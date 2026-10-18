@@ -1,0 +1,13 @@
+{
+  "strategy": "structured_check",
+  "script": "scripts/run_structured_check_main10.py",
+  "script_hash": "092B27384BBE3F6D5DEEE9A7EAC560EE3D9D7CF431303F2CDD9B32B4229D6C25",
+  "preparation_hash": "73F41C9BC013B347B01606397D7550F5D427D932C3C97DDA4B0CACDD978A21A7",
+  "protected_hash": "69AFD6DC2121303BE6069BB46DF2482F09116B1C97B0807F51DB3F8E2190D022",
+  "prompt": {
+    "version": "structured_check_v1",
+    "path": "prompts/experimental/structured_check_v1.txt",
+    "hash": "ABAE6625B0A4C1C68D5DB1158737A0EC393B226D2804135DF616C7F01C2C98CE"
+  },
+  "manifest_hash": "2BAEC9A7C2ADCBB1E1803F5F4103865A5415420BF79DDAF46629B90895132AE7"
+}

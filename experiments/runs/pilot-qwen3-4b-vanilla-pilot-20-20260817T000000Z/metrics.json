@@ -1,0 +1,51 @@
+{
+  "num_examples": 20,
+  "classification_metrics": {
+    "accuracy": 0.45,
+    "precision": 0.3333333333333333,
+    "recall": 0.1,
+    "f1": 0.15384615384615383
+  },
+  "localization_metrics": {
+    "ceeval_full": 0.45,
+    "ceeval_pos": 0.1,
+    "cont_error_lines": 0.45,
+    "contradicted_lines": 0.45
+  },
+  "failure_counts": {
+    "target_inference_failure": 0,
+    "target_parsing_failure": 20,
+    "missing_prediction": 0,
+    "malformed_prediction": 0,
+    "evaluator_inference_failure": 0,
+    "evaluator_parsing_failure": 0
+  },
+  "subsets": {
+    "flawed_fictions": {
+      "num_examples": 10,
+      "classification_metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.2,
+        "f1": 0.28571428571428575
+      },
+      "localization_metrics": {
+        "ceeval_full": 0.5,
+        "ceeval_pos": 0.2
+      }
+    },
+    "flawed_fictions_long": {
+      "num_examples": 10,
+      "classification_metrics": {
+        "accuracy": 0.4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "localization_metrics": {
+        "ceeval_full": 0.4,
+        "ceeval_pos": 0.0
+      }
+    }
+  }
+}

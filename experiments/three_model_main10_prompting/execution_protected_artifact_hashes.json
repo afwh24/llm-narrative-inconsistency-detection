@@ -1,0 +1,838 @@
+[
+  {
+    "path": "experiments\\runs\\.gitkeep",
+    "hash": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\config.yaml",
+    "hash": "F760849051CD3548BEC6E1A30C281754BF17172068515CD17BF83FD162DD642F"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\errors.jsonl",
+    "hash": "B2CFDD8F5F92E80FAC3CCD81E6C90303D58A0CACF441562B750CCF0A26E0C78F"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\evaluation_examples.jsonl",
+    "hash": "BD718C01C15D8588271D5421A27D0D14107EAD55D108AC60B4AE3170ED412A7D"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\metadata.json",
+    "hash": "BD9947EE210D5020CB34FE849F08FC284EBA409CFFAA1612C943BE09F8D3E5CB"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\metrics.json",
+    "hash": "0857989A9CCFA37D4BC3BE856132A1FCE4407D108AFD4F9FADDE4FEDD1FADAB4"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\predictions.jsonl",
+    "hash": "087803E8782C48534F21442E17A805EB7CF1A3FBF4F7003D50C08347DA136578"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\run_summary.md",
+    "hash": "5163A1748AFD5F6637CB93ABDD8297DFDCEEE2F8D8568CBC3EC2A09F268794A2"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\summary.md",
+    "hash": "C6C495C6502DFB1F8E68F4CACEB620E31A4AAE7FB919A98DCDEC30BE0F376E14"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-minus-pilot-20260915T000000Z\\config.yaml",
+    "hash": "E884B5F55D6A6BDF47D9AEEE3CE83344BEBE4FDCD95FCDD61F65CA7C41B14835"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-minus-pilot-20260915T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-minus-pilot-20260915T000000Z\\evaluation_examples.jsonl",
+    "hash": "99DBCE2F35C5AAB575A01126DE8C1741A9E1E1ED8F2CE7A2F434BF541CD1D15E"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-minus-pilot-20260915T000000Z\\metadata.json",
+    "hash": "2CCCCB3C842A738DFE29A9D8826F20BBFD9F3C72EFCB825535157F9B827A59D7"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-minus-pilot-20260915T000000Z\\metrics.json",
+    "hash": "D1C53713C532446E76F84861BCF9CB5219E54836099BF6FE9F470760B571C9C0"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-minus-pilot-20260915T000000Z\\predictions.jsonl",
+    "hash": "359D5AB753E76C0114AA67692728619107F56E44EBB40E3EC15AAA5F95218DFE"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-minus-pilot-20260915T000000Z\\run_summary.md",
+    "hash": "F0073EED809FFA8046B0F9F94B56950310CF9A781023731725612E399E5CAE5A"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-evidence-first-ff-minus-pilot-20260915T000000Z\\summary.md",
+    "hash": "0C3465B6E76FE38B32D32284D8EAC71EAA7F29261A176DC38D5F5018FD7CDFE5"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-long-minus-pilot-20260915T000000Z\\config.yaml",
+    "hash": "2C8599B3B994F9A19F0A4E05F5A8C7BB2A727B5C922C7090446E336F8A236C25"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-long-minus-pilot-20260915T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-long-minus-pilot-20260915T000000Z\\evaluation_examples.jsonl",
+    "hash": "5BDC3142909C7E7A0BBED27120D50FF948C9411F1DD26EA19B0A2AB0E2A12199"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-long-minus-pilot-20260915T000000Z\\metadata.json",
+    "hash": "DFFB95012E44E9DB9773F7F094104F93A69E9A98A418778C064500272195BD81"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-long-minus-pilot-20260915T000000Z\\metrics.json",
+    "hash": "7FCF6E2997A2286B663964FEEC7E5A641D4A445D5AA64C13A25BD95CAFDF338A"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-long-minus-pilot-20260915T000000Z\\predictions.jsonl",
+    "hash": "E6C4F90C04BA5BC3E8C99D7752EB7959AF10C42077AF4D668BAC6BFF83E40F5A"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-long-minus-pilot-20260915T000000Z\\run_summary.md",
+    "hash": "667ACB602071FA71D080077347FD59FEC2362C94454B04485C4323C1F4EC4FB2"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-long-minus-pilot-20260915T000000Z\\summary.md",
+    "hash": "09893DC93CEFE1227A4CA777FB4A17E4B3E609B82DB7F81503512A4B45442F62"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-minus-pilot-20260915T000000Z\\config.yaml",
+    "hash": "BF700DD9720090BF30EFDF1747DBD122003542D2B5AD1D799E271F5B271C60DB"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-minus-pilot-20260915T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-minus-pilot-20260915T000000Z\\evaluation_examples.jsonl",
+    "hash": "343BD837827B788105DF18A35A150AF49A29F50C9F168B1B1CDBAD5233A89126"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-minus-pilot-20260915T000000Z\\metadata.json",
+    "hash": "566894D7D3A57AADCFC7B26D24DCFDE64FA6FDEDEAE5F8E969C42920157A1C3C"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-minus-pilot-20260915T000000Z\\metrics.json",
+    "hash": "B249EACDA00696A39CB932D389108C6D645F51B90C6A4838ECD4C36C6EF3DA69"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-minus-pilot-20260915T000000Z\\predictions.jsonl",
+    "hash": "08A446B7CCDA4BDC04859B1F1048902A11B422D1A3BA160807985233F9E3EE19"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-minus-pilot-20260915T000000Z\\run_summary.md",
+    "hash": "F0073EED809FFA8046B0F9F94B56950310CF9A781023731725612E399E5CAE5A"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-4b-vanilla-ff-minus-pilot-20260915T000000Z\\summary.md",
+    "hash": "7A6080DB5A73F82A012153DDC0FC2EA353C12C52495D12B806A237A6191AE0A8"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\config.yaml",
+    "hash": "76EB9D0C05E7BBD43462240A4297CF5A30ADF41A2E1E2164C9A67A76B4007BB6"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\evaluation_examples.jsonl",
+    "hash": "F918F3945D6E7825B145D70836638FDD9DBA58102487F449F636F0A2C2DB0419"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\metadata.json",
+    "hash": "D6039160D5583780416A481EB3B70FCEA91B00350F5E604C93EE0F19B74BA3C2"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\metrics.json",
+    "hash": "1082285C8178206199C0CB0CAA1288D1E352C4A573DAC69E8A3D30487B4DBFCD"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\predictions.jsonl",
+    "hash": "990675CEA75E786984594A01AEA637203D874EA79EA36709F45F3FA9F9538249"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\run_summary.md",
+    "hash": "667ACB602071FA71D080077347FD59FEC2362C94454B04485C4323C1F4EC4FB2"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-long-minus-pilot-20260915T000000Z\\summary.md",
+    "hash": "942F07078805F39801711A00C8630CD09A74CE1B780AF2B98D424B9723E7D1CF"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-minus-pilot-20260915T000000Z\\config.yaml",
+    "hash": "966CBF7DBBB6D3BB416C7A4C1E8B1E3ED5AB95747BE10022CCF523CAB381288F"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-minus-pilot-20260915T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-minus-pilot-20260915T000000Z\\evaluation_examples.jsonl",
+    "hash": "6F9A0694DC91B4A1AD6DDAD84E2A7DFF77B13B6391E5AD9AA2B3ED469CFD4250"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-minus-pilot-20260915T000000Z\\metadata.json",
+    "hash": "13012512E539D5B4FC41B01FEEAE0CECBF930B55BCCC0EB4F86817DA9FFDC127"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-minus-pilot-20260915T000000Z\\metrics.json",
+    "hash": "7C45F2A2D237EC1417A6EB1A285F39AF2CD7B84068CCCBE53293D301B939C946"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-minus-pilot-20260915T000000Z\\predictions.jsonl",
+    "hash": "57A449BF425268FC21CBE9EA7C27569857129A3E739DE931AD697689D7FD5C48"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-minus-pilot-20260915T000000Z\\run_summary.md",
+    "hash": "F0073EED809FFA8046B0F9F94B56950310CF9A781023731725612E399E5CAE5A"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-evidence-first-ff-minus-pilot-20260915T000000Z\\summary.md",
+    "hash": "31CCDB3CF14B608E4638A3EF9F3DD2D58104C77313D93F4681D30A5368F8EBFC"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-long-minus-pilot-20260915T000000Z\\config.yaml",
+    "hash": "5528DB3B8C257E0500BE3161660E62982336B3E686AC1AB2AF77F3DAF0096B30"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-long-minus-pilot-20260915T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-long-minus-pilot-20260915T000000Z\\evaluation_examples.jsonl",
+    "hash": "88DEA292B63E9F689BC1420D2AE5FE0D00A9158FB36046C8A9DE05E636BA0C3A"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-long-minus-pilot-20260915T000000Z\\metadata.json",
+    "hash": "56D6083E220CD76B3092C7B3C8AB2D36D24E1EE71699AE199BD80ECDD7DBA0BA"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-long-minus-pilot-20260915T000000Z\\metrics.json",
+    "hash": "E76EAC7C2DB6F9D2AD9DE6258E9355EB8C987D9E57769AA327CD5AA46D7D2A62"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-long-minus-pilot-20260915T000000Z\\predictions.jsonl",
+    "hash": "A0F773AEA4D0E977E722C88AE96A90700340C0BCFEBE53A0BD09EB365D2342B1"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-long-minus-pilot-20260915T000000Z\\run_summary.md",
+    "hash": "667ACB602071FA71D080077347FD59FEC2362C94454B04485C4323C1F4EC4FB2"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-long-minus-pilot-20260915T000000Z\\summary.md",
+    "hash": "87AA70099085B8E93D352FFB9CF5846BC636FE4E1F0AD95572985711E2AC8FD3"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-minus-pilot-20260915T000000Z\\config.yaml",
+    "hash": "1F612B3B87BADE4924DE12067ADA7EAC7B89E9A4F015B9D32E526F9A169FD94A"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-minus-pilot-20260915T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-minus-pilot-20260915T000000Z\\evaluation_examples.jsonl",
+    "hash": "2F4FF77DA0EC973A92D30268E09955DA7F9B760E14F80A2D564A58780297EDC4"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-minus-pilot-20260915T000000Z\\metadata.json",
+    "hash": "EF12FAAC2F6B92C2ECDEBEE85CE181E6DE2B37B98A53B4E2DC01554A9D217C2E"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-minus-pilot-20260915T000000Z\\metrics.json",
+    "hash": "F889D4F6C4317D2BB60381E2C6402DB9D1B222ED358F4E30601A38F4509DE162"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-minus-pilot-20260915T000000Z\\predictions.jsonl",
+    "hash": "27FEB755F50E2ACA756E9EE372DCB8AFE1B5B2286E0F8F1EC13AB35DE174048C"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-minus-pilot-20260915T000000Z\\run_summary.md",
+    "hash": "F0073EED809FFA8046B0F9F94B56950310CF9A781023731725612E399E5CAE5A"
+  },
+  {
+    "path": "experiments\\runs\\final-qwen3-8b-vanilla-ff-minus-pilot-20260915T000000Z\\summary.md",
+    "hash": "618F55797A069E9648CC119D073E63F51C9F221C6A809721CDDFC0143A811E1A"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-evidence-first-pilot-20-20260822T000000Z\\config.yaml",
+    "hash": "293B4D39899F7539C389AA7D4521F47CBFB7E7DDEF8FAF13EAA9099AD2CCC135"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-evidence-first-pilot-20-20260822T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-evidence-first-pilot-20-20260822T000000Z\\evaluation_examples.jsonl",
+    "hash": "B446C62A6F4B0E1C12CBC3AD45FC20954C93C81777A95B6556395CD873F782DF"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-evidence-first-pilot-20-20260822T000000Z\\metadata.json",
+    "hash": "15B6EB7EA80E1F49FD302A58E588806BA9BA1A8EE7351AA85303CD707273539D"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-evidence-first-pilot-20-20260822T000000Z\\metrics.json",
+    "hash": "7A9CF04D39AA4B817FFE99698FD13223B5C013FE240C78A25DE61B128621684F"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-evidence-first-pilot-20-20260822T000000Z\\predictions.jsonl",
+    "hash": "40CA0EAF4F2ACA2C58BEF56586E291496E7465463979661428933EBC950EC864"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-evidence-first-pilot-20-20260822T000000Z\\run_summary.md",
+    "hash": "2AEB4DAF09429E180E654F9AABE034E30C787264BB917E3ECCDCF75D3E3FA197"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-evidence-first-pilot-20-20260822T000000Z\\summary.md",
+    "hash": "9397C6B288DFB3F26A8E85C3094192D782AB02617B1C79BF814754F884CAB482"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-pilot-20-20260817T000000Z\\config.yaml",
+    "hash": "C84453C7A206DF98548548952FED948731C147A9FC6642669F9C5B2EA4FBC46B"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-pilot-20-20260817T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-pilot-20-20260817T000000Z\\evaluation_examples.jsonl",
+    "hash": "A70FD40168FD79FBE5686BF89F7914B2596AB0CA1BA7A3E85F9827CC9067285C"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-pilot-20-20260817T000000Z\\metadata.json",
+    "hash": "146F0274A9C06F54FF7540D95AC47D716055702AC95520558CDEED4DB751559C"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-pilot-20-20260817T000000Z\\metrics.json",
+    "hash": "CDE39B8F578A88B3C1562E40EB7E105374609517C2869940ADE8DCA4C5C9AD77"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-pilot-20-20260817T000000Z\\predictions.jsonl",
+    "hash": "62903BB4C23B3497A6AE395FE8DD20AE4774B2B84ED2D1F6016FEB212D064B49"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-pilot-20-20260817T000000Z\\run_summary.md",
+    "hash": "ABE1B8074E23F28DD88332507D0A82F2E40EB4AEAD9FD97F0A4F934DF78B8660"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-pilot-20-20260817T000000Z\\summary.md",
+    "hash": "A15B7CFAC81CB9DBFD81CF6C8C993BC6EFB57FF54773E20D3A64F5BF66917870"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-think-true-pilot-20-20260822T000000Z\\config.yaml",
+    "hash": "9E1A33B0179520E785D9EB43068C256F250E47763BFE71ADE06BE3505178EF47"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-think-true-pilot-20-20260822T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-think-true-pilot-20-20260822T000000Z\\evaluation_examples.jsonl",
+    "hash": "33832F9409C99FD3EEE74618F3FDA6CA4F4ECDDEEF86B71E43B5F6BAA7553912"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-think-true-pilot-20-20260822T000000Z\\metadata.json",
+    "hash": "19CBA3040BC2F9F5574B44FC16F60815A36B7CD44DFE8A8534C37A197D16623F"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-think-true-pilot-20-20260822T000000Z\\metrics.json",
+    "hash": "24A3061DEC29CC1278DA8B212138D71A3AAB1262F2E80013BF288FCFB8563780"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-think-true-pilot-20-20260822T000000Z\\predictions.jsonl",
+    "hash": "86F130BEE82AB7E23B769EB1451250BBCEDB3E31C3CEC2FD63482206C165A86D"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-think-true-pilot-20-20260822T000000Z\\run_summary.md",
+    "hash": "2AEB4DAF09429E180E654F9AABE034E30C787264BB917E3ECCDCF75D3E3FA197"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-vanilla-think-true-pilot-20-20260822T000000Z\\summary.md",
+    "hash": "128BF2F6013969DA2DCA8D16266346851389399751A231E3E5FEA1DB5B8980B3"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-verify-revise-pilot-20-20260822T000000Z\\config.yaml",
+    "hash": "C2F48EA661E1310A0943D40019BE3C73233355CDBC4BE9C73E9C056E0CA4A569"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-verify-revise-pilot-20-20260822T000000Z\\errors.jsonl",
+    "hash": "2A94E4C1F7777387BF9BB768A967A421F7735D6B6A77C13AA253228D21C2030B"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-verify-revise-pilot-20-20260822T000000Z\\evaluation_examples.jsonl",
+    "hash": "57911B9F4FF78339D831B8E63047DA87829B55705EC7B1CDE2779B3E3E6097D5"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-verify-revise-pilot-20-20260822T000000Z\\metadata.json",
+    "hash": "21BDC3520AB2D039B63AB32F5A58122BB16FA7BF67293C9B642B22FC8FDB8414"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-verify-revise-pilot-20-20260822T000000Z\\metrics.json",
+    "hash": "92D7DD9E625632C68F15A7B66AEE30BC698EDC9F14B5E36E3CFC557BA448EE42"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-verify-revise-pilot-20-20260822T000000Z\\predictions.jsonl",
+    "hash": "C009D320912B045C92F9FF508E84457B17127D95FA6E955D3F0F0783F32A2CD4"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-verify-revise-pilot-20-20260822T000000Z\\run_summary.md",
+    "hash": "5603EFFC46638DFE7A1F8A632BB75B1CAA42E21A1FA4DDB9F1CB33B49CDA20A6"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-4b-verify-revise-pilot-20-20260822T000000Z\\summary.md",
+    "hash": "6251BD579963961627E31D9B0A92631F2512CCF68ADF568A46DB2B042537D036"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-evidence-first-pilot-20-20260822T000000Z\\config.yaml",
+    "hash": "9C88F2B335311B8BFF294385678377957FCA286E2F37FFA24FF81D49A99C54B5"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-evidence-first-pilot-20-20260822T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-evidence-first-pilot-20-20260822T000000Z\\evaluation_examples.jsonl",
+    "hash": "99B4A1BC1E6817ACA8C97C62B17DBCE3EBB002291CBFC753757F0676A6459621"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-evidence-first-pilot-20-20260822T000000Z\\metadata.json",
+    "hash": "034191173F46E4476D1B1FB1B6EAF49B3F43BEC16D33D0860D15B9B504F34EBF"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-evidence-first-pilot-20-20260822T000000Z\\metrics.json",
+    "hash": "00E233B34BF40D283E590186B0F5E09C46AB8B5C5AE8A1876E190E6566DA7B08"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-evidence-first-pilot-20-20260822T000000Z\\predictions.jsonl",
+    "hash": "FD05DA1715E6B1A7BDC4D1EC4A7F536C74BB1B5843A437D5F4DDDFB485239834"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-evidence-first-pilot-20-20260822T000000Z\\run_summary.md",
+    "hash": "2AEB4DAF09429E180E654F9AABE034E30C787264BB917E3ECCDCF75D3E3FA197"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-evidence-first-pilot-20-20260822T000000Z\\summary.md",
+    "hash": "594D2DB7946E3F732DC8C59D1E13955A4D8A842321C8AE200043B70884A32BB2"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-pilot-20-20260822T000000Z\\config.yaml",
+    "hash": "15D499E854F23AF98E1C51CCDBE5B3AC538BC8C7E0B9F3CD206B2BD0D736630F"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-pilot-20-20260822T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-pilot-20-20260822T000000Z\\evaluation_examples.jsonl",
+    "hash": "49BCF93D15BD6639E40BFD1CB5EF9D206F2CDDE43B84F6E0282BE534110EA76C"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-pilot-20-20260822T000000Z\\metadata.json",
+    "hash": "C5BCC4C8E8353835F37D8EC42DDAD5FCC4A0BBC194D95943902A54D631EBE927"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-pilot-20-20260822T000000Z\\metrics.json",
+    "hash": "B0264D56353A0D47AAA7D4C30F77150B2E709A7C07B8954BEBE1D13C5A883D01"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-pilot-20-20260822T000000Z\\predictions.jsonl",
+    "hash": "0CF6966DB23C3AA32EDE8BD67AF5ABDE6B1771F7DC2A8E64721C5A4021CF1A51"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-pilot-20-20260822T000000Z\\run_summary.md",
+    "hash": "ABE1B8074E23F28DD88332507D0A82F2E40EB4AEAD9FD97F0A4F934DF78B8660"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-pilot-20-20260822T000000Z\\summary.md",
+    "hash": "47F62A5C77E15B39EFDA45E4DA9D0DF16B9BA89AA37288D4ED1A5C32B1323098"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-think-true-pilot-20-20260822T000000Z\\config.yaml",
+    "hash": "2BD9AC4EC15073E70F218C9E460E7BC106B442CEFD185C5D8F5ABBBB2CE893D9"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-think-true-pilot-20-20260822T000000Z\\errors.jsonl",
+    "hash": "F1DDAEDA219F20D3C52A94AF7FAF944013CB13972E888B00A5FF9B27B19A7C0F"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-think-true-pilot-20-20260822T000000Z\\evaluation_examples.jsonl",
+    "hash": "F784EA4F900F0A7D8540EB206B3C80EB03106173FC24456006C6732BB53628A7"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-think-true-pilot-20-20260822T000000Z\\metadata.json",
+    "hash": "072F5B0D3E55DBF996B22F190C1D5DFB62EDCE8317BDA0EC356399DDAC00982D"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-think-true-pilot-20-20260822T000000Z\\metrics.json",
+    "hash": "BC76DF374C5BA915B1BDA9BB446DC480AEC57EEE05D7C954496606D3096F23BB"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-think-true-pilot-20-20260822T000000Z\\predictions.jsonl",
+    "hash": "960F3B5CABCC42EE4C424470500DBA7A5DEE1A5A1BD45A6C3ECCBCB900C40CAE"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-think-true-pilot-20-20260822T000000Z\\run_summary.md",
+    "hash": "1EB6579E8D8CAEE4B8EA65B9F86BFA4E6D27251F844FA1C811ECBD765F1DC4C4"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-vanilla-think-true-pilot-20-20260822T000000Z\\summary.md",
+    "hash": "6DDA88EF38F8C15078E28280F240A47B6F759563F37618A0FC0CB3F0FB7694C6"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-verify-revise-pilot-20-20260822T000000Z\\config.yaml",
+    "hash": "AF2F6FDC62735346AEF5D9F0EE6F2A51D77BF71AE659BBA0BB982B1C60D02562"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-verify-revise-pilot-20-20260822T000000Z\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-verify-revise-pilot-20-20260822T000000Z\\evaluation_examples.jsonl",
+    "hash": "49BCF93D15BD6639E40BFD1CB5EF9D206F2CDDE43B84F6E0282BE534110EA76C"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-verify-revise-pilot-20-20260822T000000Z\\metadata.json",
+    "hash": "4F95FCF05382D715C81218CD063C64BF3F64C0046FB9E759DA289E8829B248F3"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-verify-revise-pilot-20-20260822T000000Z\\metrics.json",
+    "hash": "B0264D56353A0D47AAA7D4C30F77150B2E709A7C07B8954BEBE1D13C5A883D01"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-verify-revise-pilot-20-20260822T000000Z\\predictions.jsonl",
+    "hash": "2BCA5715EFCC55AE8077CDE37B46E49742971102C703C1F756816B55D33FA697"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-verify-revise-pilot-20-20260822T000000Z\\run_summary.md",
+    "hash": "2AEB4DAF09429E180E654F9AABE034E30C787264BB917E3ECCDCF75D3E3FA197"
+  },
+  {
+    "path": "experiments\\runs\\pilot-qwen3-8b-verify-revise-pilot-20-20260822T000000Z\\summary.md",
+    "hash": "06B839788685CC449D39097150D0BB2FE48943B6B607750179797336DD56F5FE"
+  },
+  {
+    "path": "experiments\\summaries\\.gitkeep",
+    "hash": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+  },
+  {
+    "path": "experiments\\summaries\\pilot_baseline_comparison.md",
+    "hash": "66025FF0780D271B23742A0A915C8FDDE18362B1DA4CFE171A1AE80B8BBB90AA"
+  },
+  {
+    "path": "experiments\\summaries\\pilot_baseline_paired_comparison.json",
+    "hash": "156816C34B0D67F5916D3D5613DD63BC4D8FE406CD934AC9A5E8B3EC8BE1404F"
+  },
+  {
+    "path": "experiments\\summaries\\pilot_error_analysis.md",
+    "hash": "51C110EF95337A34C95B58816B6C69F09506BA74C037B71EBB4E6CF74B6117EE"
+  },
+  {
+    "path": "experiments\\summaries\\pilot_results.csv",
+    "hash": "37E30462A8E98B35A77AA4D651A9B552DD8717EF2DB03F1A248F35801B11E074"
+  },
+  {
+    "path": "experiments\\summaries\\pilot_statistical_analysis.md",
+    "hash": "E4AFBD90DA74F6FFD1CF0073F81AC68A391A5B23E2AC8A999D15D9F44424B156"
+  },
+  {
+    "path": "experiments\\summaries\\pilot_thinking_ablation.md",
+    "hash": "4DC869BB560D663F4FE6747693A628D9B6AF83CC0DE5282A4CD7844245BBD47B"
+  },
+  {
+    "path": "experiments\\three_model_main10\\audit.json",
+    "hash": "BC94216A58B758F6D8C333F9F552BB9335D1E36F2FA76A9319B11AC0F4FF61A8"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\baseline_pilot_comparison.md",
+    "hash": "760E259471AF67A19C6A42C1C17ED20957C2FDDD9DEDAE217B688D409540288F"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\llama3_1_8b_baseline_evaluation.jsonl",
+    "hash": "832739C8D697A78E180C2571F90B3EE13AFE8FE0B58B840B82959CC68762E8FA"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\llama3_1_8b_baseline_metadata.json",
+    "hash": "D456EF2D2A65FE38D7F59A3107FA5515F2CA725275F20EA3317441087C2E44BF"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\llama3_1_8b_baseline_metrics.json",
+    "hash": "EDC583FE536D1FD716B430AB3C3035BF1E2D0F2A8E5C84F903B068139DEB28F0"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\llama3_1_8b_baseline.json",
+    "hash": "D21B071FB59105E94C52BCA10DC3DEF4DA754AA3FDDD9EED2B2CD049668835D4"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\llama3_1_8b_baseline.jsonl",
+    "hash": "1221985ECEBE2435D48FEF2AF4AEAAFBCE418B09C603DD3A49F5E126867EF5E6"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\mistral_7b_baseline_evaluation.jsonl",
+    "hash": "258835D10DEE7136E8A585AA2E3E432A8E7353FBDDDCDDDD434B56C010BC9E3F"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\mistral_7b_baseline_metadata.json",
+    "hash": "B18260BB71ECFE2BDD0638DC62429DC2E2169C534E281B605F5C9B8A1CBA5251"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\mistral_7b_baseline_metrics.json",
+    "hash": "0E5FD714485B054704F60F98C00DCC840F84B527409236D0EB316ECFBCE414B8"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\mistral_7b_baseline.json",
+    "hash": "1624A9508E168D2667C55BF9F2561DAE0650B84F7504942177F3B5D7C9D3B147"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\mistral_7b_baseline.jsonl",
+    "hash": "B2D43D8425AF7106DF767FA45ED7EC55DC56F403DCE94B118F97A82B1A7F0023"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\qwen3_8b_baseline_evaluation.jsonl",
+    "hash": "5B81F56C959DDEF73DC784949B176E9FA72157C745AF6D26EC7298D54A261EF8"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\qwen3_8b_baseline_metadata.json",
+    "hash": "675D9F3D63E9F7D25BB38670CAE3620CCE316A6306382531F6C792D5A9918EA8"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\qwen3_8b_baseline_metrics.json",
+    "hash": "053125C869FDC3075FEA52495562406E88652F3D80823E2C6D2546C683943484"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\qwen3_8b_baseline.json",
+    "hash": "FBB3550F25AF0B49B565622445BF3573F95B58F9B0D6307825AA487960C7E449"
+  },
+  {
+    "path": "experiments\\three_model_main10\\exports\\qwen3_8b_baseline.jsonl",
+    "hash": "73F5B32F657D11717772D77BF9652F9B85CB081333DDDE55D8E472A04E9F3BCD"
+  },
+  {
+    "path": "experiments\\three_model_main10\\preparation\\config.yaml",
+    "hash": "C87BE9F1B270C1EC5C8513D20CD77111E021B3A1C692435AC2698615B8433D1F"
+  },
+  {
+    "path": "experiments\\three_model_main10\\preparation\\metadata.json",
+    "hash": "2FD5DF4426B0426AA4D4E42A9CAC7EF300B1A7504DE1D6967FE7BC1014011F4C"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-llama3-1-8b-baseline-main10-v1\\config.yaml",
+    "hash": "AF1DFC035A73178712AA15D847D159FB4690895989940D6323637B4F0AC1AC66"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-llama3-1-8b-baseline-main10-v1\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-llama3-1-8b-baseline-main10-v1\\evaluation_examples.jsonl",
+    "hash": "832739C8D697A78E180C2571F90B3EE13AFE8FE0B58B840B82959CC68762E8FA"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-llama3-1-8b-baseline-main10-v1\\metadata.json",
+    "hash": "D456EF2D2A65FE38D7F59A3107FA5515F2CA725275F20EA3317441087C2E44BF"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-llama3-1-8b-baseline-main10-v1\\metrics.json",
+    "hash": "EDC583FE536D1FD716B430AB3C3035BF1E2D0F2A8E5C84F903B068139DEB28F0"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-llama3-1-8b-baseline-main10-v1\\predictions.jsonl",
+    "hash": "1221985ECEBE2435D48FEF2AF4AEAAFBCE418B09C603DD3A49F5E126867EF5E6"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-llama3-1-8b-baseline-main10-v1\\run_summary.md",
+    "hash": "0CB38B635743B9DB9E058968B84425232C52A41A156ADCF892F1C0DA863D1532"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-llama3-1-8b-baseline-main10-v1\\summary.md",
+    "hash": "87E2A19F35E77F44855982C964666E0CDA38542D7A4B509CC9C6CE84CBA838A9"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-mistral-7b-baseline-main10-v1\\config.yaml",
+    "hash": "700EFC3240359BA12E7909FB46991365DA74C3C89FD5BB5AAF2247E59AD56123"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-mistral-7b-baseline-main10-v1\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-mistral-7b-baseline-main10-v1\\evaluation_examples.jsonl",
+    "hash": "258835D10DEE7136E8A585AA2E3E432A8E7353FBDDDCDDDD434B56C010BC9E3F"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-mistral-7b-baseline-main10-v1\\metadata.json",
+    "hash": "B18260BB71ECFE2BDD0638DC62429DC2E2169C534E281B605F5C9B8A1CBA5251"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-mistral-7b-baseline-main10-v1\\metrics.json",
+    "hash": "0E5FD714485B054704F60F98C00DCC840F84B527409236D0EB316ECFBCE414B8"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-mistral-7b-baseline-main10-v1\\predictions.jsonl",
+    "hash": "B2D43D8425AF7106DF767FA45ED7EC55DC56F403DCE94B118F97A82B1A7F0023"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-mistral-7b-baseline-main10-v1\\run_summary.md",
+    "hash": "0CB38B635743B9DB9E058968B84425232C52A41A156ADCF892F1C0DA863D1532"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-mistral-7b-baseline-main10-v1\\summary.md",
+    "hash": "0205AEF74843875AF060F5758B933D72BEE454F49A98618E17EE50849EF3AE9F"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-qwen3-8b-baseline-main10-v1\\config.yaml",
+    "hash": "62177897A66AD9879F60A22EB072E5AE943D0A47B5B06F4F1F33C1D7381EDB19"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-qwen3-8b-baseline-main10-v1\\errors.jsonl",
+    "hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-qwen3-8b-baseline-main10-v1\\evaluation_examples.jsonl",
+    "hash": "5B81F56C959DDEF73DC784949B176E9FA72157C745AF6D26EC7298D54A261EF8"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-qwen3-8b-baseline-main10-v1\\metadata.json",
+    "hash": "675D9F3D63E9F7D25BB38670CAE3620CCE316A6306382531F6C792D5A9918EA8"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-qwen3-8b-baseline-main10-v1\\metrics.json",
+    "hash": "053125C869FDC3075FEA52495562406E88652F3D80823E2C6D2546C683943484"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-qwen3-8b-baseline-main10-v1\\predictions.jsonl",
+    "hash": "73F5B32F657D11717772D77BF9652F9B85CB081333DDDE55D8E472A04E9F3BCD"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-qwen3-8b-baseline-main10-v1\\run_summary.md",
+    "hash": "0CB38B635743B9DB9E058968B84425232C52A41A156ADCF892F1C0DA863D1532"
+  },
+  {
+    "path": "experiments\\three_model_main10\\runs\\exploratory-qwen3-8b-baseline-main10-v1\\summary.md",
+    "hash": "C0AC2EAE2D437871228D4B06CFBDEC2E8BB61126A88243F0720AC41CA10523CB"
+  },
+  {
+    "path": "data\\pilot\\pilot_20.json",
+    "hash": "006BCFBD7DEAF6A8C6AF4DC5741F34F41E3EEAC2B52751EB14BE5583C2761FCD"
+  },
+  {
+    "path": "data\\pilot\\three_model_main10.json",
+    "hash": "2BAEC9A7C2ADCBB1E1803F5F4103865A5415420BF79DDAF46629B90895132AE7"
+  },
+  {
+    "path": "data\\final\\final_flawed_fictions_long_minus_pilot.json",
+    "hash": "332D4567C737469B1ADBACFA745B2EA4AF894FAC380171C6B5E99EDEB558381C"
+  },
+  {
+    "path": "data\\final\\final_flawed_fictions_minus_pilot.json",
+    "hash": "62BCA266A329FB0C29B6CEF40011F0DE7B83D11A53C1D447538CF135F6B98A0D"
+  },
+  {
+    "path": "data\\raw\\flawed-fictions\\flawed_fictions_cf_negs.parquet",
+    "hash": "F05ADD4776F3F919178BC6E5F948CFE460C3E09E04D694B37369079F4DB941D4"
+  },
+  {
+    "path": "data\\raw\\flawed-fictions\\flawed_fictions_error_resolved_negs.parquet",
+    "hash": "3BD44D3757CAC89D7B8C4DB202AABAF7F26450FBF316A29E7E65975A6875CBFE"
+  },
+  {
+    "path": "data\\raw\\flawed-fictions\\flawed_fictions_long.parquet",
+    "hash": "164F12D4D9A95680B05B5484133AEEC4A34A1A2F8BA886439C731813B5309B62"
+  },
+  {
+    "path": "data\\raw\\flawed-fictions\\flawed_fictions.parquet",
+    "hash": "584033C8475F100B2B4964227CF2C3E1E523549B6881C0398177B6FB8154592B"
+  },
+  {
+    "path": "prompts\\benchmark\\.gitkeep",
+    "hash": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+  },
+  {
+    "path": "prompts\\benchmark\\cot_v1.txt",
+    "hash": "D54BF0DA3D20A61C38F2CE786ECF44AAE8971E45ACF2CF9196613293879CADDE"
+  },
+  {
+    "path": "prompts\\benchmark\\fewshot_examples_v1.json",
+    "hash": "2E984D40B10137DF158DE627EE30C9770F04CBBE1DE5A7E5D941E8ABD2429594"
+  },
+  {
+    "path": "prompts\\benchmark\\fewshot_v1.txt",
+    "hash": "33165F58174AA6D56EEE31ECAF61E937B3D3E752CCE316F3012A26927CEA5614"
+  },
+  {
+    "path": "prompts\\benchmark\\vanilla_v1.txt",
+    "hash": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA"
+  },
+  {
+    "path": "prompts\\experimental\\.gitkeep",
+    "hash": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+  },
+  {
+    "path": "prompts\\experimental\\evidence_first_v1.txt",
+    "hash": "F2391B1109137AA0DEB643094CB64392316705BF202CEF1B58DABB2308862238"
+  },
+  {
+    "path": "prompts\\experimental\\evidence_first_v2.txt",
+    "hash": "F370BAA50DEEA1CCC0C1276CE0C56BA6094CE6FD1657FA5507CEA4EF52924F9D"
+  },
+  {
+    "path": "prompts\\experimental\\structured_check_v1.txt",
+    "hash": "ABAE6625B0A4C1C68D5DB1158737A0EC393B226D2804135DF616C7F01C2C98CE"
+  },
+  {
+    "path": "prompts\\experimental\\verify_revise_v1.txt",
+    "hash": "8064404B9BE0B0C1FC50F78BC6B203DC83632609D26F658C3AAB71BFF4C3EED0"
+  },
+  {
+    "path": "prompts\\experimental\\verify_revise_v2.txt",
+    "hash": "272F789C83596EE7B408F1D58210F6D71E7796FE174966C29023DAF4E8744131"
+  },
+  {
+    "path": "configs\\experiments\\.gitkeep",
+    "hash": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+  },
+  {
+    "path": "configs\\experiments\\three_model_main10_prompting.json",
+    "hash": "833822A8964EE56F40522A5091E84956C9EA7F6AE62E36FEAE3E279A089ECAC1"
+  },
+  {
+    "path": "configs\\experiments\\three_model_main10.json",
+    "hash": "FF608CA3C6A51BD4A7F52B23E72C0181CDB84DF6768429C99010EBA9CDB2A329"
+  },
+  {
+    "path": "configs\\models\\.gitkeep",
+    "hash": "01BA4719C80B6FE911B091A7C05124B64EEECE964E09C058EF8F9805DACA546B"
+  },
+  {
+    "path": "configs\\models\\qwen3_4b.yaml",
+    "hash": "1C1D67015979C0348836009E7F2D49954D1026B43AF2806B32895F2FDDFD997F"
+  },
+  {
+    "path": "configs\\models\\qwen3_8b.yaml",
+    "hash": "E66E7288E2F1030DC7C639C1C1E43F0123E0F148EE6B0379B5BFFEA69F5C7267"
+  },
+  {
+    "path": "configs\\models\\three_model_main10\\llama3_1_8b.yaml",
+    "hash": "038170B89548224F9113427A9BA8CE940F3D20B9F30875840E7617E3501AA6E2"
+  },
+  {
+    "path": "configs\\models\\three_model_main10\\mistral_7b.yaml",
+    "hash": "94A75A166B8107F3F24125FB5F9DB4F0C709567842A5869644E50065FC0DFD96"
+  },
+  {
+    "path": "configs\\models\\three_model_main10\\qwen3_8b.yaml",
+    "hash": "5DD273B2230CBC1B209FE8B54A8976CA671CF97B87ED9DDC601D884E13CAA5F0"
+  },
+  {
+    "path": "docs\\final_experiment_design.md",
+    "hash": "D606CE0EC071E66C552ED363B4003BFC7F802000433054E0548422CBABB44B62"
+  },
+  {
+    "path": "docs\\final_run_plan.md",
+    "hash": "5B6F3D4210A8A5D05F6DB431638185F46FC01F3488B3E123484771736C5C7865"
+  }
+]

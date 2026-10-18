@@ -1,0 +1,629 @@
+{
+  "status": "PENDING_OR_NEEDS_CHECKING",
+  "errors": [],
+  "missing_required_judgments": [
+    {
+      "review_id": "qwen3_8b:flawed_fictions_123",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_123",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_181",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_181",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_241",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_241",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_295",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_295",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_378",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_378",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_265",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_265",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_350",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_350",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_385",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_385",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_343",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_343",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_117",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_117",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_335",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_335",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_399",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_399",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_382",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_382",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_253",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_253",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_357",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_357",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_193",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_193",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_300",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_300",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_143",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_143",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_354",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_354",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_181",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_181",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_128",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_128",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_196",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_196",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_255",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_255",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_236",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_236",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_374",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_374",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_235",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_235",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_384",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_384",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_289",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_289",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_262",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_262",
+      "field": "verify_revise_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_400",
+      "field": "baseline_explanation_supported"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_400",
+      "field": "verify_revise_explanation_supported"
+    }
+  ],
+  "counts_by_model_strategy": {
+    "qwen3_8b/baseline": {
+      "No explanation status": 0,
+      "pending": 10
+    },
+    "qwen3_8b/verify_revise": {
+      "No explanation status": 0,
+      "pending": 10
+    },
+    "llama3_1_8b/baseline": {
+      "No explanation status": 0,
+      "pending": 10
+    },
+    "llama3_1_8b/verify_revise": {
+      "No explanation status": 0,
+      "pending": 10
+    },
+    "mistral_7b/baseline": {
+      "No explanation status": 0,
+      "pending": 10
+    },
+    "mistral_7b/verify_revise": {
+      "No explanation status": 0,
+      "pending": 10
+    }
+  },
+  "paired_support_counts": {
+    "incomplete_or_invalid_pairs": 30
+  },
+  "automated_interpretations": [],
+  "scope": "Qualitative diagnostic sample only; no dataset-wide explanation-quality proportions.",
+  "unresolved_transfers": [],
+  "references": [
+    {
+      "review_id": "qwen3_8b:flawed_fictions_123",
+      "story_id": "flawed_fictions_123",
+      "model": "qwen3_8b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "bounded_recovery_error_lines_missing_or_wrong_close; bounded_recovery_contradicted_lines_missing_or_wrong_close",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_explanation_close_tag; malformed_explanation_wrapper"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_181",
+      "story_id": "flawed_fictions_181",
+      "model": "qwen3_8b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_241",
+      "story_id": "flawed_fictions_241",
+      "model": "qwen3_8b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_contradicted_lines_close_tag; bounded_recovery_contradicted_lines_missing_or_wrong_close"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_295",
+      "story_id": "flawed_fictions_295",
+      "model": "qwen3_8b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_378",
+      "story_id": "flawed_fictions_378",
+      "model": "qwen3_8b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_explanation_close_tag; malformed_explanation_wrapper"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_265",
+      "story_id": "flawed_fictions_265",
+      "model": "qwen3_8b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_explanation_close_tag; malformed_explanation_wrapper"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_350",
+      "story_id": "flawed_fictions_350",
+      "model": "qwen3_8b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_explanation_close_tag; malformed_explanation_wrapper"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_385",
+      "story_id": "flawed_fictions_385",
+      "model": "qwen3_8b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_343",
+      "story_id": "flawed_fictions_343",
+      "model": "qwen3_8b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_117",
+      "story_id": "flawed_fictions_117",
+      "model": "qwen3_8b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_335",
+      "story_id": "flawed_fictions_335",
+      "model": "llama3_1_8b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_399",
+      "story_id": "flawed_fictions_399",
+      "model": "llama3_1_8b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_382",
+      "story_id": "flawed_fictions_382",
+      "model": "llama3_1_8b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_253",
+      "story_id": "flawed_fictions_253",
+      "model": "llama3_1_8b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_357",
+      "story_id": "flawed_fictions_357",
+      "model": "llama3_1_8b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_193",
+      "story_id": "flawed_fictions_193",
+      "model": "llama3_1_8b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_300",
+      "story_id": "flawed_fictions_300",
+      "model": "llama3_1_8b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_143",
+      "story_id": "flawed_fictions_143",
+      "model": "llama3_1_8b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_354",
+      "story_id": "flawed_fictions_354",
+      "model": "llama3_1_8b",
+      "baseline_gold_agreement": "Invalid label",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "missing_response_close_tag; missing_decision_close_tag; missing_or_malformed_decision_tags; malformed_response_wrapper",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_181",
+      "story_id": "flawed_fictions_181",
+      "model": "llama3_1_8b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "none"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_128",
+      "story_id": "flawed_fictions_128",
+      "model": "mistral_7b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Review needed: multiple explanation sections",
+      "baseline_parser_flags": "missing_response_close_tag; malformed_response_wrapper",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_response_close_tag; malformed_response_wrapper"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_196",
+      "story_id": "flawed_fictions_196",
+      "model": "mistral_7b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Review needed: multiple explanation sections",
+      "baseline_parser_flags": "missing_response_close_tag; malformed_response_wrapper",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_response_close_tag; malformed_response_wrapper"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_255",
+      "story_id": "flawed_fictions_255",
+      "model": "mistral_7b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "missing_response_close_tag; malformed_response_wrapper",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_response_close_tag; malformed_response_wrapper"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_236",
+      "story_id": "flawed_fictions_236",
+      "model": "mistral_7b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Review needed: multiple explanation sections",
+      "baseline_parser_flags": "missing_response_close_tag; malformed_response_wrapper",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_response_close_tag; malformed_response_wrapper"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_374",
+      "story_id": "flawed_fictions_374",
+      "model": "mistral_7b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "missing_response_close_tag; malformed_response_wrapper",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_response_close_tag; malformed_response_wrapper"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_235",
+      "story_id": "flawed_fictions_235",
+      "model": "mistral_7b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Review needed: multiple explanation sections",
+      "baseline_parser_flags": "missing_response_close_tag; malformed_response_wrapper",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_response_close_tag; malformed_response_wrapper"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_384",
+      "story_id": "flawed_fictions_384",
+      "model": "mistral_7b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "text_after_response_tag",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_response_close_tag; malformed_response_wrapper"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_289",
+      "story_id": "flawed_fictions_289",
+      "model": "mistral_7b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "none",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_response_close_tag; malformed_response_wrapper"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_262",
+      "story_id": "flawed_fictions_262",
+      "model": "mistral_7b",
+      "baseline_gold_agreement": "Disagrees",
+      "baseline_explanation_status": "Review needed: multiple explanation sections",
+      "baseline_parser_flags": "missing_response_close_tag; malformed_response_wrapper",
+      "verify_revise_gold_agreement": "Disagrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_response_close_tag; malformed_response_wrapper"
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_400",
+      "story_id": "flawed_fictions_400",
+      "model": "mistral_7b",
+      "baseline_gold_agreement": "Agrees",
+      "baseline_explanation_status": "Explanation text present (support not assessed)",
+      "baseline_parser_flags": "text_after_response_tag",
+      "verify_revise_gold_agreement": "Agrees",
+      "verify_revise_explanation_status": "Explanation text present (support not assessed)",
+      "verify_revise_parser_flags": "missing_response_close_tag; missing_error_lines_close_tag; missing_contradicted_lines_close_tag; malformed_response_wrapper; bounded_recovery_error_lines_missing_or_wrong_close; bounded_recovery_contradicted_lines_missing_or_wrong_close"
+    }
+  ],
+  "config": {
+    "version": "main100_manual_review_simple_v1",
+    "review_directory": "experiments/main100_comparison_v2_ollama0400/analysis/human_review_v1",
+    "runtime_config": "configs/experiments/main100_human_review_v1.json",
+    "allowed_judgments": [
+      "Yes",
+      "No",
+      "Unsure"
+    ],
+    "explicit_no_explanation_markers": [
+      "",
+      "none",
+      "n/a",
+      "no explanation",
+      "no explanation provided"
+    ],
+    "transfer_policy": "Preserve notes. Map Unclear to Unsure. Map old explanation No only when old detection is not N/A; map Yes only with explicit old detection Yes. Otherwise leave blank and identify the entry. Never derive human judgments from automatic labels or missing-explanation status."
+  },
+  "note": "Existing simplified CSV and Markdown are never rewritten. If present, CSV judgments are authoritative; detailed files remain preserved."
+}

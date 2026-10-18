@@ -1,0 +1,13 @@
+{
+  "version": "main100_human_review_v1",
+  "experiment_root": "experiments/main100_comparison_v2_ollama0400",
+  "corrected_analysis": "experiments/main100_comparison_v2_ollama0400/analysis/scoring_correction_v1",
+  "output_directory": "experiments/main100_comparison_v2_ollama0400/analysis/human_review_v1",
+  "selection_salt": "main100_human_review_v1:2026-10-08",
+  "models": ["qwen3_8b", "llama3_1_8b", "mistral_7b"],
+  "stratum_quotas": {"baseline_wrong_verify_correct": 3, "baseline_correct_verify_wrong": 3, "both_wrong": 3, "both_correct": 1},
+  "coverage_minima": {"baseline_fp": 1, "baseline_fn": 1, "verify_revise_fp": 1, "verify_revise_fn": 1, "evaluator_affected": 2, "invalid_output": 1},
+  "selection_rule": "Deterministic greedy rare-feature coverage within stratum quotas, then fill remaining quotas by salted SHA-256(model, story_id). Unavailable coverage is reported, never fabricated. Duplicate stories forbidden within each model; overlap across models allowed.",
+  "node_executable": "C:/Users/fonga/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+  "node_modules": "C:/Users/fonga/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules"
+}

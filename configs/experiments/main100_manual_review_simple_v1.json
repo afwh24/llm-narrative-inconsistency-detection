@@ -1,0 +1,8 @@
+{
+  "version": "main100_manual_review_simple_v1",
+  "review_directory": "experiments/main100_comparison_v2_ollama0400/analysis/human_review_v1",
+  "runtime_config": "configs/experiments/main100_human_review_v1.json",
+  "allowed_judgments": ["Yes", "No", "Unsure"],
+  "explicit_no_explanation_markers": ["", "none", "n/a", "no explanation", "no explanation provided"],
+  "transfer_policy": "Preserve notes. Map Unclear to Unsure. Map old explanation No only when old detection is not N/A; map Yes only with explicit old detection Yes. Otherwise leave blank and identify the entry. Never derive human judgments from automatic labels or missing-explanation status."
+}

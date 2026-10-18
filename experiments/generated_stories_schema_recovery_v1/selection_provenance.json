@@ -1,0 +1,1055 @@
+[
+  {
+    "pair_id": "qwen3_8b_001",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_001_A.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "9F4E072247D37FAA3A2C7D5B6A5B8B062FF8EB5099BC0AD975D617C3A12EDAEF",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:1ad4cdaa945a31b14413fb5b41b9178eb4602b1fc37074d384f11eab5f57de32:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_001_B.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "DB5232167A452B6E4A88FB98C5A6389124C23751A571B63DF52B64C500699C8D",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:ad8463921b4deff63aab9da1231914b2cd563656b12d4561ad06865f05eb8c6a:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_002",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/qwen3_8b/qwen3_8b_002_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "F65BA297E598C3FAE507829F94C00A8ACCD73294E359FB802F9C8EAB31E87EB4",
+        "request_ids": [
+          "generated_stories_recovery_v2__qwen3_8b:0fab8f3c055fc19ae229ef694068b0a26ef2df078d1eb1638615d915bcaca872:1",
+          "generated_stories_recovery_v2__qwen3_8b:0fab8f3c055fc19ae229ef694068b0a26ef2df078d1eb1638615d915bcaca872:2"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/qwen3_8b/qwen3_8b_002_B.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "4E8BE9D6308AF43ED0F20AC00184606C802E26440E82A456ECDC958690EF1E0C",
+        "request_ids": [
+          "generated_stories_recovery_v2__qwen3_8b:529c91ac0aef510537edba42fd780bf7fe4c34379229fa427746b587ccd61df8:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_003",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_003_A.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "6F318E9915861E232BD4924A2D138F99EEF15BF575A8CCC8590759451CB9BAA3",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:a9e6046fea7c8abc1e5ba3ac5354b67ab7726baf82be64d9390d932957affe2f:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_003_B.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "60D614CFACBC567F453BD3236AADAB1A2D16044A9350A39464A7D92F97049E26",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:a50740a1c617e95b2c4e51fa216231c2c2f9ef8df4f6821562dcb27da6314836:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_004",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_004_A.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "051A95413233B5A40CDD0DEF05D826B972AA98D0D20BEEAA85C40F06A6B1C30A",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:364ecf6c01882bdc6ca31fdabb6818069052129c4ac843c56f1190c3a6540331:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_004_B.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "088A1F11F3845ACB448138BEA7873375254D90CD98AB7D95C982D6970C032848",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:ccddf836fa417b4eb5f8d967eca987f2bef25b6cc6fb97b8e3f9222894bc1b06:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_005",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_005_A.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "BC5A8E0BCE7E1763E60022D4BBC17992D781857A99C94B942CB97B2CE39B9834",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:9ae381b3f8773af0c83ee5abe451b24bfa35de43a08033024c9377ecc53620fb:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_005_B.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "3A2B7FA56D5C9F86F04DCB1D798663ED9EC3FF3B76508AC11B4F77BB09C4FC5F",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:a815a6b9e2c5cf294c2faf35412fd4ee610ed933ece9ff9e12c9da2bc4809b44:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_006",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_006_A.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "2199B1F2A21DA28874D2724F4B47BE235531108B69378D589D8EABB20D62E633",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:ba545ee8d92398791cf55746eee98d79ad1a97772317ffd45e65e0e317a1aa92:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_006_B.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "8DBDC62A12B67AA8326FB1343D32BF74FFD4206C1ECC95EAF00C868B78D24964",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:18fa8d9d5e1b370c395af89ae76ae58d32439c71d387b7083ce53e4ba71ef6ad:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_007",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_007_A.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "F2A4A8FFDBE47193F812DC0121614F046202791E655467B64DD140A5EB2C1EC6",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:a87d37593c7cd5a75f878d76a2a9b28982aefcc20510df3a74b9350e5b6e0cb6:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_007_B.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "5A1FBC304733F54C301A0155EE9809B50A9DE5B07CA55CA099ADBF3C1845FBAD",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:aec654da9a5a77e5c15ec4b0ea216a4ea0f1901de92a29f19ceed18e0478531e:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_008",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_008_A.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "5AEB2DF9C7A2DA3E77B29E0F4E2C709CD0FA97C9916A2FDDAE1D226CE97508F5",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:222cb1c56e7a0a21f0f2411a95c710235c804816fc9461fbb76f72e32650021e:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_008_B.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "DFCEE742304B6D756DED88C8CDE5D92CF8EA6F4C42CC62D65563399FFAB63F29",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:2a21ee037a2bd377d886b45f764ba36e6525967545a0a2930ae00771d79ed180:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_009",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_009_A.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "1DA9FDE0344A70BCC8811DB084FA4DEDF0C6B2EB4B5C690175203AE654225CBB",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:aa981c8da420706ee3b783a02d0d80dc10b421a680c3bb4a7f146faf0ecadcb4:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_009_B.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "90D1EE1606B201F07CFABF9C452AB78DB9DD83B53391B34A18C8D8557789F054",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:9689348371a1dbc4be760b49e0d3cfff846f2b1468205193945029fbf53e7742:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_010",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_010_A.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "D61BC3522FBD35DFF1F3C514AF3261E96B7DC815499C201A641B7381111B7E0D",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:737c939da4080cb5d3112e44eeefce185c88f22b7f48ce43b47abb57a3229c52:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_010_B.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "59E79C7DC1888FE9D489B9EDB5D34DE7370ABDEE217C1168471FAF4C642999D3",
+        "request_ids": [
+          "generated_stories_v1__qwen3_8b:0194ed1d24576052820d8fba386e8206445a542a9e4f5d0f31cb1c73a313962c:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_001",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_001_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "B8FF1E087BE998D3AB593E0A2ADC597D16BC72ACC9FC5786BE54D8126575BF3A",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:792a5067a215ccae1605c7dc62fd2ce7c01e7d52aa0b5ae37de0bd9f70af4d37:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_001_B.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "BD36F8E50FB56F5B4B757E84D6CB332AC67EB661D94217BB539971B471BDB345",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:1707e6952736f4ae72a50704fa5a142fb1bc4b1f89b2544c5e77fcf6b87fb1de:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_002",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_002_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "914F82765F35E789DC1F3E48BA77BD826883A592EDD08D2A408CC3D9A09F17B0",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:1f128aebb3aa8ec79e0e8ce60d947bd3d75076849532ef835ca517d1c80f43ec:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_002_B.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "AB322C0B5BE398997E36F65E1E655970D581AD06613794DA3073F4AF3B5C8DDB",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:ee5658b1dbe875d5bd311ceec958792a0b67182acc1b4f92f48d19cfd6372851:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_003",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_003_A.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "87CCDD37FF97CD0A59BBCFAA3A0E8949AE018B578439ED97000FB96C804D7372",
+        "request_ids": [
+          "generated_stories_v1__llama3_1_8b:86b7be9382d482f742b90d7fddbceb0a86f1a36a944e97b695375481b2ec5df2:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_003_B.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "71C502253811513A5CFC2CCFC9F986B580C73A37D3D4FBB280DCCB73B2E61511",
+        "request_ids": [
+          "generated_stories_v1__llama3_1_8b:8f0f522492b07d856ce4e2e4a42ea845e6b2a2ba0bf42d4b4adb6694daa704fd:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_004",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_004_A.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "44F541F4B309F3E17DB86A15CA47CECE326903C1076688C8E357D1ED2DB181EE",
+        "request_ids": [
+          "generated_stories_v1__llama3_1_8b:da33e070334b37517eee128ccab2b8485da55ecb929cf8e188762634116b882e:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_004_B.json",
+        "source_run": "generated_stories_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_v1.json",
+          "preparation": "experiments/generated_stories_v1/preparation.json",
+          "ollama_version": "0.40.0"
+        },
+        "checkpoint_sha256": "9F56C13CAEE68A84A49057F876109942C784DF49CB902EADA38C62E63A160D56",
+        "request_ids": [
+          "generated_stories_v1__llama3_1_8b:d70279268827181497795897a12d333647ef95ddcab2f22c5e2630a2195115b9:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_005",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_005_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "101006E3CF2D28AF2A28442C51A1AEEE16B38F3B5810017AF25A6D492840A46F",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:25072dadb8fc6f5a472d61da3307acb0816a5d64fbc942e1d4404553f22b648a:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_005_B.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "464DC6DB2598AD71112F62F272F6C7D0CCE1BFE12F67AAD4E8A9A69E29E8C209",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:ca0e6352b2b7126e65d6b8199a46e33a242cc0e344483bf1a61ccce2fd6beb31:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_006",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_006_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "4D781CBFD26DEF35B2255FA5A18C54CAB39693110ECC7A3785265403606A171A",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:8c04bd0a6f6d913d8bf93d62ec0ad4d4791c4e3ba7cc008d77dffa96aa6a0b4b:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_006_B.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "12FE95A434AFEFFFF451B03C8CF4FC977E9D03CCD649E3123D6D6E7DC6FBF923",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:d59fb3453cd16f1871051897e90b620ecf454353a05cfdffe27d10b5dfa2ad30:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_007",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_007_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "F13F780328489FF053EF558A39C92571C4D434C8265DBF880DA9A072AFF3DC52",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:69751e5ab1bae3101e7fc5e99d1d4841ad8bfc004f39a6f73bf71da648887d61:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_007_B.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "3FC4FCF41E3E9FC50F70E3DA321A18D964F6C5DD5CD36C41EF70D0E71EDD8CBC",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:1c090f626836172b647fa101a86dea4e4b479fb1e295748c781685b21a608fc0:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_008",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_008_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "E3205CEBF1DBA86BB8E5699CB23731FF9251BD5040494348B50627EE67553DAD",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:56683dacebce8f2e193cfd02476ce7f9a2ef3cc2500bf4d64168001336722dab:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_008_B.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "A72260D9829D7D19BF85B10A00760F4D25173108CD4BA0F548DA9D0B6848D955",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:77296cf9c51e5d28b8c5b49bca72175d60668d17da4ba24225460b2aa2585b28:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_009",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_009_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "E0205E4EC7362797C9E120A3B94E24D776F77938E32A16F40694FEFED4A1F813",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:bb58d9c0920b668a0e292ae45efa3c695f8bb4847856eb86eab5f138865ee776:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_diagnostics_v2/llama_timeout/checkpoints/llama3_1_8b/llama3_1_8b_009_B.json",
+        "source_run": "generated_stories_diagnostics_v2/llama_timeout",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_diagnostics_v2.json",
+          "preparation": "experiments/generated_stories_diagnostics_v2/preparation.json",
+          "case": "llama_timeout",
+          "ollama_version": "0.40.2"
+        },
+        "checkpoint_sha256": "FEFA5A7584465E3D838051DDF66CEF033AF5A6E4FE49ED35635C5EFFB7E83F24",
+        "request_ids": [
+          "generated_stories_diagnostics_v2__llama_timeout__llama3_1_8b:6beba146e2a43278503bb935ec1461376a3114426790e76cf6dd81e886772c60:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_010",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_010_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "92D98EF476C45F5E99E24A3A4A5D51DE84B7976D3D20A122F7ED03381D0463B6",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:17ebe28e9d9a7bda9c2d51c2167edc17826abc06fb01b6fd490f77c4cfd2d5a4:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_010_B.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "A0B434FF43FB128D45AB6A71A5C68E8643D89E81D5F96E2FB52047CFDE773415",
+        "request_ids": [
+          "generated_stories_recovery_v2__llama3_1_8b:da37949224686b0dd86ecd4ac617f81f1eb8fc83ad440006669c3ef21c4e8af9:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_001",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_001_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "B506FAC45447F2D916F6A4F542939ADBF9E26FE4EE46C2B1F376336C87793A69",
+        "request_ids": [
+          "generated_stories_recovery_v2__mistral_7b:9d6534121fe0829dca30cfbd62c7838844f9a80e936dc1a224c6f006b642afda:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_diagnostics_v2/mistral_schema/checkpoints/mistral_7b/mistral_7b_001_B.json",
+        "source_run": "generated_stories_diagnostics_v2/mistral_schema",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_diagnostics_v2.json",
+          "preparation": "experiments/generated_stories_diagnostics_v2/preparation.json",
+          "case": "mistral_schema",
+          "ollama_version": "0.40.2"
+        },
+        "checkpoint_sha256": "D16996B394240CC749A9E458352761E3B2205362057E7A304C3AA12A19259A04",
+        "request_ids": [
+          "generated_stories_diagnostics_v2__mistral_schema__mistral_7b:7ade30b02ff8b60c87c2c9845621e84efec99704cfe5b2c56fcf0bce054b8a9b:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_002",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_002_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "7143D1B05CD71377D1509AAC8133CB9689D6F71C41065D76F62286500F1AE14E",
+        "request_ids": [
+          "generated_stories_recovery_v2__mistral_7b:df54896f65b13d409fb9393462c1f5c563a254e101d32158c08b3619714b359b:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_schema_recovery_v1/checkpoints/mistral_7b/mistral_7b_002_B.json",
+        "source_run": "generated_stories_schema_recovery_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_schema_recovery_v1.json",
+          "preparation": "experiments/generated_stories_schema_recovery_v1/preparation.json",
+          "ollama_version": "0.40.2"
+        },
+        "checkpoint_sha256": "045B6484D9158C97D80F4EB28FA7C657515BDBF3164055B8A06213A129DEB448",
+        "request_ids": [
+          "generated_stories_schema_recovery_v1__mistral_7b:c6ed713aafc454686ee4b9f3f0637503b9798303ce39c7bfeadfa365a7ebc721:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_003",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_003_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "803B1286D8EC55E0BE19E2D89ECF5AB492499E93020ACFBBDD752B64E3477438",
+        "request_ids": [
+          "generated_stories_recovery_v2__mistral_7b:5725aa46295375100ae1d72ac91e4537285dec5913acea78805fa25c1c6cbcea:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_schema_recovery_v1/checkpoints/mistral_7b/mistral_7b_003_B.json",
+        "source_run": "generated_stories_schema_recovery_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_schema_recovery_v1.json",
+          "preparation": "experiments/generated_stories_schema_recovery_v1/preparation.json",
+          "ollama_version": "0.40.2"
+        },
+        "checkpoint_sha256": "084AEAC69195996F9C0F73A8C2D050EF1F543A73DFDAF59831DE08B48BFBE315",
+        "request_ids": [
+          "generated_stories_schema_recovery_v1__mistral_7b:4b4197f8e2146624aafbd43024fe40bec75e23f16b068de703f291e4a1b7662a:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_004",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_004_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "AF74E27BB9B8EA3489B82FEC4EA9617AC3BEAE22473683574E71FE182A80CE95",
+        "request_ids": [
+          "generated_stories_recovery_v2__mistral_7b:9bbd502a7e1e4a496eb3d1be462a1bf0d3eb5f0b246f03cc18a6a578361b46f5:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_schema_recovery_v1/checkpoints/mistral_7b/mistral_7b_004_B.json",
+        "source_run": "generated_stories_schema_recovery_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_schema_recovery_v1.json",
+          "preparation": "experiments/generated_stories_schema_recovery_v1/preparation.json",
+          "ollama_version": "0.40.2"
+        },
+        "checkpoint_sha256": "840622B1C9EBF0ADBBCC3BCB0D35E013EA02325F071F687922257BEFB2BDE34B",
+        "request_ids": [
+          "generated_stories_schema_recovery_v1__mistral_7b:42583894d36d35630d60f1b3fb354c29c64aa7cd67a1635a5908ca766d1b8056:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_005",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_005_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "2DF718D05191C62AA86B27DC87619F2AEB4F0715060259E72F9914537C9F23FD",
+        "request_ids": [
+          "generated_stories_recovery_v2__mistral_7b:8b55253abfd3b815816473eda2a2d314987bb3f8051db44ed71da620fb6beaf1:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_schema_recovery_v1/checkpoints/mistral_7b/mistral_7b_005_B.json",
+        "source_run": "generated_stories_schema_recovery_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_schema_recovery_v1.json",
+          "preparation": "experiments/generated_stories_schema_recovery_v1/preparation.json",
+          "ollama_version": "0.40.2"
+        },
+        "checkpoint_sha256": "889B22AC5B542702294F325049071F062C73C2F02D8FCDC2CE11829548F5CBBC",
+        "request_ids": [
+          "generated_stories_schema_recovery_v1__mistral_7b:5878dd46a79649a918c9f027d801fc81c32f29248e95b0c60a16f61430e64aed:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_006",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_006_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "6B0580F49E1F70FBDA263BC7B29A13BFCE3C0332D6CB5B1FF7B7F58E9C01A48C",
+        "request_ids": [
+          "generated_stories_recovery_v2__mistral_7b:189b61f6a51896a08e4a12559e8d9aabfdcbbe2db2d8c59a0b38b5f7de968d54:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_schema_recovery_v1/checkpoints/mistral_7b/mistral_7b_006_B.json",
+        "source_run": "generated_stories_schema_recovery_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_schema_recovery_v1.json",
+          "preparation": "experiments/generated_stories_schema_recovery_v1/preparation.json",
+          "ollama_version": "0.40.2"
+        },
+        "checkpoint_sha256": "69B781BD7EA73A397420F520DE716DC77DD873202A326AA169A8E24929DFEE21",
+        "request_ids": [
+          "generated_stories_schema_recovery_v1__mistral_7b:3c1b7399ae620797375808802a232d9b56e09c12d43f894d4997ce1c3507f80a:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_007",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_007_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "8D75F9A4FFB5B0A5CD868990750CA1FFC54092068A1CFB91CA9793F6F7D2E661",
+        "request_ids": [
+          "generated_stories_recovery_v2__mistral_7b:2ad56d8432588af04ded03253e18ec5ab9b82e8eb4a71de06be78cdff1bb171a:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_schema_recovery_v1/checkpoints/mistral_7b/mistral_7b_007_B.json",
+        "source_run": "generated_stories_schema_recovery_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_schema_recovery_v1.json",
+          "preparation": "experiments/generated_stories_schema_recovery_v1/preparation.json",
+          "ollama_version": "0.40.2"
+        },
+        "checkpoint_sha256": "19DB5C0867B34649FF7CE6A59C8AA4FFF5B8790DB92B092D0568B953D557584E",
+        "request_ids": [
+          "generated_stories_schema_recovery_v1__mistral_7b:6e7c29891761bba59720339002fccda6a02c2f4c7e995621ccd4061bd5bb8665:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_008",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_008_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "C0AAC75C7711C19B85806C2190D1B78114BEB293F0C5F805CBE397E84DD35127",
+        "request_ids": [
+          "generated_stories_recovery_v2__mistral_7b:4a85d59d525e77dcc858f4021965755d34250dba45e9fbae87340e0dc22af8dd:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_008_B.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "5EC8B63E98A5AD50CD208D3CCE179C04105A155AADB33199FAA7072AF73DAD81",
+        "request_ids": [
+          "generated_stories_recovery_v2__mistral_7b:73a2086a8a7be7a08182607f9340d5c985abd515fb85c0f569382e043a83e9d6:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_009",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_009_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "5B46173742B25FCC0C7535F715A66DA1CF1A1931014764D7DB422A1126B90EEA",
+        "request_ids": [
+          "generated_stories_recovery_v2__mistral_7b:90ac1c7e723ee8e896e68ab281d28283dbf2328a566997c3ab3439a2de94f393:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_schema_recovery_v1/checkpoints/mistral_7b/mistral_7b_009_B.json",
+        "source_run": "generated_stories_schema_recovery_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_schema_recovery_v1.json",
+          "preparation": "experiments/generated_stories_schema_recovery_v1/preparation.json",
+          "ollama_version": "0.40.2"
+        },
+        "checkpoint_sha256": "0722144B89AEDFA522A84532878F983009A0034171ECE70E731F8B58E1EBEBD4",
+        "request_ids": [
+          "generated_stories_schema_recovery_v1__mistral_7b:929dfe006c3d258261ba7603b4f008ad26bdec5c75cc8064829b6ae80924ec13:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_010",
+    "stages": [
+      {
+        "stage": "A",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_010_A.json",
+        "source_run": "generated_stories_recovery_v2",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_recovery_v2.json",
+          "preparation": "experiments/generated_stories_recovery_v2/preparation.json",
+          "ollama_version": "0.40.1"
+        },
+        "checkpoint_sha256": "A161829D129AEEEB69857097B679DC1705B4A33A9B36CC82A8860B27F093593F",
+        "request_ids": [
+          "generated_stories_recovery_v2__mistral_7b:81b2f7f0b9eaf206c5eac2a577103126b15df49c380250276f02e6c6e426f7c1:1"
+        ],
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "checkpoint": "experiments/generated_stories_schema_recovery_v1/checkpoints/mistral_7b/mistral_7b_010_B.json",
+        "source_run": "generated_stories_schema_recovery_v1",
+        "source_configuration": {
+          "config": "configs/experiments/generated_stories_schema_recovery_v1.json",
+          "preparation": "experiments/generated_stories_schema_recovery_v1/preparation.json",
+          "ollama_version": "0.40.2"
+        },
+        "checkpoint_sha256": "D054B6CD61FC797CF9A98AFECEC9A9931A31BB1004410D67EFD091128248708C",
+        "request_ids": [
+          "generated_stories_schema_recovery_v1__mistral_7b:c045359d673e48b47bef631d091d4de80f387fb9dfdd810a18c1b8c171168d75:1"
+        ],
+        "status": "ok"
+      }
+    ]
+  }
+]

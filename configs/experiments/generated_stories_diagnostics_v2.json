@@ -1,0 +1,35 @@
+{
+  "name": "generated_stories_diagnostics_v2",
+  "root": "experiments/generated_stories_diagnostics_v2",
+  "source_root": "experiments/generated_stories_recovery_v2",
+  "max_retries": 0,
+  "max_total_dispatch_starts": 2,
+  "schema_path": "configs/experiments/generated_stories_stage_b_schema_v1.json",
+  "cases": {
+    "llama_timeout": {
+      "model": "llama3.1:8b",
+      "pair_id": "llama3_1_8b_009",
+      "timeout_seconds": 1200,
+      "format": "json",
+      "expected_source_status": "terminal_technical_B_OllamaTimeoutError",
+      "factor": "client deadline 600 -> 1200 seconds; identical application request body",
+      "hypothesis": "A longer bounded wait permits this slow rewrite to return a complete response.",
+      "support": "Complete response received after 600 but before 1200 seconds; structural validity reported separately.",
+      "weaken": "Timeout at 1200 seconds or another execution failure. Completion before 600 is inconclusive about the increased deadline."
+    },
+    "mistral_schema": {
+      "model": "mistral:7b",
+      "pair_id": "mistral_7b_001",
+      "timeout_seconds": 600,
+      "format": "schema",
+      "expected_source_status": "terminal_parsing_B",
+      "factor": "request format json -> required-field JSON schema; prompt and all other request fields unchanged",
+      "hypothesis": "Requiring the existing output fields in the decoding schema prevents explanation omission.",
+      "support": "Complete structurally valid response containing nonempty explanation; content quality remains unverified.",
+      "weaken": "Missing/empty explanation or other structure failure. HTTP schema rejection or timeout is an execution limitation, not evidence of story quality."
+    }
+  },
+  "ollama_version": "0.40.2",
+  "predecessor_root": "experiments/generated_stories_diagnostics_v1",
+  "procedure_revision": "Runtime revision 0.40.1 to 0.40.2; historical comparison confounded by runtime; same two cases and one-start budgets; no additional controls scheduled"
+}

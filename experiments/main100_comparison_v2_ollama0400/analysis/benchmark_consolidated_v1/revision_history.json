@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-12",
+  "archived_reports": [
+    "experiments\\main100_comparison_v2_ollama0400\\report_history\\main100_comparison_97d8102140f2ee4c.md",
+    "experiments\\main100_comparison_v2_ollama0400\\report_history\\main100_error_analysis_be16512e484a9069.md"
+  ],
+  "current_report": "experiments\\main100_comparison_v2_ollama0400\\analysis\\benchmark_consolidated_v1\\report.md",
+  "review_sha256": "1da2ab045e6ea697df026c4f4a40a11a160d788da62f0d86d3105ca67c55a6f9",
+  "protected_inputs_unchanged": true
+}

@@ -1,0 +1,146 @@
+{
+  "version": "generated_stories_verified_v1",
+  "root": "data/generated_stories_verified_v1",
+  "review_root": "reports/generated_stories_manual_review_v1",
+  "review": "reports/generated_stories_manual_review_v1/manual_review.csv",
+  "corrections": "reports/generated_stories_manual_review_v1/optional_annotation_corrections.csv",
+  "candidates": "reports/generated_stories_manual_review_v1/candidates_unverified.jsonl",
+  "provenance": "reports/generated_stories_manual_review_v1/candidate_provenance.json",
+  "detector_freeze": "experiments/main100_comparison_v2_ollama0400/preparation.json",
+  "source_hashes": {
+    "reports/generated_stories_manual_review_v1/manual_review.csv": "2a395d3b00163c0185eda2b89236bb83af6ba9fdf8766b5807577556cc9b7611",
+    "reports/generated_stories_manual_review_v1/optional_annotation_corrections.csv": "d6dd48059359761cbc9d51d5be59932b4fedbe3c22a4b7808992c52983572cdc",
+    "reports/generated_stories_manual_review_v1/candidates_unverified.jsonl": "59d30824a311a63f134af52b02af43f9e744a7cdfbc5fb682d3bf36c86c299a9",
+    "reports/generated_stories_manual_review_v1/candidate_provenance.json": "d202f3f4253e5150f244ddd57c0b12566224f96f4b3ab108c7998ace4d37fbc5",
+    "experiments/generated_stories_v1/editing_instructions.json": "b134dcfa64e28e212e2edc6fb8f79eb74c8f515a45297bd347de9284d2386242",
+    "experiments/main100_comparison_v2_ollama0400/preparation.json": "80f2121940ac6829229383d9d83b122df850ec2ef03436b5fffd2a26f639218a"
+  },
+  "presentation_salt": "generated-stories-verified-v1-order-20261012",
+  "exposure_attestation": {
+    "answer": "Unsure",
+    "date": "2026-10-12",
+    "question": "Have these generated stories or review findings been used to develop, select, or revise detector prompts or strategies, including outside this repository?"
+  },
+  "notes_assessment": {
+    "qwen3_8b_001": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "qwen3_8b_002": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "qwen3_8b_003": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "qwen3_8b_004": {
+      "disposition": "unresolved",
+      "reason": "Uncertainty remains in at least one human judgment; preserve existing No judgments."
+    },
+    "qwen3_8b_005": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "qwen3_8b_006": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "qwen3_8b_007": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "qwen3_8b_008": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "qwen3_8b_009": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "qwen3_8b_010": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "llama3_1_8b_001": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "llama3_1_8b_002": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "llama3_1_8b_003": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "llama3_1_8b_004": {
+      "disposition": "unresolved",
+      "reason": "Uncertainty remains in at least one human judgment; preserve existing No judgments."
+    },
+    "llama3_1_8b_005": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "llama3_1_8b_006": {
+      "disposition": "unresolved",
+      "reason": "Uncertainty remains in at least one human judgment; preserve existing No judgments."
+    },
+    "llama3_1_8b_007": {
+      "disposition": "unresolved",
+      "reason": "Notes describe ambiguous original ownership despite original_is_consistent=Yes; requires explicit resolution."
+    },
+    "llama3_1_8b_008": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "llama3_1_8b_009": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "llama3_1_8b_010": {
+      "disposition": "resolved",
+      "reason": "Acceptance notes support the conflict and explicitly resolve morning-stiffness concern."
+    },
+    "mistral_7b_001": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "mistral_7b_002": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "mistral_7b_003": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "mistral_7b_004": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "mistral_7b_005": {
+      "disposition": "unresolved",
+      "reason": "Uncertainty remains in at least one human judgment; preserve existing No judgments."
+    },
+    "mistral_7b_006": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "mistral_7b_007": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "mistral_7b_008": {
+      "disposition": "rejection_reason",
+      "reason": "Notes explain definite failed eligibility; they do not resolve the No judgments."
+    },
+    "mistral_7b_009": {
+      "disposition": "unresolved",
+      "reason": "Uncertainty remains in at least one human judgment; preserve existing No judgments."
+    },
+    "mistral_7b_010": {
+      "disposition": "unresolved",
+      "reason": "Uncertainty remains in at least one human judgment; preserve existing No judgments."
+    }
+  }
+}

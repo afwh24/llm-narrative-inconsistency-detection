@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "evaluator": "scoring_correction_v1",
+  "records": 600,
+  "review_complete": true,
+  "review_counts": {
+    "qwen3_8b": {
+      "judgments": {
+        "baseline": {
+          "Yes": 3,
+          "No": 4,
+          "Unsure": 3
+        },
+        "verify_revise": {
+          "Yes": 0,
+          "No": 10,
+          "Unsure": 0
+        }
+      },
+      "pair_ids": {
+        "verify_revise_better": [],
+        "baseline_better": [
+          "qwen3_8b:flawed_fictions_295",
+          "qwen3_8b:flawed_fictions_378",
+          "qwen3_8b:flawed_fictions_265"
+        ],
+        "both_yes": [],
+        "both_no": [
+          "qwen3_8b:flawed_fictions_123",
+          "qwen3_8b:flawed_fictions_385",
+          "qwen3_8b:flawed_fictions_343",
+          "qwen3_8b:flawed_fictions_117"
+        ],
+        "uncertain": [
+          "qwen3_8b:flawed_fictions_181",
+          "qwen3_8b:flawed_fictions_241",
+          "qwen3_8b:flawed_fictions_350"
+        ],
+        "no_explanation_separate": [],
+        "incomplete_or_invalid": []
+      },
+      "pair_counts": {
+        "verify_revise_better": 0,
+        "baseline_better": 3,
+        "both_yes": 0,
+        "both_no": 4,
+        "uncertain": 3,
+        "no_explanation_separate": 0,
+        "incomplete_or_invalid": 0
+      }
+    },
+    "llama3_1_8b": {
+      "judgments": {
+        "baseline": {
+          "Yes": 0,
+          "No": 9,
+          "Unsure": 1
+        },
+        "verify_revise": {
+          "Yes": 3,
+          "No": 7,
+          "Unsure": 0
+        }
+      },
+      "pair_ids": {
+        "verify_revise_better": [
+          "llama3_1_8b:flawed_fictions_335",
+          "llama3_1_8b:flawed_fictions_399",
+          "llama3_1_8b:flawed_fictions_382"
+        ],
+        "baseline_better": [],
+        "both_yes": [],
+        "both_no": [
+          "llama3_1_8b:flawed_fictions_253",
+          "llama3_1_8b:flawed_fictions_193",
+          "llama3_1_8b:flawed_fictions_300",
+          "llama3_1_8b:flawed_fictions_143",
+          "llama3_1_8b:flawed_fictions_354",
+          "llama3_1_8b:flawed_fictions_181"
+        ],
+        "uncertain": [
+          "llama3_1_8b:flawed_fictions_357"
+        ],
+        "no_explanation_separate": [],
+        "incomplete_or_invalid": []
+      },
+      "pair_counts": {
+        "verify_revise_better": 3,
+        "baseline_better": 0,
+        "both_yes": 0,
+        "both_no": 6,
+        "uncertain": 1,
+        "no_explanation_separate": 0,
+        "incomplete_or_invalid": 0
+      }
+    },
+    "mistral_7b": {
+      "judgments": {
+        "baseline": {
+          "Yes": 2,
+          "No": 5,
+          "Unsure": 3
+        },
+        "verify_revise": {
+          "Yes": 0,
+          "No": 9,
+          "Unsure": 1
+        }
+      },
+      "pair_ids": {
+        "verify_revise_better": [],
+        "baseline_better": [
+          "mistral_7b:flawed_fictions_374",
+          "mistral_7b:flawed_fictions_235"
+        ],
+        "both_yes": [],
+        "both_no": [
+          "mistral_7b:flawed_fictions_196",
+          "mistral_7b:flawed_fictions_236",
+          "mistral_7b:flawed_fictions_384",
+          "mistral_7b:flawed_fictions_289",
+          "mistral_7b:flawed_fictions_400"
+        ],
+        "uncertain": [
+          "mistral_7b:flawed_fictions_128",
+          "mistral_7b:flawed_fictions_255",
+          "mistral_7b:flawed_fictions_262"
+        ],
+        "no_explanation_separate": [],
+        "incomplete_or_invalid": []
+      },
+      "pair_counts": {
+        "verify_revise_better": 0,
+        "baseline_better": 2,
+        "both_yes": 0,
+        "both_no": 5,
+        "uncertain": 3,
+        "no_explanation_separate": 0,
+        "incomplete_or_invalid": 0
+      }
+    }
+  },
+  "inputs_sha256": {
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple.csv": "1da2ab045e6ea697df026c4f4a40a11a160d788da62f0d86d3105ca67c55a6f9",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\human_review_summary_93a0517b8da4.md": "a8fb25fc417291b08127afb4d870c544d9a58d933a5a08a7950c311489d2dc35",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple.md": "824be963c6bec64ab24d783ff139765db78f290431fe4a3a629b61279a9c60e7",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\review_rows.json": "8e5d62c41d4d1adba3ce67c3f4dfbe06c833dd67600908ca4be70fb94958a64f",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\scoring_correction_v1\\audit.json": "d928b26694226dfe67323198f282566fab0be4fbbf25eb5bb4e01a910e5c7657",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\scoring_correction_v1\\comparison.csv": "03637f7149eda73ea649bd0c202b9728ae76626ac7d23fbbeb722763ff15b162",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\scoring_correction_v1\\record_traces.jsonl": "ed4d5c4ddc849e9a7472c207509ee026e50029c65b804253f32f81fd3435ae52",
+    "experiments\\main100_comparison_v2_ollama0400\\runs\\main100_comparison_v2_ollama0400__qwen3_8b_baseline\\predictions.jsonl": "e0e05aea9b0ff93ace1eeba882c39d1d0b74ff6c0101682b0c56e51b2454fe13",
+    "experiments\\main100_comparison_v2_ollama0400\\runs\\main100_comparison_v2_ollama0400__qwen3_8b_verify_revise\\predictions.jsonl": "c026fc9417d94226705724f132b7e3681bb7bb79b75bb954637e77e994136c4c",
+    "experiments\\main100_comparison_v2_ollama0400\\runs\\main100_comparison_v2_ollama0400__llama3_1_8b_baseline\\predictions.jsonl": "d44361a715f306394a65b0c3790d3704c0210040ef0edc99cba94f8a06d79f12",
+    "experiments\\main100_comparison_v2_ollama0400\\runs\\main100_comparison_v2_ollama0400__llama3_1_8b_verify_revise\\predictions.jsonl": "174dfa8fb71a89aa9b9916d754e40db08fadf0e771c6e09774fa9a8bb2b30cc2",
+    "experiments\\main100_comparison_v2_ollama0400\\runs\\main100_comparison_v2_ollama0400__mistral_7b_baseline\\predictions.jsonl": "dc856da78dad095a38ab3d532f880f942fe113a06d4cdf76bbcdf89ee060c46f",
+    "experiments\\main100_comparison_v2_ollama0400\\runs\\main100_comparison_v2_ollama0400__mistral_7b_verify_revise\\predictions.jsonl": "859e000052ab367df6c191c9a0d3485b5596eccdfccd77aef903989a2455b1e6"
+  },
+  "inference_calls": 0,
+  "rescoring": false,
+  "checks": "CSV/snapshot/manifest/summary hash; audit/CSV metrics; 600 trace/raw hashes; aligned IDs; confusion and localisation counts"
+}

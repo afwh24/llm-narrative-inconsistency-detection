@@ -1,0 +1,13 @@
+{
+  "audit": "PASS_COMPLETE",
+  "final_records": 600,
+  "terminal_failures": 0,
+  "protected_artifacts_unchanged": 75,
+  "focused_tests": "31 passed",
+  "inference_calls": 0,
+  "report_hashes": {
+    "main100_comparison.md": "97D8102140F2EE4C6BFA5C02CD007783BBD1DEC713BF0A6BF210DCB9A251C476",
+    "main100_error_analysis.md": "BE16512E484A9069DBF414196D4E3EEBE59D78D76226071B0A3A82AF60B88E73",
+    "main100_metrics.csv": "53E909BB0E4B75F9887C71F55A8969777654E422F0905592DFEA3A46E60585BE"
+  }
+}

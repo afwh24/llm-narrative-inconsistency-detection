@@ -1,0 +1,50 @@
+{
+  "strategy": "structured_check",
+  "updated_at": "2026-10-06T11:45:27.807892+00:00",
+  "status": "COMPLETE",
+  "expected": 30,
+  "completed": 30,
+  "pending": 0,
+  "last_error": null,
+  "models": [
+    {
+      "model": "qwen3:8b",
+      "run_id": "exploratory-qwen3-8b-structured-check-main10-prompting-v1",
+      "status": "COMPLETE",
+      "completed": 10,
+      "pending": 0,
+      "successful": 10,
+      "terminal_failed": 0,
+      "request_attempts_logged": 10,
+      "historical_request_logging_gaps": [],
+      "output_path": "experiments\\three_model_main10_prompting\\exports\\qwen3_8b_structured_check.json",
+      "resume_command": ".\\.venv\\Scripts\\python.exe scripts\\run_structured_check_main10.py run --model qwen3:8b"
+    },
+    {
+      "model": "llama3.1:8b",
+      "run_id": "exploratory-llama3-1-8b-structured-check-main10-prompting-v1",
+      "status": "COMPLETE",
+      "completed": 10,
+      "pending": 0,
+      "successful": 10,
+      "terminal_failed": 0,
+      "request_attempts_logged": 10,
+      "historical_request_logging_gaps": [],
+      "output_path": "experiments\\three_model_main10_prompting\\exports\\llama3_1_8b_structured_check.json",
+      "resume_command": ".\\.venv\\Scripts\\python.exe scripts\\run_structured_check_main10.py run --model llama3.1:8b"
+    },
+    {
+      "model": "mistral:7b",
+      "run_id": "exploratory-mistral-7b-structured-check-main10-prompting-v1",
+      "status": "COMPLETE",
+      "completed": 10,
+      "pending": 0,
+      "successful": 10,
+      "terminal_failed": 0,
+      "request_attempts_logged": 10,
+      "historical_request_logging_gaps": [],
+      "output_path": "experiments\\three_model_main10_prompting\\exports\\mistral_7b_structured_check.json",
+      "resume_command": ".\\.venv\\Scripts\\python.exe scripts\\run_structured_check_main10.py run --model mistral:7b"
+    }
+  ]
+}

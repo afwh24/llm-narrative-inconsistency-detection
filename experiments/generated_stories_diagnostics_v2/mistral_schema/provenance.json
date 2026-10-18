@@ -1,0 +1,10 @@
+{
+  "diagnostic_case": "mistral_schema",
+  "source_A": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_001_A.json",
+  "source_B": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_001_B.json",
+  "original_story_hash": "f87cf4aac61ec2149fb9d27d602a994eed94a70666434144fd718b6e8060e8fa",
+  "manifest_hash": "ec81465fd4f4b4950c5a31bb3e4d7b5df24c162eb96d16839f5a967e3f7ae133",
+  "factor": "request format json -> required-field JSON schema; prompt and all other request fields unchanged",
+  "runtime_revision": "Runtime revision 0.40.1 to 0.40.2; historical comparison confounded by runtime; same two cases and one-start budgets; no additional controls scheduled",
+  "diagnostic_checkpoint": "experiments/generated_stories_diagnostics_v2/mistral_schema/checkpoints/mistral_7b/mistral_7b_001_B.json"
+}

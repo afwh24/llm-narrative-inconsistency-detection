@@ -1,0 +1,48 @@
+{
+  "name": "three_model_main10",
+  "role": "previously_inspected_exploratory_pilot",
+  "parent_manifest": "data/pilot/pilot_20.json",
+  "parent_manifest_hash": "006BCFBD7DEAF6A8C6AF4DC5741F34F41E3EEAC2B52751EB14BE5583C2761FCD",
+  "manifest": "data/pilot/three_model_main10.json",
+  "subset": "flawed_fictions",
+  "raw_data_path": "data/raw/flawed-fictions/flawed_fictions.parquet",
+  "raw_data_hash": "584033C8475F100B2B4964227CF2C3E1E523549B6881C0398177B6FB8154592B",
+  "expected_examples": 10,
+  "expected_positive": 5,
+  "expected_negative": 5,
+  "strategy": "vanilla",
+  "prompt_version": "vanilla_v1",
+  "prompt_template_hash": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA",
+  "run_root": "experiments/three_model_main10/runs",
+  "preparation_dir": "experiments/three_model_main10/preparation",
+  "export_dir": "experiments/three_model_main10/exports",
+  "output_label": "baseline",
+  "template_token_margin": 1024,
+  "generation": {
+    "temperature": 0.5,
+    "seed": 42,
+    "num_ctx": 16384,
+    "num_predict": 4096,
+    "top_k": 40,
+    "top_p": 0.9,
+    "repeat_penalty": 1.0
+  },
+  "runtime": {"timeout_seconds": 300, "max_retries": 3},
+  "models": {
+    "qwen3:8b": {
+      "config": "configs/models/three_model_main10/qwen3_8b.yaml",
+      "run_id": "exploratory-qwen3-8b-baseline-main10-v1",
+      "export_stem": "qwen3_8b_baseline"
+    },
+    "llama3.1:8b": {
+      "config": "configs/models/three_model_main10/llama3_1_8b.yaml",
+      "run_id": "exploratory-llama3-1-8b-baseline-main10-v1",
+      "export_stem": "llama3_1_8b_baseline"
+    },
+    "mistral:7b": {
+      "config": "configs/models/three_model_main10/mistral_7b.yaml",
+      "run_id": "exploratory-mistral-7b-baseline-main10-v1",
+      "export_stem": "mistral_7b_baseline"
+    }
+  }
+}

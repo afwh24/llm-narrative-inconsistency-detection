@@ -1,0 +1,11 @@
+# Python >=3.12. Run pip install -r requirements.txt from the repository root.
+# Install fyp and its authoritative dependencies: nltk>=3.6, pyarrow>=15,
+# plus pytest>=8 for offline validation (declared in pyproject.toml).
+# Editable installation keeps source identities and adjacent review exporters.
+-e .[dev]
+
+# Saved-result PDF/SVG figures; PNG conversion separately requires pdftoppm.
+reportlab>=4
+
+# Install Ollama, model weights and benchmark/tokenizer data separately.
+# Historical report-authoring and upstream cloud-provider tools are excluded.

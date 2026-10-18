@@ -1,0 +1,67 @@
+{
+  "benchmark_strategy": "vanilla",
+  "completed_example_count": 2,
+  "configuration_fingerprint": "0726C7935E0745E12CAA988006074DFA0E0B7E82DB67C12A27C8B41B9CDDB638",
+  "context_configuration": {
+    "num_ctx": null,
+    "num_predict": 4096
+  },
+  "dataset": {
+    "expected_subset_counts": {
+      "flawed_fictions_long": 200
+    },
+    "fixed_manifest": "data\\final\\final_flawed_fictions_long_minus_pilot.json",
+    "fixed_manifest_example_count": 190,
+    "fixed_manifest_hash": "332D4567C737469B1ADBACFA745B2EA4AF894FAC380171C6B5E99EDEB558381C",
+    "fixed_manifest_name": "final_flawed_fictions_long_minus_pilot",
+    "fixed_manifest_role": "final_confirmatory",
+    "identity": "kahuja/flawed-fictions",
+    "raw_data_dir": "data\\raw\\flawed-fictions",
+    "selected_limit": null,
+    "subsets": [
+      "flawed_fictions_long"
+    ],
+    "version": "733717281afdb715538b753f0f85ef7d55568b85"
+  },
+  "dependencies": {
+    "nltk": "3.10.3",
+    "pyarrow": "25.0.1"
+  },
+  "end_timestamp": "2026-09-15T11:41:02.116502Z",
+  "expected_example_count": 190,
+  "experiment_type": "baseline",
+  "failed_example_count": 0,
+  "git": {
+    "commit": "00e895d9168d2db3369de9cf44328bb80878ec85",
+    "dirty": true
+  },
+  "model": "qwen3:8b",
+  "model_configuration": {
+    "generation": {
+      "num_ctx": null,
+      "num_predict": 4096,
+      "seed": 42,
+      "temperature": 0.5,
+      "think": false
+    },
+    "runtime": {
+      "max_retries": 3,
+      "timeout_seconds": 300
+    },
+    "source_path": "configs\\models\\qwen3_8b.yaml"
+  },
+  "ollama_model": "qwen3:8b",
+  "ollama_version": "0.34.0",
+  "prompt_template_hash": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA",
+  "prompt_version": "vanilla_v1",
+  "provider": "ollama",
+  "python": {
+    "executable": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\.venv\\Scripts\\python.exe",
+    "version": "3.12.10"
+  },
+  "run_id": "final-qwen3-8b-vanilla-ff-long-minus-pilot-20260915T000000Z",
+  "seed": 42,
+  "start_timestamp": "2026-09-15T11:03:14.778201Z",
+  "temperature": 0.5,
+  "thinking_mode": false
+}

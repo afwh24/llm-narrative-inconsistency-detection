@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["modified_story", "intended_contradiction"],
+  "properties": {
+    "modified_story": {"type": "string", "minLength": 1},
+    "intended_contradiction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["error_sentence", "contradicted_sentence", "explanation"],
+      "properties": {
+        "error_sentence": {"type": "string", "minLength": 1},
+        "contradicted_sentence": {"type": "string", "minLength": 1},
+        "explanation": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

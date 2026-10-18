@@ -1,0 +1,8 @@
+{
+  "name": "generated_stories_recovery_v1",
+  "root": "experiments/generated_stories_recovery_v1",
+  "source_config": "configs/experiments/generated_stories_v1.json",
+  "request_format": "json",
+  "max_retries": 1,
+  "procedure": "revised procedure: JSON output mode; unchanged prompts and sampling; two total dispatch starts per stage, connection/timeout retries only"
+}

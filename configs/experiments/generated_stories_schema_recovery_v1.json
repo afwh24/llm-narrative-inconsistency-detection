@@ -1,0 +1,15 @@
+{
+  "name": "generated_stories_schema_recovery_v1",
+  "root": "experiments/generated_stories_schema_recovery_v1",
+  "ollama_version": "0.40.2",
+  "model": "mistral:7b",
+  "stage": "B",
+  "pairs": ["mistral_7b_002", "mistral_7b_003", "mistral_7b_004", "mistral_7b_005", "mistral_7b_006", "mistral_7b_007", "mistral_7b_009", "mistral_7b_010"],
+  "timeout_seconds": 600,
+  "max_retries": 0,
+  "max_dispatch_starts": 8,
+  "schema_path": "configs/experiments/generated_stories_stage_b_schema_v1.json",
+  "stopping_rule": "Stop on first non-ok stage, interruption, unresolved attempt, persistence or integrity failure. No retry escalation; terminal failures block further batch dispatch on resume.",
+  "selection_rule": "Original successful pair, else recovery-v2 successful pair, else predeclared diagnostic-v2 successful pair, else sole new stage B. Never use quality warnings or human judgments to select.",
+  "procedure": "Revised procedure: schema-constrained B requests on Ollama 0.40.2 with corrected transport and one start per pair; unchanged generation prompts and sampling. Reuse saved recovery-v2 originals. Mixed-procedure consolidated exports require per-stage provenance."
+}

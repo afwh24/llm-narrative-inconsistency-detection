@@ -1,0 +1,62 @@
+{
+  "expected": 600,
+  "completed": 0,
+  "pending": 600,
+  "terminal_failures": 0,
+  "conditions": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "pending": 100,
+      "completed": 0,
+      "successful": 0,
+      "terminal_failures": 0,
+      "status": "PENDING",
+      "output": null
+    },
+    {
+      "condition": "qwen3_8b_verify_revise",
+      "pending": 100,
+      "completed": 0,
+      "successful": 0,
+      "terminal_failures": 0,
+      "status": "PENDING",
+      "output": null
+    },
+    {
+      "condition": "llama3_1_8b_baseline",
+      "pending": 100,
+      "completed": 0,
+      "successful": 0,
+      "terminal_failures": 0,
+      "status": "PENDING",
+      "output": null
+    },
+    {
+      "condition": "llama3_1_8b_verify_revise",
+      "pending": 100,
+      "completed": 0,
+      "successful": 0,
+      "terminal_failures": 0,
+      "status": "PENDING",
+      "output": null
+    },
+    {
+      "condition": "mistral_7b_baseline",
+      "pending": 100,
+      "completed": 0,
+      "successful": 0,
+      "terminal_failures": 0,
+      "status": "PENDING",
+      "output": null
+    },
+    {
+      "condition": "mistral_7b_verify_revise",
+      "pending": 100,
+      "completed": 0,
+      "successful": 0,
+      "terminal_failures": 0,
+      "status": "PENDING",
+      "output": null
+    }
+  ]
+}

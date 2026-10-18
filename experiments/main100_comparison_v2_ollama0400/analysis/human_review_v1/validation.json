@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "tests": "51 passed in 1.22s",
+  "test_command": ".\\.venv\\Scripts\\python.exe -m pytest tests/test_main100_human_review.py tests/test_scoring_correction_v1.py -q --basetemp .tmp/main100_review_tests_02",
+  "pairs": 30,
+  "responses": 60,
+  "distinct_stories": 29,
+  "blank_human_cells": 360,
+  "pending_decisions": 270,
+  "optional_notes": 90,
+  "protected_files_unchanged": 127,
+  "inference_calls": 0,
+  "output_sha256": {
+    "review.md": "cbb0ac6e23620240b1498a1266c4a6081d7453af93ab14ed27df52fbf337b707",
+    "review.csv": "3982b3a3d93b5af9142106ee2e171e4803300267a048f3918a6f5e8220b137fe",
+    "review_rows.json": "8e5d62c41d4d1adba3ce67c3f4dfbe06c833dd67600908ca4be70fb94958a64f",
+    "selection_manifest.json": "48dfe7109a49a475c024fcf881efb6b1964c715d896616b6561c14294c37bae3"
+  }
+}

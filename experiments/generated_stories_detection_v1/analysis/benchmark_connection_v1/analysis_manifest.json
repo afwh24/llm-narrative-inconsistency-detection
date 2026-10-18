@@ -1,0 +1,17 @@
+{
+  "version": "benchmark_connection_v1",
+  "inference_calls": 0,
+  "files_sha256": {
+    "additional_source_checks.json": "5c90132e73c51f817f57bda1c7d018435e85e789179b0c5c25349acae2fc75b1",
+    "audit.json": "5a28975e60c1c6b94d51e387af7d437e5a80626a83dc2aa8f3ac9ba8d8df3acd",
+    "comparison.json": "c0a5fca5f3788d11461d526e50b4796aa33fc4adbd74e9b8c88cf72c54f5b7bc",
+    "error_analysis.md": "97852055ce6fc07aa880e12a3281eef236701f755db0a2e45bbe9bc540471cda",
+    "findings.md": "96269f778c749a8586fcee3cf3b74ba870a260b5bddcabf0c90bc86b43776dec",
+    "gold_concerns.md": "c970dafa0774d9c1eca67a717bd7e765f8f9fda94dc6e315903dcd2f8b35314d",
+    "report.md": "0833dea7d2f18964374bf44a9c8794ba279186044128038533ccf92fe5d6ddd5",
+    "review_context.json": "8ffe96e5b82b05b4c50cb57ad02fd3cb06c7f4072eb8f7a62971be2d13055f09",
+    "selected_error_records.json": "0fa229e6f3169c6db7083522daa5830d59c130055a9b51c3910c84dc6030f079",
+    "tables.md": "5f24a0d9449c9a1e5dc6a9a995baf9c0c468a0aae9e8ebc87b55cedeb825c538"
+  },
+  "verification": "All relative file links resolve; all quoted detector excerpts appear verbatim in selected responses; consumed source hashes still match; 45 offline tests passed. Existing artifacts preserved."
+}

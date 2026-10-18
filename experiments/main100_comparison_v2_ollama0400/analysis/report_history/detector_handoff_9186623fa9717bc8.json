@@ -1,0 +1,19 @@
+{
+  "selected_strategy": "verify_revise",
+  "templates": {
+    "vanilla": {
+      "version": "vanilla_v1",
+      "path": "prompts/benchmark/vanilla_v1.txt",
+      "hash": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA",
+      "copy": "prompts/frozen/main100_comparison_v1/vanilla_v1.txt"
+    },
+    "verify_revise": {
+      "version": "verify_revise_v2",
+      "path": "prompts/experimental/verify_revise_v2.txt",
+      "hash": "272F789C83596EE7B408F1D58210F6D71E7796FE174966C29023DAF4E8744131",
+      "copy": "prompts/frozen/main100_comparison_v1/verify_revise_v2.txt"
+    }
+  },
+  "instruction": "Reuse these exact hash-verified templates; do not tune wording from main100 results.",
+  "source_experiment": "experiments/main100_comparison_v2_ollama0400"
+}

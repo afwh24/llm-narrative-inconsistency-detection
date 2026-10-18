@@ -1,0 +1,242 @@
+[
+  {
+    "review_id": "qwen3_8b:flawed_fictions_123",
+    "story_id": "flawed_fictions_123",
+    "model": "qwen3_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "qwen3_8b:flawed_fictions_181",
+    "story_id": "flawed_fictions_181",
+    "model": "qwen3_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "qwen3_8b:flawed_fictions_241",
+    "story_id": "flawed_fictions_241",
+    "model": "qwen3_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "qwen3_8b:flawed_fictions_295",
+    "story_id": "flawed_fictions_295",
+    "model": "qwen3_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "qwen3_8b:flawed_fictions_378",
+    "story_id": "flawed_fictions_378",
+    "model": "qwen3_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "qwen3_8b:flawed_fictions_265",
+    "story_id": "flawed_fictions_265",
+    "model": "qwen3_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "qwen3_8b:flawed_fictions_350",
+    "story_id": "flawed_fictions_350",
+    "model": "qwen3_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "qwen3_8b:flawed_fictions_385",
+    "story_id": "flawed_fictions_385",
+    "model": "qwen3_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "qwen3_8b:flawed_fictions_343",
+    "story_id": "flawed_fictions_343",
+    "model": "qwen3_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "qwen3_8b:flawed_fictions_117",
+    "story_id": "flawed_fictions_117",
+    "model": "qwen3_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "llama3_1_8b:flawed_fictions_335",
+    "story_id": "flawed_fictions_335",
+    "model": "llama3_1_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "llama3_1_8b:flawed_fictions_399",
+    "story_id": "flawed_fictions_399",
+    "model": "llama3_1_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "llama3_1_8b:flawed_fictions_382",
+    "story_id": "flawed_fictions_382",
+    "model": "llama3_1_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "llama3_1_8b:flawed_fictions_253",
+    "story_id": "flawed_fictions_253",
+    "model": "llama3_1_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "llama3_1_8b:flawed_fictions_357",
+    "story_id": "flawed_fictions_357",
+    "model": "llama3_1_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "llama3_1_8b:flawed_fictions_193",
+    "story_id": "flawed_fictions_193",
+    "model": "llama3_1_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "llama3_1_8b:flawed_fictions_300",
+    "story_id": "flawed_fictions_300",
+    "model": "llama3_1_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "llama3_1_8b:flawed_fictions_143",
+    "story_id": "flawed_fictions_143",
+    "model": "llama3_1_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "llama3_1_8b:flawed_fictions_354",
+    "story_id": "flawed_fictions_354",
+    "model": "llama3_1_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "llama3_1_8b:flawed_fictions_181",
+    "story_id": "flawed_fictions_181",
+    "model": "llama3_1_8b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "mistral_7b:flawed_fictions_128",
+    "story_id": "flawed_fictions_128",
+    "model": "mistral_7b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "mistral_7b:flawed_fictions_196",
+    "story_id": "flawed_fictions_196",
+    "model": "mistral_7b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "mistral_7b:flawed_fictions_255",
+    "story_id": "flawed_fictions_255",
+    "model": "mistral_7b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "mistral_7b:flawed_fictions_236",
+    "story_id": "flawed_fictions_236",
+    "model": "mistral_7b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "mistral_7b:flawed_fictions_374",
+    "story_id": "flawed_fictions_374",
+    "model": "mistral_7b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "mistral_7b:flawed_fictions_235",
+    "story_id": "flawed_fictions_235",
+    "model": "mistral_7b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "mistral_7b:flawed_fictions_384",
+    "story_id": "flawed_fictions_384",
+    "model": "mistral_7b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "mistral_7b:flawed_fictions_289",
+    "story_id": "flawed_fictions_289",
+    "model": "mistral_7b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "mistral_7b:flawed_fictions_262",
+    "story_id": "flawed_fictions_262",
+    "model": "mistral_7b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  },
+  {
+    "review_id": "mistral_7b:flawed_fictions_400",
+    "story_id": "flawed_fictions_400",
+    "model": "mistral_7b",
+    "baseline_explanation_supported": "",
+    "verify_revise_explanation_supported": "",
+    "notes": ""
+  }
+]

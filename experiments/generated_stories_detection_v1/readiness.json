@@ -1,0 +1,64 @@
+{
+  "version": "generated_stories_verified_v1",
+  "accepted_pairs": 1,
+  "story_ids": [
+    "s_ad55dc39c9afb9dbd4a8bc9c",
+    "s_f8ac30b95f49c23f78326f45"
+  ],
+  "expected_records": 12,
+  "duplicates": [],
+  "duplicate_policy": "Report exact-text groups; block identical versions within an accepted pair or conflicting gold labels on identical text. Retain other duplicates with original prompt-family grouping; never silently deduplicate.",
+  "exposure": {
+    "user_attestation": {
+      "answer": "Unsure",
+      "date": "2026-10-12",
+      "question": "Have these generated stories or review findings been used to develop, select, or revise detector prompts or strategies, including outside this repository?"
+    },
+    "detector_freeze": "experiments/main100_comparison_v2_ollama0400/preparation.json",
+    "detector_prepared_at": "2026-10-07T09:34:37.182460+00:00",
+    "prompt_hash_checks": {
+      "prompts/benchmark/vanilla_v1.txt": {
+        "expected": "68eee6c1a3f1617a3f1e4c6a08939e0ea8110ee1c1678b176d832a3d952d6aea",
+        "actual": "68eee6c1a3f1617a3f1e4c6a08939e0ea8110ee1c1678b176d832a3d952d6aea",
+        "matches": true
+      },
+      "prompts/frozen/main100_comparison_v1/vanilla_v1.txt": {
+        "expected": "68eee6c1a3f1617a3f1e4c6a08939e0ea8110ee1c1678b176d832a3d952d6aea",
+        "actual": "68eee6c1a3f1617a3f1e4c6a08939e0ea8110ee1c1678b176d832a3d952d6aea",
+        "matches": true
+      },
+      "prompts/experimental/verify_revise_v2.txt": {
+        "expected": "272f789c83596ee7b408f1d58210f6d71e7796fe174966c29023daf4e8744131",
+        "actual": "272f789c83596ee7b408f1d58210f6d71e7796fe174966c29023daf4e8744131",
+        "matches": true
+      },
+      "prompts/frozen/main100_comparison_v1/verify_revise_v2.txt": {
+        "expected": "272f789c83596ee7b408f1d58210f6d71e7796fe174966c29023daf4e8744131",
+        "actual": "272f789c83596ee7b408f1d58210f6d71e7796fe174966c29023daf4e8744131",
+        "matches": true
+      }
+    },
+    "known_exposure": [
+      "generation failure diagnosis",
+      "recovery schema design",
+      "human annotation and review",
+      "assistant review preparation and validation"
+    ],
+    "conclusion": "Detector-development exposure is unknown. Existing compared detector templates match their earlier freeze if all checks pass. This does not prove absence of outside development/selection exposure. Do not claim untouched evaluation.",
+    "scope": "Repository freeze/templates plus user attestation; not an exhaustive audit of external conversations or private work."
+  },
+  "authoritative_manifest": "data/generated_stories_verified_v1/evaluator_only/manifest.json",
+  "dataset_hashes": {
+    "data/generated_stories_verified_v1/detector_inputs.jsonl": "125d3ddcaf4961421b80e7e0cdad43362b3cd8ae999fd0f8fe15e19a44414447",
+    "data/generated_stories_verified_v1/evaluator_only/all_candidate_dispositions.jsonl": "e08b77ed707045fe765e9ac9c6449785c43a460607ea986fc184fcaee760891d",
+    "data/generated_stories_verified_v1/evaluator_only/exposure.json": "5576d057b45b4ca4ff33f94e757035de2384424bd7e21f3be78de17e08fb67ef",
+    "data/generated_stories_verified_v1/evaluator_only/gold_stories.jsonl": "83b8530f37b3b85cbfda653579eb3ce911dd587e696897f0137f078b4ef1d68f",
+    "data/generated_stories_verified_v1/evaluator_only/manifest.json": "42a349b2fce88b098e630dd5001f1866533514f54d786087b8b06c7589a0861f",
+    "data/generated_stories_verified_v1/evaluator_only/provenance.jsonl": "9cb9d7ef34645ab63a8f25347c6d08067286fc8ef9234f47d663e650f5d095dd",
+    "data/generated_stories_verified_v1/evaluator_only/review_validation.md": "563711a0b2432ea0581aba92404322312a5402df5628b46334cf63a4623312b6",
+    "data/generated_stories_verified_v1/evaluator_only/summary.json": "eeece2c9ebc51957dbc217cad61d4a5d4630bb2e6daa94fda8567f312fa9d97d",
+    "data/generated_stories_verified_v1/evaluator_only/verified_pairs.jsonl": "c16ad816ba8e165128d8f1394dc4d88c0d4bd8cc5cc897935820956f2c3529b7",
+    "data/generated_stories_verified_v1/evaluator_only/writing_prompt_groups.json": "69ed33f337889ed91314e739a580fc524f06d3a4c225f360fca5b816e78e7047"
+  },
+  "checks": "All structure, source, gold, grouping and leakage checks passed"
+}

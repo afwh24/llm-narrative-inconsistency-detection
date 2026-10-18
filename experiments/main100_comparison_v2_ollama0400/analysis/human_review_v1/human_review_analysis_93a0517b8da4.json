@@ -1,0 +1,569 @@
+{
+  "annotation_sha256": "93a0517b8da43e69431ccb34d9e66301961bc04a54c6d524cc0f734df1d6270f",
+  "annotation_file": "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple.csv",
+  "human_annotations_verbatim": [
+    {
+      "review_id": "qwen3_8b:flawed_fictions_123",
+      "story_id": "flawed_fictions_123",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method has failed to detect a continuity error despite mentioning of error and contradicting lines.\nThe verify_revise method correctly detects a continuity error, but its explanation differs from the gold reference. It fails to identify the incorrectly referenced noun and understand the figurative comparison, focusing on the animals rather than the wife.\n\n The first marked line, \"for you have filled my life with peace and happiness, unlike the wild beasts I faced,\" introduces a continuity error because it contradicts the earlier statement that Hercules's wife caused him much trouble. It is inconsistent for someone who causes much trouble to fill someone's life with peace and happiness without any explanation or development in the story to show a change in their relationship.\n\nThe third marked line, \"for you have supported him who has conquered all the others,\" also introduces a continuity error for similar reasons. It implies that Hercules's wife has been supportive, which contradicts the earlier characterization of her as someone who caused him much trouble. Hence my answer is \"There is a continuity error in the story concerning the characterization of Hercules's wife as both a source of trouble and a source of peace, happiness, and support.\""
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_181",
+      "story_id": "flawed_fictions_181",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method has failed to identify the continuity error and its reasoning.\nThough, the verify_revise method agrees there is a continuity error but the explanation differs from the gold reference and fails to identify the incorrectly referenced noun or subject, focusing on the Elves of Darkness and Evil Spirit instead of the Fruit-Elves.\n\nThe line \"through natural processes,\" introduces a continuity error because it contradicts the previously established role of the Fruit-Elves in the ripening of strawberries. The story describes in detail how the Fruit-Elves are actively involved in the growth and ripening of the strawberry plant, from loosening the earth around the roots to painting the berries and protecting them from insects. Therefore, suggesting that the strawberries ripen naturally without mentioning the elves' involvement conflicts with the established narrative. Hence my answer is \"There is a continuity error in the story concerning the ripening process of strawberries.\""
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_241",
+      "story_id": "flawed_fictions_241",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "Yes",
+      "notes": "The baseline method has failed to identify the continuity error and its reasoning.\nThe verify_revise method has correctly identified the continuity error and its supported reasoning."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_295",
+      "story_id": "flawed_fictions_295",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method has correctly identify it with no continuity error.\nThe verify_revise method has incorrectly identify it with a continuity error and even mentioned error and contradicting lines to justify its answer."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_378",
+      "story_id": "flawed_fictions_378",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method has correctly identify it with no continuity error.\nThe verify_revise method has incorrectly identify it with a continuity error and even mentioned error and contradicting lines to justify its answer."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_265",
+      "story_id": "flawed_fictions_265",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method has correctly identify it with no continuity error.\nThe verify_revise method has incorrectly identify it with a continuity error and even mentioned error and contradicting lines to justify its answer."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_350",
+      "story_id": "flawed_fictions_350",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both baseline and verify_revise method failed to identify the continuity error and its supported reasoning.\nThe marked line \"the room seemed even more starkly lit, every corner visible and nowhere to hide;\" introduces a continuity error because it contradicts the earlier description of the room's lighting. Initially, the room is described as having \"no light save from the fire; a dull, steady glow that bathes the room in soft rose,\" which implies a dimly lit environment. The marked line suggests a sudden change to a brightly lit room where every corner is visible, which is inconsistent with the previously established lighting conditions. Hence my answer is \"There is a continuity error in the story concerning the lighting conditions of the room.\""
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_385",
+      "story_id": "flawed_fictions_385",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both baseline and verify_revise method failed to identify the continuity error and its supported reasoning.\nThe story establishes at the beginning that the prince desperately wants to find and marry a real princess. This is emphasized by showing him traveling around the world searching for one and becoming very sad when he couldn't find a suitable princess. However, when a proven real princess finally appears, the story suddenly states that his \"interest in marrying was not strong,\" which directly contradicts his earlier established strong desire to find and marry a real princess. There's no explanation provided for this dramatic change in the prince's motivation and desires."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_343",
+      "story_id": "flawed_fictions_343",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both baseline and verify_revise method has incorrectly identify it with a continuity error and even mentioned error and contradicting lines to justify its answer."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_117",
+      "story_id": "flawed_fictions_117",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both baseline and verify_revise method has correctly identify it contains a continuity error but both methods provides the same invalid explanation, error and contradicting lines. Both methods referenced to the wrong subject, focusing on the ship instead of the letter.\nThe continuity error arises because the story initially establishes that the letter Kreusler is excited to read has a Washington, D.C., U.S.A. postmark. This is a significant detail because it indicates that the letter was sent from the United States. Later, however, the story states that the letter has a London postmark, which contradicts the earlier detail. This inconsistency could confuse readers about the origin of the letter and disrupt the continuity of the story. Hence my answer is \"There is a continuity error in the story concerning the origin of the letter Kreusler is reading.\""
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_335",
+      "story_id": "flawed_fictions_335",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "Yes",
+      "notes": "Baseline method has incorrectly identify the story with continuity error.\nVerify_Revise method has correctly identify the story with no continuity error and corrected the invalid error introduced and contradicting line quoted from the baseline method"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_399",
+      "story_id": "flawed_fictions_399",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "Yes",
+      "notes": "Baseline method has incorrectly identify the story with continuity error.\nVerify_Revise method has correctly identify the story with no continuity error and corrected the invalid error introduced and contradicting line quoted from the baseline method"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_382",
+      "story_id": "flawed_fictions_382",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "Yes",
+      "notes": "Baseline method has incorrectly identify the story with continuity error.\nVerify_Revise method has correctly identify the story with no continuity error and corrected the invalid error introduced and contradicting line quoted from the baseline method"
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_253",
+      "story_id": "flawed_fictions_253",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method has correctly identify it with continuity error and supporting error introduced and contradicting lines.\nThe verify_revise method has failed to identify the continuity error and states that the story has resolves itself.\nThe story establishes that the War of the Roses involved two factions: the \"Red Rose\" and the \"White Rose.\" These two factions are clearly defined, with the \"Red Rose\" faction supporting King Henry the Sixth and Queen Margaret. The introduction of a \"Blue Rose\" faction is inconsistent with the previously established context of the story, as there is no mention of such a faction earlier. This creates a continuity error because it introduces an element that contradicts the established world of the story. Hence my answer is \"There is a continuity error in the story concerning the introduction of a 'Blue Rose' faction, which contradicts the previously established factions of 'Red Rose' and 'White Rose' in the War of the Roses.\""
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_357",
+      "story_id": "flawed_fictions_357",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method has correctly identify it with continuity error and supporting error introduced and contradicting lines.\nThe verify_revise method has failed to identify the continuity error and states that the story has resolves itself.\nThe first marked line introduces a continuity error because it describes the sun shining through the hallway shortly after it was established that it was midnight. This sudden transition from midnight to daytime without any explanation of the passage of time is inconsistent with the established timeline of the story. The subsequent lines about the sun setting and evening drawing near are consistent with each other, but the initial jump from midnight to daytime is problematic. Hence my answer is \"There is a continuity error in the story concerning the sudden transition from midnight to daytime without any explanation of the passage of time.\""
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_193",
+      "story_id": "flawed_fictions_193",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method correctly identifies that there exist continuity error but failed to mention the correct error introducing and contradicted lines.\nThe verify_revise method failed to identify the plot hole and mentions that the continuity error is resolved in the story later on its own.\nThe continuity error arises from the inconsistency in the description of Baucis and Philemon's cottage. Initially, the cottage is described as being made of wattles (woven sticks) and thatched with straw, which is indicative of a very simple and poor dwelling. However, later in the story, the cottage is referred to as a \"brick cottage\" and is described as having \"solid brick walls\" and a \"tiled roof\" before its transformation into a temple. This change in the description of the cottage's materials and construction introduces a continuity error. Hence my answer is \"There is a continuity error in the story concerning the description of Baucis and Philemon's cottage.\""
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_300",
+      "story_id": "flawed_fictions_300",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both baseline  and verify_revise method has incorrectly identified continuity errors in the story and mentioned different invalid error introducing and contradicting lines respectively."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_143",
+      "story_id": "flawed_fictions_143",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both baseline  and verify_revise method has incorrectly identified continuity errors in the story and mentioned invalid error introducing and contradicting lines respectively."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_354",
+      "story_id": "flawed_fictions_354",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both baseline  and verify_revise method has incorrectly identified continuity errors in the story and mentioned invalid error introducing and contradicting lines respectively."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_181",
+      "story_id": "flawed_fictions_181",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "Yes",
+      "notes": "Both baseline and verify_revise method has correctly identify the continuity error and the correct error introducing and contradicting lines respectively."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_128",
+      "story_id": "flawed_fictions_128",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "Unsure",
+      "notes": "The baseline method has failed to identify the continuity error within the story.\nThe verify_revise method has correctly identified the continuity error within the story with reasonable explanation but mentioned different error introducing and contradicted lines.\nThe continuity error arises because the reaction of the priests of the monastery to Softy's familiarity with Prince Yi contradicts the earlier portrayal of Softy as a well-known and respected figure. If Softy is known to be gentle, selfless, and respected by everyone, it is inconsistent for the priests to be scandalized and less forgiving of his behavior. They should be more understanding and accepting of his character, given his established reputation. Hence my answer is \"There is a continuity error in the story concerning the reaction of the priests of the monastery to Softy's familiarity with Prince Yi.\""
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_196",
+      "story_id": "flawed_fictions_196",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method failed to identify the continuity error within the story.\nThe verify_revise method has correctly identified the continuity error within the story but mentioned different error introducing and contradicting lines.\nThe story establishes that the Spirit of Creation came down from Heaven to look at his creation. However, in the marked line, the story suddenly places him back in heaven without any mention of him returning there. This creates a spatial contradiction as the Spirit cannot be in both places at once, and there's no explanation of him returning to heaven."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_255",
+      "story_id": "flawed_fictions_255",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method failed to identify the continuity error within the story.\nThe verify_revise method has correctly identified the continuity error within the story but mentioned different error introducing and contradicting lines.\nThe continuity error arises from the fact that the character initially introduced as a Brahmin is later referred to as a farmer. There is no explanation or indication in the story that the Brahmin is also a farmer or that he changed his occupation. This inconsistency in the character's role creates a continuity error. Hence my answer is \"There is a continuity error in the story concerning the inconsistent reference to the Brahmin as a farmer without any explanation.\""
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_236",
+      "story_id": "flawed_fictions_236",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method has correctly identified that has no continuity error in the story.\nThe verify_revise method has failed to recognised that there are not continuity error within the story and mentioned invalid error introduced and contradicting lines."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_374",
+      "story_id": "flawed_fictions_374",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method has correctly identified that has no continuity error in the story.\nThe verify_revise method has failed to recognised that there are not continuity error within the story and mentioned invalid error introduced and contradicting lines."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_235",
+      "story_id": "flawed_fictions_235",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "The baseline method has correctly identified that has no continuity error in the story.\nThe verify_revise method has failed to recognised that there are not continuity error within the story and mentioned invalid error introduced and contradicting lines."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_384",
+      "story_id": "flawed_fictions_384",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both baseline and verify_revise methods have failed to identify that there are no continuity errors within the story. Both methods also mentioned invalid error introduced and contradicting lines."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_289",
+      "story_id": "flawed_fictions_289",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both baseline and verify_revise methods have failed to identify that there are no continuity errors within the story. Both methods also mentioned invalid error introduced and contradicting lines."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_262",
+      "story_id": "flawed_fictions_262",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both baseline and verify_revise methods have failed to identify that there are continuity errors within the story.\nThe marked line states that no one had approached the boy initially, but this directly contradicts earlier events where a servant was sent to confront him and even spoke to him directly. This creates a clear continuity error as these two versions of events cannot both be true - either someone approached him (as shown in the earlier lines) or no one approached him (as claimed in the marked line)."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_400",
+      "story_id": "flawed_fictions_400",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "Yes",
+      "notes": "Both baseline and verify_revise correctly identify a continuity error in the story. Each method identifies a different error, resulting in two distinct findings, both of which are valid and supported by the story."
+    }
+  ],
+  "validation_errors": [],
+  "missing_required_judgments": [],
+  "form_complete": true,
+  "counts": {
+    "qwen3_8b": {
+      "judgments": {
+        "baseline": {
+          "Yes": 3,
+          "No": 7,
+          "Unsure": 0
+        },
+        "verify_revise": {
+          "Yes": 1,
+          "No": 9,
+          "Unsure": 0
+        }
+      },
+      "pair_ids": {
+        "verify_revise_better": [
+          "qwen3_8b:flawed_fictions_241"
+        ],
+        "baseline_better": [
+          "qwen3_8b:flawed_fictions_295",
+          "qwen3_8b:flawed_fictions_378",
+          "qwen3_8b:flawed_fictions_265"
+        ],
+        "both_yes": [],
+        "both_no": [
+          "qwen3_8b:flawed_fictions_123",
+          "qwen3_8b:flawed_fictions_181",
+          "qwen3_8b:flawed_fictions_350",
+          "qwen3_8b:flawed_fictions_385",
+          "qwen3_8b:flawed_fictions_343",
+          "qwen3_8b:flawed_fictions_117"
+        ],
+        "uncertain": [],
+        "no_explanation_separate": [],
+        "incomplete_or_invalid": []
+      },
+      "pair_counts": {
+        "verify_revise_better": 1,
+        "baseline_better": 3,
+        "both_yes": 0,
+        "both_no": 6,
+        "uncertain": 0,
+        "no_explanation_separate": 0,
+        "incomplete_or_invalid": 0
+      }
+    },
+    "llama3_1_8b": {
+      "judgments": {
+        "baseline": {
+          "Yes": 3,
+          "No": 7,
+          "Unsure": 0
+        },
+        "verify_revise": {
+          "Yes": 4,
+          "No": 6,
+          "Unsure": 0
+        }
+      },
+      "pair_ids": {
+        "verify_revise_better": [
+          "llama3_1_8b:flawed_fictions_335",
+          "llama3_1_8b:flawed_fictions_399",
+          "llama3_1_8b:flawed_fictions_382"
+        ],
+        "baseline_better": [
+          "llama3_1_8b:flawed_fictions_253",
+          "llama3_1_8b:flawed_fictions_357"
+        ],
+        "both_yes": [
+          "llama3_1_8b:flawed_fictions_181"
+        ],
+        "both_no": [
+          "llama3_1_8b:flawed_fictions_193",
+          "llama3_1_8b:flawed_fictions_300",
+          "llama3_1_8b:flawed_fictions_143",
+          "llama3_1_8b:flawed_fictions_354"
+        ],
+        "uncertain": [],
+        "no_explanation_separate": [],
+        "incomplete_or_invalid": []
+      },
+      "pair_counts": {
+        "verify_revise_better": 3,
+        "baseline_better": 2,
+        "both_yes": 1,
+        "both_no": 4,
+        "uncertain": 0,
+        "no_explanation_separate": 0,
+        "incomplete_or_invalid": 0
+      }
+    },
+    "mistral_7b": {
+      "judgments": {
+        "baseline": {
+          "Yes": 4,
+          "No": 6,
+          "Unsure": 0
+        },
+        "verify_revise": {
+          "Yes": 1,
+          "No": 8,
+          "Unsure": 1
+        }
+      },
+      "pair_ids": {
+        "verify_revise_better": [],
+        "baseline_better": [
+          "mistral_7b:flawed_fictions_236",
+          "mistral_7b:flawed_fictions_374",
+          "mistral_7b:flawed_fictions_235"
+        ],
+        "both_yes": [
+          "mistral_7b:flawed_fictions_400"
+        ],
+        "both_no": [
+          "mistral_7b:flawed_fictions_196",
+          "mistral_7b:flawed_fictions_255",
+          "mistral_7b:flawed_fictions_384",
+          "mistral_7b:flawed_fictions_289",
+          "mistral_7b:flawed_fictions_262"
+        ],
+        "uncertain": [
+          "mistral_7b:flawed_fictions_128"
+        ],
+        "no_explanation_separate": [],
+        "incomplete_or_invalid": []
+      },
+      "pair_counts": {
+        "verify_revise_better": 0,
+        "baseline_better": 3,
+        "both_yes": 1,
+        "both_no": 5,
+        "uncertain": 1,
+        "no_explanation_separate": 0,
+        "incomplete_or_invalid": 0
+      }
+    }
+  },
+  "explanation_presence_status": {
+    "qwen3_8b:flawed_fictions_123": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_181": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_241": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_295": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_378": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_265": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_350": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_385": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_343": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_117": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_335": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_399": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_382": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_253": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_357": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_193": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_300": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_143": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_354": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_181": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_128": {
+      "baseline": "Review needed: multiple explanation sections",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_196": {
+      "baseline": "Review needed: multiple explanation sections",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_255": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_236": {
+      "baseline": "Review needed: multiple explanation sections",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_374": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_235": {
+      "baseline": "Review needed: multiple explanation sections",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_384": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_289": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_262": {
+      "baseline": "Review needed: multiple explanation sections",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_400": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    }
+  },
+  "no_explanation_responses": 0,
+  "source_verified_review_ids": [
+    "qwen3_8b:flawed_fictions_123",
+    "qwen3_8b:flawed_fictions_181",
+    "qwen3_8b:flawed_fictions_241",
+    "qwen3_8b:flawed_fictions_295",
+    "qwen3_8b:flawed_fictions_378",
+    "qwen3_8b:flawed_fictions_265",
+    "qwen3_8b:flawed_fictions_350",
+    "qwen3_8b:flawed_fictions_385",
+    "qwen3_8b:flawed_fictions_343",
+    "qwen3_8b:flawed_fictions_117",
+    "llama3_1_8b:flawed_fictions_335",
+    "llama3_1_8b:flawed_fictions_399",
+    "llama3_1_8b:flawed_fictions_382",
+    "llama3_1_8b:flawed_fictions_253",
+    "llama3_1_8b:flawed_fictions_357",
+    "llama3_1_8b:flawed_fictions_193",
+    "llama3_1_8b:flawed_fictions_300",
+    "llama3_1_8b:flawed_fictions_143",
+    "llama3_1_8b:flawed_fictions_354",
+    "llama3_1_8b:flawed_fictions_181",
+    "mistral_7b:flawed_fictions_128",
+    "mistral_7b:flawed_fictions_196",
+    "mistral_7b:flawed_fictions_255",
+    "mistral_7b:flawed_fictions_236",
+    "mistral_7b:flawed_fictions_374",
+    "mistral_7b:flawed_fictions_235",
+    "mistral_7b:flawed_fictions_384",
+    "mistral_7b:flawed_fictions_289",
+    "mistral_7b:flawed_fictions_262",
+    "mistral_7b:flawed_fictions_400"
+  ],
+  "selected_comparisons": 30,
+  "distinct_stories": 29,
+  "input_hashes": {
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple.csv": "93a0517b8da43e69431ccb34d9e66301961bc04a54c6d524cc0f734df1d6270f",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple.md": "824be963c6bec64ab24d783ff139765db78f290431fe4a3a629b61279a9c60e7",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple_initial.json": "13f9ccf94a8d7d6afe4601595eb24cc72a1e8c5696ddd6300cba7c80fe18ea5a",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple_status_4b525d9defb3.json": "b16ea929933e9a96eab62fee3526183ec2cfe59554b79ac59b04714c4261ffd4",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\README.md": "54aa00bccbca5ac9c1875c95ea86198d0fb24449c312fd3d0f7b49883b4a90be",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\review.csv": "3982b3a3d93b5af9142106ee2e171e4803300267a048f3918a6f5e8220b137fe",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\review.md": "cbb0ac6e23620240b1498a1266c4a6081d7453af93ab14ed27df52fbf337b707",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\review_rows.json": "8e5d62c41d4d1adba3ce67c3f4dfbe06c833dd67600908ca4be70fb94958a64f",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\selection_manifest.json": "48dfe7109a49a475c024fcf881efb6b1964c715d896616b6561c14294c37bae3",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\validation.json": "11cded27c0eec067b2e58a01b81210741c6a35845b07c7bca58d1e97e5b4a2d6",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\readability_history\\manual_review_simple_55152142ad10.md": "55152142ad109a40ff43aa0733c25593070c067779e029e2519f5c3aaba6559a"
+  },
+  "raw_input_hashes": {
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__qwen3_8b_baseline/predictions.jsonl": "e0e05aea9b0ff93ace1eeba882c39d1d0b74ff6c0101682b0c56e51b2454fe13",
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__qwen3_8b_verify_revise/predictions.jsonl": "c026fc9417d94226705724f132b7e3681bb7bb79b75bb954637e77e994136c4c",
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__llama3_1_8b_baseline/predictions.jsonl": "d44361a715f306394a65b0c3790d3704c0210040ef0edc99cba94f8a06d79f12",
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__llama3_1_8b_verify_revise/predictions.jsonl": "174dfa8fb71a89aa9b9916d754e40db08fadf0e771c6e09774fa9a8bb2b30cc2",
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__mistral_7b_baseline/predictions.jsonl": "dc856da78dad095a38ab3d532f880f942fe113a06d4cdf76bbcdf89ee060c46f",
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__mistral_7b_verify_revise/predictions.jsonl": "859e000052ab367df6c191c9a0d3485b5596eccdfccd77aef903989a2455b1e6"
+  },
+  "analysis_source_sha256": "33b1ca5128594c5e1985bccea1bff0363d37596975cf3d85e11c2b5d573e91fb",
+  "inference_calls": 0,
+  "scope": "Selected, unblinded diagnostic sample. Counts are descriptive of entered annotations only; no population estimates."
+}

@@ -1,0 +1,31 @@
+{
+  "planned_pairs": 30,
+  "completed_pairs": 30,
+  "pending_pairs": 0,
+  "models": [
+    {
+      "model": "qwen3:8b",
+      "completed_pairs": 10,
+      "pending_pairs": 0,
+      "terminal_failures": 1,
+      "completed_stages": 19,
+      "export": "experiments/generated_stories_v1/exports/qwen3_8b_generated_pairs.jsonl"
+    },
+    {
+      "model": "llama3.1:8b",
+      "completed_pairs": 10,
+      "pending_pairs": 0,
+      "terminal_failures": 8,
+      "completed_stages": 12,
+      "export": "experiments/generated_stories_v1/exports/llama3_1_8b_generated_pairs.jsonl"
+    },
+    {
+      "model": "mistral:7b",
+      "completed_pairs": 10,
+      "pending_pairs": 0,
+      "terminal_failures": 10,
+      "completed_stages": 10,
+      "export": "experiments/generated_stories_v1/exports/mistral_7b_generated_pairs.jsonl"
+    }
+  ]
+}

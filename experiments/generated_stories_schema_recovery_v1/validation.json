@@ -1,0 +1,12 @@
+{
+  "offline_tests_passed": 75,
+  "protected_existing_files": 784,
+  "intentional_existing_changes": [
+    "docs/decision_log.md"
+  ],
+  "all_other_existing_files_unchanged": true,
+  "batch_dispatch_starts": 0,
+  "live_preflight": "passed Ollama 0.40.2",
+  "selected_complete_pairs": 22,
+  "pending_stages": 8
+}

@@ -1,0 +1,39 @@
+run_id: final-qwen3-8b-vanilla-ff-long-minus-pilot-20260915T000000Z
+experiment_type: baseline
+model: "qwen3:8b"
+ollama_model: "qwen3:8b"
+provider: ollama
+model_configuration:
+  generation:
+    temperature: 0.5
+    seed: 42
+    think: false
+    num_ctx: null
+    num_predict: 4096
+  runtime:
+    timeout_seconds: 300
+    max_retries: 3
+  source_path: configs\models\qwen3_8b.yaml
+thinking_mode: false
+benchmark_strategy: vanilla
+prompt_version: vanilla_v1
+prompt_template_hash: 68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA
+temperature: 0.5
+seed: 42
+context_configuration:
+  num_ctx: null
+  num_predict: 4096
+dataset:
+  identity: kahuja/flawed-fictions
+  version: 733717281afdb715538b753f0f85ef7d55568b85
+  subsets:
+    - flawed_fictions_long
+  expected_subset_counts:
+    flawed_fictions_long: 200
+  raw_data_dir: data\raw\flawed-fictions
+  selected_limit: null
+  fixed_manifest: data\final\final_flawed_fictions_long_minus_pilot.json
+  fixed_manifest_name: final_flawed_fictions_long_minus_pilot
+  fixed_manifest_hash: 332D4567C737469B1ADBACFA745B2EA4AF894FAC380171C6B5E99EDEB558381C
+  fixed_manifest_example_count: 190
+  fixed_manifest_role: final_confirmatory

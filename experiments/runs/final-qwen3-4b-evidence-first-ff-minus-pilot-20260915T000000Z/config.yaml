@@ -1,0 +1,39 @@
+run_id: final-qwen3-4b-evidence-first-ff-minus-pilot-20260915T000000Z
+experiment_type: baseline
+model: "qwen3:4b"
+ollama_model: "qwen3:4b"
+provider: ollama
+model_configuration:
+  generation:
+    temperature: 0.5
+    seed: 42
+    think: false
+    num_ctx: null
+    num_predict: 4096
+  runtime:
+    timeout_seconds: 300
+    max_retries: 3
+  source_path: configs\models\qwen3_4b.yaml
+thinking_mode: false
+benchmark_strategy: evidence_first
+prompt_version: evidence_first_v1
+prompt_template_hash: F2391B1109137AA0DEB643094CB64392316705BF202CEF1B58DABB2308862238
+temperature: 0.5
+seed: 42
+context_configuration:
+  num_ctx: null
+  num_predict: 4096
+dataset:
+  identity: kahuja/flawed-fictions
+  version: 733717281afdb715538b753f0f85ef7d55568b85
+  subsets:
+    - flawed_fictions
+  expected_subset_counts:
+    flawed_fictions: 414
+  raw_data_dir: data\raw\flawed-fictions
+  selected_limit: null
+  fixed_manifest: data\final\final_flawed_fictions_minus_pilot.json
+  fixed_manifest_name: final_flawed_fictions_minus_pilot
+  fixed_manifest_hash: 62BCA266A329FB0C29B6CEF40011F0DE7B83D11A53C1D447538CF135F6B98A0D
+  fixed_manifest_example_count: 404
+  fixed_manifest_role: final_confirmatory

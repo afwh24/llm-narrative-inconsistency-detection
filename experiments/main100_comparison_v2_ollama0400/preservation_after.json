@@ -1,0 +1,10 @@
+{
+  "protected_files": 431,
+  "unchanged_files": 430,
+  "unexpected_changes": [],
+  "intentional_append": {
+    "path": "docs/decision_log.md",
+    "preserved_prefix_bytes": 23554,
+    "preserved_prefix_sha256": "299AF699FDD3096A697B816A5A30129E1C4DF9C0FF6E03627340D87DC54B0D77"
+  }
+}

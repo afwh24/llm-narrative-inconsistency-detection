@@ -1,0 +1,2447 @@
+{
+  "name": "final_flawed_fictions_minus_pilot",
+  "purpose": "Pilot-excluded final confirmatory FLAWEDFICTIONS scope. This is not an official train/dev/test split.",
+  "scope_role": "final_confirmatory",
+  "selection_date": "2026-09-15",
+  "selection_method": "Load the official released benchmark variant in source order and exclude the exact example IDs listed in data/pilot/pilot_20.json.",
+  "dataset": {
+    "identity": "kahuja/flawed-fictions",
+    "version": "733717281afdb715538b753f0f85ef7d55568b85",
+    "source_subset": "flawed_fictions",
+    "official_example_count": 414,
+    "pilot_manifest": "data\\pilot\\pilot_20.json",
+    "pilot_manifest_hash": "006BCFBD7DEAF6A8C6AF4DC5741F34F41E3EEAC2B52751EB14BE5583C2761FCD",
+    "pilot_examples_excluded": 10,
+    "final_example_count": 404,
+    "label_counts": {
+      "0.0": 202,
+      "1.0": 202
+    }
+  },
+  "records": [
+    {
+      "example_id": "flawed_fictions_0",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "37308EB13FD7A4720CB4CBC2FDA5C1F3233208C7D4C5384C5C8689366C131850"
+    },
+    {
+      "example_id": "flawed_fictions_1",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "14EB0B3807083E5F1235A44DB05010C1EA11FEF345F2E245B56036B5CB5EDBB5"
+    },
+    {
+      "example_id": "flawed_fictions_2",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "58B8F6C2E3FFF08E206A778330C1143BC7E2180658521B6070A5DD57CC2A0244"
+    },
+    {
+      "example_id": "flawed_fictions_3",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "A610A73C3C34322189A3332E6CBB30276A649F61C9BB9033BC117CD0FBF97FBB"
+    },
+    {
+      "example_id": "flawed_fictions_4",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "377BD539B160CB49050C8A248E3D0E7F02F6D81BECEF92943D9C2BE83E530483"
+    },
+    {
+      "example_id": "flawed_fictions_5",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "429DB2FC52DA29AC699C015238385C740919A3B4D2BE97BE80B25B53F5FF2E34"
+    },
+    {
+      "example_id": "flawed_fictions_6",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "7231656D126075E820B4C6AEC395D9FF62A78EBEEB0D656564BDE28E2F87B4D0"
+    },
+    {
+      "example_id": "flawed_fictions_7",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "0971DEA5695E231307399068F877DDFA6877D16B067A7858847EDC2D47FC8D76"
+    },
+    {
+      "example_id": "flawed_fictions_8",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "32434F971AF2B20339DD8CA2591F40D721FE59509F8BE09B364AAD8FD1F95721"
+    },
+    {
+      "example_id": "flawed_fictions_9",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "B7894E2DE293D231D90E5CCD94244ED1BD597627B588C7399C8AE295E2775568"
+    },
+    {
+      "example_id": "flawed_fictions_10",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "C57A39324D98A931E2C05EA6292D5C9723004CC901E50DA9B59F5C3718DFB3E3"
+    },
+    {
+      "example_id": "flawed_fictions_11",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "BE994F83B8829271C75CABBB8531DE08EFA0A57AE8074A9135338AE32C6C88D5"
+    },
+    {
+      "example_id": "flawed_fictions_12",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "CA7820170209E9C38338AE570CA4BC73FA193D73815CDB3F5F128F5C0F90ADA3"
+    },
+    {
+      "example_id": "flawed_fictions_13",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "F7056D877F02D5F0647D432D7E79BDBEE2F55D2664097B8E8A300B506C576C69"
+    },
+    {
+      "example_id": "flawed_fictions_14",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "15F1928070E71963B770C0543DC6E6722BA62CD202D1213D0601552AE66E9433"
+    },
+    {
+      "example_id": "flawed_fictions_15",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "793316A7C33D41503F4EC531D9B2B004334CB47D9B9BA9CE80C38C4F1D394993"
+    },
+    {
+      "example_id": "flawed_fictions_16",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "C67A772E0B7327460C24F799E96936B8E65583CF62CB35DA2A3CFEEBFE3B2210"
+    },
+    {
+      "example_id": "flawed_fictions_17",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "7A834E1E975D6C416A507D085F74F96F89A74DA782222CD3878E720828E5AD82"
+    },
+    {
+      "example_id": "flawed_fictions_19",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "213041A91F97B760E64FCEB01CD73F9F38E060325B6EE97D695FDCB39D24AB07"
+    },
+    {
+      "example_id": "flawed_fictions_20",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "5E1D5E861920507B425E004925A54764BFFAF52EEB8EAF4D2D352CC85260DE1C"
+    },
+    {
+      "example_id": "flawed_fictions_21",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "2EDC8D081D32ED718BEB2402AB7442C47BC5D167D37E494A07C57A785FE126F2"
+    },
+    {
+      "example_id": "flawed_fictions_22",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "B4464C0D1AD03B666A4EF86A76B5232EE8667BE65C2B839979C6448F9D6A5D7D"
+    },
+    {
+      "example_id": "flawed_fictions_23",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "89301335C6A03AC1AB157DCDEBA8B88087B8E2D082BB5F8E1E2FE5B3C8A09B86"
+    },
+    {
+      "example_id": "flawed_fictions_24",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "577DC9B15375C4DF1F762EBF6980DCA55A414F15F1E527D72C091A4E9CE3FF3A"
+    },
+    {
+      "example_id": "flawed_fictions_25",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "237C37ECDF64E7CD966B8E55F6B10908C909649E60EC4B24A84A1E4B44448182"
+    },
+    {
+      "example_id": "flawed_fictions_26",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "213650E24BE6F4A806BA960119ECE88CA722C60D3BBD8249DDA2535731C80369"
+    },
+    {
+      "example_id": "flawed_fictions_27",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "9A5DD28D8D056A374321B7EAF346FF5466845917C39FEE1166478793E9498D7A"
+    },
+    {
+      "example_id": "flawed_fictions_28",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "4BB29813521166E4018D2BF66DB5CED22A6BF32A3201B83EBC0F24AF4F48ECD5"
+    },
+    {
+      "example_id": "flawed_fictions_29",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "2693BE1FEF4B696173D865697475965D14E0301953561DF72F8C5514E49BFF74"
+    },
+    {
+      "example_id": "flawed_fictions_30",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "F95E287D66C081F3493F8C1D33BBEAECDBA1E5E0DC3CDBD7857D0EE0F7575E53"
+    },
+    {
+      "example_id": "flawed_fictions_31",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "EAD58226A7F790182264E505C080B2EB9A905B51736BDE0842BFC2C912DFB903"
+    },
+    {
+      "example_id": "flawed_fictions_32",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "3899D91AFD963D7558E625E318B2A90DA3E95A2DDA83ECAE6B29D5C73549B2B5"
+    },
+    {
+      "example_id": "flawed_fictions_33",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "3DD9B57B3C22529954E9D737BB18DDBEC6874DF426427A51933170C948DF5A1D"
+    },
+    {
+      "example_id": "flawed_fictions_34",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "886C54A2273DE868C3784465C958214E61189D8CDBE882259A86FDCB4BC1C845"
+    },
+    {
+      "example_id": "flawed_fictions_35",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "258FF396A96F2EA65EE5C950BBEDA47C542228B8DFE87C315C8B374E6D063273"
+    },
+    {
+      "example_id": "flawed_fictions_36",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "BCC0676B9EEE52F12DE6AB08E1040736112A59FF29F0BC5F094EAA0815CB9866"
+    },
+    {
+      "example_id": "flawed_fictions_37",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "1C621F8C025783A86E1D486030C8A6371B25FEA727A03E6116AABCDE45C1BBF8"
+    },
+    {
+      "example_id": "flawed_fictions_38",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "1EE3C75CF1173CF7D7FC41AF61E5E5CD9DD23A3DCF8E9264F043B29A12B403D9"
+    },
+    {
+      "example_id": "flawed_fictions_39",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "FFDA5478B7FF069203382CACE21FAD493E1927D06B0FEB14E77B80939D011D05"
+    },
+    {
+      "example_id": "flawed_fictions_40",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "786DF62EF68849184CE8F8CE30BF92BC1762A1338D17A5C6868C84214915B124"
+    },
+    {
+      "example_id": "flawed_fictions_41",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "929B5DAC9369D8AB6C97EC61DA04E195CDD8A381DBCCF70A500E22B14D25B9EF"
+    },
+    {
+      "example_id": "flawed_fictions_42",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E8EB1F29E4C642CD5627011CA2657F9FBF987B49345BBD6489E6CAB15CC8197C"
+    },
+    {
+      "example_id": "flawed_fictions_43",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "3F0FDDF5D9D3D0CA3C1390A4DC76C1F4EF05ACFC94D170B46CC5EA181F3E6569"
+    },
+    {
+      "example_id": "flawed_fictions_44",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "948D83DB10F5164640DDD13F2A046300A88EE4702DE4A45581614863CE065847"
+    },
+    {
+      "example_id": "flawed_fictions_45",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "B60CCCC69F7B7E6399BE5A6AAA48954229334E4EAE85E7061F8DAADECB110CBB"
+    },
+    {
+      "example_id": "flawed_fictions_46",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "F7DB473929C73500B4073B7C1AC6B6BF0DBE7EC18D7720AC5D4A3917EBCDC46A"
+    },
+    {
+      "example_id": "flawed_fictions_47",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E0A91937E47CFAE137AEB4A22358EAD859430B5665395A6686633B269BC345E0"
+    },
+    {
+      "example_id": "flawed_fictions_48",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "130734EC510426D6718D5FB60913A1B38FBACB5671E0928F4278C248329611EA"
+    },
+    {
+      "example_id": "flawed_fictions_49",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "C09C4DC13D68E12D8F6DF665350778095DFDFB321C5C7A21890B0E2C287E39EE"
+    },
+    {
+      "example_id": "flawed_fictions_50",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "25D56523842AA42F6963DE4A0F11CA75AF4C31008BA79FC54DDD116B880C345C"
+    },
+    {
+      "example_id": "flawed_fictions_51",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "761A9FDD964623D4685D26FB3E6C2AEA1040DB47A9F9BA2B483F456FF967EA91"
+    },
+    {
+      "example_id": "flawed_fictions_52",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "55E54E53382407C44F84FEBC7D2EFEA85A97EFE4CC3720B2A590E9400D30E07F"
+    },
+    {
+      "example_id": "flawed_fictions_53",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "A0791A825CA998057E69419ACCF1C05696B08FAF96813E61AD5FE175DB146E3B"
+    },
+    {
+      "example_id": "flawed_fictions_54",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "57C25A3FA73F6F05DC6DC8CCE85E53C6C64A0C04FAB0827AB63281D960D60CBB"
+    },
+    {
+      "example_id": "flawed_fictions_55",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "301EEEBF5F397B00770FB8B8FFCE370072F2758992D6093A7C8D1635F13A8BA8"
+    },
+    {
+      "example_id": "flawed_fictions_57",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "8CFDC474517413FB345D2009F034302B28C8AD4F416BA2D72CA6945CB4D418AD"
+    },
+    {
+      "example_id": "flawed_fictions_58",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "20102F97A0CE1FF0CB12B9487653F1B85D985D07DEA29E7630A094759AE30A26"
+    },
+    {
+      "example_id": "flawed_fictions_59",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "46BEFC1ADE3CF6FADC59B858D28D699D604D20FFDFC503F269EB7E3D5DB751FF"
+    },
+    {
+      "example_id": "flawed_fictions_60",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "AB9926B750DD42860B5F4BC4BEC7C476AE1CFF014169B826E7DB23585E7228D4"
+    },
+    {
+      "example_id": "flawed_fictions_61",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "C9A9592529C32557A2EF4850D1E87004A001D92F12A44CC5F50BEEC4A00427BD"
+    },
+    {
+      "example_id": "flawed_fictions_62",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E0DE27D7077E9F10ECEB4A869EB0BB07B02BA03B670326C56C19522DC5FAB8D8"
+    },
+    {
+      "example_id": "flawed_fictions_63",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "39C309A9B3E81902CE8319BD1F43CA157CEF4120B65FA09CF762D42EC2C249DE"
+    },
+    {
+      "example_id": "flawed_fictions_64",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "660922753939E10FB643EFF0E4F6138310884DDC4CE24A1370F4A5511BEDB33F"
+    },
+    {
+      "example_id": "flawed_fictions_65",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "4DE2848F95377D7660D2DDFA434FFBA0291ABA1272C85518A490972433C02601"
+    },
+    {
+      "example_id": "flawed_fictions_66",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "13E909C74820E0AC6BB246BFCBB41B0FCF3C6697306C1CE08C2C40FDD4F4B7E9"
+    },
+    {
+      "example_id": "flawed_fictions_67",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "CAEAAEF24562FC01C493A3F393E84D9D38651E1E48FFBD308BB4335255FA1892"
+    },
+    {
+      "example_id": "flawed_fictions_68",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "83AFB39B5751C58F0D9C9E1B6AE365422450BEE25BA7B504B1B8ED4535E49301"
+    },
+    {
+      "example_id": "flawed_fictions_69",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "6C6DCCA75492F5CEDEBCF4032CEC258574605564F6ED34383031A0E9D7B8C665"
+    },
+    {
+      "example_id": "flawed_fictions_70",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E2C477CFC9E7AA591ADF42515A5A95DEF0E8D68BF5251BD3A66848E82ABCA773"
+    },
+    {
+      "example_id": "flawed_fictions_71",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "DB8F00098B6AF3274F9045864B3593B3FD2A100E0B2368FA6FE530F96804263C"
+    },
+    {
+      "example_id": "flawed_fictions_73",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "2BACA3E84E63D9977868582BE9189827965A3C182C34EDF833E7AC4CC5B76C22"
+    },
+    {
+      "example_id": "flawed_fictions_74",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "87AA3B328E9D07F4B4E23A7EF22614668101F78D8F1A28C389D237900391F28C"
+    },
+    {
+      "example_id": "flawed_fictions_75",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "3278AF5797B0DC5074226D1F45478D6F611C7DCF5C96876181D5294F0B5E1DB0"
+    },
+    {
+      "example_id": "flawed_fictions_76",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "40D6F90DD153CD60314CB90878337F55C6992BE703CE1E7A6AD5EFEEAB1DE962"
+    },
+    {
+      "example_id": "flawed_fictions_77",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "2472F0B0E2885738244C6B7C7C01E9D808E440F08C462944194891EED9FE2417"
+    },
+    {
+      "example_id": "flawed_fictions_78",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "F58DE426721071BA9F224494725FDC3FCB54816135DB7EFCD358A83F04373359"
+    },
+    {
+      "example_id": "flawed_fictions_79",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "F657A623014CB380AC8B31429E699E9569549178D4713F6A2E42759095EE4785"
+    },
+    {
+      "example_id": "flawed_fictions_80",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "0D200CFC24B02300521A10887FEE0F1079BB6202EC27113E05461EF1F156B238"
+    },
+    {
+      "example_id": "flawed_fictions_81",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "C61F040DDC2D59329D81C2FF0AB35874D423ABD508EB1B276BF91D3682530BCB"
+    },
+    {
+      "example_id": "flawed_fictions_82",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "EB1845E9F7ECF1CB0B2A0FA4D2B77E775BC719884240A652DA32E782FB193C79"
+    },
+    {
+      "example_id": "flawed_fictions_83",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "3A7638EB184845B21AA89427A2A0147452CCF3867F0EF8D08B5AFE068F4D30EC"
+    },
+    {
+      "example_id": "flawed_fictions_84",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E8C454DC1A4CD94CD8778BA7174E99688306BE463E40DC8206A26186C94BA584"
+    },
+    {
+      "example_id": "flawed_fictions_85",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "DD07068EA158CD62501F6864DEDFABDE2209E453938037D8F86575AE0EA9A228"
+    },
+    {
+      "example_id": "flawed_fictions_86",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "528D96ACFFE7B274298D573109A2C8DF5490B95F5FB84FA4F73647092C466F80"
+    },
+    {
+      "example_id": "flawed_fictions_87",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "305BCFE328C553F4D7456A738A675C0C6564905FAD18FB3EAF792ACA2BC9914F"
+    },
+    {
+      "example_id": "flawed_fictions_88",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "7715774FD31FD085E6D26E864683BB9AA7EB4EE7A92F37E5D599D22F8AD6F444"
+    },
+    {
+      "example_id": "flawed_fictions_89",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "367E3CECFFF3CEE314DD494446145800DF25B2EFFFDCA5AC17CFA7F5FE1A12E8"
+    },
+    {
+      "example_id": "flawed_fictions_90",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "7010FD035EBB77AE1DFA2B85F93CA08502DD5D16B0A3D18F91B63919091F7EF3"
+    },
+    {
+      "example_id": "flawed_fictions_91",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "4AA9A080FD90032BAA00114FE306D762989060670DD64C65FB55B347DE189867"
+    },
+    {
+      "example_id": "flawed_fictions_92",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "330380EE7A1E8022096E9B90D238AD7117B927457293AD8A6F3A38B9C80F7488"
+    },
+    {
+      "example_id": "flawed_fictions_93",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "308515F8C4EC0FB7922C94839CE00F2616C7D1EB1D79C19C4DCB0EB9D30CD577"
+    },
+    {
+      "example_id": "flawed_fictions_94",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E33BC7B2448E2782617EB1B10FB41B7BA37813871148A0C08A8A586AF7014E0A"
+    },
+    {
+      "example_id": "flawed_fictions_95",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "5E8B1A12D36E99F1A3B0907BFA5A287E455AC2E2778BAE90009F49A60EEA7A6D"
+    },
+    {
+      "example_id": "flawed_fictions_96",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "7637B7BFB5193D65C6D7996CA7E2F22F605E63B2BE4A027FE6CBC0B3CEB15AC3"
+    },
+    {
+      "example_id": "flawed_fictions_97",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "B311905A246F1AC141A97ACA9AB0575926EF98DF2ADE1890DC6AAAC0EF245491"
+    },
+    {
+      "example_id": "flawed_fictions_98",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "4EDE424101AF0ED08B0E1F352E3D8CD220C378B29A849E24136C2EE339DC079E"
+    },
+    {
+      "example_id": "flawed_fictions_99",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "8F00D5DAF52BCC78FBA7EFD9F85DCDEBC5424E497DE287F41F4C2E7D58626936"
+    },
+    {
+      "example_id": "flawed_fictions_100",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "5D204C23924EA8A97E9CA97C4AA6B0FA2FB8FC95CA30FBC70E9D3B57998E00FA"
+    },
+    {
+      "example_id": "flawed_fictions_101",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "DDA3EC39964B755F0B5B7ECC8569064B7916BDC229590F6DFF59E119C2BE6FD4"
+    },
+    {
+      "example_id": "flawed_fictions_102",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "AB067ACAF489E48FC54B2145B04E2F6505B0F1D63B7AB6B0F1DE24C3C2F5E31C"
+    },
+    {
+      "example_id": "flawed_fictions_103",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "3ADE32294A5F37A27CF004545C33B75DD5FDE948CAA73FCF90DF06D8B5B5FD1A"
+    },
+    {
+      "example_id": "flawed_fictions_104",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "1BF9CD44D2763BB2A44083A2709BCCF408EC4FD2CA876428C1EEAB6B888054F6"
+    },
+    {
+      "example_id": "flawed_fictions_105",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "1F6C1BCD766E71FB0FDA4DBF7C9993BD5EC85C155A94DFF48B1885CFF2801D03"
+    },
+    {
+      "example_id": "flawed_fictions_106",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "0FB0FFC978E109358A044FF4BAB1ADD2B74F2940343A1B49BA3AFE7583FCB852"
+    },
+    {
+      "example_id": "flawed_fictions_107",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "B60CC699C3E8696E16DF6C71032FFFB738033CC9C73C93C80F998CC2AC32C13F"
+    },
+    {
+      "example_id": "flawed_fictions_108",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "498E7DB3A62FA15B0CC302FCCE8E156D9BB4DCB760CF90637377DF4CC0B644D5"
+    },
+    {
+      "example_id": "flawed_fictions_110",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "BF87C97D9EF1522BC0FBBFC15AA2111019F5A9D0020CFBE212D2AA8DBAEB76EB"
+    },
+    {
+      "example_id": "flawed_fictions_111",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "723BA786134266CCBF30413B4CD8DB57BFE8082842276A46CE8948F572A2D1A3"
+    },
+    {
+      "example_id": "flawed_fictions_112",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "DAF226ED4AEBB3D845138B97F1DAC53FDD8F85F94C20CF3AF6495BEE38215658"
+    },
+    {
+      "example_id": "flawed_fictions_113",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "F626F119510AF9B071DEE867F7F52B1A70D85DDE5EEE8898643E44CD4CDE6FD8"
+    },
+    {
+      "example_id": "flawed_fictions_114",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "6AB01DACA9C34AAEDC9E19A98EB11A56ABFCA305FEE5C10775B4EC8418E31FD5"
+    },
+    {
+      "example_id": "flawed_fictions_115",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "4E2D430222E18C401F9274EFD06B27D86D13C804E6084375413234CC133F0ADD"
+    },
+    {
+      "example_id": "flawed_fictions_116",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "21FCAB3CB3CABB160080E044B758CD5A6C3F8D3071504993F7FCC153088594A8"
+    },
+    {
+      "example_id": "flawed_fictions_117",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "A47C45D531E474DE414A02E16DE9438708E63D8B3FCE753CFA513DA229A7095D"
+    },
+    {
+      "example_id": "flawed_fictions_118",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "3D02560B60D49AA2D3C26D4F00477178CC9792DF15180BE27398F07D153B72FF"
+    },
+    {
+      "example_id": "flawed_fictions_119",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "5903A8E4E162D240F36E3DF7871EC0199D702316B811F70F44D5549D7862CCCA"
+    },
+    {
+      "example_id": "flawed_fictions_120",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "37E2FAE930AF298170AA3963DF8CAF9B97E8FE72B50E0B0F0F6675C395E23C7F"
+    },
+    {
+      "example_id": "flawed_fictions_121",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "3B6C18A239C972CF14EED5C5D3E19ED3E0B4D811CD772888275D17E48C7529B1"
+    },
+    {
+      "example_id": "flawed_fictions_122",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "8AEE2A625D96E9A16534298D872B01AA0D97F7485FA81F3479F0B5DB6D071891"
+    },
+    {
+      "example_id": "flawed_fictions_123",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "8A94333D58F5CD734A0CE989FE195B9E7104A6ADBE4CCBF4F7CCBF73CBB1008D"
+    },
+    {
+      "example_id": "flawed_fictions_124",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "83189618E9345962E29C33B985780FDCC8F3E61CE5E0FADC45A232EA34E306D0"
+    },
+    {
+      "example_id": "flawed_fictions_125",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "4FC1C1566150F7E5D2830A3A1033093F03E020461CB1E9642D2444F5617482C4"
+    },
+    {
+      "example_id": "flawed_fictions_126",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "B9658211F0EB34B4C482D3E1B84E121510682B4A4970F2DDCAB7DB0562D40B0E"
+    },
+    {
+      "example_id": "flawed_fictions_127",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "7C76B7FBA408BA5FCA9CE4CDC8EEEDA2759035B18BA36CCEBBF749D017FA7A0C"
+    },
+    {
+      "example_id": "flawed_fictions_128",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "3D2B36399C39D0990CFC499C2870090F431FB060A31E007660A7ACC734CC9ECD"
+    },
+    {
+      "example_id": "flawed_fictions_129",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "56EFE396F2A9E6C2D2D09DF5BC15F2836ABCBB09DABE803A1B3B773AB322BA70"
+    },
+    {
+      "example_id": "flawed_fictions_130",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "C3E7BF7970ED89A0ABD542FEA42E57CC36C7705C6C3CE0349C63E65F6D46C4C3"
+    },
+    {
+      "example_id": "flawed_fictions_132",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "57D1E4182C888E126DAB7797611822DE089E3FAC3E6542D38914DB2A5E6DBDE7"
+    },
+    {
+      "example_id": "flawed_fictions_133",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "9EF1649937CE6B5A3A6C06AF32A11C358B6D94BE5EFF9B188DB334F9B71DD46F"
+    },
+    {
+      "example_id": "flawed_fictions_134",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "EF27D860206F1772555921F5C41A9E1368C19FFF21B86A1456C0FC5DEAE78EF6"
+    },
+    {
+      "example_id": "flawed_fictions_135",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "94AB51525529C8B26B8208746176D039584989CB29C6ECCB3C37A8D52BE23CF2"
+    },
+    {
+      "example_id": "flawed_fictions_136",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "143506E3A57C6F11C7081713572BC942F0597E9C2002E98337C720507F9B664F"
+    },
+    {
+      "example_id": "flawed_fictions_137",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "51B9783469A67541935D534BE01BC270D21D2FF70C45C90D5C2F0DCD06212800"
+    },
+    {
+      "example_id": "flawed_fictions_138",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "6CBEB4EC5228DE412F791CC805EE73B8E109C23B0676BD6BCD447321562DBDC3"
+    },
+    {
+      "example_id": "flawed_fictions_139",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "C401450C1861F01C83D8E01B023726324643C02D9F4C178F332342AC8E2E6F48"
+    },
+    {
+      "example_id": "flawed_fictions_140",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "1FE62C5913464FE19EDD75564B59F3081941BE985CAE97D42E92056196D3F3FA"
+    },
+    {
+      "example_id": "flawed_fictions_141",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "88FD9FA72AD3D5317A6D8D347294B227BA267F4748FFE500C2746DD01BE10BF9"
+    },
+    {
+      "example_id": "flawed_fictions_142",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "744F652C232629099CDEE6480B2EB6361F7BF7073F26BB9677E8BBB4DBE75E93"
+    },
+    {
+      "example_id": "flawed_fictions_143",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "98BE64B67226B27C927728B7C4B4A004F54874C089358AB799CA93240BC367BA"
+    },
+    {
+      "example_id": "flawed_fictions_144",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "BE49777C7AFE69126E5693145DCA6522F366DAE574B649E9CAB1C8C7E95DE61C"
+    },
+    {
+      "example_id": "flawed_fictions_145",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "753D4DF83AC3A85D8BCABA6B70D9DAF817B15222008DEAF8B8D13B303E13BC94"
+    },
+    {
+      "example_id": "flawed_fictions_146",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "56960DF511A5D3EF6A176FB1522D54FF27989EF464E9E4D42AEE41D0639641EF"
+    },
+    {
+      "example_id": "flawed_fictions_147",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "25C50E90244700CF24ACC47E4B45539906A3A5BAF53B5E0B598D1C6068277263"
+    },
+    {
+      "example_id": "flawed_fictions_148",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "7A50252FE1022A3DE8B88F903D557FD2CF572CE3E6350F04A8C21588F77EF851"
+    },
+    {
+      "example_id": "flawed_fictions_149",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "F51AE23F902431451C072C605E13938F88D71321CB38B4BC8D0F344EDC932395"
+    },
+    {
+      "example_id": "flawed_fictions_150",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "AAEDFD1A5E2DD9573AD1AFFB6385A1DF13CB725B316D05FC1E2ECB637E6E4E82"
+    },
+    {
+      "example_id": "flawed_fictions_151",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "80FE20CDC33BD1D1EF93E57BDBC47890566D2E585C2C1D5C38442CC96545A9AE"
+    },
+    {
+      "example_id": "flawed_fictions_152",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "0BC358BBBB097205377A4ECE6B4D8D4FDF9BE7309313ED02E7D5AB29DA634396"
+    },
+    {
+      "example_id": "flawed_fictions_153",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "F6F87663E84CE8A065B614390BD923EDF95658A551143E5888BABCABD2059513"
+    },
+    {
+      "example_id": "flawed_fictions_154",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "4270E24ABDBC77CD6A85EE5FB3435C420B4B806344060AD2204F041D0A0068F9"
+    },
+    {
+      "example_id": "flawed_fictions_155",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "6872736D8372119366CB3B4544ECF0CDF86B04FBBA4D07CE73DD571243C7023B"
+    },
+    {
+      "example_id": "flawed_fictions_156",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "24F6EABA9298ADAE3CA15488EC32DCB5BE6B19FCED186C6812B976A961960CF5"
+    },
+    {
+      "example_id": "flawed_fictions_157",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "26FCA88A892FC7DD2F4FF1053484CB6CFAD819B91CF60566B5C141EAB0BA44F3"
+    },
+    {
+      "example_id": "flawed_fictions_158",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "B5FFFC99A8E39D28DD3BB8725BECDEBA7F8B5D948B9056DDA906F9834A722B6A"
+    },
+    {
+      "example_id": "flawed_fictions_159",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "FCEB4E554EE1F79B590C5321A14A5E4BCE9B5CA0A348BF4788B54DF31C17AADA"
+    },
+    {
+      "example_id": "flawed_fictions_160",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "9E64C6C5790799C8DAF205CBC6C7133188B01C06FF7A04AC724B2CAF30592832"
+    },
+    {
+      "example_id": "flawed_fictions_161",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "72D191D8138A5F46E10CD0DB16B4FD615E5E911725DEBCA6A36ACCEF64CBEE32"
+    },
+    {
+      "example_id": "flawed_fictions_162",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "7711A6BF1098B69AD802202BF058FCCD72DBDB64285C8AFAA5E1D2B5CA4552B7"
+    },
+    {
+      "example_id": "flawed_fictions_163",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "18A83F2C573571F34787444FD12E582C85990CE4799445C38437DBD7321AEB59"
+    },
+    {
+      "example_id": "flawed_fictions_164",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "AAA5213D0F8E7368A09D0BF2D6158E6F95CA3EDB78D0C082C1969C33A482AC6E"
+    },
+    {
+      "example_id": "flawed_fictions_165",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "5950C834F4BEEC27661D34B98CDC93300505731960A15D6050998DE548BEE1ED"
+    },
+    {
+      "example_id": "flawed_fictions_166",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "7DAB9DD2AB720368D33FCCD55D60B7D018AF801C304F95EFAC95AD9D90D7CF5F"
+    },
+    {
+      "example_id": "flawed_fictions_167",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "F5A7CB6653C571D0443C345DD87793D8C9E4106B0B268BAF82E1C116EDB4FF30"
+    },
+    {
+      "example_id": "flawed_fictions_168",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "9E7AC32C163EA23F27696D0B17E7584F6530535818113825FE9D918C9A755AC6"
+    },
+    {
+      "example_id": "flawed_fictions_169",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "9DA5EAD3D8FBD13AF2F8FC423C5410DF51FC77D0E60A9B4DEE6E3CFC89CA25B4"
+    },
+    {
+      "example_id": "flawed_fictions_170",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "977AB70DF11B7E632B63BA836D7E5E003D0720C9245825AF1B4D890BB9359312"
+    },
+    {
+      "example_id": "flawed_fictions_171",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "2296DA331F09A91830010AB62692B3E76FDECCFBB5006D10D8E0603E67507CA1"
+    },
+    {
+      "example_id": "flawed_fictions_172",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "3B17615E0D22227DB57304B5416C014BB128B7C23D2821655BFB669F67495C7D"
+    },
+    {
+      "example_id": "flawed_fictions_173",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "137CE34AB951B4D2B56D7BA23400103777B77BF082F0A38A0FA25D8E22837F7F"
+    },
+    {
+      "example_id": "flawed_fictions_174",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "AA1FE5A43A2C6FB71241C4A04F8AFFDCE81BBDFFA23B88D3D2FF0392587B0DDC"
+    },
+    {
+      "example_id": "flawed_fictions_175",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "4728DD95C32CC2D8A161614869D5249DDA364AF5689534638662B4BBE4A4BBAB"
+    },
+    {
+      "example_id": "flawed_fictions_176",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "8F23454418B548435D8156589169F45FA2BFF628F20092610A1C4100D5BDA586"
+    },
+    {
+      "example_id": "flawed_fictions_177",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "659413C43787BBB51BEAA6220C5645A231FF9A40767957EA80A552AA9863F7AD"
+    },
+    {
+      "example_id": "flawed_fictions_178",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "5E5FE132DF8721880C8DB013CB6949B11D44C7DC62CE7CEC2C3335CB375F37F6"
+    },
+    {
+      "example_id": "flawed_fictions_179",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "7DC71DAE9959C4529D90D604FE81F521F0B94D260C56AE1CD0A6287C49B18784"
+    },
+    {
+      "example_id": "flawed_fictions_180",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "09DF764410D061EEA44EC002F08AB494C73B6B9825EBD12549FDA347E6CB2828"
+    },
+    {
+      "example_id": "flawed_fictions_181",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "6E431C51A77BA11579B32051C15769ADC47A9CE1AA3F23706976B0F4F56BF3E9"
+    },
+    {
+      "example_id": "flawed_fictions_182",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "B1278C6644B39C25BAC42D528D46032F028BCD0D38C444DCEC7B9A8877472CFB"
+    },
+    {
+      "example_id": "flawed_fictions_183",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "7921C9C77E4B646F51843FACA36C11EFE58DACADD4A9DE4B5CB9ADE91CFD380C"
+    },
+    {
+      "example_id": "flawed_fictions_184",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "B0EC5BE1A065CF130B89996518D9D9228146C90640169F3F8694FE3E5C301E9C"
+    },
+    {
+      "example_id": "flawed_fictions_185",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "67E1C4C5B4973C85A2B83E39CBEF62F9FADFE7DAE6A2C166B77E3F8627E5B0A7"
+    },
+    {
+      "example_id": "flawed_fictions_186",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "0F100179B6AA5977045748788968E7E9AB926F4C9288E7308C717E72AA40C615"
+    },
+    {
+      "example_id": "flawed_fictions_187",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "9B283FD746B4DD7019EFBA280E751FF9367A270FC0896BAED7691D09B7755234"
+    },
+    {
+      "example_id": "flawed_fictions_188",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "09BAADBB475639059CAF93318ED39F27D07C812C9313DC46AD9D1EBDA2CC6BF1"
+    },
+    {
+      "example_id": "flawed_fictions_190",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "C4FB5BE4AA6A65351F54197D8F8B7F2EE3A3CA07BC736D229C9802778B3503C6"
+    },
+    {
+      "example_id": "flawed_fictions_191",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "A53E40C340D985E1105AFE78626BD91D115DB27245166B812229B947FD63CF7B"
+    },
+    {
+      "example_id": "flawed_fictions_192",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "3C06950017D52FB68E5F7D5D5E16ABA586A8C305961CFB1DE60BA629C21C697A"
+    },
+    {
+      "example_id": "flawed_fictions_193",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "C08BC3CCBFD8D1ACA51DD4F86FEB0A544318FE3B54D77CDC144A03A8D5C8BD83"
+    },
+    {
+      "example_id": "flawed_fictions_194",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "94988924D6B552DDCF3CD43632759F2A2D33E9DBB54F540EF834BD4B3DAE7DC7"
+    },
+    {
+      "example_id": "flawed_fictions_195",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "52369151852DF61706865476254135223A93BAD53472CA999445CAC9627FD8A1"
+    },
+    {
+      "example_id": "flawed_fictions_196",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "9DAFAA716B109EDFA38A0F6372FFC7C24A106814C5670B4F61A7C1AA6AFCD9EF"
+    },
+    {
+      "example_id": "flawed_fictions_197",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "6E7BEFF392A5CC95A71950B72E019F8E5285B0DF95F9806E4D51F3E4371137F2"
+    },
+    {
+      "example_id": "flawed_fictions_198",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "C3548A09B546AE7381EEF538459DF4E12E14CCB7051E7FD66E680BD603592641"
+    },
+    {
+      "example_id": "flawed_fictions_199",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "3B351F8823BDF6F8300AFBE5CFFB1290A967A43A6D1D6E4C61C2A38F6BF99E07"
+    },
+    {
+      "example_id": "flawed_fictions_200",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "49294C22C816D30FD316CA7CEDE6BF6D288DBA815408391F616BD7037161AC89"
+    },
+    {
+      "example_id": "flawed_fictions_201",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "8B41B5720875B91103D09CEA62C3CD6DBA670D702D68CE6E7A831E6A3F0E744F"
+    },
+    {
+      "example_id": "flawed_fictions_202",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "98BAF5CBC510EF24B522E47F7C0E4FE007B616E2197821817E3A323DAD45A551"
+    },
+    {
+      "example_id": "flawed_fictions_203",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "0A21B4C1B5B2D3F4034036DF37D410945F81F0F700A9C5691943B9C2AC6DFB06"
+    },
+    {
+      "example_id": "flawed_fictions_204",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "C92F9D80C99FE4B609F832765D90E0ACB16FE6CA333A9D284389FF2566870AD8"
+    },
+    {
+      "example_id": "flawed_fictions_205",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "9B64B92F8699D425DAD3CDB43473401C394984518D7AAF72F21AD33D4FDDAF03"
+    },
+    {
+      "example_id": "flawed_fictions_206",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "33302D0BCBE991F399BC8E31450ADE19D0CF67008FA7C5432ABE0E806C988A4A"
+    },
+    {
+      "example_id": "flawed_fictions_207",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "94828C173897EA6C46D7C382CBE23B042864477A37F57A527D8E3E0760974A92"
+    },
+    {
+      "example_id": "flawed_fictions_208",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "851BD51BD73F7675A354F0903F21AB1A99F4E8C6B888F5E855A1C0043BFBF320"
+    },
+    {
+      "example_id": "flawed_fictions_209",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "28D12D2030A79931E0F92B41A774F015CD274D1E86202DA286114CC3FAE9E9AF"
+    },
+    {
+      "example_id": "flawed_fictions_210",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "8B4EB57E76693081FECB88CD4BA747C765F6C7B92DB9941C5822E9E01598809C"
+    },
+    {
+      "example_id": "flawed_fictions_211",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "96B873870387FAB45C0A5001CB1886EAC3A576DF12DF405FA527D0BFA813A3D3"
+    },
+    {
+      "example_id": "flawed_fictions_212",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "3C15829FB3584282FE243ADA4E6974A4F10ACE9EE8F82E1B442725EFA96AD3F0"
+    },
+    {
+      "example_id": "flawed_fictions_213",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "EEFDA82BDD17F9F7DC333C7F4BB408EC258A556C131C958FB1DDE9B29C28C0DA"
+    },
+    {
+      "example_id": "flawed_fictions_214",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "DDDAF94C1415DC44A0647DEDA557DACAC41EB6618DF9698EC414DEF139A551F8"
+    },
+    {
+      "example_id": "flawed_fictions_215",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "DCCAD1F1A05AD5157EA4F0677D957677A2DF382492FB22D59BBF65F663E59EB9"
+    },
+    {
+      "example_id": "flawed_fictions_216",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "F3432CCE9BEDBD1B4584249F1B9F504C4F47607766D5E18425830A334E121F75"
+    },
+    {
+      "example_id": "flawed_fictions_217",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "AD967677477376E1F56D4253CC671AAFD371589490C56BCAF29E4E466D38EFAA"
+    },
+    {
+      "example_id": "flawed_fictions_218",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "817746BD68DF21DA1DEFAF1E2B592A3DF7253CE281614AA4D9E250F3AEF8E94D"
+    },
+    {
+      "example_id": "flawed_fictions_219",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "D743628A63E0D018DA901CF7C2EF9B083B52FF26F4F05E8C010FCFE788F30B99"
+    },
+    {
+      "example_id": "flawed_fictions_220",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "F4E5D62B02886333EDE3CFD70E6B583CE284FE26A38086595BBDE80E6F317B92"
+    },
+    {
+      "example_id": "flawed_fictions_221",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "5E2BEABB366FA980752752553BD3556BE986E8E0A25F19499CBFBED85269CC6A"
+    },
+    {
+      "example_id": "flawed_fictions_222",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "709BFA71012E3CBD8E21FD9EF1CC4F34E6D53BFBB8D5A4BD3475694856017013"
+    },
+    {
+      "example_id": "flawed_fictions_224",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "3EC0D0C0FE666E01C679FC5043E256E8809A4A1781878D741C1576B7D6306772"
+    },
+    {
+      "example_id": "flawed_fictions_225",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "25E18A63108545208E3487F34ACA5BF223DAAD8AB126472E66AB4FCBFDC96EBC"
+    },
+    {
+      "example_id": "flawed_fictions_226",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "2E4F34416A895E7DE8DC8E950207A356417A75660EDF1FB4198C1D6116239E78"
+    },
+    {
+      "example_id": "flawed_fictions_227",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "0870ADD8306F86574C3F6F462AFB3D95A0E8471A007EC49CFD81E311C4461942"
+    },
+    {
+      "example_id": "flawed_fictions_228",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "B8FA7622101721ED8C585C562293C81641DA512AFE884D2BC26564EB6A7B413D"
+    },
+    {
+      "example_id": "flawed_fictions_229",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "C36A200A207DFE40E2E600A63A13EA70B657A90AE24D75A4425B277EE1FC1F8C"
+    },
+    {
+      "example_id": "flawed_fictions_230",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "FE722ACBE51C2D5D5E19033F86F3E816B865206B038CE58E65A53930BACA500D"
+    },
+    {
+      "example_id": "flawed_fictions_231",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "623EB32F3A0D556576716C8441E1A7E4E2FE12E9BEF82BFFACC783EA5D7B7F5F"
+    },
+    {
+      "example_id": "flawed_fictions_232",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "EB57B2BA13530BB25CE073F107BD413031C5F38D9F1D8B529E2944514946656F"
+    },
+    {
+      "example_id": "flawed_fictions_233",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "22E31CCEF431196E4AF1F1BFE788934A57D982C57BB78715CAA6CBB0A66216AD"
+    },
+    {
+      "example_id": "flawed_fictions_234",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "14F33B85844C8B1B17C9E05561CC8BB9BC78E9EEE318845D75266106D419D1D0"
+    },
+    {
+      "example_id": "flawed_fictions_235",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "0D9840D48177A2D93472A3ED156582774A0978D6398E5B822FA8C47A78B2C3E6"
+    },
+    {
+      "example_id": "flawed_fictions_236",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "AB6D5A1EEE054E25E3F105862ED871C24C81F74114428A345FFBC156524AC43E"
+    },
+    {
+      "example_id": "flawed_fictions_237",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "25F25117889775D21EACF069BB2D39CBD22BBC5AEBE30E60F4CA81D2156B3E70"
+    },
+    {
+      "example_id": "flawed_fictions_238",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "2A81D201D897AADC306EB7634DF18F606E82FD0FA5ED61A042D532D8C22CBD8F"
+    },
+    {
+      "example_id": "flawed_fictions_239",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "84DD81B4CEEA9BEF381B9B1BE9E6F970FC84F9F4A7CFA1B73ED5B4BA4DC91FBE"
+    },
+    {
+      "example_id": "flawed_fictions_240",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "26837921DF5D74219B1A2DD9C0EF22D2BAB3647D2B3CC10FDAA4DF2A08DEC282"
+    },
+    {
+      "example_id": "flawed_fictions_241",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "C4FD4CC77922C5E9A22107F4A509E8273DBD0AC1BADCD74F6EE657C954EEBC6B"
+    },
+    {
+      "example_id": "flawed_fictions_242",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "CCA8DBA877222B50871C47FEAFFC72CFD7EED6195DCBA2F0EC740B4D6E6E21A8"
+    },
+    {
+      "example_id": "flawed_fictions_243",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "55706755A65D3707F01505B9B97293D15B80DB92A6C13328F48F4765A8578E11"
+    },
+    {
+      "example_id": "flawed_fictions_244",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "7275B6E52CFF643A0E3A48498E95EF2155C4C8401E0D73BCFA35DB38D90AAA34"
+    },
+    {
+      "example_id": "flawed_fictions_245",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "7B697CE0E4C5C35F0F1FA3CE7A49025E831184653F0E21C0C7F1B5A163331894"
+    },
+    {
+      "example_id": "flawed_fictions_246",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "CF86CF5681C8179E2A61A9C36E970695A833547481C4D4FF7A8C491121C873FC"
+    },
+    {
+      "example_id": "flawed_fictions_247",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "2EB99936B091F771F0BBA58721FC3FEF53CA588E301F153301666FA7F4D6D3FD"
+    },
+    {
+      "example_id": "flawed_fictions_248",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "B3206B49AD4A02CD98F888EDD30BC590E07A8C72F61EE8961D00497F05670915"
+    },
+    {
+      "example_id": "flawed_fictions_249",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "5E6337044A7BBEFC0AFEFB9E5C037A817B9160896D148A6DCCDF0BEB4005D1AB"
+    },
+    {
+      "example_id": "flawed_fictions_250",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "AA25BD4D0DF9E6149CB0B33EA733F2C92DEC4F19AF1D0BCA8738C1EC1D17373D"
+    },
+    {
+      "example_id": "flawed_fictions_251",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "806B13D0A5FFDAE69A169765FF56870855B628AB91432091B7F717601D8FC45F"
+    },
+    {
+      "example_id": "flawed_fictions_252",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "853F68FBCD659D871F5491F8A3E267034857FC26DB7DC19311B02BC0CCBBA5C1"
+    },
+    {
+      "example_id": "flawed_fictions_253",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "84EBE6E0D3877258C62139C91F4170770FA63C0E68BEA46AFF48278E760F5128"
+    },
+    {
+      "example_id": "flawed_fictions_254",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "F9B315D183765E2F823B8666779AF04A29D9AEC9B10DCB046E532139F24F5B9D"
+    },
+    {
+      "example_id": "flawed_fictions_255",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "B4A7D93101B62233308CC5A58BC9E3BC5481FDF9FAFADAF5A54EBBFC8C39B477"
+    },
+    {
+      "example_id": "flawed_fictions_256",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "D53AEBFA712F36A8E6A4C57B33CA02CCDBC936E2750B8D2B72499FAD5DA0EFB2"
+    },
+    {
+      "example_id": "flawed_fictions_257",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "57B10DE7C1800D12183FFC91AB38272A20E131209837EA5F95F36E03D6B76A7F"
+    },
+    {
+      "example_id": "flawed_fictions_258",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "920D1CDA6BA0E090276E1014BDC0C7BA0D5A0BB60E202FC27CE1B0A1528C75D3"
+    },
+    {
+      "example_id": "flawed_fictions_259",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "90B93AF1F213A964BC40AC3E7871F9D5F7D9464511AE621D2CC67DBA82F17749"
+    },
+    {
+      "example_id": "flawed_fictions_260",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "58AEC2B863537DC95ADDFE10E8C96F1D14FB28A6A86D5F19947D69BD60019D67"
+    },
+    {
+      "example_id": "flawed_fictions_261",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "44972DF4456CEF0E171B2C0B708346E40DBA58F3126858F9905A7DF12FF9CC8A"
+    },
+    {
+      "example_id": "flawed_fictions_262",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "6F061719E370FEF4E00512B3583C5A25D85E206F063D15FF601D1DA7EE5F6449"
+    },
+    {
+      "example_id": "flawed_fictions_263",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "F0B369BC07E91A86FD7D5363C8C15083519E82B27BBEAD17D9ED8D610BE0E000"
+    },
+    {
+      "example_id": "flawed_fictions_264",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "C5FB074839A3AF8407B7F3C1BCB9E3DE270833DACBBA8986B99E216D83024B95"
+    },
+    {
+      "example_id": "flawed_fictions_265",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "90DAF505131BD3BD2BE545F470782D9445DEBC27BF033A8A1F9AD9ADFDA54E5A"
+    },
+    {
+      "example_id": "flawed_fictions_266",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "64882CF480F61F9410B8C2BFB97FB4EA1F3F82B200780DFE1888AA6EC9AA7828"
+    },
+    {
+      "example_id": "flawed_fictions_268",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "A64354530EFF89A3BCEF5F899AA7B3A4AD04249CF529BFB738638B25226A6AAC"
+    },
+    {
+      "example_id": "flawed_fictions_269",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "E4BF5A52C16BBA22D2D4723AC5476EC38CEBD19EBF8E4BAC8578F73E79808925"
+    },
+    {
+      "example_id": "flawed_fictions_270",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "D276E4F39A9839687CBC3747E1534F335B75F6931BED8A10D905B099906217CA"
+    },
+    {
+      "example_id": "flawed_fictions_271",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "EAECA6A8EDE5E6A276FB41875D9DA994CF79844048B1105340E0F997B259F85B"
+    },
+    {
+      "example_id": "flawed_fictions_272",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "4CA460B244A63302C3183A7E94C28E8F4335275BC3867675632CEA526D60B292"
+    },
+    {
+      "example_id": "flawed_fictions_273",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "3AF07A192DBA0327B5AC6065192EA760A1502033594AD2AFA759058F8381FEA5"
+    },
+    {
+      "example_id": "flawed_fictions_274",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "315853FA107CC40849D4C6B6A9A1473669E3C2FD2CD629A0827D816B43778DD3"
+    },
+    {
+      "example_id": "flawed_fictions_275",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E862BFB319466BDC402484643D96F49E857997D2868F24D56B02CBD1AEB3096B"
+    },
+    {
+      "example_id": "flawed_fictions_276",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "B5F4A097DDEC761F82C142A07108B271373D91A109B4CED396B3EB7132EFF6C7"
+    },
+    {
+      "example_id": "flawed_fictions_277",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "ED441A1C158630E3A9DE3D8C34E16C199A0039D97BC6BCDFD67380A90881EF85"
+    },
+    {
+      "example_id": "flawed_fictions_278",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "A9D8AD7DF2F7B127D188DCE771BE0B600347C44B952A3F7AAD2295B08760685D"
+    },
+    {
+      "example_id": "flawed_fictions_279",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "7C5219CDD24C3593A3A915705F7289B2806972CBBCB5B7C5A852D4B33FE121D6"
+    },
+    {
+      "example_id": "flawed_fictions_280",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "7438071FAE50C0F8E3B206777261819F01883560558CCC571F826604EFC545DC"
+    },
+    {
+      "example_id": "flawed_fictions_281",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "5DD0E456BEECFCA2761BBEEBBF19AE7F3DD7783D76BE93CFC1661C5CDACE6567"
+    },
+    {
+      "example_id": "flawed_fictions_282",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "40DA03FAF563FD585B8E82BE1AAC1CBE2CCB5A255FEB900DEA73D2CA0ABB0629"
+    },
+    {
+      "example_id": "flawed_fictions_283",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "46BC7E49F2F6845DF9246C7C94F9B076FDC27EEC2E96270E1C97AFF1565AE1C3"
+    },
+    {
+      "example_id": "flawed_fictions_284",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "794A7FFA1E955CAC6B4099D0A802FE484527D63837CFDC8543479FA490CA3DBA"
+    },
+    {
+      "example_id": "flawed_fictions_286",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "601CC6779A911B6A3AFB9FDC6A88E77BCFDB9D26C677C6B98BD182AC7B3D8FBB"
+    },
+    {
+      "example_id": "flawed_fictions_287",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "8592C4DCECC19A1D61904F069ED65D97FB34FA3755CE2327541FA3EECD3A5B74"
+    },
+    {
+      "example_id": "flawed_fictions_288",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "A511C021FE447F6710459B6702478485BC002F03AA10EF6E3400DFDF2B2A97D3"
+    },
+    {
+      "example_id": "flawed_fictions_289",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "F4C96E869E0AD551CC9B019EED87FB5849EDC1932580BBD49BB83AE1BF0CC54B"
+    },
+    {
+      "example_id": "flawed_fictions_290",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "6CF7B31564214FB33F1F21C59FBFDAA63BFBC8974772C2B25B2BF599848B734E"
+    },
+    {
+      "example_id": "flawed_fictions_291",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "40F4AD7FF01956C059C1D29C19E9608B80AA90DD47DBE1C2F0D44767947AFE26"
+    },
+    {
+      "example_id": "flawed_fictions_292",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "41C19CF9C931A5E3F8E7A43E3BEE777FF5A271FE15ACB3BF81029CBB1C67DC5F"
+    },
+    {
+      "example_id": "flawed_fictions_293",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "74A42883E3A5E9543DF3489D945B19701FDEC0E69BE8EF6ABB49BD21940A9696"
+    },
+    {
+      "example_id": "flawed_fictions_294",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "9897982053A3E79E8F941029DC5B19BCD951A656F6E42095BD509D97D82B90DD"
+    },
+    {
+      "example_id": "flawed_fictions_295",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "BC36D61874148C6C31F87B4A9329CD5DDD4825EC9648A1EA237E4A65CA4BA0D6"
+    },
+    {
+      "example_id": "flawed_fictions_296",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "501E69C4FF594A8641A6CF97F899BBCCCA82C183850FD7308F60E42E3571CA9B"
+    },
+    {
+      "example_id": "flawed_fictions_297",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "949D1657B0765BC6126EA815AF31A58E4C8648DE9542C4932B461BFAB1168B29"
+    },
+    {
+      "example_id": "flawed_fictions_298",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "D630E3F709979D0D6D1C73AE2331ABD25E278F3A56CF88D85AA02279E569F7E7"
+    },
+    {
+      "example_id": "flawed_fictions_299",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "48873A19E8DF4F60C0B7E3A8C37C6A087E8DD1CE02EFE5EC216752491D76F32D"
+    },
+    {
+      "example_id": "flawed_fictions_300",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "1767239866CC61BF6ED867B9949E26405FD7D0F532FE4501836AF53CE8E2ABA5"
+    },
+    {
+      "example_id": "flawed_fictions_301",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "6DAE5EA047343191EB023C4AD61BD3AD6EBD17E42450111903AFA918FE33B319"
+    },
+    {
+      "example_id": "flawed_fictions_302",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "2BA8944D33A4EDBADC39ED2C90FF2B91F44E2B915262154E1E3EDE8E0CA4AD95"
+    },
+    {
+      "example_id": "flawed_fictions_303",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "1914EA3DBA81B82D65C805EF8159E2148664A120EED82AE18DF8466DE0E7F2A3"
+    },
+    {
+      "example_id": "flawed_fictions_304",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "7FA3537ABDBB5961E813B6D8137BBB938D46B505E0C6C0FBBB8BF376083F0D93"
+    },
+    {
+      "example_id": "flawed_fictions_305",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "D3CF1D2DAB3EAC45567B17A933B1CDB3E6F0AA957E3F42821A20CF6EB6F91208"
+    },
+    {
+      "example_id": "flawed_fictions_306",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "CB9CCCDDF4C9333A96028D647151EE85E58C2BA7833688EB71EC7A41AC9CB64E"
+    },
+    {
+      "example_id": "flawed_fictions_307",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "098BE65C11B665AD07AC063DCAC3391957E35754D4F694C600C8569EB38C7543"
+    },
+    {
+      "example_id": "flawed_fictions_308",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "7C7DB5A2D5EBCE71DCFCD33305F436B6A818E3D57FD7DB2D5A2B02FEF28AE79A"
+    },
+    {
+      "example_id": "flawed_fictions_309",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "8C9BAE2882FA6B9E3E7B234085C579CE26AB03EA495E25150FE57114C80A05D5"
+    },
+    {
+      "example_id": "flawed_fictions_310",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "408F981A3B8409B7F002E7D8E2550D01F479411D2193756DB6B8EA3C9813E720"
+    },
+    {
+      "example_id": "flawed_fictions_311",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "2AC81175C247385D58C715DB40D2443B530C91383AA8D76E7C194E5F8A1A25A2"
+    },
+    {
+      "example_id": "flawed_fictions_312",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "C48C3E79EB82BC20DE4AD921E097BADFAE79608ACD532D30D3AC066FFC30A9BF"
+    },
+    {
+      "example_id": "flawed_fictions_313",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "20C9ECAD2821CA90425207D539BE69608C8BED3F97D0C3241889BE380C9C116A"
+    },
+    {
+      "example_id": "flawed_fictions_314",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "A94880E9658FF4C072F8D8857D806F2064857FD50BDB2C3EB65E8011E9568246"
+    },
+    {
+      "example_id": "flawed_fictions_315",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "AE9A9615CF7C667B379FC598614F014D007C2F33D42BD9989B5C8F1CB574D739"
+    },
+    {
+      "example_id": "flawed_fictions_316",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E43486E6FB4D569ED28CA91F8A84CE2E937BB4BD00192045DAE45E9A2E3D1B21"
+    },
+    {
+      "example_id": "flawed_fictions_317",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "815083BE222CE9D2DAD68C8DC8146981070818875E01F8A360EEDC24087FEC99"
+    },
+    {
+      "example_id": "flawed_fictions_318",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "3AF26955B0974A76D30ADF823EBE5AE97402B9F734C2906A9E90359E784F355C"
+    },
+    {
+      "example_id": "flawed_fictions_319",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "BE7F9FBD06270C2630EEEC2CC5B15BE6CFBE79662F60021C6C98EE2C4E004C2E"
+    },
+    {
+      "example_id": "flawed_fictions_320",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "FBD800A4FF25EC4B05489AA544FC3E6F897D11C55068ECE62AF8710608B0C032"
+    },
+    {
+      "example_id": "flawed_fictions_321",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "1E77565824C2FDDF482FED47D0301EC1E2A00ACD0963BC4A8C1B6AC3E54918DB"
+    },
+    {
+      "example_id": "flawed_fictions_322",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "DE2EB771D5FF72690BDF755F8425B87139ABF498AD16B50A162366154A011D5F"
+    },
+    {
+      "example_id": "flawed_fictions_323",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "77A6655F5188AABC30E65D501E20EE7B510D74180C148B71DC554D6E09251494"
+    },
+    {
+      "example_id": "flawed_fictions_324",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "2AEA0ED6186FB217E0D69289CB0D6E4BEDFABCDC573063AC548F1CF6AFC43AF7"
+    },
+    {
+      "example_id": "flawed_fictions_325",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "EE72D198CE4C1B2DCE95874420797E9654BF3E76761460ACBEBF431C29D85B20"
+    },
+    {
+      "example_id": "flawed_fictions_326",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "6EEDB3E7A08110CBEC2BAA37B3540CA0B5CAB2EA5921C31D39F86BF1598A3351"
+    },
+    {
+      "example_id": "flawed_fictions_327",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "B6F2260033735139B0E01664768C5432F0EB274F0DB5FF33133A2133E9C975D2"
+    },
+    {
+      "example_id": "flawed_fictions_328",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "874B94C1E72AA06ED0E556440172784F03EEB346566B3195A5919C722A63CF1B"
+    },
+    {
+      "example_id": "flawed_fictions_329",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "CFC5D17418D1FFDF57830BD3FDBBE28CDCDA82013FB5282F62B181703003437F"
+    },
+    {
+      "example_id": "flawed_fictions_330",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "08FF938FE5C45C449BDEA113982A0AD30EE072D9FD61336D4D621A00EB383E63"
+    },
+    {
+      "example_id": "flawed_fictions_331",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "29D4BE21864BF7E2A8E156E2D0DBF4A5FF5369EF9D51106AB17C408689CFAF0F"
+    },
+    {
+      "example_id": "flawed_fictions_332",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "7E65BA97A818BD7A28DA6EA8357F3B8313568665E7B2C152E68DB4A6EA7ABDE1"
+    },
+    {
+      "example_id": "flawed_fictions_333",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "E3B9D01B8083641544B3F80DF36FE839F2342FFF41509728027A35FCFD69044D"
+    },
+    {
+      "example_id": "flawed_fictions_334",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "8FC751CD0995A9C32270DD2C0ECEBC31D420D2EEAC8572DBC666B6B13C23542B"
+    },
+    {
+      "example_id": "flawed_fictions_335",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "6539B6C52181491156523DED828309B579E3E1A62E85D36174A4C9C8C77AF6BF"
+    },
+    {
+      "example_id": "flawed_fictions_336",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "D3540CAC2312EA2C92BF655B9D026F1C5CF4EB7E61B9B5097486A87836AB1BB9"
+    },
+    {
+      "example_id": "flawed_fictions_337",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "C9D817DDADAD97470E2FA4FE0A169A26B34434A58490466C99AAEB31A8904FD5"
+    },
+    {
+      "example_id": "flawed_fictions_338",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "7FBB8B050527763519092DD695A2BD107EE97FB081F0FBF5584051790F3C6D99"
+    },
+    {
+      "example_id": "flawed_fictions_339",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "A25756E569660D61F4307849DEF69F5E7DAF051E7B952C495732C35A1945813B"
+    },
+    {
+      "example_id": "flawed_fictions_340",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "D3F568B9EF72A26F250D6050949AE55A7CD0CE68A0AAF28FB361644D3EA75722"
+    },
+    {
+      "example_id": "flawed_fictions_342",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E438C049FF9271C74C37FAF934482488216544879E12F64C8637FF1B44AC14A6"
+    },
+    {
+      "example_id": "flawed_fictions_343",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "139AAA55E8DC07B1836D5E7FF8185704BE54479627203EB1B047928DA33996BC"
+    },
+    {
+      "example_id": "flawed_fictions_344",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "1EAFC685B6B92E6AC93A8557C8B7847954452A1CB4773BEFDCDB14B69DE15ED8"
+    },
+    {
+      "example_id": "flawed_fictions_345",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "433FEE34A443E3F722CA85844CA927807B5AE4176336FF0C066AFA584236D9E2"
+    },
+    {
+      "example_id": "flawed_fictions_346",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "6EF68F404B1676827E9B5A9585A738A1C0D120A5DB541CB8433B2EFD58E69B0C"
+    },
+    {
+      "example_id": "flawed_fictions_347",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "2635C821F67182256F6CBAFEA39C0C80AAABB4A5F50CC2808C9D370D418DEEF7"
+    },
+    {
+      "example_id": "flawed_fictions_348",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "26311857BCDB4574AD27FA32DC092ADE128B23EA9D394287A93904B9C88CD8CC"
+    },
+    {
+      "example_id": "flawed_fictions_349",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "C94FB5FE19E554151D3D57396849CDE7E89D028361BD7250B9AFCAF440A3FEB2"
+    },
+    {
+      "example_id": "flawed_fictions_350",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "964D96E7B2E88AD7679B29F8239BD816E4EBB2BD750EE3D2AEF034EE50927569"
+    },
+    {
+      "example_id": "flawed_fictions_351",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "C7B770B1920A6F5F01FD44384D5C375FF6C00BDAAAE5D63E924855322A859B42"
+    },
+    {
+      "example_id": "flawed_fictions_352",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "F6E07477D6AE5076E1D30FCD143965DB0112FB133A46A3FA8C4689ACA23EB04E"
+    },
+    {
+      "example_id": "flawed_fictions_353",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "168F893EF755663FC4EF05A8C663C2A0C5FCCD1FB4E7346DF322498A156DB5CE"
+    },
+    {
+      "example_id": "flawed_fictions_354",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "3EF8A32CB1DB7454E53D5AD3F0276DFF2C4DD79901ED6E2800E2B51AF6362A93"
+    },
+    {
+      "example_id": "flawed_fictions_355",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "F2835325BE4C830F8F33B81B318CEC307E31280075E90201BDB7518465A2B8C3"
+    },
+    {
+      "example_id": "flawed_fictions_356",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "4A7AB48C6051F9FD34C6A1A8E34E2D1AA688720C70DEBEDB2CEFADEE56D79DE4"
+    },
+    {
+      "example_id": "flawed_fictions_357",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "196CD6BDB9A1E5B6F2831A76E163FEE5587EA3B872AFA8C6FBBB0AEB1A03B09E"
+    },
+    {
+      "example_id": "flawed_fictions_358",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "6A7D9F8485281629B19CFCB3C567F662A28D8D8D08440EAE7308692451837868"
+    },
+    {
+      "example_id": "flawed_fictions_359",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "809B2001D098655D1A9EBAEFD947AB93C22CDC2B37735E4D12CA6D1B64E8F1CD"
+    },
+    {
+      "example_id": "flawed_fictions_360",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "4ED0CD83464E78D1D15F68F358AD2B61C8ED9AC3B580EF510990EAFFAA9BA14D"
+    },
+    {
+      "example_id": "flawed_fictions_361",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "FC6657EF038226C59C81891C8AEA3172DBA3B1C45F11D5D0B9560DC085E96CEE"
+    },
+    {
+      "example_id": "flawed_fictions_362",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "BED4337EA97B665E2A040DA42079A2976B34D35DFB033C919C41EE2E8A0E6EEF"
+    },
+    {
+      "example_id": "flawed_fictions_363",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "D105B6D4F1CDE3CF7B8D3B9008722E57BD6E2054B48C224155CD42235B34A552"
+    },
+    {
+      "example_id": "flawed_fictions_364",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "CEE926D65CECB40755C28EB1C3D7BDA43A57139D3A46F7BCBEA39DCDD6730C25"
+    },
+    {
+      "example_id": "flawed_fictions_365",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "D498D8B281E219B1E3D08AE627D377102E9D0B916C13E90A941B958F7CD18DF6"
+    },
+    {
+      "example_id": "flawed_fictions_366",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "CFE5C6FD17592820A4E12563B5F42CA59FE7070F09B706C704D571A7EE6F7F48"
+    },
+    {
+      "example_id": "flawed_fictions_367",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "57BF441C66D8DD144EA091EE203AD975496884E485046A3EFF962F50F64D84CE"
+    },
+    {
+      "example_id": "flawed_fictions_368",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "6D24197B6A334E957E87EE34143889E303C3B7438F3D090B26D6BD7AD8E886D9"
+    },
+    {
+      "example_id": "flawed_fictions_369",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "E854E3FEAAE76A59D010DE17BBB9F4C24066758319CCF7735300690DEB71B34A"
+    },
+    {
+      "example_id": "flawed_fictions_370",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "DAE836FD399BA37006E0C4FDBC02D9FF18107877A64CC35C5F85DD5F89F908D8"
+    },
+    {
+      "example_id": "flawed_fictions_371",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "EC9F1CEB56B4AE20ED5BA9098F1CA38A5BDAB638C7077A19730E05DA7EA3B6D5"
+    },
+    {
+      "example_id": "flawed_fictions_372",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "DBC8A287232B69C8CEFCDDED07E649B15E32F30AF209D1B4C8E82394A4B6844A"
+    },
+    {
+      "example_id": "flawed_fictions_373",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "F778CC243D31427CA3C1B38EA6B525C121A23195E16524B1BD4513D03C3768A6"
+    },
+    {
+      "example_id": "flawed_fictions_374",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "F8B31B9C95367E9483814A7446F9FCE75CB037FC4F4B7E5D2B43D4F5622C35C8"
+    },
+    {
+      "example_id": "flawed_fictions_375",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E74330C76DB4551D72FD1CD32259D656E01AB9E8ACB0A71F6AC9E3D73464E26B"
+    },
+    {
+      "example_id": "flawed_fictions_376",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E94A014F61B4E48566B2E35ED47E0DCA00279B8CD6ED6ED834E66742BFE49FA8"
+    },
+    {
+      "example_id": "flawed_fictions_377",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "A5752389D64921F9D56735BBFE08B059DB00B444FA180ECA9871069301B91A8C"
+    },
+    {
+      "example_id": "flawed_fictions_378",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "F4E8E64B5C2164C1B6B06C5F9E9CB38EBEEBC594A0E45ED30D16A9790F2D0262"
+    },
+    {
+      "example_id": "flawed_fictions_379",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "16157A1F8CBF462BFDA61CC4953CB85EC24F72F3462069ABEDD06DAF1B737861"
+    },
+    {
+      "example_id": "flawed_fictions_380",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "07AE909C710E0D9A7A9002A48F46001F34D2A62A8B9A5E7B5BE674927AC01483"
+    },
+    {
+      "example_id": "flawed_fictions_381",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "A93EC368FC835CCDF0FA9A962396A296FBCED12F0C83D1C7A7FA9D726E7CEEBA"
+    },
+    {
+      "example_id": "flawed_fictions_382",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "2C5782416D7C9DF19B699EDB3FBC149F7F0BA1820134255C48DC36A2DB2A412D"
+    },
+    {
+      "example_id": "flawed_fictions_383",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "B684B8775912D77BD0EFBF11CCC0FCB117887A99E11B75253AE0B854BADEC902"
+    },
+    {
+      "example_id": "flawed_fictions_384",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "BCDE281D9E4E9D67C19629CF4F409757EA6687B3344D7153B20B29343CC1964B"
+    },
+    {
+      "example_id": "flawed_fictions_385",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "FB241ED597164B9445AE39D390609A9DC2F7DD3DFDB06D48982442D174DA2DF9"
+    },
+    {
+      "example_id": "flawed_fictions_386",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "72810C40BFED7FB9FD3284F4C4D6A37AF9AF7E344256843E0F2BF7691D11DDF9"
+    },
+    {
+      "example_id": "flawed_fictions_387",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "91F3D709021C6040F0A6477153E992773F2B095F137429F935145BB502D7FE08"
+    },
+    {
+      "example_id": "flawed_fictions_388",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "681129DC66AA3EA717BC2CF4C75E071C5E6F5C07EC918E9AE760A0CD8B4990E6"
+    },
+    {
+      "example_id": "flawed_fictions_389",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "CF0301E5DCF3BD7C0C55E365798F93E8A9F3CB5B9ECA379355CD894E8B7CA340"
+    },
+    {
+      "example_id": "flawed_fictions_390",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "D94E0AC3E7ED76BCE9F92646934518D5DC30E062CC5A8313B7183EEB16596255"
+    },
+    {
+      "example_id": "flawed_fictions_391",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "CD65452843460EE7EA2ED1523BF7CA2D346F986F22840CE7DA8756D0888CB43D"
+    },
+    {
+      "example_id": "flawed_fictions_392",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "B42D4EC8EDB1575FEF0CB3FA58D77A95353FBFC33D00F517CA9770193B740730"
+    },
+    {
+      "example_id": "flawed_fictions_393",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "677420CB4083DB6E4405BEB7D55BE5D32E621E5B0CBBEAF1719B5C376ECD610E"
+    },
+    {
+      "example_id": "flawed_fictions_394",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "81F102545F5DD85A6D1B67E7C20A5459ED1F4596543417013771C8DA5D65019C"
+    },
+    {
+      "example_id": "flawed_fictions_395",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "259B91C291CFB9780BB44656D10453F4F1185FD2310CFA6F782E1433011B5CB7"
+    },
+    {
+      "example_id": "flawed_fictions_396",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "8506EC85229016B7551AF97D565C3CEC5C07E6C6BB1751A7C686F55E44386A4A"
+    },
+    {
+      "example_id": "flawed_fictions_397",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "30FC69F3E32D21447B003F5041FEED9CE1FD003657A9877E1B5980C8C9902CB8"
+    },
+    {
+      "example_id": "flawed_fictions_398",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "9461656D1E72585F48943E7C46AFFF8B1D52F4723181F27E2A2345CF38A75DA2"
+    },
+    {
+      "example_id": "flawed_fictions_399",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "87902B5FD4258501AFB7668B3864F93CE1F56595F13FCE1923DA4B05071BDBD1"
+    },
+    {
+      "example_id": "flawed_fictions_400",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "F052C3A6C9148F70A15D546CFE7CD4129E2CE3163D4958D3BD417752837587D1"
+    },
+    {
+      "example_id": "flawed_fictions_401",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "65A5F8196674423B9E7A4FA15BB6F2FEB41C374D9A03032A66A3E57D4D607934"
+    },
+    {
+      "example_id": "flawed_fictions_402",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "D4D282BEF3A6B022D1C6B0771B0E6C1E5631CCDEB3EB848B9A3CD1E23DBF9864"
+    },
+    {
+      "example_id": "flawed_fictions_403",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "BDB345AAE63E98CF8F999B3D7F5A1EF83EAF97C1E0237A34479CCE67150B982B"
+    },
+    {
+      "example_id": "flawed_fictions_404",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "645DDC1124A3416B25E6DDBE2F748E7E0A2F066A010F39CFBDC0E868DB4A5EB7"
+    },
+    {
+      "example_id": "flawed_fictions_405",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E0B170B0CAD26EA49FDE1B6712BF152CAB50311F0AA3DFC2B285A86B964618DF"
+    },
+    {
+      "example_id": "flawed_fictions_406",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "ACBB41E95D11DCF7A78BE57511B0BDBAF46CAABA7ABBA8EAAA724C9C5B5E4879"
+    },
+    {
+      "example_id": "flawed_fictions_407",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "E3C63C9288DE5F2864C66E237F27893E7EAF55152E7479D08B96B383A0F749FD"
+    },
+    {
+      "example_id": "flawed_fictions_408",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "E072350CFDED814CD85C1B2FF3ED1C0601A34B7E93328AB7D2124A3780F22595"
+    },
+    {
+      "example_id": "flawed_fictions_409",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "EC633A4F357262978A2637A01133FE9666BD9795E05D3E214AA5BF693FA29F76"
+    },
+    {
+      "example_id": "flawed_fictions_410",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "5E12DF76402BCB98BBCC851D4B59CC6407F148DBDFBDC0588A5513610F87096D"
+    },
+    {
+      "example_id": "flawed_fictions_411",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "0D1947A2A02BBE3AB849F9DDA30D8608D6571BEA8846151FE1A81CF5D08A9632"
+    },
+    {
+      "example_id": "flawed_fictions_412",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "309677FC2F8167867B02EE67BF360A57AA3063C14F3A8D218D76F4B1AA32CD3A"
+    },
+    {
+      "example_id": "flawed_fictions_413",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "864B38CEDC1317F2730271084CFB3CC05D10006D35755B1795B579326D1CBEC9"
+    }
+  ]
+}

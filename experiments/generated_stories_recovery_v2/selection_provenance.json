@@ -1,0 +1,632 @@
+[
+  {
+    "pair_id": "qwen3_8b_001",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_001_A.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_001_B.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_002",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/qwen3_8b/qwen3_8b_002_A.json",
+        "recovery_dispatch_starts": 2,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/qwen3_8b/qwen3_8b_002_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_003",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_003_A.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_003_B.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_004",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_004_A.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_004_B.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_005",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_005_A.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_005_B.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_006",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_006_A.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_006_B.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_007",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_007_A.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_007_B.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_008",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_008_A.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_008_B.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_009",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_009_A.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_009_B.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "qwen3_8b_010",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_010_A.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_010_B.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_001",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_001_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_001_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_002",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_002_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_002_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_003",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_003_A.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_003_B.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_004",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_004_A.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "original",
+        "checkpoint": "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_004_B.json",
+        "recovery_dispatch_starts": 0,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_005",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_005_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_005_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_006",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_006_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_006_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_007",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_007_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_007_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_008",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_008_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_008_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_009",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_009_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_009_B.json",
+        "recovery_dispatch_starts": 2,
+        "remaining_recovery_budget": 0,
+        "status": "terminal_technical_B_OllamaTimeoutError"
+      }
+    ]
+  },
+  {
+    "pair_id": "llama3_1_8b_010",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_010_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_010_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_001",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_001_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_001_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "terminal_parsing_B"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_002",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_002_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_002_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "terminal_parsing_B"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_003",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_003_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_003_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "terminal_parsing_B"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_004",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_004_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_004_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "terminal_parsing_B"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_005",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_005_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_005_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "terminal_parsing_B"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_006",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_006_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_006_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "terminal_parsing_B"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_007",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_007_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_007_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "terminal_parsing_B"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_008",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_008_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_008_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_009",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_009_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_009_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "terminal_parsing_B"
+      }
+    ]
+  },
+  {
+    "pair_id": "mistral_7b_010",
+    "stages": [
+      {
+        "stage": "A",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_010_A.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "ok"
+      },
+      {
+        "stage": "B",
+        "source": "recovery",
+        "checkpoint": "experiments/generated_stories_recovery_v2/checkpoints/mistral_7b/mistral_7b_010_B.json",
+        "recovery_dispatch_starts": 1,
+        "remaining_recovery_budget": 0,
+        "status": "terminal_parsing_B"
+      }
+    ]
+  }
+]

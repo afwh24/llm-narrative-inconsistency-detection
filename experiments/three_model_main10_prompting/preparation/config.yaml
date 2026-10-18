@@ -1,0 +1,52 @@
+name: three_model_main10_prompting
+role: previously_inspected_exploratory_prompting_pilot
+baseline_configuration: configs/experiments/three_model_main10.json
+manifest: data/pilot/three_model_main10.json
+manifest_hash: 2BAEC9A7C2ADCBB1E1803F5F4103865A5415420BF79DDAF46629B90895132AE7
+run_root: experiments/three_model_main10_prompting/runs
+preparation_dir: experiments/three_model_main10_prompting/preparation
+generation:
+  temperature: 0.5
+  seed: 42
+  num_ctx: 16384
+  num_predict: 4096
+  top_k: 40
+  top_p: 0.9
+  repeat_penalty: 1.0
+runtime:
+  timeout_seconds: 300
+  max_retries: 3
+models:
+  qwen3:8b: qwen3-8b
+  llama3.1:8b: llama3-1-8b
+  mistral:7b: mistral-7b
+strategies:
+  vanilla:
+    version: vanilla_v1
+    path: prompts/benchmark/vanilla_v1.txt
+    hash: 68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA
+  evidence_first:
+    version: evidence_first_v2
+    path: prompts/experimental/evidence_first_v2.txt
+    hash: F370BAA50DEEA1CCC0C1276CE0C56BA6094CE6FD1657FA5507CEA4EF52924F9D
+  structured_check:
+    version: structured_check_v1
+    path: prompts/experimental/structured_check_v1.txt
+    hash: ABAE6625B0A4C1C68D5DB1158737A0EC393B226D2804135DF616C7F01C2C98CE
+  verify_revise:
+    version: verify_revise_v2
+    path: prompts/experimental/verify_revise_v2.txt
+    hash: 272F789C83596EE7B408F1D58210F6D71E7796FE174966C29023DAF4E8744131
+baseline_contract_sources:
+  - src/fyp/data/loader.py
+  - src/fyp/data/schema.py
+  - src/fyp/data/validation.py
+  - src/fyp/data/pilot.py
+  - src/fyp/models/base.py
+  - src/fyp/models/registry.py
+  - src/fyp/models/ollama_client.py
+  - src/fyp/prompting/parser.py
+  - src/fyp/prompting/records.py
+  - src/fyp/evaluation/evaluator.py
+  - src/fyp/evaluation/localization.py
+  - src/fyp/evaluation/metrics.py

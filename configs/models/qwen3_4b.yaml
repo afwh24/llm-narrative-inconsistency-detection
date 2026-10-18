@@ -1,0 +1,13 @@
+provider: ollama
+model: qwen3:4b
+
+generation:
+  temperature: 0.5
+  seed: 42
+  think: false
+  num_ctx: null
+  num_predict: 4096
+
+runtime:
+  timeout_seconds: 300
+  max_retries: 3

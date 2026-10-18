@@ -1,0 +1,62 @@
+{
+  "expected": 600,
+  "completed": 600,
+  "pending": 0,
+  "terminal_failures": 0,
+  "conditions": [
+    {
+      "condition": "qwen3_8b_baseline",
+      "pending": 0,
+      "completed": 100,
+      "successful": 100,
+      "terminal_failures": 0,
+      "status": "COMPLETE",
+      "output": "experiments\\main100_comparison_v2_ollama0400\\exports\\qwen3_8b_baseline.json"
+    },
+    {
+      "condition": "qwen3_8b_verify_revise",
+      "pending": 0,
+      "completed": 100,
+      "successful": 100,
+      "terminal_failures": 0,
+      "status": "COMPLETE",
+      "output": "experiments\\main100_comparison_v2_ollama0400\\exports\\qwen3_8b_verify_revise.json"
+    },
+    {
+      "condition": "llama3_1_8b_baseline",
+      "pending": 0,
+      "completed": 100,
+      "successful": 100,
+      "terminal_failures": 0,
+      "status": "COMPLETE",
+      "output": "experiments\\main100_comparison_v2_ollama0400\\exports\\llama3_1_8b_baseline.json"
+    },
+    {
+      "condition": "llama3_1_8b_verify_revise",
+      "pending": 0,
+      "completed": 100,
+      "successful": 100,
+      "terminal_failures": 0,
+      "status": "COMPLETE",
+      "output": "experiments\\main100_comparison_v2_ollama0400\\exports\\llama3_1_8b_verify_revise.json"
+    },
+    {
+      "condition": "mistral_7b_baseline",
+      "pending": 0,
+      "completed": 100,
+      "successful": 100,
+      "terminal_failures": 0,
+      "status": "COMPLETE",
+      "output": "experiments\\main100_comparison_v2_ollama0400\\exports\\mistral_7b_baseline.json"
+    },
+    {
+      "condition": "mistral_7b_verify_revise",
+      "pending": 0,
+      "completed": 100,
+      "successful": 100,
+      "terminal_failures": 0,
+      "status": "COMPLETE",
+      "output": "experiments\\main100_comparison_v2_ollama0400\\exports\\mistral_7b_verify_revise.json"
+    }
+  ]
+}

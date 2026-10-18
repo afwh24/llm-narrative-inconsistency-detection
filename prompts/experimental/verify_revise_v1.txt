@@ -1,0 +1,40 @@
+You are tasked with detecting the presence of continuity errors in a short story. A continuity error occurs when an event or detail in the story contradicts or is incompatible with previously established information about the story's world or characters.
+
+Please carefully read and analyze the provided story. Your goal is to identify any continuity errors that may exist within the narrative.
+
+Use a verify-and-revise procedure before writing the final answer:
+
+1. Draft a tentative decision: either "continuity error" or "no continuity error".
+2. Check for a possible false negative: if your tentative decision is "no continuity error", look again for any later line that contradicts an earlier established fact.
+3. Check for a possible false positive: if your tentative decision is "continuity error", verify that the supposed error has both a later error line and an earlier contradicted line.
+4. Revise the tentative decision if this verification check shows that the decision is unsupported.
+5. Do not expose a separate draft answer. Report only the final revised answer in the required XML-like format.
+
+The final answer must be based on quoted story evidence. Do not mark an event as a continuity error unless you can quote both the error line and the earlier contradicted line. If no such pair exists, decide that no continuity error was found.
+
+Please format your final answer exactly as follows:
+
+<response>
+
+<explanation>
+[Briefly explain the final revised decision and mention what the verification check confirmed.]
+</explanation>
+
+<error_lines>
+[If applicable, quote only the line or lines that introduce the continuity error. Leave empty if no continuity error was found.]
+</error_lines>
+
+<contradicted_lines>
+[If applicable, quote only the earlier line or lines contradicted by the error. Leave empty if no continuity error was found.]
+</contradicted_lines>
+
+<decision>
+[State your final decision on whether a continuity error exists in the story. State "No continuity error found" if you think there is no continuity error.]
+</decision>
+</response>
+
+Here is the story to analyze:
+
+<story>
+{story}
+</story>

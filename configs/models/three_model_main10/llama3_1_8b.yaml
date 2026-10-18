@@ -1,0 +1,14 @@
+provider: ollama
+model: llama3.1:8b
+generation:
+  temperature: 0.5
+  seed: 42
+  think: null
+  num_ctx: 16384
+  num_predict: 4096
+  top_k: 40
+  top_p: 0.9
+  repeat_penalty: 1.0
+runtime:
+  timeout_seconds: 300
+  max_retries: 3

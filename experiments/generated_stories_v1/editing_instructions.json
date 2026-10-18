@@ -1,0 +1,52 @@
+[
+  {
+    "writing_prompt_id": "prompt_001",
+    "category": "Character facts or relationships",
+    "editing_instruction": "Change one later statement about a named character's established family relationship or personal fact so it directly conflicts with an explicit earlier statement. Preserve the earlier statement. Do not use a revelation, mistaken belief, or change over time to explain it."
+  },
+  {
+    "writing_prompt_id": "prompt_002",
+    "category": "Character facts or relationships",
+    "editing_instruction": "Change one later explicit fact about a named character or relationship to contradict an earlier explicit fact about that same person. Preserve the earlier fact; do not explain away the conflict."
+  },
+  {
+    "writing_prompt_id": "prompt_003",
+    "category": "Timeline or event order",
+    "editing_instruction": "Alter one later time or event-order statement to make the established sequence impossible. Keep the earlier explicit time or ordering statement intact; avoid flashbacks, clock errors or unexplained ambiguity."
+  },
+  {
+    "writing_prompt_id": "prompt_004",
+    "category": "Timeline or event order",
+    "editing_instruction": "Alter one later timestamp or order-of-events statement to contradict a clear earlier timing constraint. Preserve that earlier constraint. Do not change other events or explain the conflict."
+  },
+  {
+    "writing_prompt_id": "prompt_005",
+    "category": "Location or movement",
+    "editing_instruction": "Change one later location statement so the same person is somewhere incompatible with an earlier explicit location or movement constraint at that time. Preserve the earlier constraint; do not add a journey or time skip."
+  },
+  {
+    "writing_prompt_id": "prompt_006",
+    "category": "Location or movement",
+    "editing_instruction": "Change one later location or route statement to conflict directly with an earlier explicit spatial or access constraint. Preserve the earlier statement and surrounding movement; do not add secret routes or reopen a closed route."
+  },
+  {
+    "writing_prompt_id": "prompt_007",
+    "category": "Object possession or properties",
+    "editing_instruction": "Change one later statement about a uniquely identified object's possession or fixed physical property to contradict an earlier explicit fact. Preserve the earlier fact; do not introduce a duplicate, transfer, repair or transformation."
+  },
+  {
+    "writing_prompt_id": "prompt_008",
+    "category": "Object possession or properties",
+    "editing_instruction": "Change one later statement about the same uniquely identified keepsake's physical property or possession to conflict with an earlier explicit fact. Preserve that fact; do not add duplicates, exchanges or physical changes."
+  },
+  {
+    "writing_prompt_id": "prompt_009",
+    "category": "Explicit fictional-world rules",
+    "editing_instruction": "Change one later event to violate one explicit universal rule of the lantern magic stated earlier. Preserve that rule; do not add an exception, new power, unreliable narration or explanation."
+  },
+  {
+    "writing_prompt_id": "prompt_010",
+    "category": "Explicit fictional-world rules",
+    "editing_instruction": "Change one later event so the technology violates an explicit operating rule established earlier. Preserve the rule; do not add an override, malfunction, exception or new mechanism."
+  }
+]

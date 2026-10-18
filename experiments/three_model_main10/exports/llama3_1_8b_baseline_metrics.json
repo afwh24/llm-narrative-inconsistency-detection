@@ -1,0 +1,38 @@
+{
+  "num_examples": 10,
+  "classification_metrics": {
+    "accuracy": 0.5,
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.6666666666666666
+  },
+  "localization_metrics": {
+    "ceeval_full": 0.1,
+    "ceeval_pos": 0.2,
+    "cont_error_lines": 0.2,
+    "contradicted_lines": 0.1
+  },
+  "failure_counts": {
+    "target_inference_failure": 0,
+    "target_parsing_failure": 0,
+    "missing_prediction": 0,
+    "malformed_prediction": 0,
+    "evaluator_inference_failure": 0,
+    "evaluator_parsing_failure": 0
+  },
+  "subsets": {
+    "flawed_fictions": {
+      "num_examples": 10,
+      "classification_metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      },
+      "localization_metrics": {
+        "ceeval_full": 0.1,
+        "ceeval_pos": 0.2
+      }
+    }
+  }
+}

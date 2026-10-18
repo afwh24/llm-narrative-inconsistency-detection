@@ -1,0 +1,529 @@
+[
+  {
+    "condition": "qwen3_8b_baseline",
+    "detector": "qwen3:8b",
+    "strategy": "vanilla",
+    "story_id": "s_ad55dc39c9afb9dbd4a8bc9c",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 1,
+    "predicted": 1,
+    "full": 1.0,
+    "error_side": 1.0,
+    "contradicted_side": 1.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/qwen3_8b_baseline/s_ad55dc39c9afb9dbd4a8bc9c.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [
+          "In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [
+          "The vibrations were off, slightly too high for the plant's liking.",
+          "She made a mental note to adjust the device later in the day."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [
+          "In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [
+          "As she began her morning routine, Kaelin noticed that one of the shoots had begun to wilt.",
+          "The vibrations were off, slightly too high for the plant's liking.",
+          "She made a mental note to adjust the device later in the day."
+        ],
+        "rejected_empty_fragments": []
+      }
+    }
+  },
+  {
+    "condition": "qwen3_8b_baseline",
+    "detector": "qwen3:8b",
+    "strategy": "vanilla",
+    "story_id": "s_f8ac30b95f49c23f78326f45",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 0,
+    "predicted": 0,
+    "full": 1.0,
+    "error_side": 1.0,
+    "contradicted_side": 1.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/qwen3_8b_baseline/s_f8ac30b95f49c23f78326f45.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      }
+    }
+  },
+  {
+    "condition": "qwen3_8b_verify_revise",
+    "detector": "qwen3:8b",
+    "strategy": "verify_revise",
+    "story_id": "s_ad55dc39c9afb9dbd4a8bc9c",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 1,
+    "predicted": 1,
+    "full": 1.0,
+    "error_side": 1.0,
+    "contradicted_side": 1.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/qwen3_8b_verify_revise/s_ad55dc39c9afb9dbd4a8bc9c.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [
+          "In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [
+          "The vibrations were off, slightly too high for the plant's liking.",
+          "She made a mental note to adjust the device later in the day."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [
+          "In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [
+          "She made a mental note to adjust the device later in the day."
+        ],
+        "rejected_empty_fragments": []
+      }
+    }
+  },
+  {
+    "condition": "qwen3_8b_verify_revise",
+    "detector": "qwen3:8b",
+    "strategy": "verify_revise",
+    "story_id": "s_f8ac30b95f49c23f78326f45",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 0,
+    "predicted": 0,
+    "full": 1.0,
+    "error_side": 1.0,
+    "contradicted_side": 1.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/qwen3_8b_verify_revise/s_f8ac30b95f49c23f78326f45.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      }
+    }
+  },
+  {
+    "condition": "llama3_1_8b_baseline",
+    "detector": "llama3.1:8b",
+    "strategy": "vanilla",
+    "story_id": "s_ad55dc39c9afb9dbd4a8bc9c",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 1,
+    "predicted": 1,
+    "full": 0.0,
+    "error_side": 0.0,
+    "contradicted_side": 0.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/llama3_1_8b_baseline/s_ad55dc39c9afb9dbd4a8bc9c.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [
+          "In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [
+          "The vibrations were off, slightly too high for the plant's liking.",
+          "She made a mental note to adjust the device later in the day."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [
+          "The Echoes device was linked to the wrist-mounted device, and it sent real-time data on the garden's vibrations, temperature, and water levels.",
+          "Kaelin's eyes scanned the data, her trained mind quickly pinpointing the problem.",
+          "The vibrations were off, slightly too high for the plant's liking.",
+          "She made a mental note to adjust the device later in the day."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [
+          "The Echoes device continued to hum, its vibrations resonating through the soil, nourishing the plants and sustaining life.",
+          "In the afternoon, Kaelin decided it was time to adjust the Echoes device.",
+          "She carefully entered the new settings, making sure the vibrations would be just right for the struggling shoot."
+        ],
+        "rejected_empty_fragments": []
+      }
+    }
+  },
+  {
+    "condition": "llama3_1_8b_baseline",
+    "detector": "llama3.1:8b",
+    "strategy": "vanilla",
+    "story_id": "s_f8ac30b95f49c23f78326f45",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 0,
+    "predicted": 1,
+    "full": 0.0,
+    "error_side": 0.0,
+    "contradicted_side": 0.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/llama3_1_8b_baseline/s_f8ac30b95f49c23f78326f45.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [
+          "The Echoes device continued to hum, its vibrations resonating through the soil, nourishing the plants and sustaining life."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [
+          "The Echoes device, a complex network of crystals and wires, hummed softly in the corner of the garden, its gentle thrumming a constant presence in Kaelin's life.",
+          "Kaelin's eyes scanned the data, her trained mind quickly pinpointing the problem.",
+          "The vibrations were off, slightly too high for the plant's liking."
+        ],
+        "rejected_empty_fragments": []
+      }
+    }
+  },
+  {
+    "condition": "llama3_1_8b_verify_revise",
+    "detector": "llama3.1:8b",
+    "strategy": "verify_revise",
+    "story_id": "s_ad55dc39c9afb9dbd4a8bc9c",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 1,
+    "predicted": 0,
+    "full": 0.0,
+    "error_side": 0.0,
+    "contradicted_side": 0.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/llama3_1_8b_verify_revise/s_ad55dc39c9afb9dbd4a8bc9c.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [
+          "In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [
+          "The vibrations were off, slightly too high for the plant's liking.",
+          "She made a mental note to adjust the device later in the day."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [
+          "In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [
+          "The vibrations were off, slightly too high for the plant's liking.",
+          "She made a mental note to adjust the device later in the day."
+        ],
+        "rejected_empty_fragments": []
+      }
+    }
+  },
+  {
+    "condition": "llama3_1_8b_verify_revise",
+    "detector": "llama3.1:8b",
+    "strategy": "verify_revise",
+    "story_id": "s_f8ac30b95f49c23f78326f45",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 0,
+    "predicted": 0,
+    "full": 1.0,
+    "error_side": 1.0,
+    "contradicted_side": 1.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/llama3_1_8b_verify_revise/s_f8ac30b95f49c23f78326f45.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [
+          "The Echoes device continued to hum, its vibrations resonating through the soil, nourishing the plants and sustaining life."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [
+          "Kaelin's eyes scanned the data, her trained mind quickly pinpointing the problem.",
+          "The vibrations were off, slightly too high for the plant's liking."
+        ],
+        "rejected_empty_fragments": []
+      }
+    }
+  },
+  {
+    "condition": "mistral_7b_baseline",
+    "detector": "mistral:7b",
+    "strategy": "vanilla",
+    "story_id": "s_ad55dc39c9afb9dbd4a8bc9c",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 1,
+    "predicted": 0,
+    "full": 0.0,
+    "error_side": 0.0,
+    "contradicted_side": 0.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/mistral_7b_baseline/s_ad55dc39c9afb9dbd4a8bc9c.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [
+          "In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [
+          "The vibrations were off, slightly too high for the plant's liking.",
+          "She made a mental note to adjust the device later in the day."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [
+          "In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [
+          "She made a mental note to adjust the device later in the day.",
+          "As she worked, she noticed that one of the plants was responding to the adjustment."
+        ],
+        "rejected_empty_fragments": []
+      }
+    }
+  },
+  {
+    "condition": "mistral_7b_baseline",
+    "detector": "mistral:7b",
+    "strategy": "vanilla",
+    "story_id": "s_f8ac30b95f49c23f78326f45",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 0,
+    "predicted": 0,
+    "full": 1.0,
+    "error_side": 1.0,
+    "contradicted_side": 1.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/mistral_7b_baseline/s_f8ac30b95f49c23f78326f45.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [
+          "The Echoes device continued to hum, its vibrations resonating through the soil, nourishing the plants and sustaining life."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [
+          "The Echoes device continued to hum, its vibrations resonating through the soil, nourishing the plants and sustaining life."
+        ],
+        "rejected_empty_fragments": []
+      }
+    }
+  },
+  {
+    "condition": "mistral_7b_verify_revise",
+    "detector": "mistral:7b",
+    "strategy": "verify_revise",
+    "story_id": "s_ad55dc39c9afb9dbd4a8bc9c",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 1,
+    "predicted": 1,
+    "full": 0.0,
+    "error_side": 0.0,
+    "contradicted_side": 0.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/mistral_7b_verify_revise/s_ad55dc39c9afb9dbd4a8bc9c.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [
+          "In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [
+          "The vibrations were off, slightly too high for the plant's liking.",
+          "She made a mental note to adjust the device later in the day."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [
+          "As she worked, she noticed that one of the plants was responding to the adjustment.",
+          "Its leaves began to perk up, and its color deepened."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [
+          "In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment."
+        ],
+        "rejected_empty_fragments": []
+      }
+    }
+  },
+  {
+    "condition": "mistral_7b_verify_revise",
+    "detector": "mistral:7b",
+    "strategy": "verify_revise",
+    "story_id": "s_f8ac30b95f49c23f78326f45",
+    "generator": "llama3.1:8b",
+    "category": "Explicit fictional-world rules",
+    "pair_id": "llama3_1_8b_010",
+    "writing_prompt_id": "prompt_010",
+    "gold": 0,
+    "predicted": 1,
+    "full": 0.0,
+    "error_side": 0.0,
+    "contradicted_side": 0.0,
+    "pending": false,
+    "terminal_failure": false,
+    "unparseable": false,
+    "checkpoint": "experiments/generated_stories_detection_v1/checkpoints/mistral_7b_verify_revise/s_f8ac30b95f49c23f78326f45.json",
+    "localization_trace": {
+      "gold_error": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "gold_contradicted": {
+        "sentences": [],
+        "rejected_empty_fragments": []
+      },
+      "predicted_error": {
+        "sentences": [
+          "In the afternoon, Kaelin decided it was time to adjust the Echoes device."
+        ],
+        "rejected_empty_fragments": []
+      },
+      "predicted_contradicted": {
+        "sentences": [
+          "The Echoes device, a complex network of crystals and wires, hummed softly in the corner of the garden, its gentle thrumming a constant presence in Kaelin's life."
+        ],
+        "rejected_empty_fragments": []
+      }
+    }
+  }
+]

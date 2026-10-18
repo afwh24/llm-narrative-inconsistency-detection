@@ -1,0 +1,10 @@
+{
+  "diagnostic_case": "llama_timeout",
+  "source_A": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_009_A.json",
+  "source_B": "experiments/generated_stories_recovery_v2/checkpoints/llama3_1_8b/llama3_1_8b_009_B.json",
+  "original_story_hash": "66e5d64b1be16f9879d23bbd538796c6740631b8b3981353d5b0f80736a422ea",
+  "manifest_hash": "ec81465fd4f4b4950c5a31bb3e4d7b5df24c162eb96d16839f5a967e3f7ae133",
+  "factor": "client deadline 600 -> 1200 seconds; identical application request body",
+  "runtime_revision": "Runtime revision 0.40.1 to 0.40.2; historical comparison confounded by runtime; same two cases and one-start budgets; no additional controls scheduled",
+  "diagnostic_checkpoint": "experiments/generated_stories_diagnostics_v2/llama_timeout/checkpoints/llama3_1_8b/llama3_1_8b_009_B.json"
+}

@@ -1,0 +1,569 @@
+{
+  "annotation_sha256": "1da2ab045e6ea697df026c4f4a40a11a160d788da62f0d86d3105ca67c55a6f9",
+  "annotation_file": "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple.csv",
+  "human_annotations_verbatim": [
+    {
+      "review_id": "qwen3_8b:flawed_fictions_123",
+      "story_id": "flawed_fictions_123",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Being stronger than the beasts does not contradict Hercules defeating them; its explanation also conflicts with its no-error decision. verify_revise: Fierce beasts can still be figuratively gentler than his wife. Both miss the wife's earlier trouble versus later peace, happiness and support."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_181",
+      "story_id": "flawed_fictions_181",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "Unsure",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Gold concern / baseline: Ripening through natural processes need not exclude the Fruit-Elves' assistance, so the alleged contradiction is debatable. verify_revise: The story explicitly allows occasional escapes and says the elves did not willingly permit harm; it never says the plant was stolen from the Elves of Darkness."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_241",
+      "story_id": "flawed_fictions_241",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "Unsure",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Gold concern / baseline: Bitter and delicious are not mutually exclusive, and refreshing does not mean non-bitter; the gold contradiction is questionable. verify_revise: The theft supplies a reason for the Goblin to stop returning. A helpful character changing behavior after mistreatment is not a contradiction."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_295",
+      "story_id": "flawed_fictions_295",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Its consistency judgment fits the magical microscopic scene. verify_revise: The town is a comparison and the other magician's mistaken guess; the drop of water never literally becomes a city."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_378",
+      "story_id": "flawed_fictions_378",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: The events consistently depict chivalrous conduct between enemies. verify_revise: Enmity does not prevent truthful praise or a generous rescue; the quoted defense of truth is spoken by the Knight Without Fear, not King Meladius."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_265",
+      "story_id": "flawed_fictions_265",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: The curse, imagined appearance and restored sight fit together. verify_revise: The man's initial confusion is explained by his wife's later clarification. A mistaken expectation followed by learning is not a continuity error."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_350",
+      "story_id": "flawed_fictions_350",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "Unsure",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Gold concern / baseline: The room 'seemed' starkly lit in a distressed first-person account, which may describe subjective perception rather than changed illumination. verify_revise: 'No continuity error was found' only repeats the conclusion and supplies no justification for assessing this ambiguity."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_385",
+      "story_id": "flawed_fictions_385",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Discusses the pea test but misses the prince's strong desire for a real princess versus the unexplained claim that his interest in marrying was weak. verify_revise: The museum observation is true but does not justify a no-error conclusion or address the prince's changed motivation."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_343",
+      "story_id": "flawed_fictions_343",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: A frightening legend and prisoners' choices do not contradict the door actually leading to freedom. verify_revise: Being Von Dee's former mistress could explain Cecile's knowledge; it does not imply she lacked that knowledge."
+    },
+    {
+      "review_id": "qwen3_8b:flawed_fictions_117",
+      "story_id": "flawed_fictions_117",
+      "model": "qwen3_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both: The accumulated letter can have been written before the Seronica sank; this is the tragic reveal, not a timeline contradiction. verify_revise also misquotes the ship's name as Seron'tica. Gold concern: An original Washington postmark does not necessarily exclude an additional London postmark, although no forwarding is stated."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_335",
+      "story_id": "flawed_fictions_335",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "Yes",
+      "notes": "Baseline: Reverses the ghee exchange and invents carrying limitations; lending a horse does not establish inability to carry objects. verify_revise: Correctly explains that the razor was exchanged for the woman's cloth/chudder, so possession is consistent."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_399",
+      "story_id": "flawed_fictions_399",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "Yes",
+      "notes": "Baseline: Invents a condition about eating the mouse faster and confuses the order and meaning of the dialogue. verify_revise: The increasingly hostile tone culminating in an attack fits the story and does not contradict earlier events."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_382",
+      "story_id": "flawed_fictions_382",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "Yes",
+      "notes": "Baseline: Invents a promise that the original doctor said the ABC book would locate stolen money; the servants actually reveal the hiding place. verify_revise: Correctly identifies the cock as the book illustration and the hidden servant's misunderstanding of the doctor's remark."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_253",
+      "story_id": "flawed_fictions_253",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Correctly identifies Blue Rose versus the established red/white factions, but also invents that the helpful outlaw is one of the earlier attacking robbers; marked No under the instruction to reject invented facts. verify_revise: Invents a change of allegiance and does not resolve the incompatible faction name."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_357",
+      "story_id": "flawed_fictions_357",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "Unsure",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Gold concern / baseline: The midnight-to-sunlight/evening sequence is suspicious, but elapsed time is not fixed; passage into the next day is possible. The baseline does not establish that these descriptions concern the same time. verify_revise: Emotional comfort does not resolve the questioned external lighting or timeline."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_193",
+      "story_id": "flawed_fictions_193",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Restored youth is not promised to last forever, so later aging is not contradictory. verify_revise: Its account of rejuvenation and remaining together does not address the actual change from a wattle-and-straw cottage to brick walls and a tiled roof before the temple transformation."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_300",
+      "story_id": "flawed_fictions_300",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Invents that the smaller birds sing; the text says they drum. verify_revise: Invents that perching implies no wings, despite the explicit statement that the birds drum with their wings."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_143",
+      "story_id": "flawed_fictions_143",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Confuses the mouse's tail with the cat's, attributes all requests to the cat and invents an irrelevant edibility contradiction. verify_revise: There is no universal rule requiring every character to demand another item; the baker's warning is given before the bread exchange and the chain then completes."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_354",
+      "story_id": "flawed_fictions_354",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Claims the straw withstands the coal even though it explicitly burns through and falls into the water; being windblown does not create the claimed contradiction. verify_revise: Escaping the mistress unnoticed does not prevent a different person finding the bean later."
+    },
+    {
+      "review_id": "llama3_1_8b:flawed_fictions_181",
+      "story_id": "flawed_fictions_181",
+      "model": "llama3_1_8b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Beginning daily tasks at dawn does not rule out guarding at night. verify_revise: Occasional escapes are explicitly established, so protecting fruit from escaped insects is consistent. Gold concern: Natural ripening need not exclude the elves' assistance; neither response demonstrates a valid contradiction."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_128",
+      "story_id": "flawed_fictions_128",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "Unsure",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Gold concern / baseline: Softy's kindness does not guarantee that priests approve of his informal address to a prince, and universal respect is not established by his nickname. The baseline's no-error reading is plausible. verify_revise: Invents that Softy demands the prince's name and confuses the two prince encounters; familiarity need not contradict kindness."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_196",
+      "story_id": "flawed_fictions_196",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Reviews the rat/cat sequence but misses the Spirit having come down from Heaven versus being 'still in the heavens.' verify_revise: Rats can be harmful to people while having served a useful purpose against the Evil One; these properties are compatible."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_255",
+      "story_id": "flawed_fictions_255",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "Unsure",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Gold concern / baseline: The story does not establish that being a Brahmin and being a farmer are incompatible; the change in designation alone is not a clear contradiction. Baseline also loosely attributes the mother's joke to the father. verify_revise: The dog and Rajah are explicitly the same transforming character; the cowherd condition does not imply two entities."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_236",
+      "story_id": "flawed_fictions_236",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Invents that the larger stable shelters multiple families, despite its correct no-error label. verify_revise: Confuses two different properties; Wojak compares a similar ruined house with his own, and the unfamiliar child confirms that the first location is not his home."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_374",
+      "story_id": "flawed_fictions_374",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: The foul-smelling meat explains the woman's successful escape and fits the king's behavior. verify_revise: Treats an explicitly explained exception as a contradiction; a tyrant can dismiss someone he finds repulsive."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_235",
+      "story_id": "flawed_fictions_235",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "Yes",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Correctly treats the hometown recollections and New York visit as compatible episodes. verify_revise: Invents a claim of no previous theaters and a performance five years earlier; the five years are the interval inside the play, which the narrator misunderstands."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_384",
+      "story_id": "flawed_fictions_384",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: Invents that the Waiting-woman is the Queen's daughter and that the Princess travels alone; the companion is explicitly introduced. verify_revise: The Waiting-woman's coercive claim and seizure of the horse do not contradict its previous ownership. Its evidence also combines text out of sequence."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_289",
+      "story_id": "flawed_fictions_289",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Both: The neighbors' accusations reflect partial observations and mistaken interpretations, not inconsistent narrated events. verify_revise also reverses the action: the man is clearing his driveway and adding gravel to the road, not clearing the road."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_262",
+      "story_id": "flawed_fictions_262",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "Unsure",
+      "verify_revise_explanation_supported": "Unsure",
+      "notes": "Gold concern / both: 'Initially' could refer to the first moment when the host and guests ignored the boy, before the servant approached, or could conflict with the servant encounter. Neither response addresses that ambiguity. Baseline overstates supernatural identification from the start; verify_revise overstates a definite revelation, since the ending explicitly withholds certainty about his identity."
+    },
+    {
+      "review_id": "mistral_7b:flawed_fictions_400",
+      "story_id": "flawed_fictions_400",
+      "model": "mistral_7b",
+      "baseline_explanation_supported": "No",
+      "verify_revise_explanation_supported": "No",
+      "notes": "Baseline: A faster wolf arriving before a girl on a long walk is not contradictory. verify_revise: Being eaten quickly does not imply the grandmother was healthy. Both miss the incompatible arrival order. Gold caveat: The claimed lack of time to disguise himself is explicitly explained by the immediate knock and is not independently a clear contradiction."
+    }
+  ],
+  "validation_errors": [],
+  "missing_required_judgments": [],
+  "form_complete": true,
+  "counts": {
+    "qwen3_8b": {
+      "judgments": {
+        "baseline": {
+          "Yes": 3,
+          "No": 4,
+          "Unsure": 3
+        },
+        "verify_revise": {
+          "Yes": 0,
+          "No": 10,
+          "Unsure": 0
+        }
+      },
+      "pair_ids": {
+        "verify_revise_better": [],
+        "baseline_better": [
+          "qwen3_8b:flawed_fictions_295",
+          "qwen3_8b:flawed_fictions_378",
+          "qwen3_8b:flawed_fictions_265"
+        ],
+        "both_yes": [],
+        "both_no": [
+          "qwen3_8b:flawed_fictions_123",
+          "qwen3_8b:flawed_fictions_385",
+          "qwen3_8b:flawed_fictions_343",
+          "qwen3_8b:flawed_fictions_117"
+        ],
+        "uncertain": [
+          "qwen3_8b:flawed_fictions_181",
+          "qwen3_8b:flawed_fictions_241",
+          "qwen3_8b:flawed_fictions_350"
+        ],
+        "no_explanation_separate": [],
+        "incomplete_or_invalid": []
+      },
+      "pair_counts": {
+        "verify_revise_better": 0,
+        "baseline_better": 3,
+        "both_yes": 0,
+        "both_no": 4,
+        "uncertain": 3,
+        "no_explanation_separate": 0,
+        "incomplete_or_invalid": 0
+      }
+    },
+    "llama3_1_8b": {
+      "judgments": {
+        "baseline": {
+          "Yes": 0,
+          "No": 9,
+          "Unsure": 1
+        },
+        "verify_revise": {
+          "Yes": 3,
+          "No": 7,
+          "Unsure": 0
+        }
+      },
+      "pair_ids": {
+        "verify_revise_better": [
+          "llama3_1_8b:flawed_fictions_335",
+          "llama3_1_8b:flawed_fictions_399",
+          "llama3_1_8b:flawed_fictions_382"
+        ],
+        "baseline_better": [],
+        "both_yes": [],
+        "both_no": [
+          "llama3_1_8b:flawed_fictions_253",
+          "llama3_1_8b:flawed_fictions_193",
+          "llama3_1_8b:flawed_fictions_300",
+          "llama3_1_8b:flawed_fictions_143",
+          "llama3_1_8b:flawed_fictions_354",
+          "llama3_1_8b:flawed_fictions_181"
+        ],
+        "uncertain": [
+          "llama3_1_8b:flawed_fictions_357"
+        ],
+        "no_explanation_separate": [],
+        "incomplete_or_invalid": []
+      },
+      "pair_counts": {
+        "verify_revise_better": 3,
+        "baseline_better": 0,
+        "both_yes": 0,
+        "both_no": 6,
+        "uncertain": 1,
+        "no_explanation_separate": 0,
+        "incomplete_or_invalid": 0
+      }
+    },
+    "mistral_7b": {
+      "judgments": {
+        "baseline": {
+          "Yes": 2,
+          "No": 5,
+          "Unsure": 3
+        },
+        "verify_revise": {
+          "Yes": 0,
+          "No": 9,
+          "Unsure": 1
+        }
+      },
+      "pair_ids": {
+        "verify_revise_better": [],
+        "baseline_better": [
+          "mistral_7b:flawed_fictions_374",
+          "mistral_7b:flawed_fictions_235"
+        ],
+        "both_yes": [],
+        "both_no": [
+          "mistral_7b:flawed_fictions_196",
+          "mistral_7b:flawed_fictions_236",
+          "mistral_7b:flawed_fictions_384",
+          "mistral_7b:flawed_fictions_289",
+          "mistral_7b:flawed_fictions_400"
+        ],
+        "uncertain": [
+          "mistral_7b:flawed_fictions_128",
+          "mistral_7b:flawed_fictions_255",
+          "mistral_7b:flawed_fictions_262"
+        ],
+        "no_explanation_separate": [],
+        "incomplete_or_invalid": []
+      },
+      "pair_counts": {
+        "verify_revise_better": 0,
+        "baseline_better": 2,
+        "both_yes": 0,
+        "both_no": 5,
+        "uncertain": 3,
+        "no_explanation_separate": 0,
+        "incomplete_or_invalid": 0
+      }
+    }
+  },
+  "explanation_presence_status": {
+    "qwen3_8b:flawed_fictions_123": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_181": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_241": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_295": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_378": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_265": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_350": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_385": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_343": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "qwen3_8b:flawed_fictions_117": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_335": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_399": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_382": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_253": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_357": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_193": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_300": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_143": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_354": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "llama3_1_8b:flawed_fictions_181": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_128": {
+      "baseline": "Review needed: multiple explanation sections",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_196": {
+      "baseline": "Review needed: multiple explanation sections",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_255": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_236": {
+      "baseline": "Review needed: multiple explanation sections",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_374": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_235": {
+      "baseline": "Review needed: multiple explanation sections",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_384": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_289": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_262": {
+      "baseline": "Review needed: multiple explanation sections",
+      "verify_revise": "Explanation text present (support not assessed)"
+    },
+    "mistral_7b:flawed_fictions_400": {
+      "baseline": "Explanation text present (support not assessed)",
+      "verify_revise": "Explanation text present (support not assessed)"
+    }
+  },
+  "no_explanation_responses": 0,
+  "source_verified_review_ids": [
+    "qwen3_8b:flawed_fictions_123",
+    "qwen3_8b:flawed_fictions_181",
+    "qwen3_8b:flawed_fictions_241",
+    "qwen3_8b:flawed_fictions_295",
+    "qwen3_8b:flawed_fictions_378",
+    "qwen3_8b:flawed_fictions_265",
+    "qwen3_8b:flawed_fictions_350",
+    "qwen3_8b:flawed_fictions_385",
+    "qwen3_8b:flawed_fictions_343",
+    "qwen3_8b:flawed_fictions_117",
+    "llama3_1_8b:flawed_fictions_335",
+    "llama3_1_8b:flawed_fictions_399",
+    "llama3_1_8b:flawed_fictions_382",
+    "llama3_1_8b:flawed_fictions_253",
+    "llama3_1_8b:flawed_fictions_357",
+    "llama3_1_8b:flawed_fictions_193",
+    "llama3_1_8b:flawed_fictions_300",
+    "llama3_1_8b:flawed_fictions_143",
+    "llama3_1_8b:flawed_fictions_354",
+    "llama3_1_8b:flawed_fictions_181",
+    "mistral_7b:flawed_fictions_128",
+    "mistral_7b:flawed_fictions_196",
+    "mistral_7b:flawed_fictions_255",
+    "mistral_7b:flawed_fictions_236",
+    "mistral_7b:flawed_fictions_374",
+    "mistral_7b:flawed_fictions_235",
+    "mistral_7b:flawed_fictions_384",
+    "mistral_7b:flawed_fictions_289",
+    "mistral_7b:flawed_fictions_262",
+    "mistral_7b:flawed_fictions_400"
+  ],
+  "selected_comparisons": 30,
+  "distinct_stories": 29,
+  "input_hashes": {
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\human_review_analysis_93a0517b8da4.json": "cdb43ed0779290d000dcbf93364976e56b485f6205575103b9b3ad178805704c",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\human_review_summary_93a0517b8da4.md": "47ebc8eac86ed33d64ed4a465d0886a141dd9de6bf3131665c47b58e7cf9e6bf",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple.csv": "1da2ab045e6ea697df026c4f4a40a11a160d788da62f0d86d3105ca67c55a6f9",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple.md": "824be963c6bec64ab24d783ff139765db78f290431fe4a3a629b61279a9c60e7",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple_initial.json": "13f9ccf94a8d7d6afe4601595eb24cc72a1e8c5696ddd6300cba7c80fe18ea5a",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\manual_review_simple_status_4b525d9defb3.json": "b16ea929933e9a96eab62fee3526183ec2cfe59554b79ac59b04714c4261ffd4",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\README.md": "54aa00bccbca5ac9c1875c95ea86198d0fb24449c312fd3d0f7b49883b4a90be",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\review.csv": "3982b3a3d93b5af9142106ee2e171e4803300267a048f3918a6f5e8220b137fe",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\review.md": "cbb0ac6e23620240b1498a1266c4a6081d7453af93ab14ed27df52fbf337b707",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\review_rows.json": "8e5d62c41d4d1adba3ce67c3f4dfbe06c833dd67600908ca4be70fb94958a64f",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\selection_manifest.json": "48dfe7109a49a475c024fcf881efb6b1964c715d896616b6561c14294c37bae3",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\validation.json": "11cded27c0eec067b2e58a01b81210741c6a35845b07c7bca58d1e97e5b4a2d6",
+    "experiments\\main100_comparison_v2_ollama0400\\analysis\\human_review_v1\\readability_history\\manual_review_simple_55152142ad10.md": "55152142ad109a40ff43aa0733c25593070c067779e029e2519f5c3aaba6559a"
+  },
+  "raw_input_hashes": {
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__qwen3_8b_baseline/predictions.jsonl": "e0e05aea9b0ff93ace1eeba882c39d1d0b74ff6c0101682b0c56e51b2454fe13",
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__qwen3_8b_verify_revise/predictions.jsonl": "c026fc9417d94226705724f132b7e3681bb7bb79b75bb954637e77e994136c4c",
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__llama3_1_8b_baseline/predictions.jsonl": "d44361a715f306394a65b0c3790d3704c0210040ef0edc99cba94f8a06d79f12",
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__llama3_1_8b_verify_revise/predictions.jsonl": "174dfa8fb71a89aa9b9916d754e40db08fadf0e771c6e09774fa9a8bb2b30cc2",
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__mistral_7b_baseline/predictions.jsonl": "dc856da78dad095a38ab3d532f880f942fe113a06d4cdf76bbcdf89ee060c46f",
+    "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__mistral_7b_verify_revise/predictions.jsonl": "859e000052ab367df6c191c9a0d3485b5596eccdfccd77aef903989a2455b1e6"
+  },
+  "analysis_source_sha256": "33b1ca5128594c5e1985bccea1bff0363d37596975cf3d85e11c2b5d573e91fb",
+  "inference_calls": 0,
+  "scope": "Selected, unblinded diagnostic sample. Counts are descriptive of entered annotations only; no population estimates."
+}

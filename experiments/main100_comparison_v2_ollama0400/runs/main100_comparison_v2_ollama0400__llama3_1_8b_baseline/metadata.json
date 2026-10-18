@@ -1,0 +1,1733 @@
+{
+  "benchmark_strategy": "vanilla",
+  "completed_example_count": 100,
+  "configuration_fingerprint": "840999A8AC7CF8B2A25CFC26CD4198974442796B8C77E431486AE7132326AFCA",
+  "context_configuration": {
+    "num_ctx": 16384,
+    "num_predict": 4096
+  },
+  "dataset": {
+    "expected_subset_counts": {
+      "flawed_fictions": 414
+    },
+    "fixed_manifest": "experiments\\main100_comparison_v1\\evaluator_only\\manifest.json",
+    "fixed_manifest_example_count": 100,
+    "fixed_manifest_hash": "EF02FC8910579FF26F8D395704C1DB86C4EB83DEDA0748ADAA5336EFCD66E8ED",
+    "fixed_manifest_name": "main100_comparison_v1",
+    "fixed_manifest_role": "evaluation",
+    "identity": "kahuja/flawed-fictions",
+    "raw_data_dir": "data\\raw\\flawed-fictions",
+    "selected_limit": null,
+    "subsets": [
+      "flawed_fictions"
+    ],
+    "version": "733717281afdb715538b753f0f85ef7d55568b85"
+  },
+  "dependencies": {
+    "nltk": "3.10.3",
+    "pyarrow": "25.0.1"
+  },
+  "end_timestamp": "2026-10-07T13:43:02.200207Z",
+  "expected_example_count": 100,
+  "experiment_type": "main100_comparison_v2_ollama0400",
+  "failed_example_count": 0,
+  "git": {
+    "commit": "00e895d9168d2db3369de9cf44328bb80878ec85",
+    "dirty": true
+  },
+  "model": "llama3.1:8b",
+  "model_configuration": {
+    "generation": {
+      "num_ctx": 16384,
+      "num_predict": 4096,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0.5,
+      "think": null,
+      "top_k": 40,
+      "top_p": 0.9
+    },
+    "runtime": {
+      "max_retries": 3,
+      "timeout_seconds": 300
+    },
+    "source_path": "configs\\models\\three_model_main10\\llama3_1_8b.yaml"
+  },
+  "ollama_model": "llama3.1:8b",
+  "ollama_version": "0.40.0",
+  "pilot_provenance": {
+    "conditions": [
+      {
+        "export": "experiments/main100_comparison_v2_ollama0400/exports/qwen3_8b_baseline.json",
+        "id": "qwen3_8b_baseline",
+        "label": "baseline",
+        "model": "qwen3:8b",
+        "model_config": "configs/models/three_model_main10/qwen3_8b.yaml",
+        "partial_export": "experiments/main100_comparison_v2_ollama0400/exports/partial/qwen3_8b_baseline.partial.json",
+        "run_dir": "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__qwen3_8b_baseline",
+        "run_id": "main100_comparison_v2_ollama0400__qwen3_8b_baseline",
+        "strategy": "vanilla",
+        "version": "vanilla_v1"
+      },
+      {
+        "export": "experiments/main100_comparison_v2_ollama0400/exports/qwen3_8b_verify_revise.json",
+        "id": "qwen3_8b_verify_revise",
+        "label": "verify_revise",
+        "model": "qwen3:8b",
+        "model_config": "configs/models/three_model_main10/qwen3_8b.yaml",
+        "partial_export": "experiments/main100_comparison_v2_ollama0400/exports/partial/qwen3_8b_verify_revise.partial.json",
+        "run_dir": "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__qwen3_8b_verify_revise",
+        "run_id": "main100_comparison_v2_ollama0400__qwen3_8b_verify_revise",
+        "strategy": "verify_revise",
+        "version": "verify_revise_v2"
+      },
+      {
+        "export": "experiments/main100_comparison_v2_ollama0400/exports/llama3_1_8b_baseline.json",
+        "id": "llama3_1_8b_baseline",
+        "label": "baseline",
+        "model": "llama3.1:8b",
+        "model_config": "configs/models/three_model_main10/llama3_1_8b.yaml",
+        "partial_export": "experiments/main100_comparison_v2_ollama0400/exports/partial/llama3_1_8b_baseline.partial.json",
+        "run_dir": "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__llama3_1_8b_baseline",
+        "run_id": "main100_comparison_v2_ollama0400__llama3_1_8b_baseline",
+        "strategy": "vanilla",
+        "version": "vanilla_v1"
+      },
+      {
+        "export": "experiments/main100_comparison_v2_ollama0400/exports/llama3_1_8b_verify_revise.json",
+        "id": "llama3_1_8b_verify_revise",
+        "label": "verify_revise",
+        "model": "llama3.1:8b",
+        "model_config": "configs/models/three_model_main10/llama3_1_8b.yaml",
+        "partial_export": "experiments/main100_comparison_v2_ollama0400/exports/partial/llama3_1_8b_verify_revise.partial.json",
+        "run_dir": "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__llama3_1_8b_verify_revise",
+        "run_id": "main100_comparison_v2_ollama0400__llama3_1_8b_verify_revise",
+        "strategy": "verify_revise",
+        "version": "verify_revise_v2"
+      },
+      {
+        "export": "experiments/main100_comparison_v2_ollama0400/exports/mistral_7b_baseline.json",
+        "id": "mistral_7b_baseline",
+        "label": "baseline",
+        "model": "mistral:7b",
+        "model_config": "configs/models/three_model_main10/mistral_7b.yaml",
+        "partial_export": "experiments/main100_comparison_v2_ollama0400/exports/partial/mistral_7b_baseline.partial.json",
+        "run_dir": "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__mistral_7b_baseline",
+        "run_id": "main100_comparison_v2_ollama0400__mistral_7b_baseline",
+        "strategy": "vanilla",
+        "version": "vanilla_v1"
+      },
+      {
+        "export": "experiments/main100_comparison_v2_ollama0400/exports/mistral_7b_verify_revise.json",
+        "id": "mistral_7b_verify_revise",
+        "label": "verify_revise",
+        "model": "mistral:7b",
+        "model_config": "configs/models/three_model_main10/mistral_7b.yaml",
+        "partial_export": "experiments/main100_comparison_v2_ollama0400/exports/partial/mistral_7b_verify_revise.partial.json",
+        "run_dir": "experiments/main100_comparison_v2_ollama0400/runs/main100_comparison_v2_ollama0400__mistral_7b_verify_revise",
+        "run_id": "main100_comparison_v2_ollama0400__mistral_7b_verify_revise",
+        "strategy": "verify_revise",
+        "version": "verify_revise_v2"
+      }
+    ],
+    "context_budgets": {
+      "llama3.1:8b": {
+        "configured_context": 16384,
+        "estimated_f16_kv_cache_bytes": 2147483648,
+        "largest_prompt_utf8_bytes": 7202,
+        "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+        "output_allowance": 4096,
+        "required_token_upper_bound": 13803,
+        "supported_context": 131072,
+        "wrapper_and_special_token_bound": 2505
+      },
+      "mistral:7b": {
+        "configured_context": 16384,
+        "estimated_f16_kv_cache_bytes": 2147483648,
+        "largest_prompt_utf8_bytes": 7202,
+        "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+        "output_allowance": 4096,
+        "required_token_upper_bound": 13121,
+        "supported_context": 32768,
+        "wrapper_and_special_token_bound": 1823
+      },
+      "qwen3:8b": {
+        "configured_context": 16384,
+        "estimated_f16_kv_cache_bytes": 2415919104,
+        "largest_prompt_utf8_bytes": 7202,
+        "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+        "output_allowance": 4096,
+        "required_token_upper_bound": 14045,
+        "supported_context": 40960,
+        "wrapper_and_special_token_bound": 2747
+      }
+    },
+    "dependencies": {
+      "nltk": "3.10.3",
+      "pyarrow": "25.0.1"
+    },
+    "expected_records": 600,
+    "generations_during_preparation": 0,
+    "git": {
+      "commit": "00e895d9168d2db3369de9cf44328bb80878ec85",
+      "dirty": true
+    },
+    "manifest_hash": "EF02FC8910579FF26F8D395704C1DB86C4EB83DEDA0748ADAA5336EFCD66E8ED",
+    "models": {
+      "llama3.1:8b": {
+        "available": true,
+        "context_budget": {
+          "configured_context": 16384,
+          "estimated_f16_kv_cache_bytes": 2147483648,
+          "largest_prompt_utf8_bytes": 7202,
+          "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+          "output_allowance": 4096,
+          "required_token_upper_bound": 13803,
+          "supported_context": 131072,
+          "wrapper_and_special_token_bound": 2505
+        },
+        "identity": {
+          "capabilities": [
+            "completion",
+            "tools"
+          ],
+          "details": {
+            "families": [
+              "llama"
+            ],
+            "family": "llama",
+            "format": "gguf",
+            "parameter_size": "8.0B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+          "model_info": {
+            "general.architecture": "llama",
+            "general.basename": "Meta-Llama-3.1",
+            "general.file_type": 15,
+            "general.finetune": "Instruct",
+            "general.languages": [
+              "en",
+              "de",
+              "fr",
+              "it",
+              "pt",
+              "hi",
+              "es",
+              "th"
+            ],
+            "general.license": "llama3.1",
+            "general.parameter_count": 8030261312,
+            "general.quantization_version": 2,
+            "general.size_label": "8B",
+            "general.tags": [
+              "facebook",
+              "meta",
+              "pytorch",
+              "llama",
+              "llama-3",
+              "text-generation"
+            ],
+            "general.type": "model",
+            "llama.attention.head_count": 32,
+            "llama.attention.head_count_kv": 8,
+            "llama.attention.layer_norm_rms_epsilon": 1e-05,
+            "llama.block_count": 32,
+            "llama.context_length": 131072,
+            "llama.embedding_length": 4096,
+            "llama.feed_forward_length": 14336,
+            "llama.rope.dimension_count": 128,
+            "llama.rope.freq_base": 500000,
+            "llama.vocab_size": 128256,
+            "tokenizer.ggml.bos_token_id": 128000,
+            "tokenizer.ggml.eos_token_id": 128009,
+            "tokenizer.ggml.merges": [],
+            "tokenizer.ggml.model": "gpt2",
+            "tokenizer.ggml.pre": "llama-bpe",
+            "tokenizer.ggml.token_type": [],
+            "tokenizer.ggml.tokens": []
+          },
+          "parameters": "stop                           \"<|start_header_id|>\"\nstop                           \"<|end_header_id|>\"\nstop                           \"<|eot_id|>\"",
+          "size_bytes": 4920753328,
+          "system": "",
+          "tag": "llama3.1:8b",
+          "template": "{{- if or .System .Tools }}<|start_header_id|>system<|end_header_id|>\n{{- if .System }}\n\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\nCutting Knowledge Date: December 2023\n\nWhen you receive a tool call response, use the output to format an answer to the orginal user question.\n\nYou are a helpful assistant with tool calling capabilities.\n{{- end }}<|eot_id|>\n{{- end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 }}\n{{- if eq .Role \"user\" }}<|start_header_id|>user<|end_header_id|>\n{{- if and $.Tools $last }}\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}. Do not use variables.\n\n{{ range $.Tools }}\n{{- . }}\n{{ end }}\nQuestion: {{ .Content }}<|eot_id|>\n{{- else }}\n\n{{ .Content }}<|eot_id|>\n{{- end }}{{ if $last }}<|start_header_id|>assistant<|end_header_id|>\n\n{{ end }}\n{{- else if eq .Role \"assistant\" }}<|start_header_id|>assistant<|end_header_id|>\n{{- if .ToolCalls }}\n{{ range .ToolCalls }}\n{\"name\": \"{{ .Function.Name }}\", \"parameters\": {{ .Function.Arguments }}}{{ end }}\n{{- else }}\n\n{{ .Content }}\n{{- end }}{{ if not $last }}<|eot_id|>{{ end }}\n{{- else if eq .Role \"tool\" }}<|start_header_id|>ipython<|end_header_id|>\n\n{{ .Content }}<|eot_id|>{{ if $last }}<|start_header_id|>assistant<|end_header_id|>\n\n{{ end }}\n{{- end }}\n{{- end }}",
+          "template_hash": "948AF2743FC78A328DCB3B0F5A31B3D75F415840FDB699E8B1235978392ECF85"
+        },
+        "thinking": "not_applicable_option_omitted"
+      },
+      "mistral:7b": {
+        "available": true,
+        "context_budget": {
+          "configured_context": 16384,
+          "estimated_f16_kv_cache_bytes": 2147483648,
+          "largest_prompt_utf8_bytes": 7202,
+          "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+          "output_allowance": 4096,
+          "required_token_upper_bound": 13121,
+          "supported_context": 32768,
+          "wrapper_and_special_token_bound": 1823
+        },
+        "identity": {
+          "capabilities": [
+            "completion",
+            "tools"
+          ],
+          "details": {
+            "families": [
+              "llama"
+            ],
+            "family": "llama",
+            "format": "gguf",
+            "parameter_size": "7.2B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+          "model_info": {
+            "general.architecture": "llama",
+            "general.file_type": 15,
+            "general.parameter_count": 7248023552,
+            "general.quantization_version": 2,
+            "llama.attention.head_count": 32,
+            "llama.attention.head_count_kv": 8,
+            "llama.attention.layer_norm_rms_epsilon": 1e-05,
+            "llama.block_count": 32,
+            "llama.context_length": 32768,
+            "llama.embedding_length": 4096,
+            "llama.feed_forward_length": 14336,
+            "llama.rope.dimension_count": 128,
+            "llama.rope.freq_base": 1000000,
+            "llama.vocab_size": 32768,
+            "tokenizer.ggml.add_bos_token": true,
+            "tokenizer.ggml.add_eos_token": false,
+            "tokenizer.ggml.bos_token_id": 1,
+            "tokenizer.ggml.eos_token_id": 2,
+            "tokenizer.ggml.model": "llama",
+            "tokenizer.ggml.pre": "default",
+            "tokenizer.ggml.scores": [],
+            "tokenizer.ggml.token_type": [],
+            "tokenizer.ggml.tokens": [],
+            "tokenizer.ggml.unknown_token_id": 0
+          },
+          "parameters": "stop                           \"[INST]\"\nstop                           \"[/INST]\"",
+          "size_bytes": 4372824384,
+          "system": "",
+          "tag": "mistral:7b",
+          "template": "{{- if .Messages }}\n{{- range $index, $_ := .Messages }}\n{{- if eq .Role \"user\" }}\n{{- if and (eq (len (slice $.Messages $index)) 1) $.Tools }}[AVAILABLE_TOOLS] {{ $.Tools }}[/AVAILABLE_TOOLS]\n{{- end }}[INST] {{ if and $.System (eq (len (slice $.Messages $index)) 1) }}{{ $.System }}\n\n{{ end }}{{ .Content }}[/INST]\n{{- else if eq .Role \"assistant\" }}\n{{- if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}[TOOL_CALLS] [\n{{- range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{- end }}]\n{{- end }}</s>\n{{- else if eq .Role \"tool\" }}[TOOL_RESULTS] {\"content\": {{ .Content }}} [/TOOL_RESULTS]\n{{- end }}\n{{- end }}\n{{- else }}[INST] {{ if .System }}{{ .System }}\n\n{{ end }}{{ .Prompt }}[/INST]\n{{- end }}{{ .Response }}\n{{- if .Response }}</s>\n{{- end }}",
+          "template_hash": "1FF5B64B61B9A63146475A24F70D3CA2FD6FDEEC44247987163479968896FC0B"
+        },
+        "thinking": "not_applicable_option_omitted"
+      },
+      "qwen3:8b": {
+        "available": true,
+        "context_budget": {
+          "configured_context": 16384,
+          "estimated_f16_kv_cache_bytes": 2415919104,
+          "largest_prompt_utf8_bytes": 7202,
+          "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+          "output_allowance": 4096,
+          "required_token_upper_bound": 14045,
+          "supported_context": 40960,
+          "wrapper_and_special_token_bound": 2747
+        },
+        "identity": {
+          "capabilities": [
+            "completion",
+            "tools",
+            "thinking"
+          ],
+          "details": {
+            "families": [
+              "qwen3"
+            ],
+            "family": "qwen3",
+            "format": "gguf",
+            "parameter_size": "8.2B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+          "model_info": {
+            "general.architecture": "qwen3",
+            "general.basename": "Qwen3",
+            "general.file_type": 15,
+            "general.license": "apache-2.0",
+            "general.parameter_count": 8190735360,
+            "general.quantization_version": 2,
+            "general.size_label": "8B",
+            "general.type": "model",
+            "qwen3.attention.head_count": 32,
+            "qwen3.attention.head_count_kv": 8,
+            "qwen3.attention.key_length": 128,
+            "qwen3.attention.layer_norm_rms_epsilon": 1e-06,
+            "qwen3.attention.value_length": 128,
+            "qwen3.block_count": 36,
+            "qwen3.context_length": 40960,
+            "qwen3.embedding_length": 4096,
+            "qwen3.feed_forward_length": 12288,
+            "qwen3.rope.freq_base": 1000000,
+            "tokenizer.ggml.add_bos_token": false,
+            "tokenizer.ggml.bos_token_id": 151643,
+            "tokenizer.ggml.eos_token_id": 151645,
+            "tokenizer.ggml.merges": [],
+            "tokenizer.ggml.model": "gpt2",
+            "tokenizer.ggml.padding_token_id": 151643,
+            "tokenizer.ggml.pre": "qwen2",
+            "tokenizer.ggml.token_type": [],
+            "tokenizer.ggml.tokens": []
+          },
+          "parameters": "stop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95\nrepeat_penalty                 1",
+          "size_bytes": 5225388164,
+          "system": "",
+          "tag": "qwen3:8b",
+          "template": "\n{{- $lastUserIdx := -1 -}}\n{{- range $idx, $msg := .Messages -}}\n{{- if eq $msg.Role \"user\" }}{{ $lastUserIdx = $idx }}{{ end -}}\n{{- end }}\n{{- if or .System .Tools }}<|im_start|>system\n{{ if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end -}}\n<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}\n{{- if and $.IsThinkSet (eq $i $lastUserIdx) }}\n   {{- if $.Think -}}\n      {{- \" \"}}/think\n   {{- else -}}\n      {{- \" \"}}/no_think\n   {{- end -}}\n{{- end }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if (and $.IsThinkSet (and .Thinking (or $last (gt $i $lastUserIdx)))) -}}\n<think>{{ .Thinking }}</think>\n{{ end -}}\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}<tool_call>\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}</tool_call>\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n{{ if and $.IsThinkSet (not $.Think) -}}\n<think>\n\n</think>\n\n{{ end -}}\n{{ end }}\n{{- end }}",
+          "template_hash": "AE370D884F108D16E7CC8FD5259EBC5773A0AFA6E078B11F4ED7E39A27E0DFC4"
+        },
+        "thinking": "disabled"
+      }
+    },
+    "ollama_version": "0.40.0",
+    "prepared_at": "2026-10-07T09:34:37.182460+00:00",
+    "rendered_prompts": {
+      "vanilla": [
+        {
+          "example_id": "flawed_fictions_188",
+          "prompt_hash": "53F660AB005DC7BFFF8ECA6C77E8A757B7327305FF3A05184D3BCC5FD349B980",
+          "prompt_utf8_bytes": 4600,
+          "story_hash": "E857842DFCDCAC906DCAE5D67FCE71BDFCB68238A157EFA71C6D2A43F9B7325D"
+        },
+        {
+          "example_id": "flawed_fictions_265",
+          "prompt_hash": "835950DA7337AD2B1BA21E891ACC0C309D447C340497538DE3ABADA80FD40B19",
+          "prompt_utf8_bytes": 5703,
+          "story_hash": "6B3B5179D99EEAAB97A43503FE5F568FDD69A7C2A5A4BCAA22B5219FDDB32653"
+        },
+        {
+          "example_id": "flawed_fictions_380",
+          "prompt_hash": "792461F72C04A6990AFD7E924F9DB9BB01002B0527A657B9E48BAFC9A5EDB9EA",
+          "prompt_utf8_bytes": 5078,
+          "story_hash": "1657B4BD62793593E30626141B8958E2450CDCD94FC79B7AC94D7C76E9E46D04"
+        },
+        {
+          "example_id": "flawed_fictions_309",
+          "prompt_hash": "AA068796C24EBE8DFDD61CD1EF94B0A6D68589A262C3A2897D92EB02268BDAA6",
+          "prompt_utf8_bytes": 4276,
+          "story_hash": "B844DD15F3F24C073DCB63DB6743874ED35F0C1DA67F220D524FE1BB72BF493A"
+        },
+        {
+          "example_id": "flawed_fictions_153",
+          "prompt_hash": "F7A7B0DEA42FE03468CF4FC3359184CCF1CE2964918FDEF1399D74EAEF96EE62",
+          "prompt_utf8_bytes": 5859,
+          "story_hash": "CF506857BFA77BEFF7347BC9794796DF9503BF4D50097E869D76DF22A26C5DF0"
+        },
+        {
+          "example_id": "flawed_fictions_307",
+          "prompt_hash": "6EFFF6ECA73F306D7135A586870051464CAAD3C862ADBE32BBE50DC8D6FFE006",
+          "prompt_utf8_bytes": 5422,
+          "story_hash": "7F3B894BBE17C15A2E10218A7240E47FF859175C67C39170C963260B6D0C1D69"
+        },
+        {
+          "example_id": "flawed_fictions_317",
+          "prompt_hash": "9F7EC8A7DB268F03AF26DE7EEBEBBF2419003AE70D01A3056C29DF8767AC7AE4",
+          "prompt_utf8_bytes": 3948,
+          "story_hash": "0800D4B7CCB25C6EE70F4A7072CA80DAC84B8F3576A07E21C7B62D1AB64B2CCB"
+        },
+        {
+          "example_id": "flawed_fictions_235",
+          "prompt_hash": "84F1A76AAA7BB484A95089DF8AD84A50D97BAB46027E46B52E7ED2199E7D1222",
+          "prompt_utf8_bytes": 5408,
+          "story_hash": "94747C9943D83327F7288341E7ABBD44AEECA9C5CCD91DEAB59F67D997C8D499"
+        },
+        {
+          "example_id": "flawed_fictions_413",
+          "prompt_hash": "CF54BA5FF60286C45B797CB75FC2A19CD14D67431C01EFB3AC36AA0E7D5C7EF6",
+          "prompt_utf8_bytes": 4949,
+          "story_hash": "E0EEE57E5218C9C7CBB8A83F4BBB3B7E5CE8DCC52DFDC099D0D3DA2D6F24C30D"
+        },
+        {
+          "example_id": "flawed_fictions_331",
+          "prompt_hash": "46B77DA1E6C1EC1960F8E7D8D733ECF95A61096D98796E3EB1D5904997A6A354",
+          "prompt_utf8_bytes": 4965,
+          "story_hash": "E14AA430607B717B010059F7F340C8871E344B9E433D6343C6B2380D3DE32999"
+        },
+        {
+          "example_id": "flawed_fictions_378",
+          "prompt_hash": "154E8FDEE4944F08D5AE254CFF9A8F733DC21D851A9F2AD4D308BE620A478890",
+          "prompt_utf8_bytes": 4900,
+          "story_hash": "E1FB3E04129E7EF6ECB8E8FE78D16250BCBA6AE33BCE914EAC584353924ADED0"
+        },
+        {
+          "example_id": "flawed_fictions_181",
+          "prompt_hash": "A59F3F1B522DBF8480527614274A28F1023A67FEE426CF4771C604BACD9A648F",
+          "prompt_utf8_bytes": 5751,
+          "story_hash": "400925389DDCE4A0AE329C5404FF6CCBA5ADAA0811C6A6EC73156A7421BA20F9"
+        },
+        {
+          "example_id": "flawed_fictions_403",
+          "prompt_hash": "6BD92B9316BB6D9F30BDF4C87E2E7485ECE871F5D99C7BA192EBF3EE03675E9F",
+          "prompt_utf8_bytes": 4046,
+          "story_hash": "334FC615833A4CB2E92FFFCBD49E632915B60AC45A9BA996F34E45EBBD6DED75"
+        },
+        {
+          "example_id": "flawed_fictions_236",
+          "prompt_hash": "939D4027BE10ACDC449A4FECC6C870DC151E477C0E73FBA7547E0D15E27544CB",
+          "prompt_utf8_bytes": 6970,
+          "story_hash": "65354461D18145989B9E8E56C8BD306CDB9FE62EBF220B4CEFD0CE65D3AFCE0E"
+        },
+        {
+          "example_id": "flawed_fictions_193",
+          "prompt_hash": "7D55B01131D16CCBFD3A3190EE7AD4EEED26AF7F6DBCAAEABAD2D5A13DDF19D9",
+          "prompt_utf8_bytes": 6854,
+          "story_hash": "185B900713A8CE526926ACD92B7EFA86D89D52728C5C179B07F3331E346ACC55"
+        },
+        {
+          "example_id": "flawed_fictions_288",
+          "prompt_hash": "8330AA6A5315F91EA46052C18D57318DF4FCDE04319B45E1F0D216716CC8C82C",
+          "prompt_utf8_bytes": 5882,
+          "story_hash": "32D5245C97112C80DAB8B75757FEE23F97A3369D05CF092B201544C1289DD44E"
+        },
+        {
+          "example_id": "flawed_fictions_372",
+          "prompt_hash": "F17B5925530B7EF268965E3068212E05E1C5058DBA428F8631648AB367EB4B4A",
+          "prompt_utf8_bytes": 4813,
+          "story_hash": "E25850183A691845084B489C11682B5BCCA91F2E04802C2C3D4C37CDD8DE4F2C"
+        },
+        {
+          "example_id": "flawed_fictions_374",
+          "prompt_hash": "A8B0D82ABAF51051C18350DE5E6B4EF580F41D969E0863437D3CCD9BBCC0B706",
+          "prompt_utf8_bytes": 4244,
+          "story_hash": "525552BE5907F9AB54B793B1955942C1B468949D4B0EE058D26B190891248C9F"
+        },
+        {
+          "example_id": "flawed_fictions_289",
+          "prompt_hash": "116410A8C4971C969C503125D6F229A54F2B4AEF2DB41E9EE1415B88A4AE1B12",
+          "prompt_utf8_bytes": 3799,
+          "story_hash": "50537914F16772A671633F4E24BA0AF5E640B24EAB83B12C7E739FDC03ED8234"
+        },
+        {
+          "example_id": "flawed_fictions_399",
+          "prompt_hash": "B4D60C721FEA56CF61690735F2D0112C2482DC85457430E776D1042D55954A0F",
+          "prompt_utf8_bytes": 3934,
+          "story_hash": "04D116BB74C623717EA5E4295996CC5F172CC2103F9398FFC9A6784B49C02DF9"
+        },
+        {
+          "example_id": "flawed_fictions_281",
+          "prompt_hash": "AE81D792E62EC2059959A4425939751A2690663F4EF3E5D1CE03707C32A9CC51",
+          "prompt_utf8_bytes": 3661,
+          "story_hash": "805CD9DEAE4D0873349635C3D5ADDCE7F2B53DD954D8B4324B99EBE51282A73C"
+        },
+        {
+          "example_id": "flawed_fictions_199",
+          "prompt_hash": "EDD7818F1E28D85E04765EC09DDBB3442D9A00FC8EF1FFAAC1511E483D9E7418",
+          "prompt_utf8_bytes": 4099,
+          "story_hash": "5F652441D21A4B9E55959327DA0639C6F43C7CFDF8958983735B3EE4C9ACAC5B"
+        },
+        {
+          "example_id": "flawed_fictions_146",
+          "prompt_hash": "624B02B90C4B9FC05190B7CC0F9A34E804840C59E7ADDA17CE374774472B3841",
+          "prompt_utf8_bytes": 3538,
+          "story_hash": "CD9F31A25AE15E9FFAF3EC427002967E33D8AF492B299B30F59AA296DC20AF49"
+        },
+        {
+          "example_id": "flawed_fictions_182",
+          "prompt_hash": "867731E5ED49BC62409D92A9339F2E1631B8F3D48395F2586F50646FAC1B418C",
+          "prompt_utf8_bytes": 6135,
+          "story_hash": "2458148A26DB29DE5E69FA873C63032D0D1AF15A11793718FFDF98583F57FC9C"
+        },
+        {
+          "example_id": "flawed_fictions_123",
+          "prompt_hash": "354FA465A720EE0963ECF71D0C7320416DEF8773BA55E1091615C22B02DDA5B2",
+          "prompt_utf8_bytes": 3308,
+          "story_hash": "88683CCFBBF697BEFEA0A6DDD88F2E41D45BA8999F089D41C7140AC22090FAE0"
+        },
+        {
+          "example_id": "flawed_fictions_279",
+          "prompt_hash": "4DC8E8BD65ED5393BC8B69B567C6D40A180501C8ED5AB67820BE79FE28600169",
+          "prompt_utf8_bytes": 6107,
+          "story_hash": "D512DE74BBFA3127C4B9CF31548AEB5F3816379BC947A4DCFB56D28100E9DF0A"
+        },
+        {
+          "example_id": "flawed_fictions_375",
+          "prompt_hash": "EB113F47AD7425479F05D2586F90B3B7B79DDEAB656763739E8CDE3826BDF26F",
+          "prompt_utf8_bytes": 4399,
+          "story_hash": "BE4F5B3C8EA3E2C98C27BBA7B1FDCA284EF0C7AAB6791702CFD1992A8929C525"
+        },
+        {
+          "example_id": "flawed_fictions_295",
+          "prompt_hash": "65CECA2E8F05F45E2E66C95D302CEC90272F0572699DD604240621F729FE7AEE",
+          "prompt_utf8_bytes": 5512,
+          "story_hash": "6244E52FF997A4B47DB57CADCAA17E3E58F1424A9C93BC50EBEA6D3D76FB6A67"
+        },
+        {
+          "example_id": "flawed_fictions_241",
+          "prompt_hash": "17A6698135E0D1339C02D350FECD90FEB423F038FD0FE7013A695446CCD62FCB",
+          "prompt_utf8_bytes": 3891,
+          "story_hash": "202C5C683A0FE6D26BDA0CBB5E5A90F98B727B040E815F51DF406F27270B3226"
+        },
+        {
+          "example_id": "flawed_fictions_211",
+          "prompt_hash": "26266F2E4CD9598FD8C03F484B20C1BC84DCA027B75022EAA2B154D9011BF6B2",
+          "prompt_utf8_bytes": 5054,
+          "story_hash": "D28208E3F787B2A7955FD8C55E9348465B59BC8936649B48114DD04406E69AC0"
+        },
+        {
+          "example_id": "flawed_fictions_190",
+          "prompt_hash": "C1FB358EC1BAC25315FF8D726F90E6A0103D8712210CC1C8F01B766CABFA7F56",
+          "prompt_utf8_bytes": 4424,
+          "story_hash": "056ABF4643624CEF0AEE7BDA2AD51A0C118C50C219C6384433EE7ADC7F5EE6CC"
+        },
+        {
+          "example_id": "flawed_fictions_116",
+          "prompt_hash": "E263D0DEA911A35367C7A89E348FE4868D4D34F005A8C7C75768FC4592B4A805",
+          "prompt_utf8_bytes": 5743,
+          "story_hash": "6BD7B7744B783880D5010E61ED2C52384345595525446F65674C600EABC47075"
+        },
+        {
+          "example_id": "flawed_fictions_347",
+          "prompt_hash": "FA5B8D16ECBC24F4C8341C32C87B0B1402687207AF1B784DDC69FDB347A80D8B",
+          "prompt_utf8_bytes": 6609,
+          "story_hash": "2EF325D612DD30FBFE1362B47573F340A5584C24C59B36DE5B4BC268B995DC1B"
+        },
+        {
+          "example_id": "flawed_fictions_185",
+          "prompt_hash": "BEA9A5D41CB7CF7B3455DA57E5B245CCA1F67E48C669B8A54F9920A29AC7F21F",
+          "prompt_utf8_bytes": 6684,
+          "story_hash": "F8E8EC4AC91EBEAF0AEEB47DBD2BE769DB0A58E882A7B114BAF9FC512E22D914"
+        },
+        {
+          "example_id": "flawed_fictions_337",
+          "prompt_hash": "427B96DDBE4215E9E594F3B990449C2119F5D74AADF6EE437BC45AD4E18218FD",
+          "prompt_utf8_bytes": 5008,
+          "story_hash": "F8FE82BABCA0195FEC6FE4758782FFBE286D1AC6FDC4DFA304B07203C1CC35B3"
+        },
+        {
+          "example_id": "flawed_fictions_127",
+          "prompt_hash": "00DD2108C38BF4DDC296F3E017C50E8ED1FC19CE6F1BDFB2FBF307B3DE12802D",
+          "prompt_utf8_bytes": 6472,
+          "story_hash": "FBF4BF305A7010E5F03758B9A6506028F0E32A41607FDD0F35A680073A445954"
+        },
+        {
+          "example_id": "flawed_fictions_357",
+          "prompt_hash": "40BBA9D494E47FD85F65AD6850A2638BF77F6B89B0CDEC3280A3CD8B309182ED",
+          "prompt_utf8_bytes": 4424,
+          "story_hash": "652DDB634F60322359A3853A52CE820286272C444123D5F24BFF9EC509AD5555"
+        },
+        {
+          "example_id": "flawed_fictions_233",
+          "prompt_hash": "EB5FEFCC3751AD08B8601AEACDD41563C71899F0872BD72E208E6393CA43BDD4",
+          "prompt_utf8_bytes": 4479,
+          "story_hash": "6EC4778FD2637EE718D26F7FFF4188A7DEE80DB63CB7D433EF10CA22A9E39DD7"
+        },
+        {
+          "example_id": "flawed_fictions_339",
+          "prompt_hash": "F3C343C1CE8EFEFA793B5075801100162B14F0C76FA8B8677435126525C1A8FA",
+          "prompt_utf8_bytes": 5019,
+          "story_hash": "A261129750E9A196BDEC9BD0DE08AE127AC0D39F3CCBBC95CD7584B8C8E498C0"
+        },
+        {
+          "example_id": "flawed_fictions_159",
+          "prompt_hash": "B2215798D6D384BC452A7C703688F98DFA5BB8ABDB72A6957D15F8902EEEF4A7",
+          "prompt_utf8_bytes": 3490,
+          "story_hash": "28B2E28222F8F0889348BC07F4A5E2A4023ABF3FC1A1C4D76FFCB73615ED7B08"
+        },
+        {
+          "example_id": "flawed_fictions_377",
+          "prompt_hash": "FAF6C273FE2B57F4447219C0C691C8ACCCE97D840F262A89C0A351B5305EDC4D",
+          "prompt_utf8_bytes": 5445,
+          "story_hash": "5BC61D353F994AC2A85C37690690E54E90CA2F7B386C830D5EAD81A650156AB4"
+        },
+        {
+          "example_id": "flawed_fictions_379",
+          "prompt_hash": "279FCD2D91F0B436F44EE11CF962E734773CFB0F6CC067CCF6A1B5F8E2D67FCF",
+          "prompt_utf8_bytes": 3115,
+          "story_hash": "E7B57771EAA05D55898BA8F6D593D68FFE309C3EFE2F40BC71757E81E2124EB9"
+        },
+        {
+          "example_id": "flawed_fictions_283",
+          "prompt_hash": "485D7E01CD141838A096E69958E7CEEC3A2C2E64CF78020B798D4EB84D8D79A3",
+          "prompt_utf8_bytes": 4952,
+          "story_hash": "C6CD099CC96043148014826C7734AAD16694A209EB26C1A57AFE59D6EDC21E74"
+        },
+        {
+          "example_id": "flawed_fictions_405",
+          "prompt_hash": "6BEFDEBD22C818DA32A93509401E19D59A075E8E1408CF1E6F0E14CD711A24C4",
+          "prompt_utf8_bytes": 7202,
+          "story_hash": "4F61B66D604BC22DC8FD99C32167A20D372C8DC59EF6FD933B9CEC2D417D3535"
+        },
+        {
+          "example_id": "flawed_fictions_412",
+          "prompt_hash": "9A6D49280BB0FD6CE693A46C9AE2353D64B4118B3B2087C7DA09B976088D1B26",
+          "prompt_utf8_bytes": 4862,
+          "story_hash": "D29194DC427A87218C03521A2B23E6641BAEDE0376CD8F496F9D6944620CD912"
+        },
+        {
+          "example_id": "flawed_fictions_212",
+          "prompt_hash": "A7DC4EC5990AA6B6D25C15717DC0826E6184E0C5A82B9A5A58678D2075F898D7",
+          "prompt_utf8_bytes": 4626,
+          "story_hash": "B2C4214CC55AEB8BA32F65A80F47B579657848B0F8E6FCF96D34A2D2E25AEE4E"
+        },
+        {
+          "example_id": "flawed_fictions_411",
+          "prompt_hash": "B062374AFBA6C7FAE44D2CAF0A278318FCD94244838D7D6170D29E30319DA02A",
+          "prompt_utf8_bytes": 5752,
+          "story_hash": "630D2C0EE9F3E225CFA5D1417B5ED91E36B79025AC3EEDADBBC79AD738019385"
+        },
+        {
+          "example_id": "flawed_fictions_217",
+          "prompt_hash": "A2913AD033B9CC3CD178408343E1C094B5CC58243D8CD38A470917675CB2EF7A",
+          "prompt_utf8_bytes": 5308,
+          "story_hash": "DF54EA0878424C7707368EA61AA10FFC8A6FCFFE6949D461B40832764117851B"
+        },
+        {
+          "example_id": "flawed_fictions_343",
+          "prompt_hash": "1277EB7B7D4329F89BAEE59BD74149CAD306278665B99454EEE71990A3A123AF",
+          "prompt_utf8_bytes": 5407,
+          "story_hash": "0EDFBAE9842D03C5A7F203CC844EF3F32893EF84C438D63DE7868A6060F31713"
+        },
+        {
+          "example_id": "flawed_fictions_128",
+          "prompt_hash": "B415536D15DA26D7CE93D5C9D55224A8FFF8764D82ABCFBF41096735733A65B2",
+          "prompt_utf8_bytes": 3863,
+          "story_hash": "F312001F6A2B1ED322AEFAE83B3FA6AC6CDBBD756BD6DCC1F8D97E5689C48430"
+        },
+        {
+          "example_id": "flawed_fictions_274",
+          "prompt_hash": "00D0C5F53E1BDFBB8CEB7DE9654C54B93150F265542A4E3E092287475ACD6666",
+          "prompt_utf8_bytes": 4632,
+          "story_hash": "3B8BC534D5450DE83CA6A053D2E5211A70D95352B25FD60766DD313BB01C092E"
+        },
+        {
+          "example_id": "flawed_fictions_395",
+          "prompt_hash": "7672851C15F299F44A3A2489BD2433BA9ED67755B4DBEB582661EF9D22E7C14E",
+          "prompt_utf8_bytes": 5979,
+          "story_hash": "F9B14656BC59092B5FCC380236F584AC84808F0F19F54BAD5F9B877B3EA34BC3"
+        },
+        {
+          "example_id": "flawed_fictions_196",
+          "prompt_hash": "5CA9235CB7DB21D7467CC227C9A604855513C61F41E9B2A865F70BB330370AAB",
+          "prompt_utf8_bytes": 4613,
+          "story_hash": "8C0C92726DB8D498937403A470B18210665E62CCD7745BD3E23E99B67F00DC4C"
+        },
+        {
+          "example_id": "flawed_fictions_396",
+          "prompt_hash": "D4EC13B3F55A8FE00D1EABA6AD4FF39DDBBA311A9FEEC4C0472C19966C87DA7A",
+          "prompt_utf8_bytes": 6308,
+          "story_hash": "3BB36A0F7BD773F5267AD2CB7AD9AA384599536ACE88F6F8EE308AC2EFB88935"
+        },
+        {
+          "example_id": "flawed_fictions_179",
+          "prompt_hash": "DEA08A25C0849F2F2EE0334313A343315D11ACE7DF4B307CEA3C01B2119B9F97",
+          "prompt_utf8_bytes": 5590,
+          "story_hash": "B0BC01E297463D0CDE5794473A69AFBD32A20FC2DBACDA8E91558D6DF4A032B3"
+        },
+        {
+          "example_id": "flawed_fictions_358",
+          "prompt_hash": "6689126517EF25F9EA1ECEF092A107348268A5B93C93F0F785B3E1558B772EC4",
+          "prompt_utf8_bytes": 4343,
+          "story_hash": "4746491EFA0600CC192491F51CEFF2EEBC09D24C436FE480E79C3ACA2F814C4E"
+        },
+        {
+          "example_id": "flawed_fictions_262",
+          "prompt_hash": "304FD671C63965EBD0FDA59E6585E8A524DF8E5F910B2A545433A8849CA8F4A6",
+          "prompt_utf8_bytes": 5472,
+          "story_hash": "8ADF833EB2B0CFBF61723C8B2A4CFEFA6A19426128D070358194AF50D6AC0952"
+        },
+        {
+          "example_id": "flawed_fictions_118",
+          "prompt_hash": "F9CEEDF30A926C6345AA9AC30EF95D7D62DBBC9E9A3B3FAD8CB005C139A31C80",
+          "prompt_utf8_bytes": 4064,
+          "story_hash": "CA5BAC73E205454DF3C8B96C33D508BD4731BFB81E6CE2E79BA122A3D5C063E2"
+        },
+        {
+          "example_id": "flawed_fictions_121",
+          "prompt_hash": "43FE0DCF9DC4B7713EF9B906560685204155E03AC82AB13F7507BC94A091347B",
+          "prompt_utf8_bytes": 5736,
+          "story_hash": "42842A31143DD15A156BDFD39E6CDA5F63D8DDA7808228BB06210E3084B7D5A5"
+        },
+        {
+          "example_id": "flawed_fictions_300",
+          "prompt_hash": "EE4CA36C7A103DDCC456596BC5E8BC3842F02DB696D08AAFED0FAFCD5634E619",
+          "prompt_utf8_bytes": 4491,
+          "story_hash": "535C353C1A54F043959795A689561176674DC5CAFDD98AA4435EEF5078ED3E44"
+        },
+        {
+          "example_id": "flawed_fictions_382",
+          "prompt_hash": "9DA9C70E0DEC886EB00893F41CFED1274BFF60F77B4862CE8313ADD716EDC2AE",
+          "prompt_utf8_bytes": 6278,
+          "story_hash": "2D3F86759831D0F435269C28F152D5B46CF3FA21186C5F7848A4EB1338DA8A77"
+        },
+        {
+          "example_id": "flawed_fictions_296",
+          "prompt_hash": "16E4755684BB4DB5A3D604A14665E05A270CD3EA3AEEAE025480520E9D1BD363",
+          "prompt_utf8_bytes": 5273,
+          "story_hash": "74985412BBF4661B9D6A705A60215AAF93A8D2E47C92CDEDA724A9061CEB67B5"
+        },
+        {
+          "example_id": "flawed_fictions_268",
+          "prompt_hash": "22FBC4383E02AFAD5898E6E5B6A9C5CD324DF6F74E72909A9C7A3E4A37FE1A9D",
+          "prompt_utf8_bytes": 4029,
+          "story_hash": "DCC4CB824363D3A65FD9D5D67732CF47B072DD88759DD1348C9A1C91B4E140AE"
+        },
+        {
+          "example_id": "flawed_fictions_141",
+          "prompt_hash": "D8B6AA8F242D20CF9DF35F34AF7590604D02258AE51123FD78B8FA997AC536DC",
+          "prompt_utf8_bytes": 5632,
+          "story_hash": "EAA9D22AE0E40F1A39C68C47300CE81B24AB0FD33A5FCF76913CDD34A4AD6ED9"
+        },
+        {
+          "example_id": "flawed_fictions_143",
+          "prompt_hash": "6C0B53BA03D7C1EF1FD767043E8AFCA3E426B42D41E081E2A7C2694A46F99E15",
+          "prompt_utf8_bytes": 4369,
+          "story_hash": "DEF0A7CF133A98B2187C60422FBCC4867C0BD28C2892C41927859E39CC8C77A3"
+        },
+        {
+          "example_id": "flawed_fictions_225",
+          "prompt_hash": "2DD45089D9E8222E4D1E92E4E5365276BC2D5F03DC704719AB1A6CDFA2BA56FF",
+          "prompt_utf8_bytes": 4694,
+          "story_hash": "BD8D2A124A89EAFFEE9891DD686E36C28944AEB3FA1DBC5784B270A62E385481"
+        },
+        {
+          "example_id": "flawed_fictions_150",
+          "prompt_hash": "4F3646A5AB8B9D079089D6D5A1A8AF79CBBD58E8CEB52C18525117840D8D3070",
+          "prompt_utf8_bytes": 5705,
+          "story_hash": "161FF12FA42E36BFD403963D55A66FAEC8CE4D635C1C9DFEAFB900A4AC421AFB"
+        },
+        {
+          "example_id": "flawed_fictions_384",
+          "prompt_hash": "E1BE5F916F1921FBA51AFB4401D9EAF830FF95572E6163ADD1423C7BFF93E7A3",
+          "prompt_utf8_bytes": 6485,
+          "story_hash": "81C3DBA161F62BD89BBAB21A21F5660AF3C89794F0453856FE0D5F84D87DD8EF"
+        },
+        {
+          "example_id": "flawed_fictions_162",
+          "prompt_hash": "DF4D1505BE4B6225D52AA9B120CC10943E09B2D0B62CBB234B0283CDD38047D9",
+          "prompt_utf8_bytes": 4092,
+          "story_hash": "D4AE3B3A00669D7570CA6341CF46A2DD8E90F553D26A7F04B5DDB911A171E0A7"
+        },
+        {
+          "example_id": "flawed_fictions_293",
+          "prompt_hash": "302E13208690E032277EEF205346A23C7EEA6AB26E369E063251DCB51071C79C",
+          "prompt_utf8_bytes": 4808,
+          "story_hash": "0414580F80641C2FB5AC6080BF074979146123E6523E3AE4EE3BA77CAC6E8FA5"
+        },
+        {
+          "example_id": "flawed_fictions_298",
+          "prompt_hash": "4E3652C4957354F2BF83B3E050189DE390ADBD4B9678EDCD85C40650D1CBB8A2",
+          "prompt_utf8_bytes": 6436,
+          "story_hash": "0F6A8C39584CA2F88849B6538DF8D60E0B0172990B322C6CB0633D5118343686"
+        },
+        {
+          "example_id": "flawed_fictions_174",
+          "prompt_hash": "29C94FAFED2DE37F223BB5A2AA2B08B44393DBB8A36FA7BB776E8CA533A37BB5",
+          "prompt_utf8_bytes": 4818,
+          "story_hash": "CC2E807E9AF5A6DE3DA0644937DB64D2682F7243154B7112497C9683DC4BF0EC"
+        },
+        {
+          "example_id": "flawed_fictions_333",
+          "prompt_hash": "8C027AD0248B1774A51983B2FF35731C0F3B734BA2C910B2206DBB65A31FE338",
+          "prompt_utf8_bytes": 4920,
+          "story_hash": "BC3B8F6D50CB7F0EF5F4827A37CD0F745C2697EDA4C296135BB73D935AAA2194"
+        },
+        {
+          "example_id": "flawed_fictions_369",
+          "prompt_hash": "86415BFE7410BE0DA24B1303E4546976C3BC9C13A2A9F9429F70E55A85CD0106",
+          "prompt_utf8_bytes": 4222,
+          "story_hash": "80CF79D14C5FE8EF4C03765EA6691562956D077101A9C656859AAF37F09CD3B6"
+        },
+        {
+          "example_id": "flawed_fictions_240",
+          "prompt_hash": "B3D22E2B6D4C3106B5E50CA0E04223ECD4FC6D8D512F23898A1474C5045D1722",
+          "prompt_utf8_bytes": 4727,
+          "story_hash": "5DD740AF972F631099D96043805B1F16E130827DC639D04C05A55F80C17869E3"
+        },
+        {
+          "example_id": "flawed_fictions_191",
+          "prompt_hash": "D3E2E2FE3A7FCBEE018CF05C9C4D48292DDF3E6E28D25CAC1E4A5C3DF0029B7B",
+          "prompt_utf8_bytes": 3595,
+          "story_hash": "27C7951A61C20DADC199D0503A16A6F107A4DCAA3E1AC6B2E3A2E1F62D466CF6"
+        },
+        {
+          "example_id": "flawed_fictions_335",
+          "prompt_hash": "18C1AC8EC0343BCD38000191DE1154C7DBA6E461426E396092C2E9293E487D6F",
+          "prompt_utf8_bytes": 3858,
+          "story_hash": "5120218F5E4BE910F2E670D7880C7773D2874B4E26E156752D3D0E64C2DC8CC5"
+        },
+        {
+          "example_id": "flawed_fictions_354",
+          "prompt_hash": "06E887D9589D1E01EA7AE5893EBFF63326C845318A948659401BD7400C1B7C2C",
+          "prompt_utf8_bytes": 5491,
+          "story_hash": "F12FFE45BB5D0AC7580B4733E8A9777FADB25C602D431E607C5E72F6BD405F4C"
+        },
+        {
+          "example_id": "flawed_fictions_154",
+          "prompt_hash": "88D0C935CDACB077052662FCF31367A52DA5B14E263468EBBBD254CD4238AEFA",
+          "prompt_utf8_bytes": 6497,
+          "story_hash": "40655715185D25DAA65079373E4672D5610261FEF394A2BAE7DF8683DFD02831"
+        },
+        {
+          "example_id": "flawed_fictions_256",
+          "prompt_hash": "F59ECA28506DF2D034F5C02FE966AB4A355054D53341D3BBF3DA2F00266094C3",
+          "prompt_utf8_bytes": 4869,
+          "story_hash": "6DD68B59D39631DC36F026E20AD611A43736EE9787FF825FC501919E49BAAC9C"
+        },
+        {
+          "example_id": "flawed_fictions_117",
+          "prompt_hash": "2675312D5F09C44D24BA910C5899EC9DA40077D74627A867CBD0EBB394DFB0D2",
+          "prompt_utf8_bytes": 6072,
+          "story_hash": "70D10E472C00646D388025E2CB2B5988220554D70CF8A71447C801D410394DB4"
+        },
+        {
+          "example_id": "flawed_fictions_157",
+          "prompt_hash": "8E07372AD3B70AB08BAC1CF1E19328FA098F452EAC09BFED4C39F86F3D3C256F",
+          "prompt_utf8_bytes": 3010,
+          "story_hash": "CDB2001D3CE5D7856898611B05B617F82A9A59217F9DA6DA8D842154D2C592F6"
+        },
+        {
+          "example_id": "flawed_fictions_166",
+          "prompt_hash": "28FE65760F3BF881A904E538530CA839E12DC5B587CB814C154E4C00C737CCDB",
+          "prompt_utf8_bytes": 5864,
+          "story_hash": "8ACEC8AF7A324CB6CBA9B4028DDE08761C02DE17C059804FCB5F3B4CAB712250"
+        },
+        {
+          "example_id": "flawed_fictions_198",
+          "prompt_hash": "D5648B0B5DCBD5EA0AAC33CD02A4458F232E077F8C41EFAA9C4D592B947C5CE1",
+          "prompt_utf8_bytes": 3586,
+          "story_hash": "16F36C0E191C52B4519E65A1D3D456C0F8F05D982FFEA791DB16CC1F67D10D6B"
+        },
+        {
+          "example_id": "flawed_fictions_138",
+          "prompt_hash": "852FFD07CAE0BB8684EBAA0EE1396D0B98751B0FA01A516779D030F4E116EA76",
+          "prompt_utf8_bytes": 5424,
+          "story_hash": "6EAB886257CE3504ED5B24619A99438A3B330C49CFE80E422A094222C3642EB8"
+        },
+        {
+          "example_id": "flawed_fictions_385",
+          "prompt_hash": "DFAFDEDC1EF4F175E77732F7268F9E5BE9823FF559B7BB6CFC97DB821BA54F68",
+          "prompt_utf8_bytes": 4373,
+          "story_hash": "F99CE2668CE52EA0FBC435384A59F0D8748FE5621F3ACE37BE067E95179FA513"
+        },
+        {
+          "example_id": "flawed_fictions_400",
+          "prompt_hash": "9322C31FD44BE66827A4BB5888DDDFDFD723B15DECB52191339F0139058BD1E0",
+          "prompt_utf8_bytes": 6295,
+          "story_hash": "1C35409B719BB4E9C8DABF7B3CCA4382DA2E503B6567743983B0F08EA468316B"
+        },
+        {
+          "example_id": "flawed_fictions_312",
+          "prompt_hash": "E69D7A91EBBCEDAF5B11EEA9B9CD48A896FA9C471E6972AD23B60D1B9FF97D34",
+          "prompt_utf8_bytes": 5403,
+          "story_hash": "0698989E70674B0D7784AC767A3EEE5187BDB66E09D1F8674698F391E3518004"
+        },
+        {
+          "example_id": "flawed_fictions_195",
+          "prompt_hash": "CB53CD221A2C241C9E5AE54B6FB06B76EDAAFE1BAD6DEF32419E4F0C0DF80422",
+          "prompt_utf8_bytes": 4129,
+          "story_hash": "C1AD1515C6BFD871DF9945E60FA07B5D82759CC523C33632C24D1D2EC75E9152"
+        },
+        {
+          "example_id": "flawed_fictions_169",
+          "prompt_hash": "0B91B94953C9BB3011D7F0CD64AC3BD6D2E156B68847A881A2F9E8907F50A3E4",
+          "prompt_utf8_bytes": 5454,
+          "story_hash": "FD3EAA793A08CC46458E0692B91B09E84E2A77BB94D6283FB0438123C8312876"
+        },
+        {
+          "example_id": "flawed_fictions_389",
+          "prompt_hash": "47CB23EE1C96FEC2494B732DD92ACE78312EF2F4BE62286B3D180E16DECCF26D",
+          "prompt_utf8_bytes": 4827,
+          "story_hash": "FC5154424A0379E3703B4FCB2DBCB0CCF7D2705DD37EFCB9D62B2841E8304614"
+        },
+        {
+          "example_id": "flawed_fictions_255",
+          "prompt_hash": "C14CD0249CCAB803568068E2A6F01B295BF618181568A1DA8DE379A4C1681687",
+          "prompt_utf8_bytes": 4832,
+          "story_hash": "4DD8F1888DCAD61D8D0C5CA0A6F40408F64D6FFF8899B5FD4CAC5EA944B9F90F"
+        },
+        {
+          "example_id": "flawed_fictions_402",
+          "prompt_hash": "ED946A349A903207E4E518BE477B9AF19078E744EC0C07E7AD506A7247804CD1",
+          "prompt_utf8_bytes": 5206,
+          "story_hash": "2E9913D232AA4002C0BF582399B19FBC8E80B0E1F92762BE28415D2DB160F58A"
+        },
+        {
+          "example_id": "flawed_fictions_350",
+          "prompt_hash": "2B1A349EDD368DC674E739E42343DE46218C9C717AC40186B6FD129E2AFC219E",
+          "prompt_utf8_bytes": 4484,
+          "story_hash": "63806D853594AF8513523B0C0FB2511F23F9F0DC2876A6A995CA6261B11A6E58"
+        },
+        {
+          "example_id": "flawed_fictions_398",
+          "prompt_hash": "DDB6129710ECF5A994E416BD039476A30DD3BE0B04EABA0FFEF29862B8EDB6D3",
+          "prompt_utf8_bytes": 5901,
+          "story_hash": "96C63FC261F60373D852416F7B2B0D7C35C910EF6E4C7298A2B7C3B7F6BE4A6C"
+        },
+        {
+          "example_id": "flawed_fictions_253",
+          "prompt_hash": "282E0539920D9B603393FB94C1C28EC4827FE9DAD107D3C58A48E36790E8442E",
+          "prompt_utf8_bytes": 5718,
+          "story_hash": "1467AC349D97A79C4ED42A192F89D66E199BF8220255DB94402D53676D866A74"
+        },
+        {
+          "example_id": "flawed_fictions_266",
+          "prompt_hash": "180014DE826C78D4D532FC1AEB4FF530AE5D85F7900878D555A394C8C72E2DCD",
+          "prompt_utf8_bytes": 4483,
+          "story_hash": "ED30CD85113E0D4AC4692CFA6F60164B2F14126EB9ED27E0C961BEAC51E80687"
+        },
+        {
+          "example_id": "flawed_fictions_180",
+          "prompt_hash": "81AECE2233D570C8E3BA145AFDBFCEA86B19AD1720262EB3A9B52A08CF03EDE4",
+          "prompt_utf8_bytes": 5378,
+          "story_hash": "A47AA8DF48F0B1B91558E684BB47705CECC3C6D299CFD0B53720C4438C514D7F"
+        },
+        {
+          "example_id": "flawed_fictions_112",
+          "prompt_hash": "E6141C572E16F0D295FE26F960186A2E25B9755B97979DFB74F4E0D1B3A59B11",
+          "prompt_utf8_bytes": 4184,
+          "story_hash": "B5705422EA566FF6247D159E136588DDCCBC79BE9674960658961972DECD3DF0"
+        },
+        {
+          "example_id": "flawed_fictions_220",
+          "prompt_hash": "EE3A8A3B44B42FA5183C8395F7525020299FA144F8DE3B3C6D002D6EA55319E5",
+          "prompt_utf8_bytes": 7134,
+          "story_hash": "A8078A051BD633C511DA9376911A71671F178C314C0FAD0F18D2A4849070F09D"
+        }
+      ],
+      "verify_revise": [
+        {
+          "example_id": "flawed_fictions_188",
+          "prompt_hash": "FFB503C3D5B3C5A0FECD597BF054D9A8FCC40D8DB82378948161841E195A927A",
+          "prompt_utf8_bytes": 4239,
+          "story_hash": "E857842DFCDCAC906DCAE5D67FCE71BDFCB68238A157EFA71C6D2A43F9B7325D"
+        },
+        {
+          "example_id": "flawed_fictions_265",
+          "prompt_hash": "2377E0E0A640ED4A394C5877766C50BF45FFE3C4C97B260D1EE04C859AB1B7C3",
+          "prompt_utf8_bytes": 5342,
+          "story_hash": "6B3B5179D99EEAAB97A43503FE5F568FDD69A7C2A5A4BCAA22B5219FDDB32653"
+        },
+        {
+          "example_id": "flawed_fictions_380",
+          "prompt_hash": "F87315C51A2F4CA9F69A692359FA8E796F94205EE0763E187E32E19D1D53C615",
+          "prompt_utf8_bytes": 4717,
+          "story_hash": "1657B4BD62793593E30626141B8958E2450CDCD94FC79B7AC94D7C76E9E46D04"
+        },
+        {
+          "example_id": "flawed_fictions_309",
+          "prompt_hash": "F042466030EA08E56AC1922AAB667CFD17BBCA73199A97255BB701B524A799FF",
+          "prompt_utf8_bytes": 3915,
+          "story_hash": "B844DD15F3F24C073DCB63DB6743874ED35F0C1DA67F220D524FE1BB72BF493A"
+        },
+        {
+          "example_id": "flawed_fictions_153",
+          "prompt_hash": "3FD8E195910AD0DB8559A469102E115EF2A21D3EDC9885A843D55B40EEE5BA22",
+          "prompt_utf8_bytes": 5498,
+          "story_hash": "CF506857BFA77BEFF7347BC9794796DF9503BF4D50097E869D76DF22A26C5DF0"
+        },
+        {
+          "example_id": "flawed_fictions_307",
+          "prompt_hash": "AD5A2AFC2022D270E1F35DA799984B1102062A11E6B45BACBB765F0CBF9FD781",
+          "prompt_utf8_bytes": 5061,
+          "story_hash": "7F3B894BBE17C15A2E10218A7240E47FF859175C67C39170C963260B6D0C1D69"
+        },
+        {
+          "example_id": "flawed_fictions_317",
+          "prompt_hash": "C66599A8BBF3F7D1569E89ADC73A830093275D6FCDCF731BBCDFD678533C985A",
+          "prompt_utf8_bytes": 3587,
+          "story_hash": "0800D4B7CCB25C6EE70F4A7072CA80DAC84B8F3576A07E21C7B62D1AB64B2CCB"
+        },
+        {
+          "example_id": "flawed_fictions_235",
+          "prompt_hash": "58DCE318F4BAC08D5FAF8F1923CDD1238097BF42517D4A947F07A9EEA6F87FFC",
+          "prompt_utf8_bytes": 5047,
+          "story_hash": "94747C9943D83327F7288341E7ABBD44AEECA9C5CCD91DEAB59F67D997C8D499"
+        },
+        {
+          "example_id": "flawed_fictions_413",
+          "prompt_hash": "590762C1994C16773B741C343CD0D88966FCDBAED7D93B2730CC2A430B7B988D",
+          "prompt_utf8_bytes": 4588,
+          "story_hash": "E0EEE57E5218C9C7CBB8A83F4BBB3B7E5CE8DCC52DFDC099D0D3DA2D6F24C30D"
+        },
+        {
+          "example_id": "flawed_fictions_331",
+          "prompt_hash": "142D15BA26DEC8A2D4ABC6E5BD37941FE527668790BCDD2F2AC01DCD4EEB02B9",
+          "prompt_utf8_bytes": 4604,
+          "story_hash": "E14AA430607B717B010059F7F340C8871E344B9E433D6343C6B2380D3DE32999"
+        },
+        {
+          "example_id": "flawed_fictions_378",
+          "prompt_hash": "FFF250BC51BAD443D16C4B7800C4F1FDF1EFACF5C5A04249D6F574F6815D59E5",
+          "prompt_utf8_bytes": 4539,
+          "story_hash": "E1FB3E04129E7EF6ECB8E8FE78D16250BCBA6AE33BCE914EAC584353924ADED0"
+        },
+        {
+          "example_id": "flawed_fictions_181",
+          "prompt_hash": "9352954D20326607ACE35FDCAC5046E41D3F19AB64F95157A42F18965EE69534",
+          "prompt_utf8_bytes": 5390,
+          "story_hash": "400925389DDCE4A0AE329C5404FF6CCBA5ADAA0811C6A6EC73156A7421BA20F9"
+        },
+        {
+          "example_id": "flawed_fictions_403",
+          "prompt_hash": "99F9C1C20B7F1EE3CE2F309961138CB9B3EC34CF72368734719DC2058CF25B6B",
+          "prompt_utf8_bytes": 3685,
+          "story_hash": "334FC615833A4CB2E92FFFCBD49E632915B60AC45A9BA996F34E45EBBD6DED75"
+        },
+        {
+          "example_id": "flawed_fictions_236",
+          "prompt_hash": "6060614083F345818DBFEC044E542E064CAB7999A56E46FA3617CC72EC9CF11D",
+          "prompt_utf8_bytes": 6609,
+          "story_hash": "65354461D18145989B9E8E56C8BD306CDB9FE62EBF220B4CEFD0CE65D3AFCE0E"
+        },
+        {
+          "example_id": "flawed_fictions_193",
+          "prompt_hash": "DAEC27CDEB3C12EF7DF0E0791AC61151A41095F25956AEA28A7BBCC4F9947733",
+          "prompt_utf8_bytes": 6493,
+          "story_hash": "185B900713A8CE526926ACD92B7EFA86D89D52728C5C179B07F3331E346ACC55"
+        },
+        {
+          "example_id": "flawed_fictions_288",
+          "prompt_hash": "3E63568B22372E2722CCF548A14A9B87E049B8FDF76B31C770F924481191255D",
+          "prompt_utf8_bytes": 5521,
+          "story_hash": "32D5245C97112C80DAB8B75757FEE23F97A3369D05CF092B201544C1289DD44E"
+        },
+        {
+          "example_id": "flawed_fictions_372",
+          "prompt_hash": "EF910DA3E73CA20D9DEC4C8DC50727CD0A19AB774548A108588201CE26ED70A8",
+          "prompt_utf8_bytes": 4452,
+          "story_hash": "E25850183A691845084B489C11682B5BCCA91F2E04802C2C3D4C37CDD8DE4F2C"
+        },
+        {
+          "example_id": "flawed_fictions_374",
+          "prompt_hash": "F72F89E301537DC54A02D51A47F36B87ADA3AA1765CBB09BEAC390700372E248",
+          "prompt_utf8_bytes": 3883,
+          "story_hash": "525552BE5907F9AB54B793B1955942C1B468949D4B0EE058D26B190891248C9F"
+        },
+        {
+          "example_id": "flawed_fictions_289",
+          "prompt_hash": "9B8DDDDC93047CA0DE6096D4AFB696A1C0718ADB38F353F0547871607103369A",
+          "prompt_utf8_bytes": 3438,
+          "story_hash": "50537914F16772A671633F4E24BA0AF5E640B24EAB83B12C7E739FDC03ED8234"
+        },
+        {
+          "example_id": "flawed_fictions_399",
+          "prompt_hash": "0F49958D614E3FADB168CE6AE90774187C5045CCCCCFF1C49B5A27A6DDEDB42E",
+          "prompt_utf8_bytes": 3573,
+          "story_hash": "04D116BB74C623717EA5E4295996CC5F172CC2103F9398FFC9A6784B49C02DF9"
+        },
+        {
+          "example_id": "flawed_fictions_281",
+          "prompt_hash": "EC4F2276A73079719369B87BA3BD7FBB5881E6644D33D725CC15DF2C174EEF94",
+          "prompt_utf8_bytes": 3300,
+          "story_hash": "805CD9DEAE4D0873349635C3D5ADDCE7F2B53DD954D8B4324B99EBE51282A73C"
+        },
+        {
+          "example_id": "flawed_fictions_199",
+          "prompt_hash": "87D08CB90B7A34B3FA7AF3E1A3684B764A6FF20B25EE6A48DB86967ABFEAC539",
+          "prompt_utf8_bytes": 3738,
+          "story_hash": "5F652441D21A4B9E55959327DA0639C6F43C7CFDF8958983735B3EE4C9ACAC5B"
+        },
+        {
+          "example_id": "flawed_fictions_146",
+          "prompt_hash": "955C0065DA210344DF029793DF7F6574077B7AEE45153E0169D368192B21845B",
+          "prompt_utf8_bytes": 3177,
+          "story_hash": "CD9F31A25AE15E9FFAF3EC427002967E33D8AF492B299B30F59AA296DC20AF49"
+        },
+        {
+          "example_id": "flawed_fictions_182",
+          "prompt_hash": "8D4F5B77A7AF2A6D0BD3B6A612BB47166BC499DB54DD69E213F5F5F0867DACD5",
+          "prompt_utf8_bytes": 5774,
+          "story_hash": "2458148A26DB29DE5E69FA873C63032D0D1AF15A11793718FFDF98583F57FC9C"
+        },
+        {
+          "example_id": "flawed_fictions_123",
+          "prompt_hash": "E1EB3EB8E69D337701BC7DD18363FB4FB454DE3827CEB7080957082EC89C2BFA",
+          "prompt_utf8_bytes": 2947,
+          "story_hash": "88683CCFBBF697BEFEA0A6DDD88F2E41D45BA8999F089D41C7140AC22090FAE0"
+        },
+        {
+          "example_id": "flawed_fictions_279",
+          "prompt_hash": "992A41FD4D29245255AB0732313C35120D309FCFD197C0B9AB7438560F212CCE",
+          "prompt_utf8_bytes": 5746,
+          "story_hash": "D512DE74BBFA3127C4B9CF31548AEB5F3816379BC947A4DCFB56D28100E9DF0A"
+        },
+        {
+          "example_id": "flawed_fictions_375",
+          "prompt_hash": "9DD903B92BD87BDA809B546D5E0BE607DA021648BC72AF4ECFDEF2A0FB703FC4",
+          "prompt_utf8_bytes": 4038,
+          "story_hash": "BE4F5B3C8EA3E2C98C27BBA7B1FDCA284EF0C7AAB6791702CFD1992A8929C525"
+        },
+        {
+          "example_id": "flawed_fictions_295",
+          "prompt_hash": "27621E833536555DBBCC4AD7388D2481C13A116344D8BA6AE3D9D624F978414C",
+          "prompt_utf8_bytes": 5151,
+          "story_hash": "6244E52FF997A4B47DB57CADCAA17E3E58F1424A9C93BC50EBEA6D3D76FB6A67"
+        },
+        {
+          "example_id": "flawed_fictions_241",
+          "prompt_hash": "767D46AD8BDD0A54E246121C137D152DB99781978E67D977DC77184FD30A8271",
+          "prompt_utf8_bytes": 3530,
+          "story_hash": "202C5C683A0FE6D26BDA0CBB5E5A90F98B727B040E815F51DF406F27270B3226"
+        },
+        {
+          "example_id": "flawed_fictions_211",
+          "prompt_hash": "4A9A6331A3B1B253552DC4E3F93351EA537E7856B9531F1F45B1A316FDEFD26A",
+          "prompt_utf8_bytes": 4693,
+          "story_hash": "D28208E3F787B2A7955FD8C55E9348465B59BC8936649B48114DD04406E69AC0"
+        },
+        {
+          "example_id": "flawed_fictions_190",
+          "prompt_hash": "F1E0D0D0352DD357AAC28FFE894964C7938B67D695F36E77525CCA1F66FC8A22",
+          "prompt_utf8_bytes": 4063,
+          "story_hash": "056ABF4643624CEF0AEE7BDA2AD51A0C118C50C219C6384433EE7ADC7F5EE6CC"
+        },
+        {
+          "example_id": "flawed_fictions_116",
+          "prompt_hash": "9E23EC048E31896DBD9086BCE601C442877C2FC6E7506A3D1B636A6D736C5BAA",
+          "prompt_utf8_bytes": 5382,
+          "story_hash": "6BD7B7744B783880D5010E61ED2C52384345595525446F65674C600EABC47075"
+        },
+        {
+          "example_id": "flawed_fictions_347",
+          "prompt_hash": "EC0350BD5D9DC22910CC07B98F396FB57D37172DA714C67B1AEB638AF670651A",
+          "prompt_utf8_bytes": 6248,
+          "story_hash": "2EF325D612DD30FBFE1362B47573F340A5584C24C59B36DE5B4BC268B995DC1B"
+        },
+        {
+          "example_id": "flawed_fictions_185",
+          "prompt_hash": "D6C227AC7E48490F753B31D5EDA3F13692109764A15355F7AA352AB96C2356E3",
+          "prompt_utf8_bytes": 6323,
+          "story_hash": "F8E8EC4AC91EBEAF0AEEB47DBD2BE769DB0A58E882A7B114BAF9FC512E22D914"
+        },
+        {
+          "example_id": "flawed_fictions_337",
+          "prompt_hash": "A6496AEEF290309E843398B3A2324CE55961B4BFF37F95125D99A194A71421FD",
+          "prompt_utf8_bytes": 4647,
+          "story_hash": "F8FE82BABCA0195FEC6FE4758782FFBE286D1AC6FDC4DFA304B07203C1CC35B3"
+        },
+        {
+          "example_id": "flawed_fictions_127",
+          "prompt_hash": "E2005293219AF96549F9E96AEFF446B86712DAFE3BF7A118505E0E1871E62F2C",
+          "prompt_utf8_bytes": 6111,
+          "story_hash": "FBF4BF305A7010E5F03758B9A6506028F0E32A41607FDD0F35A680073A445954"
+        },
+        {
+          "example_id": "flawed_fictions_357",
+          "prompt_hash": "6C1F55BF32ACB2384DC8ACB6A116EF969F9F409B2510F3EC507AB9AE752C97BE",
+          "prompt_utf8_bytes": 4063,
+          "story_hash": "652DDB634F60322359A3853A52CE820286272C444123D5F24BFF9EC509AD5555"
+        },
+        {
+          "example_id": "flawed_fictions_233",
+          "prompt_hash": "5C693865B70C43DC0440E89B045581A8B2CDED023CED950A8FACB113BD4787CE",
+          "prompt_utf8_bytes": 4118,
+          "story_hash": "6EC4778FD2637EE718D26F7FFF4188A7DEE80DB63CB7D433EF10CA22A9E39DD7"
+        },
+        {
+          "example_id": "flawed_fictions_339",
+          "prompt_hash": "A4F60DC359C39964E858090903E61F014EA5493477FA26742AF52B355E442253",
+          "prompt_utf8_bytes": 4658,
+          "story_hash": "A261129750E9A196BDEC9BD0DE08AE127AC0D39F3CCBBC95CD7584B8C8E498C0"
+        },
+        {
+          "example_id": "flawed_fictions_159",
+          "prompt_hash": "BBF33CD12D78D8D487AEDC8655A59087DFAAF89E39C7B263EDE0A462EDD26CCE",
+          "prompt_utf8_bytes": 3129,
+          "story_hash": "28B2E28222F8F0889348BC07F4A5E2A4023ABF3FC1A1C4D76FFCB73615ED7B08"
+        },
+        {
+          "example_id": "flawed_fictions_377",
+          "prompt_hash": "BA6280F5DC7E6764F307D277844F2EAC352343291589E526316ED1E3B2F4B74E",
+          "prompt_utf8_bytes": 5084,
+          "story_hash": "5BC61D353F994AC2A85C37690690E54E90CA2F7B386C830D5EAD81A650156AB4"
+        },
+        {
+          "example_id": "flawed_fictions_379",
+          "prompt_hash": "9FF187CF5E8C7747246EBEE3815D47C22863128EE80AC8FE56D16D66CE4CA36E",
+          "prompt_utf8_bytes": 2754,
+          "story_hash": "E7B57771EAA05D55898BA8F6D593D68FFE309C3EFE2F40BC71757E81E2124EB9"
+        },
+        {
+          "example_id": "flawed_fictions_283",
+          "prompt_hash": "EB7E798142BB4C95C25BFE209532440FE7A6FC3E2DFE7365902F9E31FA56EF3F",
+          "prompt_utf8_bytes": 4591,
+          "story_hash": "C6CD099CC96043148014826C7734AAD16694A209EB26C1A57AFE59D6EDC21E74"
+        },
+        {
+          "example_id": "flawed_fictions_405",
+          "prompt_hash": "9C9F4A1FC7E5B1FA6929BE149A12EA563E509462C19DF3C860D8731BA1A9CDA5",
+          "prompt_utf8_bytes": 6841,
+          "story_hash": "4F61B66D604BC22DC8FD99C32167A20D372C8DC59EF6FD933B9CEC2D417D3535"
+        },
+        {
+          "example_id": "flawed_fictions_412",
+          "prompt_hash": "32E8BAB9E400314562DB349AA3E21DB39836345B3C9440E097FF66B09A2D9C9B",
+          "prompt_utf8_bytes": 4501,
+          "story_hash": "D29194DC427A87218C03521A2B23E6641BAEDE0376CD8F496F9D6944620CD912"
+        },
+        {
+          "example_id": "flawed_fictions_212",
+          "prompt_hash": "539062C8B255440400EC86614AB3DB7F3C170E017A214C2680C6A911402D1EF9",
+          "prompt_utf8_bytes": 4265,
+          "story_hash": "B2C4214CC55AEB8BA32F65A80F47B579657848B0F8E6FCF96D34A2D2E25AEE4E"
+        },
+        {
+          "example_id": "flawed_fictions_411",
+          "prompt_hash": "C49E1837310336D797F06A482631038BDF449C4EC3DB50C8287F7487BB0B31C8",
+          "prompt_utf8_bytes": 5391,
+          "story_hash": "630D2C0EE9F3E225CFA5D1417B5ED91E36B79025AC3EEDADBBC79AD738019385"
+        },
+        {
+          "example_id": "flawed_fictions_217",
+          "prompt_hash": "E1DEEE70C96350F32139DD7340B526ECB74207E53684A667E3BF09B5D012AF4A",
+          "prompt_utf8_bytes": 4947,
+          "story_hash": "DF54EA0878424C7707368EA61AA10FFC8A6FCFFE6949D461B40832764117851B"
+        },
+        {
+          "example_id": "flawed_fictions_343",
+          "prompt_hash": "BD9DD9F14150A7BEB27326A55624D34A08D6074800379EFD2C64ED62574EE2D3",
+          "prompt_utf8_bytes": 5046,
+          "story_hash": "0EDFBAE9842D03C5A7F203CC844EF3F32893EF84C438D63DE7868A6060F31713"
+        },
+        {
+          "example_id": "flawed_fictions_128",
+          "prompt_hash": "ED95A768CB141D68374C9AE32BAC0D2186FBF28ADA5B722EBC6A47396F113873",
+          "prompt_utf8_bytes": 3502,
+          "story_hash": "F312001F6A2B1ED322AEFAE83B3FA6AC6CDBBD756BD6DCC1F8D97E5689C48430"
+        },
+        {
+          "example_id": "flawed_fictions_274",
+          "prompt_hash": "7CAE26275F460BC5C22E63152C31D18FAC7F449B9206CD64DA0FBC30652CEC05",
+          "prompt_utf8_bytes": 4271,
+          "story_hash": "3B8BC534D5450DE83CA6A053D2E5211A70D95352B25FD60766DD313BB01C092E"
+        },
+        {
+          "example_id": "flawed_fictions_395",
+          "prompt_hash": "A378721BBBA67F74DDB426FC378FF378AF42DF0DBBAEDD6015B00123F4870CBA",
+          "prompt_utf8_bytes": 5618,
+          "story_hash": "F9B14656BC59092B5FCC380236F584AC84808F0F19F54BAD5F9B877B3EA34BC3"
+        },
+        {
+          "example_id": "flawed_fictions_196",
+          "prompt_hash": "47DEBE05A5ADAE49EB2DEE604549D1F7515161614C802DFD4A226952B4A915BD",
+          "prompt_utf8_bytes": 4252,
+          "story_hash": "8C0C92726DB8D498937403A470B18210665E62CCD7745BD3E23E99B67F00DC4C"
+        },
+        {
+          "example_id": "flawed_fictions_396",
+          "prompt_hash": "F93EC9F48EE43DC60AF2E95EB7D071DD30568613A6A96DF238E1702230A7138F",
+          "prompt_utf8_bytes": 5947,
+          "story_hash": "3BB36A0F7BD773F5267AD2CB7AD9AA384599536ACE88F6F8EE308AC2EFB88935"
+        },
+        {
+          "example_id": "flawed_fictions_179",
+          "prompt_hash": "3A8B81B94F09BFFE695D8579FE22230F5EE1C088328D9F8D2EBF09827355631B",
+          "prompt_utf8_bytes": 5229,
+          "story_hash": "B0BC01E297463D0CDE5794473A69AFBD32A20FC2DBACDA8E91558D6DF4A032B3"
+        },
+        {
+          "example_id": "flawed_fictions_358",
+          "prompt_hash": "11EFBF026CFA22AE53A7EF529E4B0C5688C4BBAA1AE3810D61BD80A1E70F1C99",
+          "prompt_utf8_bytes": 3982,
+          "story_hash": "4746491EFA0600CC192491F51CEFF2EEBC09D24C436FE480E79C3ACA2F814C4E"
+        },
+        {
+          "example_id": "flawed_fictions_262",
+          "prompt_hash": "11CB81E47D11281E87B752DB704AF54C94583B04217A577701319CF602400F79",
+          "prompt_utf8_bytes": 5111,
+          "story_hash": "8ADF833EB2B0CFBF61723C8B2A4CFEFA6A19426128D070358194AF50D6AC0952"
+        },
+        {
+          "example_id": "flawed_fictions_118",
+          "prompt_hash": "682D34C1BDA8646A2EF4FEB023316DB1068F7B4644807AB1779ECABA80F6AD75",
+          "prompt_utf8_bytes": 3703,
+          "story_hash": "CA5BAC73E205454DF3C8B96C33D508BD4731BFB81E6CE2E79BA122A3D5C063E2"
+        },
+        {
+          "example_id": "flawed_fictions_121",
+          "prompt_hash": "99FC73D781BDA4670B00B8A7C9D7C431179570D4ACE462C526C07E2F80636F9C",
+          "prompt_utf8_bytes": 5375,
+          "story_hash": "42842A31143DD15A156BDFD39E6CDA5F63D8DDA7808228BB06210E3084B7D5A5"
+        },
+        {
+          "example_id": "flawed_fictions_300",
+          "prompt_hash": "9CC3768FBB095EAD21DBB67B14F84E06EB2A8FE847279D8D5075C9F72700C350",
+          "prompt_utf8_bytes": 4130,
+          "story_hash": "535C353C1A54F043959795A689561176674DC5CAFDD98AA4435EEF5078ED3E44"
+        },
+        {
+          "example_id": "flawed_fictions_382",
+          "prompt_hash": "2CF8D570C8D6805A2B87B6FC3248F57D3CFBCC18E7E8C832EE0080AAF72B95A4",
+          "prompt_utf8_bytes": 5917,
+          "story_hash": "2D3F86759831D0F435269C28F152D5B46CF3FA21186C5F7848A4EB1338DA8A77"
+        },
+        {
+          "example_id": "flawed_fictions_296",
+          "prompt_hash": "DEC89435ED516D707F254A2A0E063E2D6B176D8F01ACC5788665E8027C61FF06",
+          "prompt_utf8_bytes": 4912,
+          "story_hash": "74985412BBF4661B9D6A705A60215AAF93A8D2E47C92CDEDA724A9061CEB67B5"
+        },
+        {
+          "example_id": "flawed_fictions_268",
+          "prompt_hash": "200AEA053A5B29C1CD119F6DCC7789ED4A274F8801FD6E939A5B832316CA051E",
+          "prompt_utf8_bytes": 3668,
+          "story_hash": "DCC4CB824363D3A65FD9D5D67732CF47B072DD88759DD1348C9A1C91B4E140AE"
+        },
+        {
+          "example_id": "flawed_fictions_141",
+          "prompt_hash": "12C5238D5B214FEB7EC3E6D3C4618DF8D822057DCD09570C379B7BA440E4C25F",
+          "prompt_utf8_bytes": 5271,
+          "story_hash": "EAA9D22AE0E40F1A39C68C47300CE81B24AB0FD33A5FCF76913CDD34A4AD6ED9"
+        },
+        {
+          "example_id": "flawed_fictions_143",
+          "prompt_hash": "D60088D74BA814FAE83AC1FBC4CF7EC6A7296CBB848ABF42280A39D744A54E98",
+          "prompt_utf8_bytes": 4008,
+          "story_hash": "DEF0A7CF133A98B2187C60422FBCC4867C0BD28C2892C41927859E39CC8C77A3"
+        },
+        {
+          "example_id": "flawed_fictions_225",
+          "prompt_hash": "2B40928FD903B4382D4CAC50155E222FE21C3D3F64ABF29D519B5620A8BE33B8",
+          "prompt_utf8_bytes": 4333,
+          "story_hash": "BD8D2A124A89EAFFEE9891DD686E36C28944AEB3FA1DBC5784B270A62E385481"
+        },
+        {
+          "example_id": "flawed_fictions_150",
+          "prompt_hash": "453795D4D86D51B9C8029A9BFF0C3AA7300CEAF983E0BF7874DC49722FC2AD94",
+          "prompt_utf8_bytes": 5344,
+          "story_hash": "161FF12FA42E36BFD403963D55A66FAEC8CE4D635C1C9DFEAFB900A4AC421AFB"
+        },
+        {
+          "example_id": "flawed_fictions_384",
+          "prompt_hash": "BBFCC95AF0E21D912547FE74E277DE8C09D3C9825EFBDF7817153AF547CDD77E",
+          "prompt_utf8_bytes": 6124,
+          "story_hash": "81C3DBA161F62BD89BBAB21A21F5660AF3C89794F0453856FE0D5F84D87DD8EF"
+        },
+        {
+          "example_id": "flawed_fictions_162",
+          "prompt_hash": "D062DC483FD31144C27B44F31E317D4AA44D7F3E4712F12462B553ACD37D7F7B",
+          "prompt_utf8_bytes": 3731,
+          "story_hash": "D4AE3B3A00669D7570CA6341CF46A2DD8E90F553D26A7F04B5DDB911A171E0A7"
+        },
+        {
+          "example_id": "flawed_fictions_293",
+          "prompt_hash": "BA2DB6DB6C430E09E760499FA8E8D1BD2F81B555AEB3E7C3B29967E5FC98C3D7",
+          "prompt_utf8_bytes": 4447,
+          "story_hash": "0414580F80641C2FB5AC6080BF074979146123E6523E3AE4EE3BA77CAC6E8FA5"
+        },
+        {
+          "example_id": "flawed_fictions_298",
+          "prompt_hash": "8C147C95B169135C040D27557A3A3A4606BD4D7E227831BBB9E589B61403FE9A",
+          "prompt_utf8_bytes": 6075,
+          "story_hash": "0F6A8C39584CA2F88849B6538DF8D60E0B0172990B322C6CB0633D5118343686"
+        },
+        {
+          "example_id": "flawed_fictions_174",
+          "prompt_hash": "40B665C8609D1866EA6F470BEE8B70C8FF869ACB4838EF79179389936F8245DC",
+          "prompt_utf8_bytes": 4457,
+          "story_hash": "CC2E807E9AF5A6DE3DA0644937DB64D2682F7243154B7112497C9683DC4BF0EC"
+        },
+        {
+          "example_id": "flawed_fictions_333",
+          "prompt_hash": "3174AE8006333E9765CC2B7FC7FC5CAAD4ED3F2C071C2E94FFB5488D7D7E0530",
+          "prompt_utf8_bytes": 4559,
+          "story_hash": "BC3B8F6D50CB7F0EF5F4827A37CD0F745C2697EDA4C296135BB73D935AAA2194"
+        },
+        {
+          "example_id": "flawed_fictions_369",
+          "prompt_hash": "00025AF7FA44DF39E014272AEAD0A502A6D4E6ADD520995F777F08E1DAF526E3",
+          "prompt_utf8_bytes": 3861,
+          "story_hash": "80CF79D14C5FE8EF4C03765EA6691562956D077101A9C656859AAF37F09CD3B6"
+        },
+        {
+          "example_id": "flawed_fictions_240",
+          "prompt_hash": "0EC3AC8B8594732706F1EFA957C979DE6CFB35610A900230BEF851E610370EF3",
+          "prompt_utf8_bytes": 4366,
+          "story_hash": "5DD740AF972F631099D96043805B1F16E130827DC639D04C05A55F80C17869E3"
+        },
+        {
+          "example_id": "flawed_fictions_191",
+          "prompt_hash": "78C1535B2381447300C73B03A8EB61952E64E86A5B9DA7DACB7230C5EA400E3F",
+          "prompt_utf8_bytes": 3234,
+          "story_hash": "27C7951A61C20DADC199D0503A16A6F107A4DCAA3E1AC6B2E3A2E1F62D466CF6"
+        },
+        {
+          "example_id": "flawed_fictions_335",
+          "prompt_hash": "B02307AF1BCF36E4E7E460B4E0498DCD83F43BA56D0B85D11868868A96E68455",
+          "prompt_utf8_bytes": 3497,
+          "story_hash": "5120218F5E4BE910F2E670D7880C7773D2874B4E26E156752D3D0E64C2DC8CC5"
+        },
+        {
+          "example_id": "flawed_fictions_354",
+          "prompt_hash": "B463B3CCF643DD3182E8D9D90CEF0E9D5964E27F0F3E33ACF180E6883F1D300C",
+          "prompt_utf8_bytes": 5130,
+          "story_hash": "F12FFE45BB5D0AC7580B4733E8A9777FADB25C602D431E607C5E72F6BD405F4C"
+        },
+        {
+          "example_id": "flawed_fictions_154",
+          "prompt_hash": "5683E65D8A577D575E34B477F3DF9A8F499B0BFC8A57AEEB3E5D64B20EBE978A",
+          "prompt_utf8_bytes": 6136,
+          "story_hash": "40655715185D25DAA65079373E4672D5610261FEF394A2BAE7DF8683DFD02831"
+        },
+        {
+          "example_id": "flawed_fictions_256",
+          "prompt_hash": "F07755447994C5486E5ECD26A3C09A84C834C2B839EB19B2AF838A73C94E9D93",
+          "prompt_utf8_bytes": 4508,
+          "story_hash": "6DD68B59D39631DC36F026E20AD611A43736EE9787FF825FC501919E49BAAC9C"
+        },
+        {
+          "example_id": "flawed_fictions_117",
+          "prompt_hash": "83259B13414702624EECB67F3A5544B3EE4645EA229CCB62F6806F42D2BD64AB",
+          "prompt_utf8_bytes": 5711,
+          "story_hash": "70D10E472C00646D388025E2CB2B5988220554D70CF8A71447C801D410394DB4"
+        },
+        {
+          "example_id": "flawed_fictions_157",
+          "prompt_hash": "68FF3DF6502188855733D83541D02A7EB264C981F54E328671F1F95C0F78B546",
+          "prompt_utf8_bytes": 2649,
+          "story_hash": "CDB2001D3CE5D7856898611B05B617F82A9A59217F9DA6DA8D842154D2C592F6"
+        },
+        {
+          "example_id": "flawed_fictions_166",
+          "prompt_hash": "DF17BE1C8EF87CE47D88F7D06E349BF27034827BCBDE932F97F9A6A9D0110D1A",
+          "prompt_utf8_bytes": 5503,
+          "story_hash": "8ACEC8AF7A324CB6CBA9B4028DDE08761C02DE17C059804FCB5F3B4CAB712250"
+        },
+        {
+          "example_id": "flawed_fictions_198",
+          "prompt_hash": "EAB630B9A0E94D5669AFBAB4DD37B51857FD1C1BA1C229B1CF3E93E4D82486AD",
+          "prompt_utf8_bytes": 3225,
+          "story_hash": "16F36C0E191C52B4519E65A1D3D456C0F8F05D982FFEA791DB16CC1F67D10D6B"
+        },
+        {
+          "example_id": "flawed_fictions_138",
+          "prompt_hash": "890467ED8E0BE13126998DCE5526C83C7CDBF062D58537510515557C0B3F5FE8",
+          "prompt_utf8_bytes": 5063,
+          "story_hash": "6EAB886257CE3504ED5B24619A99438A3B330C49CFE80E422A094222C3642EB8"
+        },
+        {
+          "example_id": "flawed_fictions_385",
+          "prompt_hash": "4948D197498BFDFDFC94BF02B3E8F0E7643D91E69B60A577E0277D9B70AA9ACA",
+          "prompt_utf8_bytes": 4012,
+          "story_hash": "F99CE2668CE52EA0FBC435384A59F0D8748FE5621F3ACE37BE067E95179FA513"
+        },
+        {
+          "example_id": "flawed_fictions_400",
+          "prompt_hash": "1982EA20BBAB307B8EDAE1AE3084D4EF1D42AB9AC4496A7C05011DD4B40BBAC6",
+          "prompt_utf8_bytes": 5934,
+          "story_hash": "1C35409B719BB4E9C8DABF7B3CCA4382DA2E503B6567743983B0F08EA468316B"
+        },
+        {
+          "example_id": "flawed_fictions_312",
+          "prompt_hash": "BAB3D4ED42688C772C99F075BEC233BD764DF9D5B72649FBB8A6CCE210B789D9",
+          "prompt_utf8_bytes": 5042,
+          "story_hash": "0698989E70674B0D7784AC767A3EEE5187BDB66E09D1F8674698F391E3518004"
+        },
+        {
+          "example_id": "flawed_fictions_195",
+          "prompt_hash": "970AAA4D555AB104768D9CA40E98582986D5020953505E7417C68DCF5CC22361",
+          "prompt_utf8_bytes": 3768,
+          "story_hash": "C1AD1515C6BFD871DF9945E60FA07B5D82759CC523C33632C24D1D2EC75E9152"
+        },
+        {
+          "example_id": "flawed_fictions_169",
+          "prompt_hash": "DE0145AB3D5545992FBE9946232A067F9188D2BA75AE1A868B70E72B9728D5E1",
+          "prompt_utf8_bytes": 5093,
+          "story_hash": "FD3EAA793A08CC46458E0692B91B09E84E2A77BB94D6283FB0438123C8312876"
+        },
+        {
+          "example_id": "flawed_fictions_389",
+          "prompt_hash": "F14D5C371BD024725B66CBC79C9AC630393F4629EE398CE515B2DC3426ECC2DC",
+          "prompt_utf8_bytes": 4466,
+          "story_hash": "FC5154424A0379E3703B4FCB2DBCB0CCF7D2705DD37EFCB9D62B2841E8304614"
+        },
+        {
+          "example_id": "flawed_fictions_255",
+          "prompt_hash": "CD2B40B83C1047CD3BC717DECA70737F94951B53BD3FC9525CD7BD317E0FAC34",
+          "prompt_utf8_bytes": 4471,
+          "story_hash": "4DD8F1888DCAD61D8D0C5CA0A6F40408F64D6FFF8899B5FD4CAC5EA944B9F90F"
+        },
+        {
+          "example_id": "flawed_fictions_402",
+          "prompt_hash": "6097EF9C467B65BFC110E35957FB86C6D02F10B50EF24A45E740DC997842D762",
+          "prompt_utf8_bytes": 4845,
+          "story_hash": "2E9913D232AA4002C0BF582399B19FBC8E80B0E1F92762BE28415D2DB160F58A"
+        },
+        {
+          "example_id": "flawed_fictions_350",
+          "prompt_hash": "5AFAE5436BAE6FF10388EFCBBCE188459C08E49B7D227CFB7DDAB9553C46BE5B",
+          "prompt_utf8_bytes": 4123,
+          "story_hash": "63806D853594AF8513523B0C0FB2511F23F9F0DC2876A6A995CA6261B11A6E58"
+        },
+        {
+          "example_id": "flawed_fictions_398",
+          "prompt_hash": "B1C3A38CE9241CF570616D3E49F4C9667DD19888C44FC3F9826BE98CFE8DDC03",
+          "prompt_utf8_bytes": 5540,
+          "story_hash": "96C63FC261F60373D852416F7B2B0D7C35C910EF6E4C7298A2B7C3B7F6BE4A6C"
+        },
+        {
+          "example_id": "flawed_fictions_253",
+          "prompt_hash": "012DDEA79656CC9DD7F973279DCD9DB672F44F7EE861AF3E96CD2A518B183F12",
+          "prompt_utf8_bytes": 5357,
+          "story_hash": "1467AC349D97A79C4ED42A192F89D66E199BF8220255DB94402D53676D866A74"
+        },
+        {
+          "example_id": "flawed_fictions_266",
+          "prompt_hash": "B0F17BB5F55752B7169446E445F1F6921864A11CED9D26271D3684966DF5239F",
+          "prompt_utf8_bytes": 4122,
+          "story_hash": "ED30CD85113E0D4AC4692CFA6F60164B2F14126EB9ED27E0C961BEAC51E80687"
+        },
+        {
+          "example_id": "flawed_fictions_180",
+          "prompt_hash": "1ED96127FB933C8AF555B96FE2BB78A8DCA46B4BBC6C463CCF594D78403D0148",
+          "prompt_utf8_bytes": 5017,
+          "story_hash": "A47AA8DF48F0B1B91558E684BB47705CECC3C6D299CFD0B53720C4438C514D7F"
+        },
+        {
+          "example_id": "flawed_fictions_112",
+          "prompt_hash": "57DCC3196B69609D9D94372A94DE317220C95AE0CBCC5ECD2457EF0F1CF23477",
+          "prompt_utf8_bytes": 3823,
+          "story_hash": "B5705422EA566FF6247D159E136588DDCCBC79BE9674960658961972DECD3DF0"
+        },
+        {
+          "example_id": "flawed_fictions_220",
+          "prompt_hash": "B0B808F799A7F9715D4C24810AE76961F1308BBB90E12C96FDE95BA74F514160",
+          "prompt_utf8_bytes": 6773,
+          "story_hash": "A8078A051BD633C511DA9376911A71671F178C314C0FAD0F18D2A4849070F09D"
+        }
+      ]
+    },
+    "runtime_revision": {
+      "limitation": "Pilot selection and 6.19-hour planning estimate are historical Ollama 0.35.1 evidence. Runtime equivalence to 0.40.0 is not claimed or tested with inference.",
+      "metadata_changes": [
+        {
+          "after": "stop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95\nrepeat_penalty                 1",
+          "before": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95",
+          "field": "parameters",
+          "model": "qwen3:8b",
+          "values_equal": true
+        }
+      ],
+      "parent_prediction_records": 0,
+      "parent_preparation": "experiments/main100_comparison_v1/preparation.json",
+      "parent_preparation_hash": "7EA310EA0469906929EB98B9854A8707D1A0F703484AF02332501B102AC9FD2A",
+      "parent_request_events": 0,
+      "parent_runtime": "0.35.1",
+      "records_reused_from_parent": 0,
+      "runtime": "0.40.0",
+      "sample_policy": "Reference the exact immutable v1 manifest, inputs, gold, exclusions and templates; no resampling."
+    },
+    "settings": {
+      "baseline_configuration": "configs/experiments/three_model_main10.json",
+      "documented_missing_run_prefix_count": 85,
+      "excluded_current_session": "01a111c4-c300-7913-a34d-50396f2e995f",
+      "expected_ollama_version": "0.40.0",
+      "export_dir": "experiments/main100_comparison_v2_ollama0400/exports",
+      "exposure_word_shingle_size": 12,
+      "family_min_containment": 0.2,
+      "family_word_shingle_size": 5,
+      "history_root": "C:/Users/fonga/.codex/sessions",
+      "inputs": "experiments/main100_comparison_v1/detector_inputs.jsonl",
+      "manifest": "experiments/main100_comparison_v1/evaluator_only/manifest.json",
+      "name": "main100_comparison_v2_ollama0400",
+      "parent_contract": "experiments/main100_comparison_v1/experiment_contract.md",
+      "parent_preparation": "experiments/main100_comparison_v1/preparation.json",
+      "pilot_configuration": "configs/experiments/three_model_main10_prompting.json",
+      "primary_model": "qwen3:8b",
+      "revision_kind": "runtime_only_same_frozen_sample",
+      "root": "experiments/main100_comparison_v2_ollama0400",
+      "run_root": "experiments/main100_comparison_v2_ollama0400/runs",
+      "sample_per_class": 50,
+      "selected_strategy": "verify_revise",
+      "selection_salt": "main100_comparison_v1:2026-10-06",
+      "template_copy_dir": "prompts/frozen/main100_comparison_v1"
+    },
+    "source_hashes": {
+      "C:/Users/fonga/AppData/Roaming/nltk_data/tokenizers/punkt_tab/english/abbrev_types.txt": "92A3E070F43D9B4C5534758CA40AD7343B04E7E29BFE0C2EB658A39445A4F779",
+      "C:/Users/fonga/AppData/Roaming/nltk_data/tokenizers/punkt_tab/english/collocations.tab": "8E2DA1225E4DD2CC9DBA261EE231CCB134859E21B46006E7F472C5EE269AF0CF",
+      "C:/Users/fonga/AppData/Roaming/nltk_data/tokenizers/punkt_tab/english/ortho_context.tab": "4BBCCA25ED3D3F06C02402ABF8419B9F033B8ADC06E7B482ECA4E45F81A5DC4C",
+      "C:/Users/fonga/AppData/Roaming/nltk_data/tokenizers/punkt_tab/english/sent_starters.txt": "F3F8535483E1DBA487241B764945168123BCA3209A9645E59ACD1225DC76EDAC",
+      "configs/experiments/main100_comparison_v1.json": "494D25F1C7748DFE513A8607BC3D931D6CCD99FA523DCDC12AE5D1107436A520",
+      "configs/experiments/main100_comparison_v2_ollama0400.json": "02B06793AF487818E9B63FA72255484FDE3B3162B8802014959DCA0DD9A89DE4",
+      "configs/experiments/three_model_main10.json": "FF608CA3C6A51BD4A7F52B23E72C0181CDB84DF6768429C99010EBA9CDB2A329",
+      "configs/experiments/three_model_main10_prompting.json": "833822A8964EE56F40522A5091E84956C9EA7F6AE62E36FEAE3E279A089ECAC1",
+      "configs/models/three_model_main10/llama3_1_8b.yaml": "038170B89548224F9113427A9BA8CE940F3D20B9F30875840E7617E3501AA6E2",
+      "configs/models/three_model_main10/mistral_7b.yaml": "94A75A166B8107F3F24125FB5F9DB4F0C709567842A5869644E50065FC0DFD96",
+      "configs/models/three_model_main10/qwen3_8b.yaml": "5DD273B2230CBC1B209FE8B54A8976CA671CF97B87ED9DDC601D884E13CAA5F0",
+      "data/raw/flawed-fictions/flawed_fictions.parquet": "584033C8475F100B2B4964227CF2C3E1E523549B6881C0398177B6FB8154592B",
+      "data/raw/flawed-fictions/flawed_fictions_cf_negs.parquet": "F05ADD4776F3F919178BC6E5F948CFE460C3E09E04D694B37369079F4DB941D4",
+      "data/raw/flawed-fictions/flawed_fictions_error_resolved_negs.parquet": "3BD44D3757CAC89D7B8C4DB202AABAF7F26450FBF316A29E7E65975A6875CBFE",
+      "data/raw/flawed-fictions/flawed_fictions_long.parquet": "164F12D4D9A95680B05B5484133AEEC4A34A1A2F8BA886439C731813B5309B62",
+      "experiments/main100_comparison_v1/detector_inputs.jsonl": "D983FFD52B511350DDA598FFFB9B3F55A9E30EA659F512326E1A5E43FF4BCC70",
+      "experiments/main100_comparison_v1/evaluator_only/exposure_audit.json": "04C51C71EC5D84D636DFABA31B0FEF4717151BD5AB504EAE330060A873072DAC",
+      "experiments/main100_comparison_v1/evaluator_only/gold.json": "93E6488D5094CE728E079993282DEB278112176923238A67FFA4A5BC3E2752FF",
+      "experiments/main100_comparison_v1/evaluator_only/manifest.json": "EF02FC8910579FF26F8D395704C1DB86C4EB83DEDA0748ADAA5336EFCD66E8ED",
+      "experiments/main100_comparison_v1/experiment_contract.md": "816D4FE433E40BE5FF4FE5B13703AFFB294DC05A68796DEAA591337CA1ACB7F5",
+      "experiments/main100_comparison_v1/model_inspection.json": "89E40FB7FB35AE57B2CDFDB449524419F904C45C03926EBC5E2F3ED896682B44",
+      "experiments/main100_comparison_v1/pilot_selection.json": "02474A6101DAF01680ECEAF7C8663F91FCA2ABF9A93F3CC824363089D7399146",
+      "experiments/main100_comparison_v1/preparation.json": "7EA310EA0469906929EB98B9854A8707D1A0F703484AF02332501B102AC9FD2A",
+      "experiments/main100_comparison_v2_ollama0400/model_inspection.json": "08263D81D60484AE7EABA1EE0040A030EE21E1867CB29882F170BEBA3BB136A8",
+      "experiments/main100_comparison_v2_ollama0400/runtime_revision.json": "D9679F2C4F7B99EA31198E5556EC6CDEAF59AF1F5B9A33761CF65E5BC629D698",
+      "prompts/benchmark/vanilla_v1.txt": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA",
+      "prompts/experimental/verify_revise_v2.txt": "272F789C83596EE7B408F1D58210F6D71E7796FE174966C29023DAF4E8744131",
+      "prompts/frozen/main100_comparison_v1/vanilla_v1.txt": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA",
+      "prompts/frozen/main100_comparison_v1/verify_revise_v2.txt": "272F789C83596EE7B408F1D58210F6D71E7796FE174966C29023DAF4E8744131",
+      "scripts/analyse_prompting_main10.py": "27B55587E7FC7E788DFCF13242E3778DD1AED451D9BB9324CB8A5E7BA3CED549",
+      "src/fyp/__init__.py": "97B85990EFC8B6F40397193DE6437994CA5C392E2D1D7036B2DA75A8B4688A2F",
+      "src/fyp/cli.py": "0DF791D2C3C58CE46B6D1849195417FEE03F274711CA2B519716DD70D471AD6B",
+      "src/fyp/data/__init__.py": "41EF50AD6917E45E5FD2E045C52C19AFA5A03B1F7FCD706B8BED6CEDAEE9B944",
+      "src/fyp/data/loader.py": "96C54EDEE9D50ECF3C4A6AA5A0DE31F9AC980A29B18A4C077B78EC6B48DC7E33",
+      "src/fyp/data/pilot.py": "BA81FA8BC2F932AE32B894BE24A68E8637EDE250829554875FE95DE8BF5BEF0C",
+      "src/fyp/data/schema.py": "A234EE9C3982C208869440D0491CB997E4103BBC385CEB58394A94F35C853240",
+      "src/fyp/data/validation.py": "F45B55E7DBCCC89C12DA6DE538E232E742701AC5D5C747B7EA543F682940D1F4",
+      "src/fyp/doctor.py": "F0831B5E6039F8A2956C1144B66B725B52015981594527696A5892EA75D5C7D7",
+      "src/fyp/evaluation/__init__.py": "939B2A8DE79B5E222143C67D1EA71228A7A97F063E4D685F8270060C8AB19266",
+      "src/fyp/evaluation/evaluator.py": "882E27E372CF681B71A1EF480C7017695AA4A5E3E7A6C3D0158E8A79FB73287E",
+      "src/fyp/evaluation/localization.py": "54849AB33CE358F09FB06918FAC3FBAF7BAE3375DCABF2C9EB7A425202C4F3C2",
+      "src/fyp/evaluation/metrics.py": "0F23879ED5A8F31166831BA19F788BCADF4D9AB57F61156E88C326456CD48AE7",
+      "src/fyp/experiments/__init__.py": "8B9EF4C8A71D737220D058103C8CDDF582146C649CFD05496832373999C1767F",
+      "src/fyp/experiments/baseline_pilot.py": "BCCF64B0FFA45B59D1EC32306FE1F8440AF6216A1584939413ABA9F43D8CAB44",
+      "src/fyp/experiments/main100_audit.py": "D93BA2DA3FBED4B06BC926CF45B8A3D26DCCDA1E8436BE76F26B9F6540572927",
+      "src/fyp/experiments/main100_comparison.py": "63B2CB62C8D80BB219622770597140BB96AAB255ACE36D58F47A78B4FA98BE41",
+      "src/fyp/experiments/main100_runtime_revision.py": "8F99AC5DFB82B3B55FC903727A3743C56960FFA8DD81DFA3120FE6E88F4556CB",
+      "src/fyp/experiments/prompting_outputs.py": "9CE0568A69118582C36B485B02D0E9055B56D8BA029CE9EA061068811F59D814",
+      "src/fyp/experiments/prompting_pilot.py": "8D7EF1DB9385B052A7937BFE9C919B3353975B69E260E954F02FA73AA520A065",
+      "src/fyp/experiments/runner.py": "23F6642FCF8B3B9FC1A647A72E9FF06DD228CFDCF3EA238BA0E8DDE28D4E9D2E",
+      "src/fyp/models/__init__.py": "0D1E1BDD18A5FAFBB33BBCED3C68BC57BE255E084C2891D2C9BD07690AF524D5",
+      "src/fyp/models/base.py": "B57B3D94F3B4D8AAE7841839B1E35BFB488CDCBD6C8B7F50E437A1741EE133AB",
+      "src/fyp/models/ollama_client.py": "7A305EF381EFA9937D2DD9836919F46C0E0166BD19625EB19A2716787DC1A9BA",
+      "src/fyp/models/registry.py": "9E8B94A92BC558928E5012C602F6B948BC649CF142CFD319697BD26C83AEC4FB",
+      "src/fyp/models/request_journal.py": "401F994AEC373C2065563A5ACB26EE9DAA9B727F03FB1A930E2E9CA90E3323EC",
+      "src/fyp/prompting/__init__.py": "BE627F2EC2B82E4D1143EB0E174F0296DAD3C360104A32A8A976D173BDC19348",
+      "src/fyp/prompting/parser.py": "CC6E06D15D267E57D59B5DD55DDF6D3EF17377FD7990E2A4196E8F644D90D52C",
+      "src/fyp/prompting/records.py": "2A644A9655A31E3E053A1FC5E616479258535A2365C153FF9B07B31C48382D72",
+      "src/fyp/prompting/strategies.py": "360BF46341EA7C86E5F266EFB9B5DE5BB310F9B6BD6E674EAC7BF6D9BA5D0DB2"
+    },
+    "status": "PREPARED_NO_INFERENCE",
+    "templates": {
+      "vanilla": {
+        "copy": "prompts/frozen/main100_comparison_v1/vanilla_v1.txt",
+        "hash": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA",
+        "path": "prompts/benchmark/vanilla_v1.txt",
+        "version": "vanilla_v1"
+      },
+      "verify_revise": {
+        "copy": "prompts/frozen/main100_comparison_v1/verify_revise_v2.txt",
+        "hash": "272F789C83596EE7B408F1D58210F6D71E7796FE174966C29023DAF4E8744131",
+        "path": "prompts/experimental/verify_revise_v2.txt",
+        "version": "verify_revise_v2"
+      }
+    }
+  },
+  "prompt_template_hash": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA",
+  "prompt_version": "vanilla_v1",
+  "provider": "ollama",
+  "python": {
+    "executable": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\.venv\\Scripts\\python.exe",
+    "version": "3.12.10"
+  },
+  "run_id": "main100_comparison_v2_ollama0400__llama3_1_8b_baseline",
+  "seed": 42,
+  "start_timestamp": "2026-10-07T11:08:25.341342Z",
+  "temperature": 0.5,
+  "thinking_mode": null
+}

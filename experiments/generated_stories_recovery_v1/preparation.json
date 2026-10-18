@@ -1,0 +1,1774 @@
+{
+  "config": {
+    "name": "generated_stories_recovery_v1",
+    "root": "experiments/generated_stories_recovery_v1",
+    "source_config": "configs/experiments/generated_stories_v1.json",
+    "request_format": "json",
+    "max_retries": 1,
+    "procedure": "revised procedure: JSON output mode; unchanged prompts and sampling; two total dispatch starts per stage, connection/timeout retries only"
+  },
+  "source_settings": {
+    "name": "generated_stories_v1",
+    "root": "experiments/generated_stories_v1",
+    "models": {
+      "qwen3:8b": {
+        "config": "configs/models/generated_stories_v1/qwen3_8b.yaml",
+        "stem": "qwen3_8b"
+      },
+      "llama3.1:8b": {
+        "config": "configs/models/generated_stories_v1/llama3_1_8b.yaml",
+        "stem": "llama3_1_8b"
+      },
+      "mistral:7b": {
+        "config": "configs/models/generated_stories_v1/mistral_7b.yaml",
+        "stem": "mistral_7b"
+      }
+    },
+    "generation": {
+      "num_ctx": 16384,
+      "num_predict": 4096
+    },
+    "templates": {
+      "A": "prompts/generation/original_v1.txt",
+      "B": "prompts/generation/rewrite_v1.txt"
+    },
+    "writing_prompts": "experiments/generated_stories_v1/writing_prompts.json",
+    "editing_instructions": "experiments/generated_stories_v1/editing_instructions.json",
+    "target_words": [
+      400,
+      700
+    ],
+    "max_edit_fraction_warning": 0.15,
+    "stages": [
+      "A",
+      "B"
+    ],
+    "template_token_margin": 512
+  },
+  "source_freeze": {
+    "settings": {
+      "name": "generated_stories_v1",
+      "root": "experiments/generated_stories_v1",
+      "models": {
+        "qwen3:8b": {
+          "config": "configs/models/generated_stories_v1/qwen3_8b.yaml",
+          "stem": "qwen3_8b"
+        },
+        "llama3.1:8b": {
+          "config": "configs/models/generated_stories_v1/llama3_1_8b.yaml",
+          "stem": "llama3_1_8b"
+        },
+        "mistral:7b": {
+          "config": "configs/models/generated_stories_v1/mistral_7b.yaml",
+          "stem": "mistral_7b"
+        }
+      },
+      "generation": {
+        "num_ctx": 16384,
+        "num_predict": 4096
+      },
+      "templates": {
+        "A": "prompts/generation/original_v1.txt",
+        "B": "prompts/generation/rewrite_v1.txt"
+      },
+      "writing_prompts": "experiments/generated_stories_v1/writing_prompts.json",
+      "editing_instructions": "experiments/generated_stories_v1/editing_instructions.json",
+      "target_words": [
+        400,
+        700
+      ],
+      "max_edit_fraction_warning": 0.15,
+      "stages": [
+        "A",
+        "B"
+      ],
+      "template_token_margin": 512
+    },
+    "inspection": {
+      "ollama_version": "0.40.0",
+      "models": {
+        "qwen3:8b": {
+          "available": true,
+          "identity": {
+            "tag": "qwen3:8b",
+            "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+            "size_bytes": 5225388164,
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "qwen3",
+              "families": [
+                "qwen3"
+              ],
+              "parameter_size": "8.2B",
+              "quantization_level": "Q4_K_M"
+            },
+            "capabilities": [
+              "completion",
+              "tools",
+              "thinking"
+            ],
+            "model_info": {
+              "general.architecture": "qwen3",
+              "general.basename": "Qwen3",
+              "general.file_type": 15,
+              "general.license": "apache-2.0",
+              "general.parameter_count": 8190735360,
+              "general.quantization_version": 2,
+              "general.size_label": "8B",
+              "general.type": "model",
+              "qwen3.attention.head_count": 32,
+              "qwen3.attention.head_count_kv": 8,
+              "qwen3.attention.key_length": 128,
+              "qwen3.attention.layer_norm_rms_epsilon": 1e-06,
+              "qwen3.attention.value_length": 128,
+              "qwen3.block_count": 36,
+              "qwen3.context_length": 40960,
+              "qwen3.embedding_length": 4096,
+              "qwen3.feed_forward_length": 12288,
+              "qwen3.rope.freq_base": 1000000,
+              "tokenizer.ggml.add_bos_token": false,
+              "tokenizer.ggml.bos_token_id": 151643,
+              "tokenizer.ggml.eos_token_id": 151645,
+              "tokenizer.ggml.merges": [],
+              "tokenizer.ggml.model": "gpt2",
+              "tokenizer.ggml.padding_token_id": 151643,
+              "tokenizer.ggml.pre": "qwen2",
+              "tokenizer.ggml.token_type": [],
+              "tokenizer.ggml.tokens": []
+            },
+            "template": "\n{{- $lastUserIdx := -1 -}}\n{{- range $idx, $msg := .Messages -}}\n{{- if eq $msg.Role \"user\" }}{{ $lastUserIdx = $idx }}{{ end -}}\n{{- end }}\n{{- if or .System .Tools }}<|im_start|>system\n{{ if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end -}}\n<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}\n{{- if and $.IsThinkSet (eq $i $lastUserIdx) }}\n   {{- if $.Think -}}\n      {{- \" \"}}/think\n   {{- else -}}\n      {{- \" \"}}/no_think\n   {{- end -}}\n{{- end }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if (and $.IsThinkSet (and .Thinking (or $last (gt $i $lastUserIdx)))) -}}\n<think>{{ .Thinking }}</think>\n{{ end -}}\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}<tool_call>\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}</tool_call>\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n{{ if and $.IsThinkSet (not $.Think) -}}\n<think>\n\n</think>\n\n{{ end -}}\n{{ end }}\n{{- end }}",
+            "template_hash": "AE370D884F108D16E7CC8FD5259EBC5773A0AFA6E078B11F4ED7E39A27E0DFC4",
+            "system": "",
+            "parameters": "temperature                    0.6\ntop_k                          20\ntop_p                          0.95\nrepeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\""
+          },
+          "thinking": "disabled",
+          "context_budget": {
+            "configured_context": 16384,
+            "supported_context": 40960,
+            "largest_prompt_utf8_bytes": 502,
+            "wrapper_and_special_token_bound": 2235,
+            "output_allowance": 4096,
+            "required_token_upper_bound": 6833,
+            "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+            "estimated_f16_kv_cache_bytes": 2415919104
+          }
+        },
+        "llama3.1:8b": {
+          "available": true,
+          "identity": {
+            "tag": "llama3.1:8b",
+            "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+            "size_bytes": 4920753328,
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "llama",
+              "families": [
+                "llama"
+              ],
+              "parameter_size": "8.0B",
+              "quantization_level": "Q4_K_M"
+            },
+            "capabilities": [
+              "completion",
+              "tools"
+            ],
+            "model_info": {
+              "general.architecture": "llama",
+              "general.basename": "Meta-Llama-3.1",
+              "general.file_type": 15,
+              "general.finetune": "Instruct",
+              "general.languages": [
+                "en",
+                "de",
+                "fr",
+                "it",
+                "pt",
+                "hi",
+                "es",
+                "th"
+              ],
+              "general.license": "llama3.1",
+              "general.parameter_count": 8030261312,
+              "general.quantization_version": 2,
+              "general.size_label": "8B",
+              "general.tags": [
+                "facebook",
+                "meta",
+                "pytorch",
+                "llama",
+                "llama-3",
+                "text-generation"
+              ],
+              "general.type": "model",
+              "llama.attention.head_count": 32,
+              "llama.attention.head_count_kv": 8,
+              "llama.attention.layer_norm_rms_epsilon": 1e-05,
+              "llama.block_count": 32,
+              "llama.context_length": 131072,
+              "llama.embedding_length": 4096,
+              "llama.feed_forward_length": 14336,
+              "llama.rope.dimension_count": 128,
+              "llama.rope.freq_base": 500000,
+              "llama.vocab_size": 128256,
+              "tokenizer.ggml.bos_token_id": 128000,
+              "tokenizer.ggml.eos_token_id": 128009,
+              "tokenizer.ggml.merges": [],
+              "tokenizer.ggml.model": "gpt2",
+              "tokenizer.ggml.pre": "llama-bpe",
+              "tokenizer.ggml.token_type": [],
+              "tokenizer.ggml.tokens": []
+            },
+            "template": "{{- if or .System .Tools }}<|start_header_id|>system<|end_header_id|>\n{{- if .System }}\n\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\nCutting Knowledge Date: December 2023\n\nWhen you receive a tool call response, use the output to format an answer to the orginal user question.\n\nYou are a helpful assistant with tool calling capabilities.\n{{- end }}<|eot_id|>\n{{- end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 }}\n{{- if eq .Role \"user\" }}<|start_header_id|>user<|end_header_id|>\n{{- if and $.Tools $last }}\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}. Do not use variables.\n\n{{ range $.Tools }}\n{{- . }}\n{{ end }}\nQuestion: {{ .Content }}<|eot_id|>\n{{- else }}\n\n{{ .Content }}<|eot_id|>\n{{- end }}{{ if $last }}<|start_header_id|>assistant<|end_header_id|>\n\n{{ end }}\n{{- else if eq .Role \"assistant\" }}<|start_header_id|>assistant<|end_header_id|>\n{{- if .ToolCalls }}\n{{ range .ToolCalls }}\n{\"name\": \"{{ .Function.Name }}\", \"parameters\": {{ .Function.Arguments }}}{{ end }}\n{{- else }}\n\n{{ .Content }}\n{{- end }}{{ if not $last }}<|eot_id|>{{ end }}\n{{- else if eq .Role \"tool\" }}<|start_header_id|>ipython<|end_header_id|>\n\n{{ .Content }}<|eot_id|>{{ if $last }}<|start_header_id|>assistant<|end_header_id|>\n\n{{ end }}\n{{- end }}\n{{- end }}",
+            "template_hash": "948AF2743FC78A328DCB3B0F5A31B3D75F415840FDB699E8B1235978392ECF85",
+            "system": "",
+            "parameters": "stop                           \"<|start_header_id|>\"\nstop                           \"<|end_header_id|>\"\nstop                           \"<|eot_id|>\""
+          },
+          "thinking": "not_applicable_option_omitted",
+          "context_budget": {
+            "configured_context": 16384,
+            "supported_context": 131072,
+            "largest_prompt_utf8_bytes": 502,
+            "wrapper_and_special_token_bound": 1993,
+            "output_allowance": 4096,
+            "required_token_upper_bound": 6591,
+            "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+            "estimated_f16_kv_cache_bytes": 2147483648
+          }
+        },
+        "mistral:7b": {
+          "available": true,
+          "identity": {
+            "tag": "mistral:7b",
+            "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+            "size_bytes": 4372824384,
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "llama",
+              "families": [
+                "llama"
+              ],
+              "parameter_size": "7.2B",
+              "quantization_level": "Q4_K_M"
+            },
+            "capabilities": [
+              "completion",
+              "tools"
+            ],
+            "model_info": {
+              "general.architecture": "llama",
+              "general.file_type": 15,
+              "general.parameter_count": 7248023552,
+              "general.quantization_version": 2,
+              "llama.attention.head_count": 32,
+              "llama.attention.head_count_kv": 8,
+              "llama.attention.layer_norm_rms_epsilon": 1e-05,
+              "llama.block_count": 32,
+              "llama.context_length": 32768,
+              "llama.embedding_length": 4096,
+              "llama.feed_forward_length": 14336,
+              "llama.rope.dimension_count": 128,
+              "llama.rope.freq_base": 1000000,
+              "llama.vocab_size": 32768,
+              "tokenizer.ggml.add_bos_token": true,
+              "tokenizer.ggml.add_eos_token": false,
+              "tokenizer.ggml.bos_token_id": 1,
+              "tokenizer.ggml.eos_token_id": 2,
+              "tokenizer.ggml.model": "llama",
+              "tokenizer.ggml.pre": "default",
+              "tokenizer.ggml.scores": [],
+              "tokenizer.ggml.token_type": [],
+              "tokenizer.ggml.tokens": [],
+              "tokenizer.ggml.unknown_token_id": 0
+            },
+            "template": "{{- if .Messages }}\n{{- range $index, $_ := .Messages }}\n{{- if eq .Role \"user\" }}\n{{- if and (eq (len (slice $.Messages $index)) 1) $.Tools }}[AVAILABLE_TOOLS] {{ $.Tools }}[/AVAILABLE_TOOLS]\n{{- end }}[INST] {{ if and $.System (eq (len (slice $.Messages $index)) 1) }}{{ $.System }}\n\n{{ end }}{{ .Content }}[/INST]\n{{- else if eq .Role \"assistant\" }}\n{{- if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}[TOOL_CALLS] [\n{{- range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{- end }}]\n{{- end }}</s>\n{{- else if eq .Role \"tool\" }}[TOOL_RESULTS] {\"content\": {{ .Content }}} [/TOOL_RESULTS]\n{{- end }}\n{{- end }}\n{{- else }}[INST] {{ if .System }}{{ .System }}\n\n{{ end }}{{ .Prompt }}[/INST]\n{{- end }}{{ .Response }}\n{{- if .Response }}</s>\n{{- end }}",
+            "template_hash": "1FF5B64B61B9A63146475A24F70D3CA2FD6FDEEC44247987163479968896FC0B",
+            "system": "",
+            "parameters": "stop                           \"[INST]\"\nstop                           \"[/INST]\""
+          },
+          "thinking": "not_applicable_option_omitted",
+          "context_budget": {
+            "configured_context": 16384,
+            "supported_context": 32768,
+            "largest_prompt_utf8_bytes": 502,
+            "wrapper_and_special_token_bound": 1311,
+            "output_allowance": 4096,
+            "required_token_upper_bound": 5909,
+            "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+            "estimated_f16_kv_cache_bytes": 2147483648
+          }
+        }
+      }
+    },
+    "stage_a_bounds": [
+      {
+        "prompt_utf8_bytes": 487
+      },
+      {
+        "prompt_utf8_bytes": 493
+      },
+      {
+        "prompt_utf8_bytes": 473
+      },
+      {
+        "prompt_utf8_bytes": 469
+      },
+      {
+        "prompt_utf8_bytes": 486
+      },
+      {
+        "prompt_utf8_bytes": 485
+      },
+      {
+        "prompt_utf8_bytes": 475
+      },
+      {
+        "prompt_utf8_bytes": 482
+      },
+      {
+        "prompt_utf8_bytes": 502
+      },
+      {
+        "prompt_utf8_bytes": 501
+      }
+    ],
+    "hashes": {
+      "configs/experiments/generated_stories_v1.json": "0269299A656FBADE910A9E7A7A66D9F8984806455A4DB282C83481E0466F8612",
+      "experiments/generated_stories_v1/writing_prompts.json": "FF2982DDD460D10572F76B0FEBCB1811A831875C1A16395691652AFA876C74F7",
+      "experiments/generated_stories_v1/editing_instructions.json": "B134DCFA64E28E212E2EDC6FB8F79EB74C8F515A45297BD347DE9284D2386242",
+      "C:/Users/fonga/Desktop/Codex/flawedfictions_fyp/src/fyp/experiments/generated_stories.py": "3906D5F177BC8CDF09F6090286C155AAFE73A13AB1D1D4DECA86C864A15DC4C8",
+      "prompts/generation/original_v1.txt": "4025963814E10DB0AB390EA40BF4B49E8F97E659B3F726FC48C4CE2E52F23DBD",
+      "prompts/generation/rewrite_v1.txt": "90EE5DB198896BD1AE5E660E179B80A707C2AE852DEE6E970F71D29102C804DF",
+      "configs/models/generated_stories_v1/qwen3_8b.yaml": "114FE9C581AD2394663BC5873D66310A4C5B403930587F934AE739BC916FC70C",
+      "configs/models/generated_stories_v1/llama3_1_8b.yaml": "79115254BB0DD91FE9BD7A4E38A3E2AD11AAC2E10FBA1E36A0B028DB8FC9177E",
+      "configs/models/generated_stories_v1/mistral_7b.yaml": "8830A52E5AEB8A5BF80AD18981B227D9C3BB383DCC684D470267A88352C5E03C",
+      "src/fyp/models/base.py": "B57B3D94F3B4D8AAE7841839B1E35BFB488CDCBD6C8B7F50E437A1741EE133AB",
+      "src/fyp/models/registry.py": "9E8B94A92BC558928E5012C602F6B948BC649CF142CFD319697BD26C83AEC4FB",
+      "src/fyp/models/ollama_client.py": "7A305EF381EFA9937D2DD9836919F46C0E0166BD19625EB19A2716787DC1A9BA",
+      "src/fyp/models/request_journal.py": "401F994AEC373C2065563A5ACB26EE9DAA9B727F03FB1A930E2E9CA90E3323EC",
+      "src/fyp/experiments/baseline_pilot.py": "BCCF64B0FFA45B59D1EC32306FE1F8440AF6216A1584939413ABA9F43D8CAB44",
+      "src/fyp/experiments/main100_comparison.py": "63B2CB62C8D80BB219622770597140BB96AAB255ACE36D58F47A78B4FA98BE41",
+      "experiments/generated_stories_v1/generation_contract.md": "803B07FA1C2470A03505D66FF667691A0CADC06857DE4ECB4032347DC198D38B"
+    },
+    "generation_calls": 0
+  },
+  "hashes": {
+    "configs/experiments/generated_stories_v1.json": "0269299A656FBADE910A9E7A7A66D9F8984806455A4DB282C83481E0466F8612",
+    "experiments/generated_stories_v1/writing_prompts.json": "FF2982DDD460D10572F76B0FEBCB1811A831875C1A16395691652AFA876C74F7",
+    "experiments/generated_stories_v1/editing_instructions.json": "B134DCFA64E28E212E2EDC6FB8F79EB74C8F515A45297BD347DE9284D2386242",
+    "C:/Users/fonga/Desktop/Codex/flawedfictions_fyp/src/fyp/experiments/generated_stories.py": "3906D5F177BC8CDF09F6090286C155AAFE73A13AB1D1D4DECA86C864A15DC4C8",
+    "prompts/generation/original_v1.txt": "4025963814E10DB0AB390EA40BF4B49E8F97E659B3F726FC48C4CE2E52F23DBD",
+    "prompts/generation/rewrite_v1.txt": "90EE5DB198896BD1AE5E660E179B80A707C2AE852DEE6E970F71D29102C804DF",
+    "configs/models/generated_stories_v1/qwen3_8b.yaml": "114FE9C581AD2394663BC5873D66310A4C5B403930587F934AE739BC916FC70C",
+    "configs/models/generated_stories_v1/llama3_1_8b.yaml": "79115254BB0DD91FE9BD7A4E38A3E2AD11AAC2E10FBA1E36A0B028DB8FC9177E",
+    "configs/models/generated_stories_v1/mistral_7b.yaml": "8830A52E5AEB8A5BF80AD18981B227D9C3BB383DCC684D470267A88352C5E03C",
+    "src/fyp/models/base.py": "B57B3D94F3B4D8AAE7841839B1E35BFB488CDCBD6C8B7F50E437A1741EE133AB",
+    "src/fyp/models/registry.py": "9E8B94A92BC558928E5012C602F6B948BC649CF142CFD319697BD26C83AEC4FB",
+    "src/fyp/models/ollama_client.py": "7A305EF381EFA9937D2DD9836919F46C0E0166BD19625EB19A2716787DC1A9BA",
+    "src/fyp/models/request_journal.py": "401F994AEC373C2065563A5ACB26EE9DAA9B727F03FB1A930E2E9CA90E3323EC",
+    "src/fyp/experiments/baseline_pilot.py": "BCCF64B0FFA45B59D1EC32306FE1F8440AF6216A1584939413ABA9F43D8CAB44",
+    "src/fyp/experiments/main100_comparison.py": "63B2CB62C8D80BB219622770597140BB96AAB255ACE36D58F47A78B4FA98BE41",
+    "experiments/generated_stories_v1/generation_contract.md": "803B07FA1C2470A03505D66FF667691A0CADC06857DE4ECB4032347DC198D38B",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_001_A.json": "D31342F8E0D7D61EE9867D2F881C72D84DC8ECF3EEF3CB0C187780607FDA664C",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_002_A.json": "20E77F2CA59A06C3D9BEF33545CB951766338265992529D313D8F7E0EA237A44",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_003_A.json": "87CCDD37FF97CD0A59BBCFAA3A0E8949AE018B578439ED97000FB96C804D7372",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_003_B.json": "71C502253811513A5CFC2CCFC9F986B580C73A37D3D4FBB280DCCB73B2E61511",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_004_A.json": "44F541F4B309F3E17DB86A15CA47CECE326903C1076688C8E357D1ED2DB181EE",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_004_B.json": "9F56C13CAEE68A84A49057F876109942C784DF49CB902EADA38C62E63A160D56",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_005_A.json": "F3BCB9B298E0FE9A3C6DABFAD2C34EE164A304B7F87EC7627BD0C3371900697A",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_006_A.json": "4CF669E785F54B1EB67B429CCD22B6A2D95A72377D4AF0B12B598433C4B5A229",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_007_A.json": "953AF29ECC6B56FEAF65941175E48595EE16C930D4212322F1FA1BB71DD06FC8",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_008_A.json": "CA3824E0CC33A38B2CD5B1E2F911842F6B140261A1C751E752DE0382A00F6303",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_009_A.json": "C013D0744289D48D2DD851FE6289321CBD963FA093A8F7C5A131E9B6593CD5CC",
+    "experiments/generated_stories_v1/checkpoints/llama3_1_8b/llama3_1_8b_010_A.json": "5E14F6D0D672783C8E7434259385FD807CCB80A5E374944515C45647101B15E6",
+    "experiments/generated_stories_v1/checkpoints/mistral_7b/mistral_7b_001_A.json": "74E08026B99748672CAF4747E5771EFC0703E730B4BC337984BE4AB8E4060785",
+    "experiments/generated_stories_v1/checkpoints/mistral_7b/mistral_7b_002_A.json": "2D17841C780DF4389C5B19CE78E71284F7215F387C26B759EFFE5671025EC578",
+    "experiments/generated_stories_v1/checkpoints/mistral_7b/mistral_7b_003_A.json": "0D2980BF75636DB249425B6F80944024B43E9CBF47D8F8AE54F350EC5B16BAD5",
+    "experiments/generated_stories_v1/checkpoints/mistral_7b/mistral_7b_004_A.json": "D44FD8C1D82B7AFA4B5B246F2F03F8CF9D4DC1F10D5D2690C2EE32CFF8047CF6",
+    "experiments/generated_stories_v1/checkpoints/mistral_7b/mistral_7b_005_A.json": "464424A2D500CFA264611FF49CCDA8FA770B7EF89967F0CC84867BE455DD9555",
+    "experiments/generated_stories_v1/checkpoints/mistral_7b/mistral_7b_006_A.json": "9B0D4494F87C1223B693B3A649F1D94AED4F5B9BBED78D3D739115BE12EADFB7",
+    "experiments/generated_stories_v1/checkpoints/mistral_7b/mistral_7b_007_A.json": "4A45F02C1DB15322A772EF253EE9D9682DAD322A95E96296724F7AEBDEA7BCDA",
+    "experiments/generated_stories_v1/checkpoints/mistral_7b/mistral_7b_008_A.json": "F02A0AC1777BFACB7DF445814C136D9497BFBF1FC8FD459F5D24EF083987E46D",
+    "experiments/generated_stories_v1/checkpoints/mistral_7b/mistral_7b_009_A.json": "0503799256D299F0F252FF2868E323302C352ADABAB9B31C02CFD0260EBDAEA7",
+    "experiments/generated_stories_v1/checkpoints/mistral_7b/mistral_7b_010_A.json": "CEB927715895010F092456A7D9DFC525BD37FB9B739AB08C3C1C2E8CACCDB641",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_001_A.json": "9F4E072247D37FAA3A2C7D5B6A5B8B062FF8EB5099BC0AD975D617C3A12EDAEF",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_001_B.json": "DB5232167A452B6E4A88FB98C5A6389124C23751A571B63DF52B64C500699C8D",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_002_A.json": "7155831D129ECD5196E07E4D9DFBEA19504AC43A01C6480FB32D81E485AE8B46",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_003_A.json": "6F318E9915861E232BD4924A2D138F99EEF15BF575A8CCC8590759451CB9BAA3",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_003_B.json": "60D614CFACBC567F453BD3236AADAB1A2D16044A9350A39464A7D92F97049E26",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_004_A.json": "051A95413233B5A40CDD0DEF05D826B972AA98D0D20BEEAA85C40F06A6B1C30A",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_004_B.json": "088A1F11F3845ACB448138BEA7873375254D90CD98AB7D95C982D6970C032848",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_005_A.json": "BC5A8E0BCE7E1763E60022D4BBC17992D781857A99C94B942CB97B2CE39B9834",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_005_B.json": "3A2B7FA56D5C9F86F04DCB1D798663ED9EC3FF3B76508AC11B4F77BB09C4FC5F",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_006_A.json": "2199B1F2A21DA28874D2724F4B47BE235531108B69378D589D8EABB20D62E633",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_006_B.json": "8DBDC62A12B67AA8326FB1343D32BF74FFD4206C1ECC95EAF00C868B78D24964",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_007_A.json": "F2A4A8FFDBE47193F812DC0121614F046202791E655467B64DD140A5EB2C1EC6",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_007_B.json": "5A1FBC304733F54C301A0155EE9809B50A9DE5B07CA55CA099ADBF3C1845FBAD",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_008_A.json": "5AEB2DF9C7A2DA3E77B29E0F4E2C709CD0FA97C9916A2FDDAE1D226CE97508F5",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_008_B.json": "DFCEE742304B6D756DED88C8CDE5D92CF8EA6F4C42CC62D65563399FFAB63F29",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_009_A.json": "1DA9FDE0344A70BCC8811DB084FA4DEDF0C6B2EB4B5C690175203AE654225CBB",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_009_B.json": "90D1EE1606B201F07CFABF9C452AB78DB9DD83B53391B34A18C8D8557789F054",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_010_A.json": "D61BC3522FBD35DFF1F3C514AF3261E96B7DC815499C201A641B7381111B7E0D",
+    "experiments/generated_stories_v1/checkpoints/qwen3_8b/qwen3_8b_010_B.json": "59E79C7DC1888FE9D489B9EDB5D34DE7370ABDEE217C1168471FAF4C642999D3",
+    "experiments/generated_stories_v1/exports/llama3_1_8b_generated_pairs.jsonl": "09BA06BFF08F5434B25122AE2FFDF0BBD8921CD478389341E5E11B549D3F9CE1",
+    "experiments/generated_stories_v1/exports/mistral_7b_generated_pairs.jsonl": "9CEEE2DE377A4858C292B016CFEA0F606971B83DB8756CAE4459B6205ADE87E2",
+    "experiments/generated_stories_v1/exports/partial/llama3_1_8b_generated_pairs.partial.jsonl": "92E413C2942726878AB727EC3DE7148E943DAD6F25EC58337676CE2128AAB1F3",
+    "experiments/generated_stories_v1/exports/partial/mistral_7b_generated_pairs.partial.jsonl": "A6490DFB228E808367F4F5B182AFCFF859556CAF4DD3D01750B7F2EC27441BD8",
+    "experiments/generated_stories_v1/exports/partial/qwen3_8b_generated_pairs.partial.jsonl": "532CAC433EDABB154A2799984D5B58BCB6A197F13B884D2F5CF083B6C371E216",
+    "experiments/generated_stories_v1/exports/qwen3_8b_generated_pairs.jsonl": "6856F16C220F8C5D275847FB24133F00D5797A60877C20A99A7DC6D747B96109",
+    "experiments/generated_stories_v1/frozen_templates/original_v1.txt": "4025963814E10DB0AB390EA40BF4B49E8F97E659B3F726FC48C4CE2E52F23DBD",
+    "experiments/generated_stories_v1/frozen_templates/rewrite_v1.txt": "90EE5DB198896BD1AE5E660E179B80A707C2AE852DEE6E970F71D29102C804DF",
+    "experiments/generated_stories_v1/model_inspection.json": "A3AD70EC6CCCDC278EA8F1088763AF83DBA1374597682F284B17D42AE25E3AC0",
+    "experiments/generated_stories_v1/preparation.json": "6898B93BF9B8D4FB8D89074C25F9BDF21E0B6EB9779908E425F12A4CEF8584F4",
+    "experiments/generated_stories_v1/preparation_history/preparation_before_copy_fix.json": "7F5FAAC38A341ADCDCB485C06DF26208D64931EB9EF33D52B1E61C1180A03CBA",
+    "experiments/generated_stories_v1/progress.json": "CBBBB5405186387B236BC5A17A35A66F8F77B4E97B70D53EB9DBEB3D007C056C",
+    "experiments/generated_stories_v1/progress.md": "294CCEAF4FA5A2CDDF04DDDA0587B24FEFFC1B51E712C2CCC162D26304E0BEAD",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_001_A_1.bin": "49C9AE5EAD1BE3F10D119B3865BE7242CDD7873A90A82D47EF6060914BBBC90B",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_002_A_1.bin": "D03F7ED30CF00FAA303001821D55ADB1EEEEB22CA305D6AF4327423533D4BCA2",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_003_A_1.bin": "180608558615BE11248C8AC56A70CBC28E1E5893D0A82E08106FA1E661E98DBC",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_003_B_1.bin": "A0ECF72761D89162EF07C9529584DDAAFC8898B403184D6A83A6A025F306F860",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_004_A_1.bin": "A0149EA036B23D44226E8B0C66C58040E7CB9032BD70C07E7A342CEB7D4CF472",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_004_B_1.bin": "8732D670D1876DE61820FC452871FCB1320B51311D872F2FCDDE0A6FDFA8FC8D",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_005_A_1.bin": "70BBAF9A9F99954D294BFE3C109F98B4279A9B2DFBD05631875E9889A8CBB513",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_006_A_1.bin": "41E48B5F9C827E7CFA4861C883D1742D07A96961259E11AD458C7C2E5983754D",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_007_A_1.bin": "FFC6AA7112B7261118C6EB886466C03E0B1AB899F44EE94E50484ADE4C846699",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_008_A_1.bin": "4C802DBFF082C4A388AB02ACD93C25B97CCD7052ADC6345A37CC23F5A44FA017",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_009_A_1.bin": "361EDED788184EC13534448D9EFDC3DD8BA097AC811F4548AF07B14F32ECC31E",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_010_A_1.bin": "E0A8D835A9DFEF03BFBF21F20BA877FF20E828D99CE809014B052616A8588909",
+    "experiments/generated_stories_v1/runs/llama3_1_8b/requests.jsonl": "BA8E844E9B94B3E15D96BB75AC72E56819AFEBF77D14DB2DD97CAFDFA2515EC9",
+    "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_001_A_1.bin": "DAB921668B66B3A5EE4A99F9980CA48E30F91FEA468A37B933CCBDC8DBDB9908",
+    "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_002_A_1.bin": "AF2C3B3C13B376F51E7B79E73CCA14004E655CEBE764DDA7927C5226025A1960",
+    "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_003_A_1.bin": "2158C3B19C57A404F46355C985F61F53269347DE4DC662D99424C9918C23455A",
+    "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_004_A_1.bin": "CFCF896DAB7C94524ED9333A3B7B9286A93E9E44D7DB5A1763CEE5B0B59A6432",
+    "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_005_A_1.bin": "2B1564A853C4F316F7109A922FBCA5DA94BD5103C9369589BFDF4D130CC8E730",
+    "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_006_A_1.bin": "A9AC0245D3D031933817FFB6ECC28C0B298753B004761795C71765BC8A0A193D",
+    "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_007_A_1.bin": "348E1637BFC3EE0225D53689A6E42B3B7D6C074CD1A2B7A395C68CD208B506FA",
+    "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_008_A_1.bin": "767E27FDC318D4293390EBC209B9822C02955BC386B43A366F8EA4CBC5A292B3",
+    "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_009_A_1.bin": "87A0BEDB3A607D141F4F69FA76967C6541BC49EE6609660BA23C8345FDD00310",
+    "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_010_A_1.bin": "C9A0FD65595C7E0C1C14537FB516C63AA887DEC1DC49900006428F2778AEA13C",
+    "experiments/generated_stories_v1/runs/mistral_7b/requests.jsonl": "450FADF4D66156A3EC3C6F132952195A0F93D8A6223D4B71650F09B370AA35F4",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_001_A_1.bin": "E3505DBCA33922D3AB99475D2D402DE6AE73B2AFE0A443A9B51036FA2D2C9740",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_001_B_1.bin": "7BA8E64851EC54509F0550DE32C3348F1E433DE1554CBAAB82BA2D77B213B46F",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_002_A_1.bin": "AEEF65D269E85C31E33947B494B2E147EB713EC8B5DC99D40CB7197BDFFCAC50",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_003_A_1.bin": "0005F02E7D564648F3D678129F5F419EED4FA4FC6BB08D6C18007FA8472DF1F4",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_003_B_1.bin": "1F1426650F2D7B80DBB7522783CAE25C3BF7351447F08101148EFF03D4FA347A",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_004_A_1.bin": "F156E04285DC289355D761140BE796C9554821DEF8C9DDD13361B919955A5925",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_004_B_1.bin": "2139BA4D9CBC0CF8EA6D25D14D742F62AA6C7CA7DA376C11241F5992B2F4D680",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_005_A_1.bin": "435E84C8E73062BBB05D302C9CE9BBF3C2663F14CC7FFF2AC96E95ECBD425604",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_005_B_1.bin": "659DEAA3F3C331DB5D6BE17B218AAFC0970499C22138209A989E448F2AEE65DD",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_006_A_1.bin": "2C77C220857722E26D98F4F5B515B495096ED06CB63DCCD6011DB4A0BF1C452E",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_006_B_1.bin": "39243496158D8CC6C5B07456E70889AB97D6641901F164B05147BB00FB6E41B9",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_007_A_1.bin": "CA350553CA04AE364E44649E7317201D5D8557B44D37EA02D5B9C08D9B80CC5C",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_007_B_1.bin": "968E20ABBA946B6F9EF3BFC5B7DDB77DAC3B9D3A251EA784BA535557860BC982",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_008_A_1.bin": "91FF60C011FD91E687B4075B719639ED4B2BD1216B5A2768D8A167852C43A2C5",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_008_B_1.bin": "77ACBD1B2417F53882B9851F14E6A4DECE571E41DAD78AED5C186A4D1852CD21",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_009_A_1.bin": "B428824135F8BAE31F3747B6D31FD16D8634BA476FC6D45FD1D09B51B1F438CF",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_009_B_1.bin": "9E9E6B6CBA9F53ED5FE505E3503CF266A588C7CCAB27F1F7F6B2E73B62E2C2C8",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_010_A_1.bin": "3FD907ED5C3C38FF0DEE1FCB7609279376ABB867A996EC2D94D0C23DFF4569A4",
+    "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_010_B_1.bin": "9054252B37168F6D0E1A841AFDFC06DD8AA608D05BE05DC0FC0189EB24E9E523",
+    "experiments/generated_stories_v1/runs/qwen3_8b/requests.jsonl": "C67888235F3C5D8F2445640DC298E39BA9339D5BD12403E978C6F1FE635A43E2",
+    "experiments/generated_stories_v1/validation.json": "B1561C0681BCC8C598853B0276CF365983FCC6AB1BF88A0CBAAE01CB690F0BA4",
+    "configs/experiments/generated_stories_recovery_v1.json": "F1898D01B58FD92E5A886A16F6917716EC8E5549DFE95831B3B2E460D19066F0",
+    "C:/Users/fonga/Desktop/Codex/flawedfictions_fyp/src/fyp/experiments/generated_stories_recovery.py": "10E67A707856E9D19CEA96C2EF5DE44078C3ED09A230770D4B4B809E3CC67FC4"
+  },
+  "audit": {
+    "counts": {
+      "qwen3:8b": {
+        "pairs_ok": 9,
+        "pairs_failed": 1,
+        "A_ok": 9,
+        "A_failed": 1,
+        "B_ok": 9,
+        "B_failed": 0,
+        "B_skipped": 1,
+        "dispatch_starts": 19,
+        "received": 19
+      },
+      "llama3.1:8b": {
+        "pairs_ok": 2,
+        "pairs_failed": 8,
+        "A_ok": 2,
+        "A_failed": 8,
+        "B_ok": 2,
+        "B_failed": 0,
+        "B_skipped": 8,
+        "dispatch_starts": 12,
+        "received": 12
+      },
+      "mistral:7b": {
+        "pairs_ok": 0,
+        "pairs_failed": 10,
+        "A_ok": 0,
+        "A_failed": 10,
+        "B_ok": 0,
+        "B_failed": 0,
+        "B_skipped": 10,
+        "dispatch_starts": 10,
+        "received": 10
+      }
+    },
+    "inventory": [
+      {
+        "model": "qwen3:8b",
+        "pair_id": "qwen3_8b_001",
+        "A": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_001_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 620
+        },
+        "B": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_001_B_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [
+            "contradicted_sentence_not_verbatim_in_modified_story"
+          ],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 755
+        }
+      },
+      {
+        "model": "qwen3:8b",
+        "pair_id": "qwen3_8b_002",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_002_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Adjacent quoted strings without JSON delimiter/structure",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 677,
+          "json_error": "Expecting ',' delimiter: line 4 column 3 (char 752)",
+          "error_excerpt": "for thirty years and was retiring tomorrow.\"\n  \n  \"Mei had begun the piece with a vase of deep indig",
+          "secondary_json_error": "Expecting ',' delimiter: line 4 column 3 (char 752)"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "qwen3:8b",
+        "pair_id": "qwen3_8b_003",
+        "A": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_003_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 560
+        },
+        "B": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_003_B_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 684
+        }
+      },
+      {
+        "model": "qwen3:8b",
+        "pair_id": "qwen3_8b_004",
+        "A": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_004_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 655
+        },
+        "B": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_004_B_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [
+            "unchanged_story"
+          ],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 819
+        }
+      },
+      {
+        "model": "qwen3:8b",
+        "pair_id": "qwen3_8b_005",
+        "A": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_005_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 667
+        },
+        "B": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_005_B_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [
+            "unchanged_story"
+          ],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 827
+        }
+      },
+      {
+        "model": "qwen3:8b",
+        "pair_id": "qwen3_8b_006",
+        "A": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_006_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 755
+        },
+        "B": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_006_B_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [
+            "unchanged_story"
+          ],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 880
+        }
+      },
+      {
+        "model": "qwen3:8b",
+        "pair_id": "qwen3_8b_007",
+        "A": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_007_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 656
+        },
+        "B": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_007_B_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [
+            "unchanged_story"
+          ],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 775
+        }
+      },
+      {
+        "model": "qwen3:8b",
+        "pair_id": "qwen3_8b_008",
+        "A": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_008_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 608
+        },
+        "B": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_008_B_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 692
+        }
+      },
+      {
+        "model": "qwen3:8b",
+        "pair_id": "qwen3_8b_009",
+        "A": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_009_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 580
+        },
+        "B": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_009_B_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [
+            "unchanged_story"
+          ],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 739
+        }
+      },
+      {
+        "model": "qwen3:8b",
+        "pair_id": "qwen3_8b_010",
+        "A": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_010_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 691
+        },
+        "B": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_010_B_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 754
+        }
+      },
+      {
+        "model": "llama3.1:8b",
+        "pair_id": "llama3_1_8b_001",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_001_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 547,
+          "json_error": "Invalid control character at: line 2 column 479 (char 480)",
+          "error_excerpt": "n a part of the team for years and knew the drill.\n\nAs she arrived at the cabin, Rachel was greeted ",
+          "secondary_json_error": "Expecting ',' delimiter: line 12 column 478 (char 2525)"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "llama3.1:8b",
+        "pair_id": "llama3_1_8b_002",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_002_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 639,
+          "json_error": "Invalid control character at: line 2 column 447 (char 448)",
+          "error_excerpt": " wooden box from a single piece of reclaimed wood.\n\nMei, a skilled woodworker, carefully carved the ",
+          "secondary_json_error": "Expecting ',' delimiter: line 16 column 429 (char 2966)"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "llama3.1:8b",
+        "pair_id": "llama3_1_8b_003",
+        "A": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_003_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [
+            "outside_target_word_range"
+          ],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 474
+        },
+        "B": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_003_B_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [
+            "outside_target_word_range"
+          ],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 606
+        }
+      },
+      {
+        "model": "llama3.1:8b",
+        "pair_id": "llama3_1_8b_004",
+        "A": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_004_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 574
+        },
+        "B": {
+          "status": "ok",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_004_B_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "valid",
+          "reason": null,
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 771
+        }
+      },
+      {
+        "model": "llama3.1:8b",
+        "pair_id": "llama3_1_8b_005",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_005_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 622,
+          "json_error": "Invalid control character at: line 2 column 446 (char 447)",
+          "error_excerpt": "tle lapping of the water against the canal's edge.\n\nAs she rode, Emma noticed the intricate stone fa",
+          "secondary_json_error": "Expecting ',' delimiter: line 14 column 362 (char 2868)"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "llama3.1:8b",
+        "pair_id": "llama3_1_8b_006",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_006_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 555,
+          "json_error": "Invalid control character at: line 2 column 397 (char 398)",
+          "error_excerpt": " the main gallery, awaiting Rachel's instructions.\n\nRachel, a graduate of Springdale University's ar",
+          "secondary_json_error": "Expecting ',' delimiter: line 10 column 2 (char 1465)"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "llama3.1:8b",
+        "pair_id": "llama3_1_8b_007",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_007_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 517,
+          "json_error": "Invalid control character at: line 2 column 417 (char 418)",
+          "error_excerpt": "chinery, when a knock on the door interrupted her.\n\nIt was a painter, a young man with a messy beard",
+          "secondary_json_error": "Expecting ',' delimiter: line 12 column 447 (char 2385)"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "llama3.1:8b",
+        "pair_id": "llama3_1_8b_008",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_008_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 502,
+          "json_error": "Invalid control character at: line 2 column 527 (char 528)",
+          "error_excerpt": "for hours, but every lead had ended in a dead-end.\n\nAs she rummaged through the lost-and-found box, ",
+          "secondary_json_error": "Expecting ',' delimiter: line 10 column 622 (char 2272)"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "llama3.1:8b",
+        "pair_id": "llama3_1_8b_009",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_009_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 634,
+          "json_error": "Invalid control character at: line 2 column 248 (char 249)",
+          "error_excerpt": "s infused the surroundings with a soothing energy.\n\nAkira, a young apprentice to the village's maste",
+          "secondary_json_error": "Expecting ',' delimiter: line 18 column 282 (char 2893)"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "llama3.1:8b",
+        "pair_id": "llama3_1_8b_010",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_010_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 613,
+          "json_error": "Invalid control character at: line 2 column 526 (char 527)",
+          "error_excerpt": "structures hummed with a gentle, blue-green light.\n\nAs she began her daily routine, Elara checked th",
+          "secondary_json_error": "Expecting ',' delimiter: line 14 column 338 (char 2892)"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "mistral:7b",
+        "pair_id": "mistral_7b_001",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_001_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 583,
+          "json_error": "Invalid control character at: line 2 column 299 (char 301)",
+          "error_excerpt": "their faces etched with determination and concern.\n\n  Among them was Emily, a seasoned volunteer wit"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "mistral:7b",
+        "pair_id": "mistral_7b_002",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_002_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 598,
+          "json_error": "Invalid control character at: line 2 column 306 (char 308)",
+          "error_excerpt": "epths of the ocean to the surface every full moon.\n\n   Among the crowd, two craftspeople stood out. "
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "mistral:7b",
+        "pair_id": "mistral_7b_003",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_003_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 522,
+          "json_error": "Invalid control character at: line 2 column 285 (char 287)",
+          "error_excerpt": " prepared for an overnight public viewing session.\n\n  The sun had barely dipped below the horizon wh"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "mistral:7b",
+        "pair_id": "mistral_7b_004",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_004_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 684,
+          "json_error": "Invalid control character at: line 2 column 340 (char 342)",
+          "error_excerpt": " the hum of early morning activity filled the air.\n\n  Baker Elara, a woman of middle age with a kind"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "mistral:7b",
+        "pair_id": "mistral_7b_005",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_005_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 531,
+          "json_error": "Invalid control character at: line 2 column 323 (char 325)",
+          "error_excerpt": "at danced across the narrow alleyways and bridges.\n\n  Max was no ordinary courier; he was known for "
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "mistral:7b",
+        "pair_id": "mistral_7b_006",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_006_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 626,
+          "json_error": "Invalid control character at: line 2 column 510 (char 512)",
+          "error_excerpt": "te several galleries being closed for maintenance.\n\n  As Mr. Johnson greeted the class, he could see"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "mistral:7b",
+        "pair_id": "mistral_7b_007",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_007_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 431,
+          "json_error": "Invalid control character at: line 2 column 473 (char 475)",
+          "error_excerpt": "Cove to find inspiration for his next masterpiece.\n\n   As Thomas was replacing the worn-out lens in "
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "mistral:7b",
+        "pair_id": "mistral_7b_008",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_008_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 587,
+          "json_error": "Invalid control character at: line 2 column 387 (char 389)",
+          "error_excerpt": "d the last train of the day loomed on the horizon.\n\n    Among the myriad items that had accumulated "
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "mistral:7b",
+        "pair_id": "mistral_7b_009",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_009_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 656,
+          "json_error": "Invalid control character at: line 2 column 366 (char 368)",
+          "error_excerpt": "nship and enchantment that was uniquely Luminaran.\n\n  Young Elara, an apprentice under the village's"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      },
+      {
+        "model": "mistral:7b",
+        "pair_id": "mistral_7b_010",
+        "A": {
+          "status": "terminal_parsing_A",
+          "raw_checkpoint": true,
+          "raw_http": [
+            "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_010_A_1.bin"
+          ],
+          "starts": 1,
+          "unused_dispatch_slots": 3,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "response_not_json",
+          "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+          "done": true,
+          "done_reason": "stop",
+          "eval_count": 562,
+          "json_error": "Invalid control character at: line 2 column 316 (char 318)",
+          "error_excerpt": " by a technology as exotic as the asteroid itself.\n\n  Orion, a man of frail physique but indomitable"
+        },
+        "B": {
+          "status": "skipped",
+          "raw_checkpoint": false,
+          "raw_http": [],
+          "starts": 0,
+          "unused_dispatch_slots": 4,
+          "executable_original_retries": 0,
+          "warnings": [],
+          "parse": "not_run",
+          "reason": "Stage A failed; B skipped"
+        }
+      }
+    ],
+    "plan": [
+      {
+        "model": "qwen3:8b",
+        "stem": "qwen3_8b",
+        "pair_id": "qwen3_8b_002",
+        "index": 1,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "llama3.1:8b",
+        "stem": "llama3_1_8b",
+        "pair_id": "llama3_1_8b_001",
+        "index": 0,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "llama3.1:8b",
+        "stem": "llama3_1_8b",
+        "pair_id": "llama3_1_8b_002",
+        "index": 1,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "llama3.1:8b",
+        "stem": "llama3_1_8b",
+        "pair_id": "llama3_1_8b_005",
+        "index": 4,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "llama3.1:8b",
+        "stem": "llama3_1_8b",
+        "pair_id": "llama3_1_8b_006",
+        "index": 5,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "llama3.1:8b",
+        "stem": "llama3_1_8b",
+        "pair_id": "llama3_1_8b_007",
+        "index": 6,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "llama3.1:8b",
+        "stem": "llama3_1_8b",
+        "pair_id": "llama3_1_8b_008",
+        "index": 7,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "llama3.1:8b",
+        "stem": "llama3_1_8b",
+        "pair_id": "llama3_1_8b_009",
+        "index": 8,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "llama3.1:8b",
+        "stem": "llama3_1_8b",
+        "pair_id": "llama3_1_8b_010",
+        "index": 9,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "mistral:7b",
+        "stem": "mistral_7b",
+        "pair_id": "mistral_7b_001",
+        "index": 0,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "mistral:7b",
+        "stem": "mistral_7b",
+        "pair_id": "mistral_7b_002",
+        "index": 1,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "mistral:7b",
+        "stem": "mistral_7b",
+        "pair_id": "mistral_7b_003",
+        "index": 2,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "mistral:7b",
+        "stem": "mistral_7b",
+        "pair_id": "mistral_7b_004",
+        "index": 3,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "mistral:7b",
+        "stem": "mistral_7b",
+        "pair_id": "mistral_7b_005",
+        "index": 4,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "mistral:7b",
+        "stem": "mistral_7b",
+        "pair_id": "mistral_7b_006",
+        "index": 5,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "mistral:7b",
+        "stem": "mistral_7b",
+        "pair_id": "mistral_7b_007",
+        "index": 6,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "mistral:7b",
+        "stem": "mistral_7b",
+        "pair_id": "mistral_7b_008",
+        "index": 7,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "mistral:7b",
+        "stem": "mistral_7b",
+        "pair_id": "mistral_7b_009",
+        "index": 8,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      },
+      {
+        "model": "mistral:7b",
+        "stem": "mistral_7b",
+        "pair_id": "mistral_7b_010",
+        "index": 9,
+        "execute": [
+          "A",
+          "B"
+        ],
+        "B_dependency": "only after selected A is structurally successful"
+      }
+    ]
+  }
+}

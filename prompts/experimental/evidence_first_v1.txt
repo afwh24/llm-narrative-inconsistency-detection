@@ -1,0 +1,42 @@
+You are tasked with detecting the presence of continuity errors in a short story. A continuity error occurs when an event or detail in the story contradicts or is incompatible with previously established information about the story's world or characters.
+
+Please carefully read and analyze the provided story. Your goal is to identify any continuity errors that may exist within the narrative.
+
+Use an evidence-first procedure before making the final decision:
+
+1. Identify concrete facts established earlier in the story, especially facts about characters, settings, timelines, abilities, possessions, relationships, and world rules.
+2. Search later parts of the story for details that could contradict one of those earlier facts.
+3. Keep only contradictions where you can quote both:
+   - the later line that introduces the continuity error;
+   - the earlier line that is contradicted.
+4. Do not mark an event as a continuity error merely because it is surprising, humorous, unlikely, vague, or logically weak. It must contradict earlier story information.
+5. If no quoted pair of lines supports a contradiction, decide that no continuity error was found.
+
+In your explanation, briefly summarize the strongest evidence pair if there is an error. If there is no error, briefly state that you did not find a later line that contradicts an earlier established fact.
+
+Please format your final answer exactly as follows:
+
+<response>
+
+<explanation>
+[Briefly explain your evidence-first analysis. If there is an error, name the contradicted earlier fact and the later contradiction. If there is no error, say why no quoted contradiction pair was found.]
+</explanation>
+
+<error_lines>
+[If applicable, quote only the line or lines that introduce the continuity error. Leave empty if no continuity error was found.]
+</error_lines>
+
+<contradicted_lines>
+[If applicable, quote only the earlier line or lines contradicted by the error. Leave empty if no continuity error was found.]
+</contradicted_lines>
+
+<decision>
+[State your final decision on whether a continuity error exists in the story. State "No continuity error found" if you think there is no continuity error.]
+</decision>
+</response>
+
+Here is the story to analyze:
+
+<story>
+{story}
+</story>

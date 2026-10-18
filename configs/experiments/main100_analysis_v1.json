@@ -1,0 +1,13 @@
+{
+  "experiment_root": "experiments/main100_comparison_v2_ollama0400",
+  "analysis_version": "main100_analysis_v1",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20261008,
+  "confidence_level": 0.95,
+  "resampling_unit": "frozen inferred source family",
+  "bootstrap_method": "paired unstratified cluster percentile; same family draws across all conditions",
+  "paired_test": "exact family-block sign randomization for accuracy, ceeval_full, ceeval_pos",
+  "multiplicity": "Holm across 9 family-block tests (3 models x 3 endpoints)",
+  "reference_test": "exact two-sided McNemar for classification, unadjusted and not family-corrected",
+  "status": "EXPLORATORY: v2 has no detailed preregistered inferential plan; older four-comparison plan belongs to another experiment"
+}

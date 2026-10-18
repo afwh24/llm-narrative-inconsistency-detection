@@ -1,0 +1,543 @@
+{
+  "selected": "verify_revise",
+  "conditions": [
+    {
+      "model": "qwen3:8b",
+      "strategy": "vanilla",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "ceeval_full": 0.5,
+        "ceeval_pos": 0.0
+      },
+      "confusion": {
+        "tp": 0,
+        "fn": 5,
+        "tn": 5,
+        "fp": 0
+      },
+      "positive_localised": 0.0,
+      "negative_correct": 5,
+      "warnings": {},
+      "warning_records": 0,
+      "attempts": 10,
+      "request_journal": false,
+      "runtime": {
+        "sum_seconds": 606.685825,
+        "mean_seconds": 60.6685825,
+        "median_seconds": 51.3774865,
+        "min_seconds": 38.6395,
+        "max_seconds": 122.563936,
+        "ollama_sum_seconds": 585.4973996,
+        "mean_output_tokens": 147.6,
+        "load_seconds": 22.250362,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-qwen3-8b-baseline-main10-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10\\exports\\qwen3_8b_baseline.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10\\runs\\exploratory-qwen3-8b-baseline-main10-v1"
+    },
+    {
+      "model": "qwen3:8b",
+      "strategy": "evidence_first",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.7,
+        "precision": 0.625,
+        "recall": 1.0,
+        "f1": 0.7692307692307693,
+        "ceeval_full": 0.2,
+        "ceeval_pos": 0.0
+      },
+      "confusion": {
+        "tp": 5,
+        "fn": 0,
+        "tn": 2,
+        "fp": 3
+      },
+      "positive_localised": 0.0,
+      "negative_correct": 2,
+      "warnings": {
+        "missing_explanation_close_tag": 4,
+        "missing_contradicted_lines_close_tag": 2
+      },
+      "warning_records": 5,
+      "attempts": 10,
+      "request_journal": true,
+      "runtime": {
+        "sum_seconds": 295.662536,
+        "mean_seconds": 29.5662536,
+        "median_seconds": 24.2326395,
+        "min_seconds": 14.447741,
+        "max_seconds": 66.764923,
+        "ollama_sum_seconds": 274.8909522,
+        "mean_output_tokens": 138.2,
+        "load_seconds": 9.195210699999999,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-qwen3-8b-evidence-first-main10-prompting-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\qwen3_8b_evidence_first.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\runs\\exploratory-qwen3-8b-evidence-first-main10-prompting-v1"
+    },
+    {
+      "model": "qwen3:8b",
+      "strategy": "structured_check",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.6,
+        "f1": 0.5454545454545454,
+        "ceeval_full": 0.2,
+        "ceeval_pos": 0.0
+      },
+      "confusion": {
+        "tp": 3,
+        "fn": 2,
+        "tn": 2,
+        "fp": 3
+      },
+      "positive_localised": 0.0,
+      "negative_correct": 2,
+      "warnings": {
+        "missing_explanation_close_tag": 1,
+        "missing_contradicted_lines_close_tag": 1
+      },
+      "warning_records": 2,
+      "attempts": 10,
+      "request_journal": true,
+      "runtime": {
+        "sum_seconds": 227.943163,
+        "mean_seconds": 22.7943163,
+        "median_seconds": 22.015375,
+        "min_seconds": 12.882345,
+        "max_seconds": 33.511697,
+        "ollama_sum_seconds": 207.1187561,
+        "mean_output_tokens": 94.3,
+        "load_seconds": 9.5207366,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-qwen3-8b-structured-check-main10-prompting-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\qwen3_8b_structured_check.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\runs\\exploratory-qwen3-8b-structured-check-main10-prompting-v1"
+    },
+    {
+      "model": "qwen3:8b",
+      "strategy": "verify_revise",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.6,
+        "precision": 0.5714285714285714,
+        "recall": 0.8,
+        "f1": 0.6666666666666666,
+        "ceeval_full": 0.3,
+        "ceeval_pos": 0.2
+      },
+      "confusion": {
+        "tp": 4,
+        "fn": 1,
+        "tn": 2,
+        "fp": 3
+      },
+      "positive_localised": 1.0,
+      "negative_correct": 2,
+      "warnings": {
+        "missing_explanation_close_tag": 3
+      },
+      "warning_records": 3,
+      "attempts": 10,
+      "request_journal": true,
+      "runtime": {
+        "sum_seconds": 138.479973,
+        "mean_seconds": 13.8479973,
+        "median_seconds": 13.048173,
+        "min_seconds": 10.144877,
+        "max_seconds": 23.483071,
+        "ollama_sum_seconds": 117.381882,
+        "mean_output_tokens": 95.6,
+        "load_seconds": 15.123475899999999,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-qwen3-8b-verify-revise-main10-prompting-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\qwen3_8b_verify_revise.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\runs\\exploratory-qwen3-8b-verify-revise-main10-prompting-v1"
+    },
+    {
+      "model": "llama3.1:8b",
+      "strategy": "vanilla",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "ceeval_full": 0.1,
+        "ceeval_pos": 0.2
+      },
+      "confusion": {
+        "tp": 5,
+        "fn": 0,
+        "tn": 0,
+        "fp": 5
+      },
+      "positive_localised": 1.0,
+      "negative_correct": 0,
+      "warnings": {},
+      "warning_records": 0,
+      "attempts": 10,
+      "request_journal": false,
+      "runtime": {
+        "sum_seconds": 651.0165910000001,
+        "mean_seconds": 65.1016591,
+        "median_seconds": 50.7286515,
+        "min_seconds": 36.887468,
+        "max_seconds": 149.21575,
+        "ollama_sum_seconds": 630.3099961,
+        "mean_output_tokens": 343.1,
+        "load_seconds": 24.1804436,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-llama3-1-8b-baseline-main10-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10\\exports\\llama3_1_8b_baseline.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10\\runs\\exploratory-llama3-1-8b-baseline-main10-v1"
+    },
+    {
+      "model": "llama3.1:8b",
+      "strategy": "evidence_first",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "ceeval_full": 0.0,
+        "ceeval_pos": 0.0
+      },
+      "confusion": {
+        "tp": 5,
+        "fn": 0,
+        "tn": 0,
+        "fp": 5
+      },
+      "positive_localised": 0.0,
+      "negative_correct": 0,
+      "warnings": {},
+      "warning_records": 0,
+      "attempts": 10,
+      "request_journal": true,
+      "runtime": {
+        "sum_seconds": 299.662433,
+        "mean_seconds": 29.9662433,
+        "median_seconds": 29.4600015,
+        "min_seconds": 20.094019,
+        "max_seconds": 48.325635,
+        "ollama_sum_seconds": 278.4890657,
+        "mean_output_tokens": 173.2,
+        "load_seconds": 11.0906568,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-llama3-1-8b-evidence-first-main10-prompting-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\llama3_1_8b_evidence_first.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\runs\\exploratory-llama3-1-8b-evidence-first-main10-prompting-v1"
+    },
+    {
+      "model": "llama3.1:8b",
+      "strategy": "structured_check",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "ceeval_full": 0.0,
+        "ceeval_pos": 0.0
+      },
+      "confusion": {
+        "tp": 5,
+        "fn": 0,
+        "tn": 0,
+        "fp": 5
+      },
+      "positive_localised": 0.0,
+      "negative_correct": 0,
+      "warnings": {},
+      "warning_records": 0,
+      "attempts": 10,
+      "request_journal": true,
+      "runtime": {
+        "sum_seconds": 300.334424,
+        "mean_seconds": 30.0334424,
+        "median_seconds": 27.967096499999997,
+        "min_seconds": 20.748678,
+        "max_seconds": 45.178862,
+        "ollama_sum_seconds": 279.5517095,
+        "mean_output_tokens": 174.4,
+        "load_seconds": 10.3253348,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-llama3-1-8b-structured-check-main10-prompting-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\llama3_1_8b_structured_check.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\runs\\exploratory-llama3-1-8b-structured-check-main10-prompting-v1"
+    },
+    {
+      "model": "llama3.1:8b",
+      "strategy": "verify_revise",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 0.6,
+        "f1": 0.5454545454545454,
+        "ceeval_full": 0.3,
+        "ceeval_pos": 0.2
+      },
+      "confusion": {
+        "tp": 3,
+        "fn": 2,
+        "tn": 2,
+        "fp": 3
+      },
+      "positive_localised": 1.0,
+      "negative_correct": 2,
+      "warnings": {},
+      "warning_records": 0,
+      "attempts": 10,
+      "request_journal": true,
+      "runtime": {
+        "sum_seconds": 215.572113,
+        "mean_seconds": 21.5572113,
+        "median_seconds": 18.497474,
+        "min_seconds": 12.428592,
+        "max_seconds": 46.204756,
+        "ollama_sum_seconds": 194.44834360000002,
+        "mean_output_tokens": 212.8,
+        "load_seconds": 13.009958600000001,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-llama3-1-8b-verify-revise-main10-prompting-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\llama3_1_8b_verify_revise.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\runs\\exploratory-llama3-1-8b-verify-revise-main10-prompting-v1"
+    },
+    {
+      "model": "mistral:7b",
+      "strategy": "vanilla",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.4,
+        "precision": 0.3333333333333333,
+        "recall": 0.2,
+        "f1": 0.25,
+        "ceeval_full": 0.3,
+        "ceeval_pos": 0.0
+      },
+      "confusion": {
+        "tp": 1,
+        "fn": 4,
+        "tn": 3,
+        "fp": 2
+      },
+      "positive_localised": 0.0,
+      "negative_correct": 3,
+      "warnings": {
+        "missing_response_close_tag": 7,
+        "missing_error_lines_tag": 3,
+        "missing_contradicted_lines_tag": 3,
+        "text_after_response_tag": 1
+      },
+      "warning_records": 8,
+      "attempts": 10,
+      "request_journal": false,
+      "runtime": {
+        "sum_seconds": 413.521092,
+        "mean_seconds": 41.3521092,
+        "median_seconds": 42.1882885,
+        "min_seconds": 26.791728,
+        "max_seconds": 54.026743,
+        "ollama_sum_seconds": 392.7639232,
+        "mean_output_tokens": 265.2,
+        "load_seconds": 8.7502131,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-mistral-7b-baseline-main10-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10\\exports\\mistral_7b_baseline.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10\\runs\\exploratory-mistral-7b-baseline-main10-v1"
+    },
+    {
+      "model": "mistral:7b",
+      "strategy": "evidence_first",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "ceeval_full": 0.0,
+        "ceeval_pos": 0.0
+      },
+      "confusion": {
+        "tp": 5,
+        "fn": 0,
+        "tn": 0,
+        "fp": 5
+      },
+      "positive_localised": 0.0,
+      "negative_correct": 0,
+      "warnings": {
+        "missing_response_close_tag": 10,
+        "missing_contradicted_lines_tag": 1
+      },
+      "warning_records": 10,
+      "attempts": 10,
+      "request_journal": true,
+      "runtime": {
+        "sum_seconds": 294.048273,
+        "mean_seconds": 29.4048273,
+        "median_seconds": 26.118809499999998,
+        "min_seconds": 20.984591,
+        "max_seconds": 47.576463,
+        "ollama_sum_seconds": 273.1217856,
+        "mean_output_tokens": 196.9,
+        "load_seconds": 9.5697287,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-mistral-7b-evidence-first-main10-prompting-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\mistral_7b_evidence_first.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\runs\\exploratory-mistral-7b-evidence-first-main10-prompting-v1"
+    },
+    {
+      "model": "mistral:7b",
+      "strategy": "structured_check",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "ceeval_full": 0.1,
+        "ceeval_pos": 0.2
+      },
+      "confusion": {
+        "tp": 5,
+        "fn": 0,
+        "tn": 0,
+        "fp": 5
+      },
+      "positive_localised": 1.0,
+      "negative_correct": 0,
+      "warnings": {
+        "missing_response_close_tag": 10
+      },
+      "warning_records": 10,
+      "attempts": 10,
+      "request_journal": true,
+      "runtime": {
+        "sum_seconds": 323.543129,
+        "mean_seconds": 32.3543129,
+        "median_seconds": 28.6003735,
+        "min_seconds": 19.126959,
+        "max_seconds": 56.386676,
+        "ollama_sum_seconds": 302.7778053,
+        "mean_output_tokens": 222.5,
+        "load_seconds": 7.7952508,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-mistral-7b-structured-check-main10-prompting-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\mistral_7b_structured_check.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\runs\\exploratory-mistral-7b-structured-check-main10-prompting-v1"
+    },
+    {
+      "model": "mistral:7b",
+      "strategy": "verify_revise",
+      "status": "COMPLETE_VERIFIED",
+      "total": 10,
+      "failed": 0,
+      "metrics": {
+        "accuracy": 0.5,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "ceeval_full": 0.0,
+        "ceeval_pos": 0.0
+      },
+      "confusion": {
+        "tp": 5,
+        "fn": 0,
+        "tn": 0,
+        "fp": 5
+      },
+      "positive_localised": 0.0,
+      "negative_correct": 0,
+      "warnings": {
+        "missing_response_close_tag": 10
+      },
+      "warning_records": 10,
+      "attempts": 10,
+      "request_journal": true,
+      "runtime": {
+        "sum_seconds": 201.73467,
+        "mean_seconds": 20.173467,
+        "median_seconds": 19.171159000000003,
+        "min_seconds": 12.293589,
+        "max_seconds": 31.814348,
+        "ollama_sum_seconds": 180.5679746,
+        "mean_output_tokens": 210.9,
+        "load_seconds": 9.3384805,
+        "done_reasons": {
+          "stop": 10
+        }
+      },
+      "run_id": "exploratory-mistral-7b-verify-revise-main10-prompting-v1",
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\mistral_7b_verify_revise.json",
+      "run_directory": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\runs\\exploratory-mistral-7b-verify-revise-main10-prompting-v1"
+    }
+  ],
+  "rule": "Primary Qwen CEEval-Full, then Pos, fewer terminal failures, lower measured total latency, shorter existing template (simplicity proxy), name for determinism.",
+  "caveat": "Pragmatic development-pilot choice; selected Qwen Full 0.30 is below baseline 0.50. Evidence-first accuracy 0.70 exceeds selected 0.60. No claim of superiority."
+}

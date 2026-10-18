@@ -1,0 +1,21 @@
+{
+  "name": "main100_comparison_v1",
+  "root": "experiments/main100_comparison_v1",
+  "pilot_configuration": "configs/experiments/three_model_main10_prompting.json",
+  "baseline_configuration": "configs/experiments/three_model_main10.json",
+  "primary_model": "qwen3:8b",
+  "selected_strategy": "verify_revise",
+  "sample_per_class": 50,
+  "selection_salt": "main100_comparison_v1:2026-10-06",
+  "family_word_shingle_size": 5,
+  "family_min_containment": 0.2,
+  "exposure_word_shingle_size": 12,
+  "history_root": "C:/Users/fonga/.codex/sessions",
+  "excluded_current_session": "01a111c4-c300-7913-a34d-50396f2e995f",
+  "documented_missing_run_prefix_count": 85,
+  "template_copy_dir": "prompts/frozen/main100_comparison_v1",
+  "manifest": "experiments/main100_comparison_v1/evaluator_only/manifest.json",
+  "inputs": "experiments/main100_comparison_v1/detector_inputs.jsonl",
+  "run_root": "experiments/main100_comparison_v1/runs",
+  "export_dir": "experiments/main100_comparison_v1/exports"
+}

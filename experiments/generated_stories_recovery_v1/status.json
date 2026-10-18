@@ -1,0 +1,20 @@
+[
+  {
+    "model": "qwen3:8b",
+    "complete_pairs": 9,
+    "terminal_recovery_failures": 0,
+    "pending_pairs": 1
+  },
+  {
+    "model": "llama3.1:8b",
+    "complete_pairs": 2,
+    "terminal_recovery_failures": 0,
+    "pending_pairs": 8
+  },
+  {
+    "model": "mistral:7b",
+    "complete_pairs": 0,
+    "terminal_recovery_failures": 0,
+    "pending_pairs": 10
+  }
+]

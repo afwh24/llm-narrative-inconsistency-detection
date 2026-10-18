@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "protected_artifacts_unchanged": 246,
+  "models": [
+    {
+      "model": "qwen3:8b",
+      "completed": 10,
+      "terminal_failed": 0,
+      "attempts": 10,
+      "parser_warning_records": 2,
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\qwen3_8b_structured_check.json"
+    },
+    {
+      "model": "llama3.1:8b",
+      "completed": 10,
+      "terminal_failed": 0,
+      "attempts": 10,
+      "parser_warning_records": 0,
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\llama3_1_8b_structured_check.json"
+    },
+    {
+      "model": "mistral:7b",
+      "completed": 10,
+      "terminal_failed": 0,
+      "attempts": 10,
+      "parser_warning_records": 10,
+      "output": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\experiments\\three_model_main10_prompting\\exports\\mistral_7b_structured_check.json"
+    }
+  ]
+}

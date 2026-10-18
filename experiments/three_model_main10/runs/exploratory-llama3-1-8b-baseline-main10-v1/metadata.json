@@ -1,0 +1,359 @@
+{
+  "benchmark_strategy": "vanilla",
+  "completed_example_count": 10,
+  "configuration_fingerprint": "0845B352B311CC86113FD5430CF07341CB9804CF987C33B927E7ACBDAFD393C8",
+  "context_configuration": {
+    "num_ctx": 16384,
+    "num_predict": 4096
+  },
+  "dataset": {
+    "expected_subset_counts": {
+      "flawed_fictions": 414
+    },
+    "fixed_manifest": "data\\pilot\\three_model_main10.json",
+    "fixed_manifest_example_count": 10,
+    "fixed_manifest_hash": "2BAEC9A7C2ADCBB1E1803F5F4103865A5415420BF79DDAF46629B90895132AE7",
+    "fixed_manifest_name": "three_model_main10",
+    "fixed_manifest_role": "pilot",
+    "identity": "kahuja/flawed-fictions",
+    "pilot_example_count": 10,
+    "pilot_manifest": "data\\pilot\\three_model_main10.json",
+    "pilot_manifest_hash": "2BAEC9A7C2ADCBB1E1803F5F4103865A5415420BF79DDAF46629B90895132AE7",
+    "pilot_name": "three_model_main10",
+    "raw_data_dir": "data\\raw\\flawed-fictions",
+    "selected_limit": null,
+    "subsets": [
+      "flawed_fictions"
+    ],
+    "version": "733717281afdb715538b753f0f85ef7d55568b85"
+  },
+  "dependencies": {
+    "nltk": "3.10.3",
+    "pyarrow": "25.0.1"
+  },
+  "end_timestamp": "2026-10-06T09:56:54.121149Z",
+  "expected_example_count": 10,
+  "experiment_type": "exploratory_baseline_pilot",
+  "failed_example_count": 0,
+  "git": {
+    "commit": "00e895d9168d2db3369de9cf44328bb80878ec85",
+    "dirty": true
+  },
+  "model": "llama3.1:8b",
+  "model_configuration": {
+    "generation": {
+      "num_ctx": 16384,
+      "num_predict": 4096,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0.5,
+      "think": null,
+      "top_k": 40,
+      "top_p": 0.9
+    },
+    "runtime": {
+      "max_retries": 3,
+      "timeout_seconds": 300
+    },
+    "source_path": "configs\\models\\three_model_main10\\llama3_1_8b.yaml"
+  },
+  "ollama_model": "llama3.1:8b",
+  "ollama_version": "0.35.1",
+  "pilot_provenance": {
+    "dataset_identity": "kahuja/flawed-fictions",
+    "dataset_version": "733717281afdb715538b753f0f85ef7d55568b85",
+    "experiment_name": "three_model_main10",
+    "git": {
+      "commit": "00e895d9168d2db3369de9cf44328bb80878ec85",
+      "dirty": true
+    },
+    "manifest_hash": "2BAEC9A7C2ADCBB1E1803F5F4103865A5415420BF79DDAF46629B90895132AE7",
+    "models": {
+      "llama3.1:8b": {
+        "available": true,
+        "context_budget": {
+          "configured_context": 16384,
+          "estimated_f16_kv_cache_bytes": 2147483648,
+          "largest_prompt_utf8_bytes": 6092,
+          "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+          "output_allowance": 4096,
+          "required_token_upper_bound": 12693,
+          "supported_context": 131072,
+          "wrapper_and_special_token_bound": 2505
+        },
+        "identity": {
+          "capabilities": [
+            "completion",
+            "tools"
+          ],
+          "details": {
+            "families": [
+              "llama"
+            ],
+            "family": "llama",
+            "format": "gguf",
+            "parameter_size": "8.0B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+          "model_info": {
+            "general.architecture": "llama",
+            "general.basename": "Meta-Llama-3.1",
+            "general.file_type": 15,
+            "general.finetune": "Instruct",
+            "general.languages": [
+              "en",
+              "de",
+              "fr",
+              "it",
+              "pt",
+              "hi",
+              "es",
+              "th"
+            ],
+            "general.license": "llama3.1",
+            "general.parameter_count": 8030261312,
+            "general.quantization_version": 2,
+            "general.size_label": "8B",
+            "general.tags": [
+              "facebook",
+              "meta",
+              "pytorch",
+              "llama",
+              "llama-3",
+              "text-generation"
+            ],
+            "general.type": "model",
+            "llama.attention.head_count": 32,
+            "llama.attention.head_count_kv": 8,
+            "llama.attention.layer_norm_rms_epsilon": 1e-05,
+            "llama.block_count": 32,
+            "llama.context_length": 131072,
+            "llama.embedding_length": 4096,
+            "llama.feed_forward_length": 14336,
+            "llama.rope.dimension_count": 128,
+            "llama.rope.freq_base": 500000,
+            "llama.vocab_size": 128256,
+            "tokenizer.ggml.bos_token_id": 128000,
+            "tokenizer.ggml.eos_token_id": 128009,
+            "tokenizer.ggml.merges": [],
+            "tokenizer.ggml.model": "gpt2",
+            "tokenizer.ggml.pre": "llama-bpe",
+            "tokenizer.ggml.token_type": [],
+            "tokenizer.ggml.tokens": []
+          },
+          "parameters": "stop                           \"<|start_header_id|>\"\nstop                           \"<|end_header_id|>\"\nstop                           \"<|eot_id|>\"",
+          "size_bytes": 4920753328,
+          "system": "",
+          "tag": "llama3.1:8b",
+          "template": "{{- if or .System .Tools }}<|start_header_id|>system<|end_header_id|>\n{{- if .System }}\n\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\nCutting Knowledge Date: December 2023\n\nWhen you receive a tool call response, use the output to format an answer to the orginal user question.\n\nYou are a helpful assistant with tool calling capabilities.\n{{- end }}<|eot_id|>\n{{- end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 }}\n{{- if eq .Role \"user\" }}<|start_header_id|>user<|end_header_id|>\n{{- if and $.Tools $last }}\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}. Do not use variables.\n\n{{ range $.Tools }}\n{{- . }}\n{{ end }}\nQuestion: {{ .Content }}<|eot_id|>\n{{- else }}\n\n{{ .Content }}<|eot_id|>\n{{- end }}{{ if $last }}<|start_header_id|>assistant<|end_header_id|>\n\n{{ end }}\n{{- else if eq .Role \"assistant\" }}<|start_header_id|>assistant<|end_header_id|>\n{{- if .ToolCalls }}\n{{ range .ToolCalls }}\n{\"name\": \"{{ .Function.Name }}\", \"parameters\": {{ .Function.Arguments }}}{{ end }}\n{{- else }}\n\n{{ .Content }}\n{{- end }}{{ if not $last }}<|eot_id|>{{ end }}\n{{- else if eq .Role \"tool\" }}<|start_header_id|>ipython<|end_header_id|>\n\n{{ .Content }}<|eot_id|>{{ if $last }}<|start_header_id|>assistant<|end_header_id|>\n\n{{ end }}\n{{- end }}\n{{- end }}",
+          "template_hash": "948AF2743FC78A328DCB3B0F5A31B3D75F415840FDB699E8B1235978392ECF85"
+        },
+        "thinking": "not_applicable_option_omitted"
+      },
+      "mistral:7b": {
+        "available": true,
+        "context_budget": {
+          "configured_context": 16384,
+          "estimated_f16_kv_cache_bytes": 2147483648,
+          "largest_prompt_utf8_bytes": 6092,
+          "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+          "output_allowance": 4096,
+          "required_token_upper_bound": 12011,
+          "supported_context": 32768,
+          "wrapper_and_special_token_bound": 1823
+        },
+        "identity": {
+          "capabilities": [
+            "completion",
+            "tools"
+          ],
+          "details": {
+            "families": [
+              "llama"
+            ],
+            "family": "llama",
+            "format": "gguf",
+            "parameter_size": "7.2B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+          "model_info": {
+            "general.architecture": "llama",
+            "general.file_type": 15,
+            "general.parameter_count": 7248023552,
+            "general.quantization_version": 2,
+            "llama.attention.head_count": 32,
+            "llama.attention.head_count_kv": 8,
+            "llama.attention.layer_norm_rms_epsilon": 1e-05,
+            "llama.block_count": 32,
+            "llama.context_length": 32768,
+            "llama.embedding_length": 4096,
+            "llama.feed_forward_length": 14336,
+            "llama.rope.dimension_count": 128,
+            "llama.rope.freq_base": 1000000,
+            "llama.vocab_size": 32768,
+            "tokenizer.ggml.add_bos_token": true,
+            "tokenizer.ggml.add_eos_token": false,
+            "tokenizer.ggml.bos_token_id": 1,
+            "tokenizer.ggml.eos_token_id": 2,
+            "tokenizer.ggml.model": "llama",
+            "tokenizer.ggml.pre": "default",
+            "tokenizer.ggml.scores": [],
+            "tokenizer.ggml.token_type": [],
+            "tokenizer.ggml.tokens": [],
+            "tokenizer.ggml.unknown_token_id": 0
+          },
+          "parameters": "stop                           \"[INST]\"\nstop                           \"[/INST]\"",
+          "size_bytes": 4372824384,
+          "system": "",
+          "tag": "mistral:7b",
+          "template": "{{- if .Messages }}\n{{- range $index, $_ := .Messages }}\n{{- if eq .Role \"user\" }}\n{{- if and (eq (len (slice $.Messages $index)) 1) $.Tools }}[AVAILABLE_TOOLS] {{ $.Tools }}[/AVAILABLE_TOOLS]\n{{- end }}[INST] {{ if and $.System (eq (len (slice $.Messages $index)) 1) }}{{ $.System }}\n\n{{ end }}{{ .Content }}[/INST]\n{{- else if eq .Role \"assistant\" }}\n{{- if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}[TOOL_CALLS] [\n{{- range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{- end }}]\n{{- end }}</s>\n{{- else if eq .Role \"tool\" }}[TOOL_RESULTS] {\"content\": {{ .Content }}} [/TOOL_RESULTS]\n{{- end }}\n{{- end }}\n{{- else }}[INST] {{ if .System }}{{ .System }}\n\n{{ end }}{{ .Prompt }}[/INST]\n{{- end }}{{ .Response }}\n{{- if .Response }}</s>\n{{- end }}",
+          "template_hash": "1FF5B64B61B9A63146475A24F70D3CA2FD6FDEEC44247987163479968896FC0B"
+        },
+        "thinking": "not_applicable_option_omitted"
+      },
+      "qwen3:8b": {
+        "available": true,
+        "context_budget": {
+          "configured_context": 16384,
+          "estimated_f16_kv_cache_bytes": 2415919104,
+          "largest_prompt_utf8_bytes": 6092,
+          "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+          "output_allowance": 4096,
+          "required_token_upper_bound": 12935,
+          "supported_context": 40960,
+          "wrapper_and_special_token_bound": 2747
+        },
+        "identity": {
+          "capabilities": [
+            "completion",
+            "tools",
+            "thinking"
+          ],
+          "details": {
+            "families": [
+              "qwen3"
+            ],
+            "family": "qwen3",
+            "format": "gguf",
+            "parameter_size": "8.2B",
+            "parent_model": "",
+            "quantization_level": "Q4_K_M"
+          },
+          "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+          "model_info": {
+            "general.architecture": "qwen3",
+            "general.basename": "Qwen3",
+            "general.file_type": 15,
+            "general.license": "apache-2.0",
+            "general.parameter_count": 8190735360,
+            "general.quantization_version": 2,
+            "general.size_label": "8B",
+            "general.type": "model",
+            "qwen3.attention.head_count": 32,
+            "qwen3.attention.head_count_kv": 8,
+            "qwen3.attention.key_length": 128,
+            "qwen3.attention.layer_norm_rms_epsilon": 1e-06,
+            "qwen3.attention.value_length": 128,
+            "qwen3.block_count": 36,
+            "qwen3.context_length": 40960,
+            "qwen3.embedding_length": 4096,
+            "qwen3.feed_forward_length": 12288,
+            "qwen3.rope.freq_base": 1000000,
+            "tokenizer.ggml.add_bos_token": false,
+            "tokenizer.ggml.bos_token_id": 151643,
+            "tokenizer.ggml.eos_token_id": 151645,
+            "tokenizer.ggml.merges": [],
+            "tokenizer.ggml.model": "gpt2",
+            "tokenizer.ggml.padding_token_id": 151643,
+            "tokenizer.ggml.pre": "qwen2",
+            "tokenizer.ggml.token_type": [],
+            "tokenizer.ggml.tokens": []
+          },
+          "parameters": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95",
+          "size_bytes": 5225388164,
+          "system": "",
+          "tag": "qwen3:8b",
+          "template": "\n{{- $lastUserIdx := -1 -}}\n{{- range $idx, $msg := .Messages -}}\n{{- if eq $msg.Role \"user\" }}{{ $lastUserIdx = $idx }}{{ end -}}\n{{- end }}\n{{- if or .System .Tools }}<|im_start|>system\n{{ if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end -}}\n<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}\n{{- if and $.IsThinkSet (eq $i $lastUserIdx) }}\n   {{- if $.Think -}}\n      {{- \" \"}}/think\n   {{- else -}}\n      {{- \" \"}}/no_think\n   {{- end -}}\n{{- end }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if (and $.IsThinkSet (and .Thinking (or $last (gt $i $lastUserIdx)))) -}}\n<think>{{ .Thinking }}</think>\n{{ end -}}\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}<tool_call>\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}</tool_call>\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n{{ if and $.IsThinkSet (not $.Think) -}}\n<think>\n\n</think>\n\n{{ end -}}\n{{ end }}\n{{- end }}",
+          "template_hash": "AE370D884F108D16E7CC8FD5259EBC5773A0AFA6E078B11F4ED7E39A27E0DFC4"
+        },
+        "thinking": "disabled"
+      }
+    },
+    "ollama_version": "0.35.1",
+    "prompt_hashes": {
+      "flawed_fictions_109": "3A5798EC7590243AFAC9B7FDE10FA026B3E17FAA8A328260821E657146CCD4AA",
+      "flawed_fictions_131": "1F9B68D6D3A97639367668D71CBE86E934B2BB8272918BE2C4C8F86EB2DAEBA5",
+      "flawed_fictions_18": "643E358623BB2346AA7B7321E11CBAF6F5AC84F09EF60FCAFC4D617E09C46000",
+      "flawed_fictions_189": "F49C9E3544DA45BA0CCF2883DFFCE92DE96EB4F6B60CFD5EDE5E19329CA68484",
+      "flawed_fictions_223": "CBA9AA408AADAC064B805AE5EE0B22C7266D703DCB7F93D2EB29CFF99D42F743",
+      "flawed_fictions_267": "7AF528EB4A20251228CC3DBC86D0851542A7F53300ED69002AAE3C21DBD22C1B",
+      "flawed_fictions_285": "245CE97ED021BDC5404EE809B07DA6579CAAB7C026FB53E552CD7060A156534F",
+      "flawed_fictions_341": "364387D3F76D16D84854AE589A81FBBB1A2DC81484942F16FFC3E3C1C3DB2B89",
+      "flawed_fictions_56": "2AA150080D3A211BD210A1421584AAAA9C98C66D31771DB3EF5837ECCE0CD41A",
+      "flawed_fictions_72": "BAD24D64762EB076BB75EEDB064630CA9EC65ADB70C84AAD1AF2193CC028774C"
+    },
+    "prompt_template_hash": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA",
+    "prompt_version": "vanilla_v1",
+    "role": "previously_inspected_exploratory_pilot",
+    "source_hashes": {
+      "configs/experiments/three_model_main10.json": "FF608CA3C6A51BD4A7F52B23E72C0181CDB84DF6768429C99010EBA9CDB2A329",
+      "configs/models/three_model_main10/llama3_1_8b.yaml": "038170B89548224F9113427A9BA8CE940F3D20B9F30875840E7617E3501AA6E2",
+      "configs/models/three_model_main10/mistral_7b.yaml": "94A75A166B8107F3F24125FB5F9DB4F0C709567842A5869644E50065FC0DFD96",
+      "configs/models/three_model_main10/qwen3_8b.yaml": "5DD273B2230CBC1B209FE8B54A8976CA671CF97B87ED9DDC601D884E13CAA5F0",
+      "data/pilot/pilot_20.json": "006BCFBD7DEAF6A8C6AF4DC5741F34F41E3EEAC2B52751EB14BE5583C2761FCD",
+      "data/raw/flawed-fictions/flawed_fictions.parquet": "584033C8475F100B2B4964227CF2C3E1E523549B6881C0398177B6FB8154592B",
+      "prompts/benchmark/vanilla_v1.txt": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA",
+      "src/fyp/__init__.py": "97B85990EFC8B6F40397193DE6437994CA5C392E2D1D7036B2DA75A8B4688A2F",
+      "src/fyp/cli.py": "4F115E114C129772B6D5119641236D212CD7F7CDAE5BD07AA3991986221626FC",
+      "src/fyp/data/__init__.py": "41EF50AD6917E45E5FD2E045C52C19AFA5A03B1F7FCD706B8BED6CEDAEE9B944",
+      "src/fyp/data/loader.py": "96C54EDEE9D50ECF3C4A6AA5A0DE31F9AC980A29B18A4C077B78EC6B48DC7E33",
+      "src/fyp/data/pilot.py": "BA81FA8BC2F932AE32B894BE24A68E8637EDE250829554875FE95DE8BF5BEF0C",
+      "src/fyp/data/schema.py": "A234EE9C3982C208869440D0491CB997E4103BBC385CEB58394A94F35C853240",
+      "src/fyp/data/validation.py": "F45B55E7DBCCC89C12DA6DE538E232E742701AC5D5C747B7EA543F682940D1F4",
+      "src/fyp/doctor.py": "F0831B5E6039F8A2956C1144B66B725B52015981594527696A5892EA75D5C7D7",
+      "src/fyp/evaluation/__init__.py": "939B2A8DE79B5E222143C67D1EA71228A7A97F063E4D685F8270060C8AB19266",
+      "src/fyp/evaluation/evaluator.py": "882E27E372CF681B71A1EF480C7017695AA4A5E3E7A6C3D0158E8A79FB73287E",
+      "src/fyp/evaluation/localization.py": "54849AB33CE358F09FB06918FAC3FBAF7BAE3375DCABF2C9EB7A425202C4F3C2",
+      "src/fyp/evaluation/metrics.py": "0F23879ED5A8F31166831BA19F788BCADF4D9AB57F61156E88C326456CD48AE7",
+      "src/fyp/experiments/__init__.py": "8B9EF4C8A71D737220D058103C8CDDF582146C649CFD05496832373999C1767F",
+      "src/fyp/experiments/baseline_pilot.py": "BCCF64B0FFA45B59D1EC32306FE1F8440AF6216A1584939413ABA9F43D8CAB44",
+      "src/fyp/experiments/runner.py": "81DA5D0AC58B58B3DEBD20316D35FE80104A14E6B38C83A50301E8D9B5646139",
+      "src/fyp/models/__init__.py": "0D1E1BDD18A5FAFBB33BBCED3C68BC57BE255E084C2891D2C9BD07690AF524D5",
+      "src/fyp/models/base.py": "B57B3D94F3B4D8AAE7841839B1E35BFB488CDCBD6C8B7F50E437A1741EE133AB",
+      "src/fyp/models/ollama_client.py": "7A305EF381EFA9937D2DD9836919F46C0E0166BD19625EB19A2716787DC1A9BA",
+      "src/fyp/models/registry.py": "9E8B94A92BC558928E5012C602F6B948BC649CF142CFD319697BD26C83AEC4FB",
+      "src/fyp/prompting/__init__.py": "BE627F2EC2B82E4D1143EB0E174F0296DAD3C360104A32A8A976D173BDC19348",
+      "src/fyp/prompting/parser.py": "CC6E06D15D267E57D59B5DD55DDF6D3EF17377FD7990E2A4196E8F644D90D52C",
+      "src/fyp/prompting/records.py": "2A644A9655A31E3E053A1FC5E616479258535A2365C153FF9B07B31C48382D72",
+      "src/fyp/prompting/strategies.py": "143EFFFF7BE55D3C42812BDE5D4B3CACB06F31825A8A54339002D741C03D7608"
+    },
+    "story_hashes": {
+      "flawed_fictions_109": "ADF76D865E682AFE1734E05A1EE7DA191481E443B80860F08F4ABF7DBF679AD5",
+      "flawed_fictions_131": "DFC59DC66C7FBC4FACE667F2A2B521727AC0925E8A982E182148945B5B569474",
+      "flawed_fictions_18": "58659C14CA332A9C96EC44C587E2659B3CC4FD911765F1DF90D2A7E05109D24C",
+      "flawed_fictions_189": "8B456013561B41350C33AF9938EABE26F316C59666D685BCBC770B20CC881582",
+      "flawed_fictions_223": "425070085660DCBA20188141D52F45E3FEA513C582F1665EB70881A28AE57458",
+      "flawed_fictions_267": "BE11B4C2743E47F559801AA4E3D7F6E5A70F975A1BA662212C5BFCAB629A59FC",
+      "flawed_fictions_285": "9DDB48FB3673BDA227B94090BC634B10A0799C715F32F12128DC7EE24B5A26A3",
+      "flawed_fictions_341": "3A8473FF0550331022C2F4A4C2965A6FDF9C7EAE8E02F9A2E5C159DA38E8DBFA",
+      "flawed_fictions_56": "5F593A5D18BF7EF8DEE828B8F31F89DA3D058BF9B530A20F6ED5DDB3F1A55DD5",
+      "flawed_fictions_72": "FF4DF32B5D326B2E9A8930A4577994C6E68EE562F50CE5523EC683992028A255"
+    }
+  },
+  "prompt_template_hash": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA",
+  "prompt_version": "vanilla_v1",
+  "provider": "ollama",
+  "python": {
+    "executable": "C:\\Users\\fonga\\Desktop\\Codex\\flawedfictions_fyp\\.venv\\Scripts\\python.exe",
+    "version": "3.12.10"
+  },
+  "run_id": "exploratory-llama3-1-8b-baseline-main10-v1",
+  "seed": 42,
+  "start_timestamp": "2026-10-06T09:46:00.212353Z",
+  "temperature": 0.5,
+  "thinking_mode": null
+}

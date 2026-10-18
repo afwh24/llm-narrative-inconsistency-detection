@@ -1,0 +1,25 @@
+{
+  "status": "PASS_PREPARATION_ONLY",
+  "inference_calls": 0,
+  "live_metadata_preflight": "PASS: Ollama 0.40.0",
+  "tests_passed": 43,
+  "tests_command": ".\\.venv\\Scripts\\python.exe -m pytest tests/test_main100_runtime_revision.py tests/test_main100_comparison.py tests/test_request_journal.py tests/test_evaluation.py tests/test_prompting.py -q --basetemp .tmp/main100_runtime_revision_tests",
+  "manifest_hash": "EF02FC8910579FF26F8D395704C1DB86C4EB83DEDA0748ADAA5336EFCD66E8ED",
+  "same_rendered_prompts": true,
+  "same_sample": true,
+  "pending": 600,
+  "completed": 0,
+  "terminal_failures": 0,
+  "preparation_hash": "80F2121940AC6829229383D9D83B122DF850EC2EF03436B5FFFD2A26F639218A",
+  "contract_hash": "FDC785D9425A0CEC14AC3EC3213622EF910E3BFC3FBA744CF25291B6C3C87392",
+  "preservation": {
+    "protected_files": 431,
+    "unchanged_files": 430,
+    "unexpected_changes": [],
+    "intentional_append": {
+      "path": "docs/decision_log.md",
+      "preserved_prefix_bytes": 23554,
+      "preserved_prefix_sha256": "299AF699FDD3096A697B816A5A30129E1C4DF9C0FF6E03627340D87DC54B0D77"
+    }
+  }
+}

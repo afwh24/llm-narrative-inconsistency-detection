@@ -1,0 +1,207 @@
+{
+  "dataset_version": "generated_stories_verified_v1",
+  "counts": {
+    "model": {
+      "qwen3:8b": {
+        "scheduled": 10,
+        "technically_complete": 10,
+        "reviewed": 10,
+        "accepted": 0,
+        "rejected": 9,
+        "needs_review": 1,
+        "terminal_technical_failures": 0
+      },
+      "llama3.1:8b": {
+        "scheduled": 10,
+        "technically_complete": 10,
+        "reviewed": 10,
+        "accepted": 1,
+        "rejected": 6,
+        "needs_review": 3,
+        "terminal_technical_failures": 0
+      },
+      "mistral:7b": {
+        "scheduled": 10,
+        "technically_complete": 10,
+        "reviewed": 10,
+        "accepted": 0,
+        "rejected": 7,
+        "needs_review": 3,
+        "terminal_technical_failures": 0
+      }
+    },
+    "category": {
+      "Character facts or relationships": {
+        "scheduled": 6,
+        "technically_complete": 6,
+        "reviewed": 6,
+        "accepted": 0,
+        "rejected": 6,
+        "needs_review": 0,
+        "terminal_technical_failures": 0
+      },
+      "Timeline or event order": {
+        "scheduled": 6,
+        "technically_complete": 6,
+        "reviewed": 6,
+        "accepted": 0,
+        "rejected": 4,
+        "needs_review": 2,
+        "terminal_technical_failures": 0
+      },
+      "Location or movement": {
+        "scheduled": 6,
+        "technically_complete": 6,
+        "reviewed": 6,
+        "accepted": 0,
+        "rejected": 4,
+        "needs_review": 2,
+        "terminal_technical_failures": 0
+      },
+      "Object possession or properties": {
+        "scheduled": 6,
+        "technically_complete": 6,
+        "reviewed": 6,
+        "accepted": 0,
+        "rejected": 5,
+        "needs_review": 1,
+        "terminal_technical_failures": 0
+      },
+      "Explicit fictional-world rules": {
+        "scheduled": 6,
+        "technically_complete": 6,
+        "reviewed": 6,
+        "accepted": 1,
+        "rejected": 3,
+        "needs_review": 2,
+        "terminal_technical_failures": 0
+      }
+    }
+  },
+  "historical": {
+    "generated_stories_v1": {
+      "model": {
+        "llama3.1:8b": {
+          "scheduled": 10,
+          "complete": 2,
+          "terminal": 8,
+          "pending": 0
+        },
+        "mistral:7b": {
+          "scheduled": 10,
+          "complete": 0,
+          "terminal": 10,
+          "pending": 0
+        },
+        "qwen3:8b": {
+          "scheduled": 10,
+          "complete": 9,
+          "terminal": 1,
+          "pending": 0
+        }
+      },
+      "category": {
+        "Character facts or relationships": {
+          "scheduled": 6,
+          "complete": 1,
+          "terminal": 5,
+          "pending": 0
+        },
+        "Timeline or event order": {
+          "scheduled": 6,
+          "complete": 4,
+          "terminal": 2,
+          "pending": 0
+        },
+        "Location or movement": {
+          "scheduled": 6,
+          "complete": 2,
+          "terminal": 4,
+          "pending": 0
+        },
+        "Object possession or properties": {
+          "scheduled": 6,
+          "complete": 2,
+          "terminal": 4,
+          "pending": 0
+        },
+        "Explicit fictional-world rules": {
+          "scheduled": 6,
+          "complete": 2,
+          "terminal": 4,
+          "pending": 0
+        }
+      }
+    },
+    "generated_stories_recovery_v2": {
+      "model": {
+        "llama3.1:8b": {
+          "scheduled": 10,
+          "complete": 9,
+          "terminal": 1,
+          "pending": 0
+        },
+        "mistral:7b": {
+          "scheduled": 10,
+          "complete": 1,
+          "terminal": 9,
+          "pending": 0
+        },
+        "qwen3:8b": {
+          "scheduled": 10,
+          "complete": 10,
+          "terminal": 0,
+          "pending": 0
+        }
+      },
+      "category": {
+        "Character facts or relationships": {
+          "scheduled": 6,
+          "complete": 4,
+          "terminal": 2,
+          "pending": 0
+        },
+        "Timeline or event order": {
+          "scheduled": 6,
+          "complete": 4,
+          "terminal": 2,
+          "pending": 0
+        },
+        "Location or movement": {
+          "scheduled": 6,
+          "complete": 4,
+          "terminal": 2,
+          "pending": 0
+        },
+        "Object possession or properties": {
+          "scheduled": 6,
+          "complete": 5,
+          "terminal": 1,
+          "pending": 0
+        },
+        "Explicit fictional-world rules": {
+          "scheduled": 6,
+          "complete": 3,
+          "terminal": 3,
+          "pending": 0
+        }
+      }
+    }
+  },
+  "classifications": {
+    "rejected": 22,
+    "needs_review": 7,
+    "accepted": 1
+  },
+  "accepted_story_count": 2,
+  "unique_accepted_writing_prompts": 1,
+  "source_B_counts": {
+    "generated_stories_v1": 11,
+    "generated_stories_recovery_v2": 9,
+    "generated_stories_diagnostics_v2/llama_timeout": 1,
+    "generated_stories_diagnostics_v2/mistral_schema": 1,
+    "generated_stories_schema_recovery_v1": 8
+  },
+  "readiness": "Offline artifacts ready. Frozen comparison execution not configured for this dataset; exposure unresolved, only one accepted prompt group. No inferential or untouched-test claim.",
+  "denominators": "Scheduled is 30 overall, 10 per model, 6 per category. Reviewed means all three judgments supplied as Yes/No/Unsure (not acceptance). Acceptance yield uses scheduled; acceptance among reviewed uses reviewed. Categories are intended targets. Latest terminal failures are zero; historical failures remain in separate tables."
+}

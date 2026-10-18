@@ -1,0 +1,22 @@
+Detect continuity errors in the fictional story below. A continuity error is a story detail that contradicts previously established information about the story's world or characters.
+
+Use a verify-and-revise procedure privately within this single response:
+1. Form a tentative decision about whether a continuity error exists.
+2. Check whether the evidence supports that decision. For a positive decision, locate both the later error-introducing passage and the earlier contradicted passage. For a negative decision, check again for an overlooked conflicting pair.
+3. Consider whether the surrounding narrative resolves the apparent contradiction through a change over time, a flashback, a character belief, or an explicit explanation.
+4. Revise the tentative decision if its evidence is unsupported or the conflict is resolved. Report only the final decision; if no supported unresolved pair remains, decide that no continuity error was found.
+
+Unusual events, missing details, or real-world implausibility alone are not continuity errors. Respect established fictional-world rules. Distinguish contradictions from changes over time, flashbacks, character beliefs, and explanations supplied by the story.
+
+Return only one final <response> block. Do not expose a scratchpad, checklist, tentative answer, or lengthy chain of thought. Keep the explanation to one or two concise sentences. Quote the story text in the evidence fields; leave both evidence fields empty for a negative decision.
+
+<response>
+<explanation>[Briefly explain the final decision using supported story evidence.]</explanation>
+<error_lines>[Quote the later error-introducing sentence or sentences, or leave empty.]</error_lines>
+<contradicted_lines>[Quote the earlier contradicted sentence or sentences, or leave empty.]</contradicted_lines>
+<decision>[Write exactly "Continuity error found" or "No continuity error found".]</decision>
+</response>
+
+<story>
+{story}
+</story>

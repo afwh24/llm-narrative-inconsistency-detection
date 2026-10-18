@@ -1,0 +1,11 @@
+{
+  "test_command": ".\\.venv\\Scripts\\python.exe -m pytest tests/test_scoring_correction_v1.py tests/test_evaluation.py tests/test_prompting.py tests/test_main100_analysis.py -q --basetemp .pytest_scoring_correction_v1_01",
+  "result": "73 passed in 1.13s",
+  "exit_code": 0,
+  "test_source_sha256": "753daf6aa13754887d92f020d0cd05cfa547c3d41970b1f2ba7876dda5bce367",
+  "offline_rescore_runs": 2,
+  "integrity": "PASS",
+  "protected_files_unchanged": 168,
+  "inference_calls": 0,
+  "artifact_invariants": "600 traces, 597 valid, 3 invalid; count conservation; Full=(TN+50*Pos)/100 for every condition; 7 guard Full changes, 10 total Full changes, 17 affected records"
+}

@@ -1,0 +1,20 @@
+{
+  "parent_preparation": "experiments/main100_comparison_v1/preparation.json",
+  "parent_preparation_hash": "7EA310EA0469906929EB98B9854A8707D1A0F703484AF02332501B102AC9FD2A",
+  "parent_runtime": "0.35.1",
+  "runtime": "0.40.0",
+  "metadata_changes": [
+    {
+      "model": "qwen3:8b",
+      "field": "parameters",
+      "before": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95",
+      "after": "stop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95\nrepeat_penalty                 1",
+      "values_equal": true
+    }
+  ],
+  "parent_prediction_records": 0,
+  "parent_request_events": 0,
+  "records_reused_from_parent": 0,
+  "sample_policy": "Reference the exact immutable v1 manifest, inputs, gold, exclusions and templates; no resampling.",
+  "limitation": "Pilot selection and 6.19-hour planning estimate are historical Ollama 0.35.1 evidence. Runtime equivalence to 0.40.0 is not claimed or tested with inference."
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS_PREPARATION_ONLY",
+  "inference_calls": 0,
+  "evaluation_records_created": 0,
+  "focused_tests": {
+    "passed": 37,
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest tests/test_main100_comparison.py tests/test_request_journal.py tests/test_evaluation.py tests/test_prompting.py -q --basetemp .tmp/main100_validation_final"
+  },
+  "manifest_hash": "EF02FC8910579FF26F8D395704C1DB86C4EB83DEDA0748ADAA5336EFCD66E8ED",
+  "contract_hash": "816D4FE433E40BE5FF4FE5B13703AFFB294DC05A68796DEAA591337CA1ACB7F5",
+  "preparation_hash": "7EA310EA0469906929EB98B9854A8707D1A0F703484AF02332501B102AC9FD2A",
+  "checks": [
+    "raw pilot reparse/re-evaluation and 12-condition compatibility",
+    "50 positive + 50 negative main only",
+    "same fixed order across six conditions",
+    "source-family exclusion closure",
+    "exact full stories and official ID types",
+    "gold-free detector inputs",
+    "original and copied template identity",
+    "finite persistent retry history",
+    "interruption remains pending",
+    "compatible checkpoint skip",
+    "partial and completed export distinction",
+    "no new predictions or requests",
+    "protected prior artifacts preserved"
+  ]
+}

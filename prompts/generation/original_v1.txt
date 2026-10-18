@@ -1,0 +1,4 @@
+Write one original, internally coherent story in English, approximately 400–700 words. Maintain consistent characters, chronology, locations, objects and setting. Return only a JSON object with exactly one string field named "story", containing the complete story. Do not include markdown fences or commentary.
+
+Writing prompt:
+{{writing_prompt}}

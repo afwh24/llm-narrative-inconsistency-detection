@@ -1,0 +1,8 @@
+{
+  "offline_tests": "15 passed",
+  "real_inference_calls": 0,
+  "pending_pairs": 30,
+  "protected_v2_artifacts_unchanged": 75,
+  "original_and_copy_template_hashes_match": true,
+  "preparation_hash": "6898B93BF9B8D4FB8D89074C25F9BDF21E0B6EB9779908E425F12A4CEF8584F4"
+}

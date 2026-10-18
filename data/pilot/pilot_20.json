@@ -1,0 +1,132 @@
+{
+  "name": "pilot_20",
+  "purpose": "Fixed 20-example FLAWEDFICTIONS research pilot / vertical-slice dataset.",
+  "selection_date": "2026-08-17",
+  "selection_method": "For each official subset x cont_error stratum, compute SHA-256 over example_id, sort by selection_hash then example_id, and select the first 5 examples.",
+  "dataset": {
+    "identity": "kahuja/flawed-fictions",
+    "version": "733717281afdb715538b753f0f85ef7d55568b85"
+  },
+  "records": [
+    {
+      "example_id": "flawed_fictions_18",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "0026743D4B08B7609BA875E8A7C9013D43A81CBFDB5609BE05D98E0CDCBEC84B"
+    },
+    {
+      "example_id": "flawed_fictions_189",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "00ACA6C2CC569327A910D9D842A3DAAE2213A0C7FCDF955E8FB29813D6B65BAA"
+    },
+    {
+      "example_id": "flawed_fictions_267",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "02952FCB1D297909936479246D631788D9DF8E6F3DAD235A6092C98840CABFD6"
+    },
+    {
+      "example_id": "flawed_fictions_72",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "0480542424B06B597058098244FB9F48398A85B946F8B60B8923576E222ED586"
+    },
+    {
+      "example_id": "flawed_fictions_131",
+      "subset": "flawed_fictions",
+      "cont_error": 0.0,
+      "selection_hash": "0976FC078D58A9F458DF92616186BE775E12B6DF2D905D09A746C41381D5CEA9"
+    },
+    {
+      "example_id": "flawed_fictions_285",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "000BF73BD4717E3935F3598196DCA73CC80F99EF109824497352727015F47D6F"
+    },
+    {
+      "example_id": "flawed_fictions_109",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "021D8812C9149AB9F7A53FE83E6CF27E8BE1A66F2098D3595FC07397A0D4F13B"
+    },
+    {
+      "example_id": "flawed_fictions_56",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "03B4B59EA51C47BE1EDD9286F114029A2CD817DB7C5B8B52B2A3D3F2AEA716F9"
+    },
+    {
+      "example_id": "flawed_fictions_223",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "0517B7D9D5028AB1B6F960326E854B8EB8C09932D709010780C21951C4171EF6"
+    },
+    {
+      "example_id": "flawed_fictions_341",
+      "subset": "flawed_fictions",
+      "cont_error": 1.0,
+      "selection_hash": "073DA128B78A87D25C8AFDBAEBD281527D960475EDC13AEC7F46A2826E9D7750"
+    },
+    {
+      "example_id": "flawed_fictions_long_44",
+      "subset": "flawed_fictions_long",
+      "cont_error": 0.0,
+      "selection_hash": "01E62C79124E38F030086F207FE6B57EA482CD7F55541E17903BC74754B28BCD"
+    },
+    {
+      "example_id": "flawed_fictions_long_83",
+      "subset": "flawed_fictions_long",
+      "cont_error": 0.0,
+      "selection_hash": "051D22F472A3747B7425C237E4F6D37339438817D92A66D5ECB36D18201FDFEB"
+    },
+    {
+      "example_id": "flawed_fictions_long_37",
+      "subset": "flawed_fictions_long",
+      "cont_error": 0.0,
+      "selection_hash": "0754830B00C4B27E5A562A2E128DFE574044B188BB24C75C509634CFC4EB0167"
+    },
+    {
+      "example_id": "flawed_fictions_long_159",
+      "subset": "flawed_fictions_long",
+      "cont_error": 0.0,
+      "selection_hash": "12BC2BDB7C6282CD605CE1B9F691DE299DD0E2BE9206FAA5F9142EAD507E890B"
+    },
+    {
+      "example_id": "flawed_fictions_long_137",
+      "subset": "flawed_fictions_long",
+      "cont_error": 0.0,
+      "selection_hash": "17E6E51188DA21E19BC70504AC0BE71EA441AE1CD2FDAEA67023FA38B587223D"
+    },
+    {
+      "example_id": "flawed_fictions_long_187",
+      "subset": "flawed_fictions_long",
+      "cont_error": 1.0,
+      "selection_hash": "044DF5C7CD66A64191F10AAE2DD13093FBB69BB0AA9C776171FC387D8C5ECD41"
+    },
+    {
+      "example_id": "flawed_fictions_long_152",
+      "subset": "flawed_fictions_long",
+      "cont_error": 1.0,
+      "selection_hash": "06671A06F456E8B1397405E05CCDEC195CCB8D36C3DE3E0E9CB7711CA7D41510"
+    },
+    {
+      "example_id": "flawed_fictions_long_182",
+      "subset": "flawed_fictions_long",
+      "cont_error": 1.0,
+      "selection_hash": "095BE6C082C723F47963506ABF73BFEA60609FAB32E4575D7A966BD7A56C1F84"
+    },
+    {
+      "example_id": "flawed_fictions_long_103",
+      "subset": "flawed_fictions_long",
+      "cont_error": 1.0,
+      "selection_hash": "0DCB7D1281F728B27EF7916B629935A868BBA763778D7D08AB0C9A5D7B56A00F"
+    },
+    {
+      "example_id": "flawed_fictions_long_93",
+      "subset": "flawed_fictions_long",
+      "cont_error": 1.0,
+      "selection_hash": "0E669CD87BAB2E24F1CE957C345A8D3A7CC37B7B1CE3E936A6EF518FBAC504A0"
+    }
+  ]
+}

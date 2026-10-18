@@ -1,0 +1,49 @@
+{
+  "pair_id": "llama3_1_8b_009",
+  "stage": "B",
+  "freeze_hash": "750389c51a5a2443f6e2e0050e6f4e38702417e84cfda0ae8c4ef85c9328ef5c",
+  "prompt_hash": "b63cfc15c661948eb8ec52b3cde1c791c56290aa67bcb7aa48e0336176092e69",
+  "fields": {
+    "original_story": null,
+    "modified_story": null,
+    "intended_contradiction": null
+  },
+  "warnings": [],
+  "attempt_history": [
+    {
+      "attempt": 1,
+      "started_at": "2026-10-08T13:37:09.645201+00:00",
+      "latency_seconds": 602.067088,
+      "status": "error",
+      "error": {
+        "type": "OllamaTimeoutError",
+        "message": "timed out"
+      },
+      "request_id": "generated_stories_recovery_v2__llama3_1_8b:61cc335ff568f813f0253d2bdbe6037460ba9511296a37a7e864a98b3f6e3fb0:1"
+    },
+    {
+      "attempt": 2,
+      "started_at": "2026-10-08T13:47:12.720517+00:00",
+      "latency_seconds": 602.040959,
+      "status": "error",
+      "error": {
+        "type": "OllamaTimeoutError",
+        "message": "timed out"
+      },
+      "request_id": "generated_stories_recovery_v2__llama3_1_8b:61cc335ff568f813f0253d2bdbe6037460ba9511296a37a7e864a98b3f6e3fb0:2"
+    }
+  ],
+  "raw_response": null,
+  "error": "timed out",
+  "status": "terminal_technical_B_OllamaTimeoutError",
+  "capacity": {
+    "configured_context": 16384,
+    "supported_context": 131072,
+    "largest_prompt_utf8_bytes": 3663,
+    "wrapper_and_special_token_bound": 1993,
+    "output_allowance": 4096,
+    "required_token_upper_bound": 9752,
+    "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+    "estimated_f16_kv_cache_bytes": 2147483648
+  }
+}

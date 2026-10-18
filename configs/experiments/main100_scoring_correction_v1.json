@@ -1,0 +1,18 @@
+{
+  "version": "scoring_correction_v1",
+  "experiment_root": "experiments/main100_comparison_v2_ollama0400",
+  "output_directory": "experiments/main100_comparison_v2_ollama0400/analysis/scoring_correction_v1",
+  "label_policy": "explicit_decision_v1",
+  "label_structure": "Exactly one complete, nonempty decision tag; wrapper and non-label field warnings do not invalidate a clear label.",
+  "negative_patterns": [
+    "^no continuity error (?:was )?found(?:[.!]| in the story[.!]|$)"
+  ],
+  "positive_patterns": [
+    "^(?:based on the analysis, i conclude that )?(?:a )?continuity error (?:exists|(?:is )?found|is present)(?:[.!]| in the story(?:[.,!]| because | due to )| due to |$)",
+    "^there is a continuity error in the story[.!]"
+  ],
+  "evidence_policy": "Bound fields at the next schema tag (or unknown closing tag); report missing/mismatched closing tags. Preserve legacy line cleanup and non-strict overlap; reject empty normalized fragments on predicted and gold sides.",
+  "invalid_policy": "Retain null labels as separate invalid-positive-gold and invalid-negative-gold counts; zero correctness/localisation credit. All-scope recall and specificity use all gold positives and negatives. F1 includes invalid gold of its own class as missed class instances.",
+  "zero_division": 0.0,
+  "inference_calls": 0
+}

@@ -1,0 +1,11 @@
+{
+  "name": "generated_stories_recovery_v2",
+  "root": "experiments/generated_stories_recovery_v2",
+  "source_config": "configs/experiments/generated_stories_v1.json",
+  "request_format": "json",
+  "max_retries": 1,
+  "procedure": "revised procedure: JSON output mode; unchanged prompts and sampling; two total dispatch starts per stage, connection/timeout retries only; runtime revised from Ollama 0.40.0 to 0.40.1; parameter-key display order ignored, values preserved",
+  "ollama_version": "0.40.1",
+  "predecessor_root": "experiments/generated_stories_recovery_v1",
+  "supersedes": "generated_stories_recovery_v1 (zero dispatches; preflight blocked)"
+}

@@ -1,0 +1,18 @@
+{
+  "analysis_version": "phase2_quantitative_v1",
+  "output_directory": "reports/report_working_phase2_20261015",
+  "main_root": "experiments/main100_comparison_v2_ollama0400",
+  "corrected_policy": "configs/experiments/main100_scoring_correction_v1.json",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20261015,
+  "confidence_level": 0.95,
+  "bootstrap_method": "paired unstratified family-cluster percentile, 96 family draws with replacement; same draws across all six conditions; recompute denominators",
+  "test_endpoints": ["accuracy", "ceeval_full", "ceeval_pos"],
+  "multiplicity": "Holm across nine exact family-block paired-swap tests: three models by three endpoints",
+  "test_assumptions": "Exchangeability of prompt labels within inferred families under the null; independence between inferred families. Observational, selected sample: not a randomized causal experiment.",
+  "interaction_scope": "Descriptive paired difference-in-differences with exploratory pointwise bootstrap intervals; no confirmatory interaction tests",
+  "pilot_policy": "Historical released-style scoring, descriptive paired comparisons only; no corrected-policy reinterpretation of prompt selection",
+  "supplementary_policy": "Corrected policy, one accepted pair, counts only; no inferential generalization",
+  "status": "New exploratory analysis of existing outputs, not preregistered; all inferential claims conditional on saved sample and heuristic families",
+  "inference_allowed": false
+}

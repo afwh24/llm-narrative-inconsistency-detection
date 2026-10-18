@@ -1,0 +1,38 @@
+{
+  "name": "generated_stories_v1",
+  "root": "experiments/generated_stories_v1",
+  "models": {
+    "qwen3:8b": {
+      "config": "configs/models/generated_stories_v1/qwen3_8b.yaml",
+      "stem": "qwen3_8b"
+    },
+    "llama3.1:8b": {
+      "config": "configs/models/generated_stories_v1/llama3_1_8b.yaml",
+      "stem": "llama3_1_8b"
+    },
+    "mistral:7b": {
+      "config": "configs/models/generated_stories_v1/mistral_7b.yaml",
+      "stem": "mistral_7b"
+    }
+  },
+  "generation": {
+    "num_ctx": 16384,
+    "num_predict": 4096
+  },
+  "templates": {
+    "A": "prompts/generation/original_v1.txt",
+    "B": "prompts/generation/rewrite_v1.txt"
+  },
+  "writing_prompts": "experiments/generated_stories_v1/writing_prompts.json",
+  "editing_instructions": "experiments/generated_stories_v1/editing_instructions.json",
+  "target_words": [
+    400,
+    700
+  ],
+  "max_edit_fraction_warning": 0.15,
+  "stages": [
+    "A",
+    "B"
+  ],
+  "template_token_margin": 512
+}

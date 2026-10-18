@@ -1,0 +1,15 @@
+{
+  "name": "generated_stories_detection_v1",
+  "root": "experiments/generated_stories_detection_v1",
+  "dataset": "data/generated_stories_verified_v1",
+  "benchmark_preparation": "experiments/main100_comparison_v2_ollama0400/preparation.json",
+  "benchmark_configuration": "configs/experiments/main100_comparison_v2_ollama0400.json",
+  "scoring_policy": "configs/experiments/main100_scoring_correction_v1.json",
+  "batch_size": 10,
+  "expected_models": ["qwen3:8b", "llama3.1:8b", "mistral:7b"],
+  "expected_strategies": {"vanilla": "vanilla_v1", "verify_revise": "verify_revise_v2"},
+  "runtime_policy": "Pin actual installed Ollama at preparation; allow documented runtime revision from historical 0.40.0, never a model/prompt/config substitution.",
+  "failure_policy": "Null predictions for terminal inference failures, output-limit termination and invalid explicit decisions; retain all scheduled records. No quality retries. Existing bounded journal retry policy: four starts maximum per story/condition.",
+  "parser_policy": "Preserve original parser output for audit; use existing explicit_decision_v1 corrected main100 parser for primary labels so malformed decisions never become default classes.",
+  "duplicate_policy": "Report exact-text groups; block identical versions within an accepted pair or conflicting gold labels on identical text. Retain other duplicates with original prompt-family grouping; never silently deduplicate."
+}

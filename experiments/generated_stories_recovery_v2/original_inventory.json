@@ -1,0 +1,1298 @@
+{
+  "counts": {
+    "qwen3:8b": {
+      "pairs_ok": 9,
+      "pairs_failed": 1,
+      "A_ok": 9,
+      "A_failed": 1,
+      "B_ok": 9,
+      "B_failed": 0,
+      "B_skipped": 1,
+      "dispatch_starts": 19,
+      "received": 19
+    },
+    "llama3.1:8b": {
+      "pairs_ok": 2,
+      "pairs_failed": 8,
+      "A_ok": 2,
+      "A_failed": 8,
+      "B_ok": 2,
+      "B_failed": 0,
+      "B_skipped": 8,
+      "dispatch_starts": 12,
+      "received": 12
+    },
+    "mistral:7b": {
+      "pairs_ok": 0,
+      "pairs_failed": 10,
+      "A_ok": 0,
+      "A_failed": 10,
+      "B_ok": 0,
+      "B_failed": 0,
+      "B_skipped": 10,
+      "dispatch_starts": 10,
+      "received": 10
+    }
+  },
+  "inventory": [
+    {
+      "model": "qwen3:8b",
+      "pair_id": "qwen3_8b_001",
+      "A": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_001_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 620
+      },
+      "B": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_001_B_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [
+          "contradicted_sentence_not_verbatim_in_modified_story"
+        ],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 755
+      }
+    },
+    {
+      "model": "qwen3:8b",
+      "pair_id": "qwen3_8b_002",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_002_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Adjacent quoted strings without JSON delimiter/structure",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 677,
+        "json_error": "Expecting ',' delimiter: line 4 column 3 (char 752)",
+        "error_excerpt": "for thirty years and was retiring tomorrow.\"\n  \n  \"Mei had begun the piece with a vase of deep indig",
+        "secondary_json_error": "Expecting ',' delimiter: line 4 column 3 (char 752)"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "qwen3:8b",
+      "pair_id": "qwen3_8b_003",
+      "A": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_003_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 560
+      },
+      "B": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_003_B_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 684
+      }
+    },
+    {
+      "model": "qwen3:8b",
+      "pair_id": "qwen3_8b_004",
+      "A": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_004_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 655
+      },
+      "B": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_004_B_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [
+          "unchanged_story"
+        ],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 819
+      }
+    },
+    {
+      "model": "qwen3:8b",
+      "pair_id": "qwen3_8b_005",
+      "A": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_005_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 667
+      },
+      "B": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_005_B_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [
+          "unchanged_story"
+        ],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 827
+      }
+    },
+    {
+      "model": "qwen3:8b",
+      "pair_id": "qwen3_8b_006",
+      "A": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_006_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 755
+      },
+      "B": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_006_B_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [
+          "unchanged_story"
+        ],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 880
+      }
+    },
+    {
+      "model": "qwen3:8b",
+      "pair_id": "qwen3_8b_007",
+      "A": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_007_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 656
+      },
+      "B": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_007_B_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [
+          "unchanged_story"
+        ],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 775
+      }
+    },
+    {
+      "model": "qwen3:8b",
+      "pair_id": "qwen3_8b_008",
+      "A": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_008_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 608
+      },
+      "B": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_008_B_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 692
+      }
+    },
+    {
+      "model": "qwen3:8b",
+      "pair_id": "qwen3_8b_009",
+      "A": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_009_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 580
+      },
+      "B": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_009_B_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [
+          "unchanged_story"
+        ],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 739
+      }
+    },
+    {
+      "model": "qwen3:8b",
+      "pair_id": "qwen3_8b_010",
+      "A": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_010_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 691
+      },
+      "B": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/qwen3_8b/raw_http/qwen3_8b_010_B_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 754
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "pair_id": "llama3_1_8b_001",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_001_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 547,
+        "json_error": "Invalid control character at: line 2 column 479 (char 480)",
+        "error_excerpt": "n a part of the team for years and knew the drill.\n\nAs she arrived at the cabin, Rachel was greeted ",
+        "secondary_json_error": "Expecting ',' delimiter: line 12 column 478 (char 2525)"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "pair_id": "llama3_1_8b_002",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_002_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 639,
+        "json_error": "Invalid control character at: line 2 column 447 (char 448)",
+        "error_excerpt": " wooden box from a single piece of reclaimed wood.\n\nMei, a skilled woodworker, carefully carved the ",
+        "secondary_json_error": "Expecting ',' delimiter: line 16 column 429 (char 2966)"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "pair_id": "llama3_1_8b_003",
+      "A": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_003_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [
+          "outside_target_word_range"
+        ],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 474
+      },
+      "B": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_003_B_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [
+          "outside_target_word_range"
+        ],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 606
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "pair_id": "llama3_1_8b_004",
+      "A": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_004_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 574
+      },
+      "B": {
+        "status": "ok",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_004_B_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "valid",
+        "reason": null,
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 771
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "pair_id": "llama3_1_8b_005",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_005_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 622,
+        "json_error": "Invalid control character at: line 2 column 446 (char 447)",
+        "error_excerpt": "tle lapping of the water against the canal's edge.\n\nAs she rode, Emma noticed the intricate stone fa",
+        "secondary_json_error": "Expecting ',' delimiter: line 14 column 362 (char 2868)"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "pair_id": "llama3_1_8b_006",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_006_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 555,
+        "json_error": "Invalid control character at: line 2 column 397 (char 398)",
+        "error_excerpt": " the main gallery, awaiting Rachel's instructions.\n\nRachel, a graduate of Springdale University's ar",
+        "secondary_json_error": "Expecting ',' delimiter: line 10 column 2 (char 1465)"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "pair_id": "llama3_1_8b_007",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_007_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 517,
+        "json_error": "Invalid control character at: line 2 column 417 (char 418)",
+        "error_excerpt": "chinery, when a knock on the door interrupted her.\n\nIt was a painter, a young man with a messy beard",
+        "secondary_json_error": "Expecting ',' delimiter: line 12 column 447 (char 2385)"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "pair_id": "llama3_1_8b_008",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_008_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 502,
+        "json_error": "Invalid control character at: line 2 column 527 (char 528)",
+        "error_excerpt": "for hours, but every lead had ended in a dead-end.\n\nAs she rummaged through the lost-and-found box, ",
+        "secondary_json_error": "Expecting ',' delimiter: line 10 column 622 (char 2272)"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "pair_id": "llama3_1_8b_009",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_009_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 634,
+        "json_error": "Invalid control character at: line 2 column 248 (char 249)",
+        "error_excerpt": "s infused the surroundings with a soothing energy.\n\nAkira, a young apprentice to the village's maste",
+        "secondary_json_error": "Expecting ',' delimiter: line 18 column 282 (char 2893)"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "llama3.1:8b",
+      "pair_id": "llama3_1_8b_010",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/llama3_1_8b/raw_http/llama3_1_8b_010_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped newlines and missing closing object brace; additional unescaped quotes may exist",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 613,
+        "json_error": "Invalid control character at: line 2 column 526 (char 527)",
+        "error_excerpt": "structures hummed with a gentle, blue-green light.\n\nAs she began her daily routine, Elara checked th",
+        "secondary_json_error": "Expecting ',' delimiter: line 14 column 338 (char 2892)"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "mistral:7b",
+      "pair_id": "mistral_7b_001",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_001_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 583,
+        "json_error": "Invalid control character at: line 2 column 299 (char 301)",
+        "error_excerpt": "their faces etched with determination and concern.\n\n  Among them was Emily, a seasoned volunteer wit"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "mistral:7b",
+      "pair_id": "mistral_7b_002",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_002_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 598,
+        "json_error": "Invalid control character at: line 2 column 306 (char 308)",
+        "error_excerpt": "epths of the ocean to the surface every full moon.\n\n   Among the crowd, two craftspeople stood out. "
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "mistral:7b",
+      "pair_id": "mistral_7b_003",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_003_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 522,
+        "json_error": "Invalid control character at: line 2 column 285 (char 287)",
+        "error_excerpt": " prepared for an overnight public viewing session.\n\n  The sun had barely dipped below the horizon wh"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "mistral:7b",
+      "pair_id": "mistral_7b_004",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_004_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 684,
+        "json_error": "Invalid control character at: line 2 column 340 (char 342)",
+        "error_excerpt": " the hum of early morning activity filled the air.\n\n  Baker Elara, a woman of middle age with a kind"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "mistral:7b",
+      "pair_id": "mistral_7b_005",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_005_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 531,
+        "json_error": "Invalid control character at: line 2 column 323 (char 325)",
+        "error_excerpt": "at danced across the narrow alleyways and bridges.\n\n  Max was no ordinary courier; he was known for "
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "mistral:7b",
+      "pair_id": "mistral_7b_006",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_006_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 626,
+        "json_error": "Invalid control character at: line 2 column 510 (char 512)",
+        "error_excerpt": "te several galleries being closed for maintenance.\n\n  As Mr. Johnson greeted the class, he could see"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "mistral:7b",
+      "pair_id": "mistral_7b_007",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_007_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 431,
+        "json_error": "Invalid control character at: line 2 column 473 (char 475)",
+        "error_excerpt": "Cove to find inspiration for his next masterpiece.\n\n   As Thomas was replacing the worn-out lens in "
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "mistral:7b",
+      "pair_id": "mistral_7b_008",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_008_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 587,
+        "json_error": "Invalid control character at: line 2 column 387 (char 389)",
+        "error_excerpt": "d the last train of the day loomed on the horizon.\n\n    Among the myriad items that had accumulated "
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "mistral:7b",
+      "pair_id": "mistral_7b_009",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_009_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 656,
+        "json_error": "Invalid control character at: line 2 column 366 (char 368)",
+        "error_excerpt": "nship and enchantment that was uniquely Luminaran.\n\n  Young Elara, an apprentice under the village's"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    },
+    {
+      "model": "mistral:7b",
+      "pair_id": "mistral_7b_010",
+      "A": {
+        "status": "terminal_parsing_A",
+        "raw_checkpoint": true,
+        "raw_http": [
+          "experiments/generated_stories_v1/runs/mistral_7b/raw_http/mistral_7b_010_A_1.bin"
+        ],
+        "starts": 1,
+        "unused_dispatch_slots": 3,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "response_not_json",
+        "reason": "Unescaped control characters in JSON string; strict parser correctly rejects",
+        "done": true,
+        "done_reason": "stop",
+        "eval_count": 562,
+        "json_error": "Invalid control character at: line 2 column 316 (char 318)",
+        "error_excerpt": " by a technology as exotic as the asteroid itself.\n\n  Orion, a man of frail physique but indomitable"
+      },
+      "B": {
+        "status": "skipped",
+        "raw_checkpoint": false,
+        "raw_http": [],
+        "starts": 0,
+        "unused_dispatch_slots": 4,
+        "executable_original_retries": 0,
+        "warnings": [],
+        "parse": "not_run",
+        "reason": "Stage A failed; B skipped"
+      }
+    }
+  ],
+  "plan": [
+    {
+      "model": "qwen3:8b",
+      "stem": "qwen3_8b",
+      "pair_id": "qwen3_8b_002",
+      "index": 1,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "llama3.1:8b",
+      "stem": "llama3_1_8b",
+      "pair_id": "llama3_1_8b_001",
+      "index": 0,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "llama3.1:8b",
+      "stem": "llama3_1_8b",
+      "pair_id": "llama3_1_8b_002",
+      "index": 1,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "llama3.1:8b",
+      "stem": "llama3_1_8b",
+      "pair_id": "llama3_1_8b_005",
+      "index": 4,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "llama3.1:8b",
+      "stem": "llama3_1_8b",
+      "pair_id": "llama3_1_8b_006",
+      "index": 5,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "llama3.1:8b",
+      "stem": "llama3_1_8b",
+      "pair_id": "llama3_1_8b_007",
+      "index": 6,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "llama3.1:8b",
+      "stem": "llama3_1_8b",
+      "pair_id": "llama3_1_8b_008",
+      "index": 7,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "llama3.1:8b",
+      "stem": "llama3_1_8b",
+      "pair_id": "llama3_1_8b_009",
+      "index": 8,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "llama3.1:8b",
+      "stem": "llama3_1_8b",
+      "pair_id": "llama3_1_8b_010",
+      "index": 9,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "mistral:7b",
+      "stem": "mistral_7b",
+      "pair_id": "mistral_7b_001",
+      "index": 0,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "mistral:7b",
+      "stem": "mistral_7b",
+      "pair_id": "mistral_7b_002",
+      "index": 1,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "mistral:7b",
+      "stem": "mistral_7b",
+      "pair_id": "mistral_7b_003",
+      "index": 2,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "mistral:7b",
+      "stem": "mistral_7b",
+      "pair_id": "mistral_7b_004",
+      "index": 3,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "mistral:7b",
+      "stem": "mistral_7b",
+      "pair_id": "mistral_7b_005",
+      "index": 4,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "mistral:7b",
+      "stem": "mistral_7b",
+      "pair_id": "mistral_7b_006",
+      "index": 5,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "mistral:7b",
+      "stem": "mistral_7b",
+      "pair_id": "mistral_7b_007",
+      "index": 6,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "mistral:7b",
+      "stem": "mistral_7b",
+      "pair_id": "mistral_7b_008",
+      "index": 7,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "mistral:7b",
+      "stem": "mistral_7b",
+      "pair_id": "mistral_7b_009",
+      "index": 8,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    },
+    {
+      "model": "mistral:7b",
+      "stem": "mistral_7b",
+      "pair_id": "mistral_7b_010",
+      "index": 9,
+      "execute": [
+        "A",
+        "B"
+      ],
+      "B_dependency": "only after selected A is structurally successful"
+    }
+  ]
+}

@@ -1,0 +1,527 @@
+{
+  "config": {
+    "name": "generated_stories_detection_v1",
+    "root": "experiments/generated_stories_detection_v1",
+    "dataset": "data/generated_stories_verified_v1",
+    "benchmark_preparation": "experiments/main100_comparison_v2_ollama0400/preparation.json",
+    "benchmark_configuration": "configs/experiments/main100_comparison_v2_ollama0400.json",
+    "scoring_policy": "configs/experiments/main100_scoring_correction_v1.json",
+    "batch_size": 10,
+    "expected_models": [
+      "qwen3:8b",
+      "llama3.1:8b",
+      "mistral:7b"
+    ],
+    "expected_strategies": {
+      "vanilla": "vanilla_v1",
+      "verify_revise": "verify_revise_v2"
+    },
+    "runtime_policy": "Pin actual installed Ollama at preparation; allow documented runtime revision from historical 0.40.0, never a model/prompt/config substitution.",
+    "failure_policy": "Null predictions for terminal inference failures, output-limit termination and invalid explicit decisions; retain all scheduled records. No quality retries. Existing bounded journal retry policy: four starts maximum per story/condition.",
+    "parser_policy": "Preserve original parser output for audit; use existing explicit_decision_v1 corrected main100 parser for primary labels so malformed decisions never become default classes.",
+    "duplicate_policy": "Report exact-text groups; block identical versions within an accepted pair or conflicting gold labels on identical text. Retain other duplicates with original prompt-family grouping; never silently deduplicate."
+  },
+  "prepared_at": "2026-10-12T16:46:59.221363+00:00",
+  "readiness": {
+    "version": "generated_stories_verified_v1",
+    "accepted_pairs": 1,
+    "story_ids": [
+      "s_ad55dc39c9afb9dbd4a8bc9c",
+      "s_f8ac30b95f49c23f78326f45"
+    ],
+    "expected_records": 12,
+    "duplicates": [],
+    "duplicate_policy": "Report exact-text groups; block identical versions within an accepted pair or conflicting gold labels on identical text. Retain other duplicates with original prompt-family grouping; never silently deduplicate.",
+    "exposure": {
+      "user_attestation": {
+        "answer": "Unsure",
+        "date": "2026-10-12",
+        "question": "Have these generated stories or review findings been used to develop, select, or revise detector prompts or strategies, including outside this repository?"
+      },
+      "detector_freeze": "experiments/main100_comparison_v2_ollama0400/preparation.json",
+      "detector_prepared_at": "2026-10-07T09:34:37.182460+00:00",
+      "prompt_hash_checks": {
+        "prompts/benchmark/vanilla_v1.txt": {
+          "expected": "68eee6c1a3f1617a3f1e4c6a08939e0ea8110ee1c1678b176d832a3d952d6aea",
+          "actual": "68eee6c1a3f1617a3f1e4c6a08939e0ea8110ee1c1678b176d832a3d952d6aea",
+          "matches": true
+        },
+        "prompts/frozen/main100_comparison_v1/vanilla_v1.txt": {
+          "expected": "68eee6c1a3f1617a3f1e4c6a08939e0ea8110ee1c1678b176d832a3d952d6aea",
+          "actual": "68eee6c1a3f1617a3f1e4c6a08939e0ea8110ee1c1678b176d832a3d952d6aea",
+          "matches": true
+        },
+        "prompts/experimental/verify_revise_v2.txt": {
+          "expected": "272f789c83596ee7b408f1d58210f6d71e7796fe174966c29023daf4e8744131",
+          "actual": "272f789c83596ee7b408f1d58210f6d71e7796fe174966c29023daf4e8744131",
+          "matches": true
+        },
+        "prompts/frozen/main100_comparison_v1/verify_revise_v2.txt": {
+          "expected": "272f789c83596ee7b408f1d58210f6d71e7796fe174966c29023daf4e8744131",
+          "actual": "272f789c83596ee7b408f1d58210f6d71e7796fe174966c29023daf4e8744131",
+          "matches": true
+        }
+      },
+      "known_exposure": [
+        "generation failure diagnosis",
+        "recovery schema design",
+        "human annotation and review",
+        "assistant review preparation and validation"
+      ],
+      "conclusion": "Detector-development exposure is unknown. Existing compared detector templates match their earlier freeze if all checks pass. This does not prove absence of outside development/selection exposure. Do not claim untouched evaluation.",
+      "scope": "Repository freeze/templates plus user attestation; not an exhaustive audit of external conversations or private work."
+    },
+    "authoritative_manifest": "data/generated_stories_verified_v1/evaluator_only/manifest.json",
+    "dataset_hashes": {
+      "data/generated_stories_verified_v1/detector_inputs.jsonl": "125d3ddcaf4961421b80e7e0cdad43362b3cd8ae999fd0f8fe15e19a44414447",
+      "data/generated_stories_verified_v1/evaluator_only/all_candidate_dispositions.jsonl": "e08b77ed707045fe765e9ac9c6449785c43a460607ea986fc184fcaee760891d",
+      "data/generated_stories_verified_v1/evaluator_only/exposure.json": "5576d057b45b4ca4ff33f94e757035de2384424bd7e21f3be78de17e08fb67ef",
+      "data/generated_stories_verified_v1/evaluator_only/gold_stories.jsonl": "83b8530f37b3b85cbfda653579eb3ce911dd587e696897f0137f078b4ef1d68f",
+      "data/generated_stories_verified_v1/evaluator_only/manifest.json": "42a349b2fce88b098e630dd5001f1866533514f54d786087b8b06c7589a0861f",
+      "data/generated_stories_verified_v1/evaluator_only/provenance.jsonl": "9cb9d7ef34645ab63a8f25347c6d08067286fc8ef9234f47d663e650f5d095dd",
+      "data/generated_stories_verified_v1/evaluator_only/review_validation.md": "563711a0b2432ea0581aba92404322312a5402df5628b46334cf63a4623312b6",
+      "data/generated_stories_verified_v1/evaluator_only/summary.json": "eeece2c9ebc51957dbc217cad61d4a5d4630bb2e6daa94fda8567f312fa9d97d",
+      "data/generated_stories_verified_v1/evaluator_only/verified_pairs.jsonl": "c16ad816ba8e165128d8f1394dc4d88c0d4bd8cc5cc897935820956f2c3529b7",
+      "data/generated_stories_verified_v1/evaluator_only/writing_prompt_groups.json": "69ed33f337889ed91314e739a580fc524f06d3a4c225f360fca5b816e78e7047"
+    },
+    "checks": "All structure, source, gold, grouping and leakage checks passed"
+  },
+  "inspection": {
+    "ollama_version": "0.40.3",
+    "models": {
+      "qwen3:8b": {
+        "available": true,
+        "identity": {
+          "tag": "qwen3:8b",
+          "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+          "size_bytes": 5225388164,
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen3",
+            "families": [
+              "qwen3"
+            ],
+            "parameter_size": "8.2B",
+            "quantization_level": "Q4_K_M"
+          },
+          "capabilities": [
+            "completion",
+            "tools",
+            "thinking"
+          ],
+          "model_info": {
+            "general.architecture": "qwen3",
+            "general.basename": "Qwen3",
+            "general.file_type": 15,
+            "general.license": "apache-2.0",
+            "general.parameter_count": 8190735360,
+            "general.quantization_version": 2,
+            "general.size_label": "8B",
+            "general.type": "model",
+            "qwen3.attention.head_count": 32,
+            "qwen3.attention.head_count_kv": 8,
+            "qwen3.attention.key_length": 128,
+            "qwen3.attention.layer_norm_rms_epsilon": 1e-06,
+            "qwen3.attention.value_length": 128,
+            "qwen3.block_count": 36,
+            "qwen3.context_length": 40960,
+            "qwen3.embedding_length": 4096,
+            "qwen3.feed_forward_length": 12288,
+            "qwen3.rope.freq_base": 1000000,
+            "tokenizer.ggml.add_bos_token": false,
+            "tokenizer.ggml.bos_token_id": 151643,
+            "tokenizer.ggml.eos_token_id": 151645,
+            "tokenizer.ggml.merges": [],
+            "tokenizer.ggml.model": "gpt2",
+            "tokenizer.ggml.padding_token_id": 151643,
+            "tokenizer.ggml.pre": "qwen2",
+            "tokenizer.ggml.token_type": [],
+            "tokenizer.ggml.tokens": []
+          },
+          "template": "\n{{- $lastUserIdx := -1 -}}\n{{- range $idx, $msg := .Messages -}}\n{{- if eq $msg.Role \"user\" }}{{ $lastUserIdx = $idx }}{{ end -}}\n{{- end }}\n{{- if or .System .Tools }}<|im_start|>system\n{{ if .System }}\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\n# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>\n{{- range .Tools }}\n{\"type\": \"function\", \"function\": {{ .Function }}}\n{{- end }}\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{\"name\": <function-name>, \"arguments\": <args-json-object>}\n</tool_call>\n{{- end -}}\n<|im_end|>\n{{ end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 -}}\n{{- if eq .Role \"user\" }}<|im_start|>user\n{{ .Content }}\n{{- if and $.IsThinkSet (eq $i $lastUserIdx) }}\n   {{- if $.Think -}}\n      {{- \" \"}}/think\n   {{- else -}}\n      {{- \" \"}}/no_think\n   {{- end -}}\n{{- end }}<|im_end|>\n{{ else if eq .Role \"assistant\" }}<|im_start|>assistant\n{{ if (and $.IsThinkSet (and .Thinking (or $last (gt $i $lastUserIdx)))) -}}\n<think>{{ .Thinking }}</think>\n{{ end -}}\n{{ if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}<tool_call>\n{{ range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{ end }}</tool_call>\n{{- end }}{{ if not $last }}<|im_end|>\n{{ end }}\n{{- else if eq .Role \"tool\" }}<|im_start|>user\n<tool_response>\n{{ .Content }}\n</tool_response><|im_end|>\n{{ end }}\n{{- if and (ne .Role \"assistant\") $last }}<|im_start|>assistant\n{{ if and $.IsThinkSet (not $.Think) -}}\n<think>\n\n</think>\n\n{{ end -}}\n{{ end }}\n{{- end }}",
+          "template_hash": "AE370D884F108D16E7CC8FD5259EBC5773A0AFA6E078B11F4ED7E39A27E0DFC4",
+          "system": "",
+          "parameters": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95"
+        },
+        "thinking": "disabled",
+        "context_budget": {
+          "configured_context": 16384,
+          "supported_context": 40960,
+          "largest_prompt_utf8_bytes": 5321,
+          "wrapper_and_special_token_bound": 2747,
+          "output_allowance": 4096,
+          "required_token_upper_bound": 12164,
+          "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+          "estimated_f16_kv_cache_bytes": 2415919104
+        }
+      },
+      "llama3.1:8b": {
+        "available": true,
+        "identity": {
+          "tag": "llama3.1:8b",
+          "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+          "size_bytes": 4920753328,
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "llama",
+            "families": [
+              "llama"
+            ],
+            "parameter_size": "8.0B",
+            "quantization_level": "Q4_K_M"
+          },
+          "capabilities": [
+            "completion",
+            "tools"
+          ],
+          "model_info": {
+            "general.architecture": "llama",
+            "general.basename": "Meta-Llama-3.1",
+            "general.file_type": 15,
+            "general.finetune": "Instruct",
+            "general.languages": [
+              "en",
+              "de",
+              "fr",
+              "it",
+              "pt",
+              "hi",
+              "es",
+              "th"
+            ],
+            "general.license": "llama3.1",
+            "general.parameter_count": 8030261312,
+            "general.quantization_version": 2,
+            "general.size_label": "8B",
+            "general.tags": [
+              "facebook",
+              "meta",
+              "pytorch",
+              "llama",
+              "llama-3",
+              "text-generation"
+            ],
+            "general.type": "model",
+            "llama.attention.head_count": 32,
+            "llama.attention.head_count_kv": 8,
+            "llama.attention.layer_norm_rms_epsilon": 1e-05,
+            "llama.block_count": 32,
+            "llama.context_length": 131072,
+            "llama.embedding_length": 4096,
+            "llama.feed_forward_length": 14336,
+            "llama.rope.dimension_count": 128,
+            "llama.rope.freq_base": 500000,
+            "llama.vocab_size": 128256,
+            "tokenizer.ggml.bos_token_id": 128000,
+            "tokenizer.ggml.eos_token_id": 128009,
+            "tokenizer.ggml.merges": [],
+            "tokenizer.ggml.model": "gpt2",
+            "tokenizer.ggml.pre": "llama-bpe",
+            "tokenizer.ggml.token_type": [],
+            "tokenizer.ggml.tokens": []
+          },
+          "template": "{{- if or .System .Tools }}<|start_header_id|>system<|end_header_id|>\n{{- if .System }}\n\n{{ .System }}\n{{- end }}\n{{- if .Tools }}\n\nCutting Knowledge Date: December 2023\n\nWhen you receive a tool call response, use the output to format an answer to the orginal user question.\n\nYou are a helpful assistant with tool calling capabilities.\n{{- end }}<|eot_id|>\n{{- end }}\n{{- range $i, $_ := .Messages }}\n{{- $last := eq (len (slice $.Messages $i)) 1 }}\n{{- if eq .Role \"user\" }}<|start_header_id|>user<|end_header_id|>\n{{- if and $.Tools $last }}\n\nGiven the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.\n\nRespond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}. Do not use variables.\n\n{{ range $.Tools }}\n{{- . }}\n{{ end }}\nQuestion: {{ .Content }}<|eot_id|>\n{{- else }}\n\n{{ .Content }}<|eot_id|>\n{{- end }}{{ if $last }}<|start_header_id|>assistant<|end_header_id|>\n\n{{ end }}\n{{- else if eq .Role \"assistant\" }}<|start_header_id|>assistant<|end_header_id|>\n{{- if .ToolCalls }}\n{{ range .ToolCalls }}\n{\"name\": \"{{ .Function.Name }}\", \"parameters\": {{ .Function.Arguments }}}{{ end }}\n{{- else }}\n\n{{ .Content }}\n{{- end }}{{ if not $last }}<|eot_id|>{{ end }}\n{{- else if eq .Role \"tool\" }}<|start_header_id|>ipython<|end_header_id|>\n\n{{ .Content }}<|eot_id|>{{ if $last }}<|start_header_id|>assistant<|end_header_id|>\n\n{{ end }}\n{{- end }}\n{{- end }}",
+          "template_hash": "948AF2743FC78A328DCB3B0F5A31B3D75F415840FDB699E8B1235978392ECF85",
+          "system": "",
+          "parameters": "stop                           \"<|start_header_id|>\"\nstop                           \"<|end_header_id|>\"\nstop                           \"<|eot_id|>\""
+        },
+        "thinking": "not_applicable_option_omitted",
+        "context_budget": {
+          "configured_context": 16384,
+          "supported_context": 131072,
+          "largest_prompt_utf8_bytes": 5321,
+          "wrapper_and_special_token_bound": 2505,
+          "output_allowance": 4096,
+          "required_token_upper_bound": 11922,
+          "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+          "estimated_f16_kv_cache_bytes": 2147483648
+        }
+      },
+      "mistral:7b": {
+        "available": true,
+        "identity": {
+          "tag": "mistral:7b",
+          "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+          "size_bytes": 4372824384,
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "llama",
+            "families": [
+              "llama"
+            ],
+            "parameter_size": "7.2B",
+            "quantization_level": "Q4_K_M"
+          },
+          "capabilities": [
+            "completion",
+            "tools"
+          ],
+          "model_info": {
+            "general.architecture": "llama",
+            "general.file_type": 15,
+            "general.parameter_count": 7248023552,
+            "general.quantization_version": 2,
+            "llama.attention.head_count": 32,
+            "llama.attention.head_count_kv": 8,
+            "llama.attention.layer_norm_rms_epsilon": 1e-05,
+            "llama.block_count": 32,
+            "llama.context_length": 32768,
+            "llama.embedding_length": 4096,
+            "llama.feed_forward_length": 14336,
+            "llama.rope.dimension_count": 128,
+            "llama.rope.freq_base": 1000000,
+            "llama.vocab_size": 32768,
+            "tokenizer.ggml.add_bos_token": true,
+            "tokenizer.ggml.add_eos_token": false,
+            "tokenizer.ggml.bos_token_id": 1,
+            "tokenizer.ggml.eos_token_id": 2,
+            "tokenizer.ggml.model": "llama",
+            "tokenizer.ggml.pre": "default",
+            "tokenizer.ggml.scores": [],
+            "tokenizer.ggml.token_type": [],
+            "tokenizer.ggml.tokens": [],
+            "tokenizer.ggml.unknown_token_id": 0
+          },
+          "template": "{{- if .Messages }}\n{{- range $index, $_ := .Messages }}\n{{- if eq .Role \"user\" }}\n{{- if and (eq (len (slice $.Messages $index)) 1) $.Tools }}[AVAILABLE_TOOLS] {{ $.Tools }}[/AVAILABLE_TOOLS]\n{{- end }}[INST] {{ if and $.System (eq (len (slice $.Messages $index)) 1) }}{{ $.System }}\n\n{{ end }}{{ .Content }}[/INST]\n{{- else if eq .Role \"assistant\" }}\n{{- if .Content }}{{ .Content }}\n{{- else if .ToolCalls }}[TOOL_CALLS] [\n{{- range .ToolCalls }}{\"name\": \"{{ .Function.Name }}\", \"arguments\": {{ .Function.Arguments }}}\n{{- end }}]\n{{- end }}</s>\n{{- else if eq .Role \"tool\" }}[TOOL_RESULTS] {\"content\": {{ .Content }}} [/TOOL_RESULTS]\n{{- end }}\n{{- end }}\n{{- else }}[INST] {{ if .System }}{{ .System }}\n\n{{ end }}{{ .Prompt }}[/INST]\n{{- end }}{{ .Response }}\n{{- if .Response }}</s>\n{{- end }}",
+          "template_hash": "1FF5B64B61B9A63146475A24F70D3CA2FD6FDEEC44247987163479968896FC0B",
+          "system": "",
+          "parameters": "stop                           \"[INST]\"\nstop                           \"[/INST]\""
+        },
+        "thinking": "not_applicable_option_omitted",
+        "context_budget": {
+          "configured_context": 16384,
+          "supported_context": 32768,
+          "largest_prompt_utf8_bytes": 5321,
+          "wrapper_and_special_token_bound": 1823,
+          "output_allowance": 4096,
+          "required_token_upper_bound": 11240,
+          "method": "UTF-8 byte bound plus full template/system bytes and special-token margin; not measured tokenization",
+          "estimated_f16_kv_cache_bytes": 2147483648
+        }
+      }
+    }
+  },
+  "historical_runtime": "0.40.0",
+  "conditions": [
+    {
+      "id": "qwen3_8b_baseline",
+      "model": "qwen3:8b",
+      "strategy": "vanilla",
+      "version": "vanilla_v1",
+      "model_config": "configs/models/three_model_main10/qwen3_8b.yaml"
+    },
+    {
+      "id": "qwen3_8b_verify_revise",
+      "model": "qwen3:8b",
+      "strategy": "verify_revise",
+      "version": "verify_revise_v2",
+      "model_config": "configs/models/three_model_main10/qwen3_8b.yaml"
+    },
+    {
+      "id": "llama3_1_8b_baseline",
+      "model": "llama3.1:8b",
+      "strategy": "vanilla",
+      "version": "vanilla_v1",
+      "model_config": "configs/models/three_model_main10/llama3_1_8b.yaml"
+    },
+    {
+      "id": "llama3_1_8b_verify_revise",
+      "model": "llama3.1:8b",
+      "strategy": "verify_revise",
+      "version": "verify_revise_v2",
+      "model_config": "configs/models/three_model_main10/llama3_1_8b.yaml"
+    },
+    {
+      "id": "mistral_7b_baseline",
+      "model": "mistral:7b",
+      "strategy": "vanilla",
+      "version": "vanilla_v1",
+      "model_config": "configs/models/three_model_main10/mistral_7b.yaml"
+    },
+    {
+      "id": "mistral_7b_verify_revise",
+      "model": "mistral:7b",
+      "strategy": "verify_revise",
+      "version": "verify_revise_v2",
+      "model_config": "configs/models/three_model_main10/mistral_7b.yaml"
+    }
+  ],
+  "templates": {
+    "vanilla": {
+      "version": "vanilla_v1",
+      "path": "prompts/benchmark/vanilla_v1.txt",
+      "hash": "68EEE6C1A3F1617A3F1E4C6A08939E0EA8110EE1C1678B176D832A3D952D6AEA",
+      "copy": "prompts/frozen/main100_comparison_v1/vanilla_v1.txt"
+    },
+    "verify_revise": {
+      "version": "verify_revise_v2",
+      "path": "prompts/experimental/verify_revise_v2.txt",
+      "hash": "272F789C83596EE7B408F1D58210F6D71E7796FE174966C29023DAF4E8744131",
+      "copy": "prompts/frozen/main100_comparison_v1/verify_revise_v2.txt"
+    }
+  },
+  "models": {
+    "qwen3:8b": {
+      "provider": "ollama",
+      "model": "qwen3:8b",
+      "generation": {
+        "temperature": 0.5,
+        "seed": 42,
+        "think": false,
+        "num_ctx": 16384,
+        "num_predict": 4096,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repeat_penalty": 1.0
+      },
+      "runtime": {
+        "timeout_seconds": 300,
+        "max_retries": 3
+      },
+      "source_path": "configs\\models\\three_model_main10\\qwen3_8b.yaml"
+    },
+    "llama3.1:8b": {
+      "provider": "ollama",
+      "model": "llama3.1:8b",
+      "generation": {
+        "temperature": 0.5,
+        "seed": 42,
+        "think": null,
+        "num_ctx": 16384,
+        "num_predict": 4096,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repeat_penalty": 1.0
+      },
+      "runtime": {
+        "timeout_seconds": 300,
+        "max_retries": 3
+      },
+      "source_path": "configs\\models\\three_model_main10\\llama3_1_8b.yaml"
+    },
+    "mistral:7b": {
+      "provider": "ollama",
+      "model": "mistral:7b",
+      "generation": {
+        "temperature": 0.5,
+        "seed": 42,
+        "think": null,
+        "num_ctx": 16384,
+        "num_predict": 4096,
+        "top_k": 40,
+        "top_p": 0.9,
+        "repeat_penalty": 1.0
+      },
+      "runtime": {
+        "timeout_seconds": 300,
+        "max_retries": 3
+      },
+      "source_path": "configs\\models\\three_model_main10\\mistral_7b.yaml"
+    }
+  },
+  "prompts": {
+    "vanilla": [
+      {
+        "story_id": "s_ad55dc39c9afb9dbd4a8bc9c",
+        "prompt": "You are tasked with detecting the presence of continuity errors in a short story. A continuity error occurs when an event or detail in the story contradicts or is incompatible with previously established information about the story's world or characters.\n\nHere is the story to analyze:\n\n<story>\nAsteroid 6's sun was just starting to peek over the horizon, casting a warm orange glow over the barren landscape. Gardener Kaelin stretched her arms, arching her back to relieve the stiffness from a long day of work. She lived on the small, inhabited asteroid, where the harsh conditions made every drop of water and every patch of soil precious. Her garden, however, was anything but typical. It relied on a technology known as 'Echoes,' which used vibrations to sustain plant life. The Echoes device, a complex network of crystals and wires, hummed softly in the corner of the garden, its gentle thrumming a constant presence in Kaelin's life. She had grown accustomed to its soothing sound, and it seemed to have a calming effect on the plants themselves. As she began her morning routine, Kaelin noticed that one of the shoots had begun to wilt. She reached for the small device on her wrist, a data-tracking tool that monitored the garden's vital signs. The Echoes device was linked to the wrist-mounted device, and it sent real-time data on the garden's vibrations, temperature, and water levels. Kaelin's eyes scanned the data, her trained mind quickly pinpointing the problem. The vibrations were off, slightly too high for the plant's liking. She made a mental note to adjust the device later in the day. The rest of the morning passed quickly, with Kaelin pruning, watering, and checking the plants' progress. The asteroid's inhabitants relied on this garden for a significant portion of their food, and Kaelin took her job seriously. As the sun reached its peak, Kaelin took a short break, sitting on a nearby rock to eat her lunch and enjoy the peaceful atmosphere. The garden was a haven, a place where the harsh realities of life on an asteroid could be forgotten. The Echoes device continued to hum, its vibrations resonating through the soil, nourishing the plants and sustaining life. In the afternoon, Kaelin decided it was time to adjust the Echoes device. She carefully entered the new settings, making sure the vibrations would be just right for the struggling shoot. As she worked, she noticed that one of the plants was responding to the adjustment. Its leaves began to perk up, and its color deepened. Kaelin smiled, satisfied with the progress. The Echoes technology was a marvel, and she felt privileged to be its caretaker. With the adjustments complete, Kaelin spent the remainder of the day tending to the garden, her movements a soothing dance of care and attention. As the sun began to set, she stood back, surveying her handiwork. The garden was a vibrant tapestry of colors and textures, a testament to the power of Echoes and Kaelin's dedication. She smiled, feeling a sense of pride and connection to this unusual, thriving ecosystem. The Echoes device continued to hum, its vibrations a constant heartbeat, sustaining life in this tiny, remarkable garden. In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment.\n</story>\n\nPlease carefully read and analyze the story above. Your goal is to identify any continuity errors that may exist within the narrative.\n\nGuidelines for identifying continuity errors:\n1. Pay attention to character descriptions, settings, and plot events.\n2. Look for inconsistencies in timelines, character abilities, or established rules of the story's world.\n3. Note any contradictions between earlier and later parts of the story.\n\nIf you find any continuity errors, please provide a clear explanation of the error and why it contradicts earlier information in the story.\n\nIdentify and quote the specific lines that:\n1. Introduce the continuity error\n2. Contain the earlier information that is contradicted by the error\n\nIf you do not find any continuity errors, state that no errors were found and briefly explain why the story maintains consistency.\n\nBased on your analysis, make a final decision on whether a continuity error exists in the story.\n\nSome tips and tricks for the task:\n- Pay attention to even little details in the story, the continuity errors often are not limited to the central plot point.\n- You might observe some logical error in the story, but make sure that it qualifies as a continuity error i.e. you should be able to find sentences in the story which have the error and the sentences with the original fact that was contradicted (see definitions below for a concrete example).\n\n\nPlease format your response as follows:\n\n<response>\n<explanation>\n[Provide your explanation here, whether you found a continuity error or not]\n</explanation>\n\n<error_lines>\n[If applicable, quote the lines that introduce the continuity error]\n</error_lines>\n\n<contradicted_lines>\n[If applicable, quote the lines from earlier in the story that are contradicted by the error]\n</contradicted_lines>\n\n<decision>\n[State your final decision on whether a continuity error exists in the story. State \"No continuity error found\" if you think there is no continuity error.]\n</decision>\n</response>",
+        "prompt_sha256": "758757a421d725cbea157477766518441ec7f05aead95cf0ee9f5a8f35f7bf2a",
+        "prompt_utf8_bytes": 5321
+      },
+      {
+        "story_id": "s_f8ac30b95f49c23f78326f45",
+        "prompt": "You are tasked with detecting the presence of continuity errors in a short story. A continuity error occurs when an event or detail in the story contradicts or is incompatible with previously established information about the story's world or characters.\n\nHere is the story to analyze:\n\n<story>\nAsteroid 6's sun was just starting to peek over the horizon, casting a warm orange glow over the barren landscape. Gardener Kaelin stretched her arms, arching her back to relieve the stiffness from a long day of work. She lived on the small, inhabited asteroid, where the harsh conditions made every drop of water and every patch of soil precious. Her garden, however, was anything but typical. It relied on a technology known as 'Echoes,' which used vibrations to sustain plant life. The Echoes device, a complex network of crystals and wires, hummed softly in the corner of the garden, its gentle thrumming a constant presence in Kaelin's life. She had grown accustomed to its soothing sound, and it seemed to have a calming effect on the plants themselves. As she began her morning routine, Kaelin noticed that one of the shoots had begun to wilt. She reached for the small device on her wrist, a data-tracking tool that monitored the garden's vital signs. The Echoes device was linked to the wrist-mounted device, and it sent real-time data on the garden's vibrations, temperature, and water levels. Kaelin's eyes scanned the data, her trained mind quickly pinpointing the problem. The vibrations were off, slightly too high for the plant's liking. She made a mental note to adjust the device later in the day. The rest of the morning passed quickly, with Kaelin pruning, watering, and checking the plants' progress. The asteroid's inhabitants relied on this garden for a significant portion of their food, and Kaelin took her job seriously. As the sun reached its peak, Kaelin took a short break, sitting on a nearby rock to eat her lunch and enjoy the peaceful atmosphere. The garden was a haven, a place where the harsh realities of life on an asteroid could be forgotten. The Echoes device continued to hum, its vibrations resonating through the soil, nourishing the plants and sustaining life. In the afternoon, Kaelin decided it was time to adjust the Echoes device. She carefully entered the new settings, making sure the vibrations would be just right for the struggling shoot. As she worked, she noticed that one of the plants was responding to the adjustment. Its leaves began to perk up, and its color deepened. Kaelin smiled, satisfied with the progress. The Echoes technology was a marvel, and she felt privileged to be its caretaker. With the adjustments complete, Kaelin spent the remainder of the day tending to the garden, her movements a soothing dance of care and attention. As the sun began to set, she stood back, surveying her handiwork. The garden was a vibrant tapestry of colors and textures, a testament to the power of Echoes and Kaelin's dedication. She smiled, feeling a sense of pride and connection to this unusual, thriving ecosystem. The Echoes device continued to hum, its vibrations a constant heartbeat, sustaining life in this tiny, remarkable garden.\n</story>\n\nPlease carefully read and analyze the story above. Your goal is to identify any continuity errors that may exist within the narrative.\n\nGuidelines for identifying continuity errors:\n1. Pay attention to character descriptions, settings, and plot events.\n2. Look for inconsistencies in timelines, character abilities, or established rules of the story's world.\n3. Note any contradictions between earlier and later parts of the story.\n\nIf you find any continuity errors, please provide a clear explanation of the error and why it contradicts earlier information in the story.\n\nIdentify and quote the specific lines that:\n1. Introduce the continuity error\n2. Contain the earlier information that is contradicted by the error\n\nIf you do not find any continuity errors, state that no errors were found and briefly explain why the story maintains consistency.\n\nBased on your analysis, make a final decision on whether a continuity error exists in the story.\n\nSome tips and tricks for the task:\n- Pay attention to even little details in the story, the continuity errors often are not limited to the central plot point.\n- You might observe some logical error in the story, but make sure that it qualifies as a continuity error i.e. you should be able to find sentences in the story which have the error and the sentences with the original fact that was contradicted (see definitions below for a concrete example).\n\n\nPlease format your response as follows:\n\n<response>\n<explanation>\n[Provide your explanation here, whether you found a continuity error or not]\n</explanation>\n\n<error_lines>\n[If applicable, quote the lines that introduce the continuity error]\n</error_lines>\n\n<contradicted_lines>\n[If applicable, quote the lines from earlier in the story that are contradicted by the error]\n</contradicted_lines>\n\n<decision>\n[State your final decision on whether a continuity error exists in the story. State \"No continuity error found\" if you think there is no continuity error.]\n</decision>\n</response>",
+        "prompt_sha256": "b3490244496272d4c1b8bf8ef8c5d789d4365865c8ccd0236d2de8708c48076f",
+        "prompt_utf8_bytes": 5191
+      }
+    ],
+    "verify_revise": [
+      {
+        "story_id": "s_ad55dc39c9afb9dbd4a8bc9c",
+        "prompt": "Detect continuity errors in the fictional story below. A continuity error is a story detail that contradicts previously established information about the story's world or characters.\n\nUse a verify-and-revise procedure privately within this single response:\n1. Form a tentative decision about whether a continuity error exists.\n2. Check whether the evidence supports that decision. For a positive decision, locate both the later error-introducing passage and the earlier contradicted passage. For a negative decision, check again for an overlooked conflicting pair.\n3. Consider whether the surrounding narrative resolves the apparent contradiction through a change over time, a flashback, a character belief, or an explicit explanation.\n4. Revise the tentative decision if its evidence is unsupported or the conflict is resolved. Report only the final decision; if no supported unresolved pair remains, decide that no continuity error was found.\n\nUnusual events, missing details, or real-world implausibility alone are not continuity errors. Respect established fictional-world rules. Distinguish contradictions from changes over time, flashbacks, character beliefs, and explanations supplied by the story.\n\nReturn only one final <response> block. Do not expose a scratchpad, checklist, tentative answer, or lengthy chain of thought. Keep the explanation to one or two concise sentences. Quote the story text in the evidence fields; leave both evidence fields empty for a negative decision.\n\n<response>\n<explanation>[Briefly explain the final decision using supported story evidence.]</explanation>\n<error_lines>[Quote the later error-introducing sentence or sentences, or leave empty.]</error_lines>\n<contradicted_lines>[Quote the earlier contradicted sentence or sentences, or leave empty.]</contradicted_lines>\n<decision>[Write exactly \"Continuity error found\" or \"No continuity error found\".]</decision>\n</response>\n\n<story>\nAsteroid 6's sun was just starting to peek over the horizon, casting a warm orange glow over the barren landscape. Gardener Kaelin stretched her arms, arching her back to relieve the stiffness from a long day of work. She lived on the small, inhabited asteroid, where the harsh conditions made every drop of water and every patch of soil precious. Her garden, however, was anything but typical. It relied on a technology known as 'Echoes,' which used vibrations to sustain plant life. The Echoes device, a complex network of crystals and wires, hummed softly in the corner of the garden, its gentle thrumming a constant presence in Kaelin's life. She had grown accustomed to its soothing sound, and it seemed to have a calming effect on the plants themselves. As she began her morning routine, Kaelin noticed that one of the shoots had begun to wilt. She reached for the small device on her wrist, a data-tracking tool that monitored the garden's vital signs. The Echoes device was linked to the wrist-mounted device, and it sent real-time data on the garden's vibrations, temperature, and water levels. Kaelin's eyes scanned the data, her trained mind quickly pinpointing the problem. The vibrations were off, slightly too high for the plant's liking. She made a mental note to adjust the device later in the day. The rest of the morning passed quickly, with Kaelin pruning, watering, and checking the plants' progress. The asteroid's inhabitants relied on this garden for a significant portion of their food, and Kaelin took her job seriously. As the sun reached its peak, Kaelin took a short break, sitting on a nearby rock to eat her lunch and enjoy the peaceful atmosphere. The garden was a haven, a place where the harsh realities of life on an asteroid could be forgotten. The Echoes device continued to hum, its vibrations resonating through the soil, nourishing the plants and sustaining life. In the afternoon, Kaelin decided it was time to adjust the Echoes device. She carefully entered the new settings, making sure the vibrations would be just right for the struggling shoot. As she worked, she noticed that one of the plants was responding to the adjustment. Its leaves began to perk up, and its color deepened. Kaelin smiled, satisfied with the progress. The Echoes technology was a marvel, and she felt privileged to be its caretaker. With the adjustments complete, Kaelin spent the remainder of the day tending to the garden, her movements a soothing dance of care and attention. As the sun began to set, she stood back, surveying her handiwork. The garden was a vibrant tapestry of colors and textures, a testament to the power of Echoes and Kaelin's dedication. She smiled, feeling a sense of pride and connection to this unusual, thriving ecosystem. The Echoes device continued to hum, its vibrations a constant heartbeat, sustaining life in this tiny, remarkable garden. In fact, the device vibrated at the optimal frequency for the entire day, and the plants thrived without any need for adjustment.\n</story>\n",
+        "prompt_sha256": "72c10cd645edef7b85850a379f2f6a60d777d9578c49c69c077fd705928e3e98",
+        "prompt_utf8_bytes": 4960
+      },
+      {
+        "story_id": "s_f8ac30b95f49c23f78326f45",
+        "prompt": "Detect continuity errors in the fictional story below. A continuity error is a story detail that contradicts previously established information about the story's world or characters.\n\nUse a verify-and-revise procedure privately within this single response:\n1. Form a tentative decision about whether a continuity error exists.\n2. Check whether the evidence supports that decision. For a positive decision, locate both the later error-introducing passage and the earlier contradicted passage. For a negative decision, check again for an overlooked conflicting pair.\n3. Consider whether the surrounding narrative resolves the apparent contradiction through a change over time, a flashback, a character belief, or an explicit explanation.\n4. Revise the tentative decision if its evidence is unsupported or the conflict is resolved. Report only the final decision; if no supported unresolved pair remains, decide that no continuity error was found.\n\nUnusual events, missing details, or real-world implausibility alone are not continuity errors. Respect established fictional-world rules. Distinguish contradictions from changes over time, flashbacks, character beliefs, and explanations supplied by the story.\n\nReturn only one final <response> block. Do not expose a scratchpad, checklist, tentative answer, or lengthy chain of thought. Keep the explanation to one or two concise sentences. Quote the story text in the evidence fields; leave both evidence fields empty for a negative decision.\n\n<response>\n<explanation>[Briefly explain the final decision using supported story evidence.]</explanation>\n<error_lines>[Quote the later error-introducing sentence or sentences, or leave empty.]</error_lines>\n<contradicted_lines>[Quote the earlier contradicted sentence or sentences, or leave empty.]</contradicted_lines>\n<decision>[Write exactly \"Continuity error found\" or \"No continuity error found\".]</decision>\n</response>\n\n<story>\nAsteroid 6's sun was just starting to peek over the horizon, casting a warm orange glow over the barren landscape. Gardener Kaelin stretched her arms, arching her back to relieve the stiffness from a long day of work. She lived on the small, inhabited asteroid, where the harsh conditions made every drop of water and every patch of soil precious. Her garden, however, was anything but typical. It relied on a technology known as 'Echoes,' which used vibrations to sustain plant life. The Echoes device, a complex network of crystals and wires, hummed softly in the corner of the garden, its gentle thrumming a constant presence in Kaelin's life. She had grown accustomed to its soothing sound, and it seemed to have a calming effect on the plants themselves. As she began her morning routine, Kaelin noticed that one of the shoots had begun to wilt. She reached for the small device on her wrist, a data-tracking tool that monitored the garden's vital signs. The Echoes device was linked to the wrist-mounted device, and it sent real-time data on the garden's vibrations, temperature, and water levels. Kaelin's eyes scanned the data, her trained mind quickly pinpointing the problem. The vibrations were off, slightly too high for the plant's liking. She made a mental note to adjust the device later in the day. The rest of the morning passed quickly, with Kaelin pruning, watering, and checking the plants' progress. The asteroid's inhabitants relied on this garden for a significant portion of their food, and Kaelin took her job seriously. As the sun reached its peak, Kaelin took a short break, sitting on a nearby rock to eat her lunch and enjoy the peaceful atmosphere. The garden was a haven, a place where the harsh realities of life on an asteroid could be forgotten. The Echoes device continued to hum, its vibrations resonating through the soil, nourishing the plants and sustaining life. In the afternoon, Kaelin decided it was time to adjust the Echoes device. She carefully entered the new settings, making sure the vibrations would be just right for the struggling shoot. As she worked, she noticed that one of the plants was responding to the adjustment. Its leaves began to perk up, and its color deepened. Kaelin smiled, satisfied with the progress. The Echoes technology was a marvel, and she felt privileged to be its caretaker. With the adjustments complete, Kaelin spent the remainder of the day tending to the garden, her movements a soothing dance of care and attention. As the sun began to set, she stood back, surveying her handiwork. The garden was a vibrant tapestry of colors and textures, a testament to the power of Echoes and Kaelin's dedication. She smiled, feeling a sense of pride and connection to this unusual, thriving ecosystem. The Echoes device continued to hum, its vibrations a constant heartbeat, sustaining life in this tiny, remarkable garden.\n</story>\n",
+        "prompt_sha256": "509fe2f178592c91bb314717cf0fe8d284577098c4c0456ded1316664210f01d",
+        "prompt_utf8_bytes": 4830
+      }
+    ]
+  },
+  "hashes": {
+    "configs/experiments/generated_stories_detection_v1.json": "e7cb27275e4a58f16dbb9b4d8ecde0a57b200e870f771ee66532be323bd661c6",
+    "C:/Users/fonga/Desktop/Codex/flawedfictions_fyp/src/fyp/experiments/generated_stories_detection.py": "8f4afa793b2d3dde692c34859f5a643e388064898014a6e6cadbccebb67ce180",
+    "experiments/main100_comparison_v2_ollama0400/preparation.json": "80f2121940ac6829229383d9d83b122df850ec2ef03436b5fffd2a26f639218a",
+    "configs/experiments/main100_comparison_v2_ollama0400.json": "02b06793af487818e9b63fa72255484fde3b3162b8802014959dca0dd9a89de4",
+    "configs/experiments/main100_scoring_correction_v1.json": "69e6348d40624bfe4187e7d97d1f342d8807e3dda9f48064043c3274f42ee286",
+    "configs/models/three_model_main10/qwen3_8b.yaml": "5dd273b2230cbc1b209fe8b54a8976ca671cf97b87ed9ddc601d884e13caa5f0",
+    "configs/models/three_model_main10/llama3_1_8b.yaml": "038170b89548224f9113427a9ba8ce940f3d20b9f30875840e7617e3501aa6e2",
+    "configs/models/three_model_main10/mistral_7b.yaml": "94a75a166b8107f3f24125fb5f9db4f0c709567842a5869644e50065fc0dfd96",
+    "prompts/benchmark/vanilla_v1.txt": "68eee6c1a3f1617a3f1e4c6a08939e0ea8110ee1c1678b176d832a3d952d6aea",
+    "prompts/frozen/main100_comparison_v1/vanilla_v1.txt": "68eee6c1a3f1617a3f1e4c6a08939e0ea8110ee1c1678b176d832a3d952d6aea",
+    "prompts/experimental/verify_revise_v2.txt": "272f789c83596ee7b408f1d58210f6d71e7796fe174966c29023daf4e8744131",
+    "prompts/frozen/main100_comparison_v1/verify_revise_v2.txt": "272f789c83596ee7b408f1d58210f6d71e7796fe174966c29023daf4e8744131",
+    "src/fyp/models/base.py": "b57b3d94f3b4d8aae7841839b1e35bfb488cdcbd6c8b7f50e437a1741ee133ab",
+    "src/fyp/models/ollama_client.py": "7a305ef381efa9937d2dd9836919f46c0e0166bd19625eb19a2716787dc1a9ba",
+    "src/fyp/models/registry.py": "9e8b94a92bc558928e5012c602f6b948bc649cf142cfd319697bd26c83aec4fb",
+    "src/fyp/models/request_journal.py": "401f994aec373c2065563a5acb26ee9daa9b727f03fb1a930e2e9ca90e3323ec",
+    "src/fyp/models/__init__.py": "0d1e1bdd18a5fafbb33bbced3c68bc57be255e084c2891d2c9bd07690af524d5",
+    "src/fyp/prompting/parser.py": "cc6e06d15d267e57d59b5dd55ddf6d3ef17377fd7990e2a4196e8f644d90d52c",
+    "src/fyp/prompting/records.py": "2a644a9655a31e3e053a1fc5e616479258535a2365c153ff9b07b31c48382d72",
+    "src/fyp/prompting/strategies.py": "360bf46341ea7c86e5f266efb9b5de5bb310f9b6bd6e674eac7bf6d9ba5d0db2",
+    "src/fyp/prompting/__init__.py": "be627f2ec2b82e4d1143eb0e174f0296dad3c360104a32a8a976d173bdc19348",
+    "src/fyp/evaluation/corrected_v1.py": "2d9ae31a814705ee49c73ef3d4f3eaeed81517dbc9ce98a5137ecc358433f242",
+    "src/fyp/evaluation/evaluator.py": "882e27e372cf681b71a1ef480c7017695aa4a5e3e7a6c3d0158e8a79fb73287e",
+    "src/fyp/evaluation/localization.py": "54849ab33ce358f09fb06918fac3fbaf7bae3375dcabf2c9eb7a425202c4f3c2",
+    "src/fyp/evaluation/metrics.py": "0f23879ed5a8f31166831ba19f788bcadf4d9ab57f61156e88c326456cd48ae7",
+    "src/fyp/evaluation/__init__.py": "939b2a8de79b5e222143c67d1ea71228a7a97f063e4d685f8270060c8ab19266",
+    "src/fyp/experiments/main100_comparison.py": "63b2cb62c8d80bb219622770597140bb96aab255ace36d58f47a78b4fa98be41",
+    "src/fyp/experiments/baseline_pilot.py": "bccf64b0ffa45b59d1ec32306fe1f8440af6216a1584939413aba9f43d8cab44",
+    "src/fyp/experiments/main100_runtime_revision.py": "8f99ac5dfb82b3b55fc903727a3743c56960ffa8dd81dfa3120fe6e88f4556cb",
+    "src/fyp/experiments/generated_stories.py": "3906d5f177bc8cdf09f6090286c155aafe73a13ab1d1d4deca86c864a15dc4c8",
+    "data/generated_stories_verified_v1/detector_inputs.jsonl": "125d3ddcaf4961421b80e7e0cdad43362b3cd8ae999fd0f8fe15e19a44414447",
+    "data/generated_stories_verified_v1/evaluator_only/all_candidate_dispositions.jsonl": "e08b77ed707045fe765e9ac9c6449785c43a460607ea986fc184fcaee760891d",
+    "data/generated_stories_verified_v1/evaluator_only/exposure.json": "5576d057b45b4ca4ff33f94e757035de2384424bd7e21f3be78de17e08fb67ef",
+    "data/generated_stories_verified_v1/evaluator_only/gold_stories.jsonl": "83b8530f37b3b85cbfda653579eb3ce911dd587e696897f0137f078b4ef1d68f",
+    "data/generated_stories_verified_v1/evaluator_only/manifest.json": "42a349b2fce88b098e630dd5001f1866533514f54d786087b8b06c7589a0861f",
+    "data/generated_stories_verified_v1/evaluator_only/provenance.jsonl": "9cb9d7ef34645ab63a8f25347c6d08067286fc8ef9234f47d663e650f5d095dd",
+    "data/generated_stories_verified_v1/evaluator_only/review_validation.md": "563711a0b2432ea0581aba92404322312a5402df5628b46334cf63a4623312b6",
+    "data/generated_stories_verified_v1/evaluator_only/summary.json": "eeece2c9ebc51957dbc217cad61d4a5d4630bb2e6daa94fda8567f312fa9d97d",
+    "data/generated_stories_verified_v1/evaluator_only/verified_pairs.jsonl": "c16ad816ba8e165128d8f1394dc4d88c0d4bd8cc5cc897935820956f2c3529b7",
+    "data/generated_stories_verified_v1/evaluator_only/writing_prompt_groups.json": "69ed33f337889ed91314e739a580fc524f06d3a4c225f360fca5b816e78e7047"
+  },
+  "scoring_policy": {
+    "version": "scoring_correction_v1",
+    "experiment_root": "experiments/main100_comparison_v2_ollama0400",
+    "output_directory": "experiments/main100_comparison_v2_ollama0400/analysis/scoring_correction_v1",
+    "label_policy": "explicit_decision_v1",
+    "label_structure": "Exactly one complete, nonempty decision tag; wrapper and non-label field warnings do not invalidate a clear label.",
+    "negative_patterns": [
+      "^no continuity error (?:was )?found(?:[.!]| in the story[.!]|$)"
+    ],
+    "positive_patterns": [
+      "^(?:based on the analysis, i conclude that )?(?:a )?continuity error (?:exists|(?:is )?found|is present)(?:[.!]| in the story(?:[.,!]| because | due to )| due to |$)",
+      "^there is a continuity error in the story[.!]"
+    ],
+    "evidence_policy": "Bound fields at the next schema tag (or unknown closing tag); report missing/mismatched closing tags. Preserve legacy line cleanup and non-strict overlap; reject empty normalized fragments on predicted and gold sides.",
+    "invalid_policy": "Retain null labels as separate invalid-positive-gold and invalid-negative-gold counts; zero correctness/localisation credit. All-scope recall and specificity use all gold positives and negatives. F1 includes invalid gold of its own class as missed class instances.",
+    "zero_division": 0.0,
+    "inference_calls": 0
+  },
+  "dependencies": {
+    "nltk": "3.10.3",
+    "pyarrow": "25.0.1"
+  },
+  "differences": [
+    "Accepted supplementary dataset replaces official main100 sample",
+    "Actual Ollama runtime pinned separately from historical 0.40.0",
+    "Primary scoring uses existing corrected_v1 explicit decisions and localization; legacy parser retained for audit",
+    "New isolated per-story checkpoints reuse frozen Main100Client request journaling; batches capped at ten"
+  ],
+  "failure_scoring": "Nulls have zero accuracy and pair credit. TP/FP/TN/FN count valid decisions only; invalid positive gold remains in recall denominator and adds to F1 missed positives. Precision=TP/(TP+FP); no artificial positive prediction for invalids. All zero denominators yield 0. CEEval nulls receive zero; Full divides by all scheduled stories, Pos by all positives. Pending results are provisional, never complete.",
+  "ceeval": "Local corrected_v1 non-strict evidence overlap, no LLM verifier; gold self-check passed. Not full paper verifier parity."
+}
